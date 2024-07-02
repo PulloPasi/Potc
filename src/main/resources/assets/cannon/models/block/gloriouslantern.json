@@ -1,0 +1,9 @@
+{
+  "parent": "cannon:custom/pearl_lantern",
+  "textures": {
+    "all": "cannon:block/lyhty",
+    "particle": "cannon:block/lyhty",
+    "0": "cannon:block/lyhty"
+  },
+  "render_type": "solid"
+}

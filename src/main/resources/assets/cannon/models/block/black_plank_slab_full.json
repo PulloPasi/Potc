@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "cannon:block/balckosplankos",
+    "top": "cannon:block/balckosplankos",
+    "side": "cannon:block/balckosplankos"
+  },
+  "render_type": "solid"
+}

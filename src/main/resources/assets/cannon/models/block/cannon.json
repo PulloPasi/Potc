@@ -1,0 +1,9 @@
+{
+  "parent": "cannon:custom/cannonyrity527",
+  "textures": {
+    "all": "cannon:block/pippeli",
+    "particle": "cannon:block/pippeli",
+    "0": "cannon:block/pippeli"
+  },
+  "render_type": "solid"
+}

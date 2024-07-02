@@ -1,0 +1,11 @@
+{
+  "cannonfire": {
+    "subtitle": "subtitles.cannonfire",
+    "sounds": [
+      {
+        "name": "cannon:canonon",
+        "stream": false
+      }
+    ]
+  }
+}

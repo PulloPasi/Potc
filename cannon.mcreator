@@ -1,0 +1,330 @@
+{
+  "mod_elements": [
+    {
+      "name": "CannonballosProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cannonballos_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/procedures/CannonballosProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cannon",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cannon",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/loot_tables/blocks/cannon.json",
+          "src/main/java/net/mcreator/cannon/block/CannonBlock.java",
+          "src/main/resources/assets/cannon/blockstates/cannon.json",
+          "src/main/resources/assets/cannon/models/item/cannon.json",
+          "src/main/resources/assets/cannon/models/block/cannon.json"
+        ]
+      }
+    },
+    {
+      "name": "CannonOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cannon_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/procedures/CannonOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CannonballosProjectile",
+      "type": "projectile",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cannonballos_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/entity/CannonballosProjectileEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "Cannonballos",
+      "type": "item",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cannonballos",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/item/cannonballos.json",
+          "src/main/java/net/mcreator/cannon/item/CannonballosItem.java"
+        ]
+      }
+    },
+    {
+      "name": "BlackPlanks",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_planks",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/item/black_planks.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/black_planks.json",
+          "src/main/resources/assets/cannon/models/block/black_planks.json",
+          "src/main/resources/assets/cannon/blockstates/black_planks.json",
+          "src/main/java/net/mcreator/cannon/block/BlackPlanksBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "BlackPlankSlab",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_plank_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/block/black_plank_slab_full.json",
+          "src/main/resources/assets/cannon/models/block/black_plank_slab.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/black_plank_slab.json",
+          "src/main/java/net/mcreator/cannon/block/BlackPlankSlabBlock.java",
+          "src/main/resources/assets/cannon/models/item/black_plank_slab.json",
+          "src/main/resources/assets/cannon/blockstates/black_plank_slab.json",
+          "src/main/resources/assets/cannon/models/block/black_plank_slab_top.json"
+        ]
+      }
+    },
+    {
+      "name": "BlackPlankTrapDoor",
+      "type": "block",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_plank_trap_door",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/block/black_plank_trap_door.json",
+          "src/main/resources/assets/cannon/models/block/black_plank_trap_door_open.json",
+          "src/main/java/net/mcreator/cannon/block/BlackPlankTrapDoorBlock.java",
+          "src/main/resources/data/cannon/loot_tables/blocks/black_plank_trap_door.json",
+          "src/main/resources/assets/cannon/models/item/black_plank_trap_door.json",
+          "src/main/resources/assets/cannon/blockstates/black_plank_trap_door.json",
+          "src/main/resources/assets/cannon/models/block/black_plank_trap_door_top.json"
+        ]
+      }
+    },
+    {
+      "name": "Dutchmansails",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dutchmansails",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/block/dutchmansails.json",
+          "src/main/java/net/mcreator/cannon/block/DutchmansailsBlock.java",
+          "src/main/resources/assets/cannon/blockstates/dutchmansails.json",
+          "src/main/resources/assets/cannon/models/item/dutchmansails.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/dutchmansails.json"
+        ]
+      }
+    },
+    {
+      "name": "Gloriouslantern",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gloriouslantern",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/loot_tables/blocks/gloriouslantern.json",
+          "src/main/resources/assets/cannon/models/block/gloriouslantern.json",
+          "src/main/resources/assets/cannon/blockstates/gloriouslantern.json",
+          "src/main/java/net/mcreator/cannon/block/GloriouslanternBlock.java",
+          "src/main/resources/assets/cannon/models/item/gloriouslantern.json"
+        ]
+      }
+    },
+    {
+      "name": "Potc",
+      "type": "tab",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "potc",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "BlackPlankStairs",
+      "type": "block",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_plank_stairs",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/loot_tables/blocks/black_plank_stairs.json",
+          "src/main/resources/assets/cannon/models/item/black_plank_stairs.json",
+          "src/main/resources/assets/cannon/models/block/black_plank_stairs_outer.json",
+          "src/main/java/net/mcreator/cannon/block/BlackPlankStairsBlock.java",
+          "src/main/resources/assets/cannon/models/block/black_plank_stairs_inner.json",
+          "src/main/resources/assets/cannon/blockstates/black_plank_stairs.json",
+          "src/main/resources/assets/cannon/models/block/black_plank_stairs.json"
+        ]
+      }
+    },
+    {
+      "name": "DavyJones",
+      "type": "armor",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "davy_jones",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/item/davy_jones_boots.json",
+          "src/main/resources/assets/cannon/models/item/davy_jones_leggings.json",
+          "src/main/java/net/mcreator/cannon/item/DavyJonesItem.java",
+          "src/main/resources/assets/cannon/models/item/davy_jones_helmet.json",
+          "src/main/resources/assets/cannon/models/item/davy_jones_chestplate.json"
+        ]
+      }
+    },
+    {
+      "name": "Dutchmansails2",
+      "type": "block",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dutchmansails_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/blockstates/dutchmansails_2.json",
+          "src/main/resources/assets/cannon/models/item/dutchmansails_2.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/dutchmansails_2.json",
+          "src/main/java/net/mcreator/cannon/block/Dutchmansails2Block.java",
+          "src/main/resources/assets/cannon/models/block/dutchmansails_2.json"
+        ]
+      }
+    },
+    {
+      "name": "Dutchmansails3",
+      "type": "block",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dutchmansails_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/loot_tables/blocks/dutchmansails_3.json",
+          "src/main/resources/assets/cannon/models/block/dutchmansails_3.json",
+          "src/main/java/net/mcreator/cannon/block/Dutchmansails3Block.java",
+          "src/main/resources/assets/cannon/models/item/dutchmansails_3.json",
+          "src/main/resources/assets/cannon/blockstates/dutchmansails_3.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "cannonfire",
+      "files": [
+        "canonon"
+      ],
+      "category": "neutral",
+      "subtitle": "Cannon Fires"
+    }
+  ],
+  "tag_elements": {
+    "BLOCKS:minecraft:slabs": [
+      "~CUSTOM:BlackPlankSlab"
+    ],
+    "BLOCKS:minecraft:stairs": [
+      "~CUSTOM:BlackPlankStairs"
+    ]
+  },
+  "language_map": {
+    "en_us": {
+      "block.cannon.black_planks": "Black Planks",
+      "block.cannon.black_plank_slab": "Black Plank Slab",
+      "block.cannon.black_plank_trap_door": "Black Plank Trap Door",
+      "subtitles.cannonfire2": "Cannon Fires",
+      "block.cannon.dutchmansails": "Sails Of The Flying Dutchman",
+      "subtitles.cannon-fire": "Cannon fires",
+      "item.cannon.davy_jones_leggings": "Davy Jones Leggings",
+      "item.cannon.davy_jones_boots": "Davy Jones Boots",
+      "subtitles.cannonfire": "Cannon Fires",
+      "item.cannon.davy_jones_chestplate": "Davy Jones Chestplate",
+      "block.cannon.dutchmansails_2": "Sails Of The Flying Dutchman Shaded",
+      "block.cannon.cannon": "Cannon",
+      "item_group.cannon.potc": "Potc",
+      "block.cannon.dutchmansails_3": "Sails Of The Flying Dutchman Bottom",
+      "block.cannon.black_plank_stairs": "Black Plank Stairs",
+      "item.cannon.davy_jones_helmet": "Davy Jones Helmet",
+      "item.cannon.cannonballos": "Cannonballos",
+      "block.cannon.gloriouslantern": "Glorious Lantern"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "cannon",
+    "modName": "cannon",
+    "version": "1.0.0",
+    "author": "pulli, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.cannon"
+  },
+  "mcreatorVersion": 202400118518
+}

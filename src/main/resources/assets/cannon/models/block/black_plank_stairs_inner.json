@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "cannon:block/balckosplankos",
+    "top": "cannon:block/balckosplankos",
+    "side": "cannon:block/balckosplankos"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_orientable_trapdoor_top",
+  "textures": {
+    "texture": "cannon:block/black_plank_trapdoor",
+    "particle": "cannon:block/black_plank_trapdoor"
+  },
+  "render_type": "solid"
+}
