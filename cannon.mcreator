@@ -407,27 +407,10 @@
       }
     },
     {
-      "name": "Barnacles",
-      "type": "block",
-      "sortid": 28,
-      "compiles": false,
-      "locked_code": false,
-      "registry_name": "barnacles",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cannon/block/BarnaclesBlock.java",
-          "src/main/resources/assets/cannon/blockstates/barnacles.json",
-          "src/main/resources/assets/cannon/models/item/barnacles.json",
-          "src/main/resources/data/cannon/loot_tables/blocks/barnacles.json",
-          "src/main/resources/assets/cannon/models/block/barnacles.json"
-        ]
-      }
-    },
-    {
       "name": "Sworde",
       "type": "tool",
       "sortid": 25,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "sworde",
       "metadata": {
@@ -441,7 +424,7 @@
       "name": "StairsOfTheFlyingDutchman",
       "type": "block",
       "sortid": 23,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "stairs_of_the_flying_dutchman",
       "metadata": {
@@ -460,7 +443,7 @@
       "name": "CannonBlockAdded",
       "type": "procedure",
       "sortid": 21,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "cannon_block_added",
       "metadata": {

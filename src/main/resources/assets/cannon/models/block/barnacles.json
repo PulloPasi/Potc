@@ -1,9 +1,0 @@
-{
-  "parent": "cannon:custom/barnacles",
-  "textures": {
-    "all": "cannon:block/barnacles",
-    "particle": "cannon:block/barnacles",
-    "0": "cannon:block/barnacles"
-  },
-  "render_type": "solid"
-}

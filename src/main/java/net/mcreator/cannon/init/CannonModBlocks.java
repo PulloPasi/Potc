@@ -7,10 +7,6 @@ package net.mcreator.cannon.init;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.client.event.RegisterColorHandlersEvent;
-import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
@@ -31,7 +27,6 @@ import net.mcreator.cannon.block.BlackPlanksBlock;
 import net.mcreator.cannon.block.BlackPlankTrapDoorBlock;
 import net.mcreator.cannon.block.BlackPlankStairsBlock;
 import net.mcreator.cannon.block.BlackPlankSlabBlock;
-import net.mcreator.cannon.block.BarnaclesBlock;
 import net.mcreator.cannon.CannonMod;
 
 public class CannonModBlocks {
@@ -52,16 +47,7 @@ public class CannonModBlocks {
 	public static final RegistryObject<Block> SLABS_OF_THE_FLYING_DUTCHMAN = REGISTRY.register("slabs_of_the_flying_dutchman", () -> new SlabsOfTheFlyingDutchmanBlock());
 	public static final RegistryObject<Block> FERRYMANS_CHASING_CANNON = REGISTRY.register("ferrymans_chasing_cannon", () -> new FerrymansChasingCannonBlock());
 	public static final RegistryObject<Block> DOOR_OF_THE_FLYING_DUTCHMAN = REGISTRY.register("door_of_the_flying_dutchman", () -> new DoorOfTheFlyingDutchmanBlock());
-	public static final RegistryObject<Block> BARNACLES = REGISTRY.register("barnacles", () -> new BarnaclesBlock());
 	public static final RegistryObject<Block> STAIRS_OF_THE_FLYING_DUTCHMAN = REGISTRY.register("stairs_of_the_flying_dutchman", () -> new StairsOfTheFlyingDutchmanBlock());
-
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
-	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-	public static class ClientSideHandler {
-		@SubscribeEvent
-		public static void blockColorLoad(RegisterColorHandlersEvent.Block event) {
-			BarnaclesBlock.blockColorLoad(event);
-		}
-	}
 }
