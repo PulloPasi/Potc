@@ -5,12 +5,12 @@
     "projectileItem": {
       "value": "CUSTOM:Cannonballos"
     },
-    "showParticles": false,
+    "showParticles": true,
     "actionSound": {
       "value": "CUSTOM:cannonfire"
     },
-    "igniteFire": false,
-    "power": 4.0,
+    "igniteFire": true,
+    "power": 5.0,
     "damage": 10.0,
     "knockback": 5,
     "entityModel": "Default",

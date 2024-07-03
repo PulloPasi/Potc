@@ -1,10 +1,7 @@
 
 package net.mcreator.cannon.item;
 
-import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.SwordItem;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 
 public class SwordeItem extends SwordItem {
 	public SwordeItem() {
