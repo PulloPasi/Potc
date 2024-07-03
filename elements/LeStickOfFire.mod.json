@@ -23,7 +23,7 @@
     "usageCount": 100,
     "blocksAffected": [],
     "glowCondition": {
-      "fixedValue": true
+      "fixedValue": false
     },
     "repairItems": [],
     "immuneToFire": false,

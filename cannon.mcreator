@@ -311,6 +311,150 @@
           "src/main/java/net/mcreator/cannon/item/LeStickOfFireItem.java"
         ]
       }
+    },
+    {
+      "name": "FerrymansChasingCannon",
+      "type": "block",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ferrymans_chasing_cannon",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/blockstates/ferrymans_chasing_cannon.json",
+          "src/main/java/net/mcreator/cannon/block/FerrymansChasingCannonBlock.java",
+          "src/main/resources/data/cannon/loot_tables/blocks/ferrymans_chasing_cannon.json",
+          "src/main/resources/assets/cannon/models/block/ferrymans_chasing_cannon.json",
+          "src/main/resources/assets/cannon/models/item/ferrymans_chasing_cannon.json"
+        ]
+      }
+    },
+    {
+      "name": "PlanksOfTheFlyingDutchman",
+      "type": "block",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "planks_of_the_flying_dutchman",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/block/PlanksOfTheFlyingDutchmanBlock.java",
+          "src/main/resources/assets/cannon/models/item/planks_of_the_flying_dutchman.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/planks_of_the_flying_dutchman.json",
+          "src/main/resources/assets/cannon/blockstates/planks_of_the_flying_dutchman.json",
+          "src/main/resources/assets/cannon/models/block/planks_of_the_flying_dutchman.json"
+        ]
+      }
+    },
+    {
+      "name": "StairsOfTheFlyingDutchman",
+      "type": "block",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stairs_of_the_flying_dutchman",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/loot_tables/blocks/stairs_of_the_flying_dutchman.json",
+          "src/main/resources/assets/cannon/models/block/stairs_of_the_flying_dutchman_outer.json",
+          "src/main/resources/assets/cannon/models/item/stairs_of_the_flying_dutchman.json",
+          "src/main/java/net/mcreator/cannon/block/StairsOfTheFlyingDutchmanBlock.java",
+          "src/main/resources/assets/cannon/blockstates/stairs_of_the_flying_dutchman.json",
+          "src/main/resources/assets/cannon/models/block/stairs_of_the_flying_dutchman.json",
+          "src/main/resources/assets/cannon/models/block/stairs_of_the_flying_dutchman_inner.json"
+        ]
+      }
+    },
+    {
+      "name": "SlabsOfTheFlyingDutchman",
+      "type": "block",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slabs_of_the_flying_dutchman",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/block/SlabsOfTheFlyingDutchmanBlock.java",
+          "src/main/resources/assets/cannon/models/block/slabs_of_the_flying_dutchman_full.json",
+          "src/main/resources/assets/cannon/models/item/slabs_of_the_flying_dutchman.json",
+          "src/main/resources/assets/cannon/models/block/slabs_of_the_flying_dutchman_top.json",
+          "src/main/resources/assets/cannon/models/block/slabs_of_the_flying_dutchman.json",
+          "src/main/resources/assets/cannon/blockstates/slabs_of_the_flying_dutchman.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/slabs_of_the_flying_dutchman.json"
+        ]
+      }
+    },
+    {
+      "name": "Sworde",
+      "type": "tool",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sworde",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/item/SwordeItem.java",
+          "src/main/resources/assets/cannon/models/item/sworde.json"
+        ]
+      }
+    },
+    {
+      "name": "DoorOfTheFlyingDutchman",
+      "type": "block",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "door_of_the_flying_dutchman",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/block/door_of_the_flying_dutchman_top_left.json",
+          "src/main/resources/assets/cannon/models/block/door_of_the_flying_dutchman_top_right.json",
+          "src/main/resources/assets/cannon/models/block/door_of_the_flying_dutchman_top_right_open.json",
+          "src/main/java/net/mcreator/cannon/block/DoorOfTheFlyingDutchmanBlock.java",
+          "src/main/resources/assets/cannon/models/block/door_of_the_flying_dutchman_bottom_left.json",
+          "src/main/resources/assets/cannon/models/block/door_of_the_flying_dutchman_top_left_open.json",
+          "src/main/resources/assets/cannon/blockstates/door_of_the_flying_dutchman.json",
+          "src/main/resources/assets/cannon/models/block/door_of_the_flying_dutchman_bottom_right_open.json",
+          "src/main/resources/assets/cannon/models/block/door_of_the_flying_dutchman_bottom_left_open.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/door_of_the_flying_dutchman.json",
+          "src/main/resources/assets/cannon/models/item/door_of_the_flying_dutchman.json",
+          "src/main/resources/assets/cannon/models/block/door_of_the_flying_dutchman_bottom_right.json"
+        ]
+      }
+    },
+    {
+      "name": "LadderThatHasBeenStolenFromMikaelsBackyard",
+      "type": "block",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ladder_that_has_been_stolen_from_mikaels_backyard",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/block/ladder_that_has_been_stolen_from_mikaels_backyard.json",
+          "src/main/java/net/mcreator/cannon/block/LadderThatHasBeenStolenFromMikaelsBackyardBlock.java",
+          "src/main/resources/data/cannon/loot_tables/blocks/ladder_that_has_been_stolen_from_mikaels_backyard.json",
+          "src/main/resources/assets/cannon/models/item/ladder_that_has_been_stolen_from_mikaels_backyard.json",
+          "src/main/resources/assets/cannon/blockstates/ladder_that_has_been_stolen_from_mikaels_backyard.json"
+        ]
+      }
+    },
+    {
+      "name": "Barnacles",
+      "type": "block",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "barnacles",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/block/BarnaclesBlock.java",
+          "src/main/resources/assets/cannon/blockstates/barnacles.json",
+          "src/main/resources/assets/cannon/models/item/barnacles.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/barnacles.json",
+          "src/main/resources/assets/cannon/models/block/barnacles.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -326,35 +470,45 @@
   ],
   "tag_elements": {
     "BLOCKS:minecraft:slabs": [
+      "~CUSTOM:SlabsOfTheFlyingDutchman",
       "~CUSTOM:BlackPlankSlab"
     ],
     "BLOCKS:minecraft:stairs": [
+      "~CUSTOM:StairsOfTheFlyingDutchman",
       "~CUSTOM:BlackPlankStairs"
     ]
   },
   "language_map": {
     "en_us": {
       "block.cannon.black_planks": "Black Planks",
+      "item.cannon.sworde": "Sworde",
       "block.cannon.black_plank_slab": "Black Plank Slab",
       "block.cannon.black_plank_trap_door": "Black Plank Trap Door",
       "block.cannon.face_of_the_ferryman": "Face Of The Ferryman",
-      "subtitles.cannonfire2": "Cannon Fires",
-      "block.cannon.ferrymans_cannon": "Ferrymans Cannon",
+      "block.cannon.ferrymans_chasing_cannon": "Ferrymans Chasing Cannon",
       "block.cannon.dutchmansails": "Sails Of The Flying Dutchman",
       "subtitles.cannon-fire": "Cannon fires",
+      "block.cannon.planks_of_the_flying_dutchman": "Planks Of The Flying Dutchman",
+      "subtitles.cannonfire": "Cannon Fires",
+      "item_group.cannon.potc": "Potc",
+      "block.cannon.cannon": "Cannon",
+      "block.cannon.black_plank_stairs": "Black Plank Stairs",
+      "item.cannon.cannonballos": "Cannonballos",
+      "block.cannon.barnacles": "Barnacles",
+      "block.cannon.slabs_of_the_flying_dutchman": "Slabs Of The Flying Dutchman",
+      "block.cannon.gloriouslantern": "Glorious Lantern",
+      "block.cannon.stairs_of_the_flying_dutchman": "Stairs Of The Flying Dutchman",
+      "block.cannon.door_of_the_flying_dutchman": "Door Of The Flying Dutchman",
+      "block.cannon.ladder_that_has_been_stolen_from_mikaels_backyard": "Ladder That Has Been Stolen From Mikaels Backyard",
+      "block.cannon.ferrymans_cannon": "Ferrymans Cannon",
+      "subtitles.cannonfire2": "Cannon Fires",
       "item.cannon.davy_jones_leggings": "Davy Jones Leggings",
       "item.cannon.davy_jones_boots": "Davy Jones Boots",
-      "subtitles.cannonfire": "Cannon Fires",
       "item.cannon.le_stick_of_fire": "Le Stick Of Fire",
       "item.cannon.davy_jones_chestplate": "Davy Jones Chestplate",
       "block.cannon.dutchmansails_2": "Sails Of The Flying Dutchman Shaded",
-      "block.cannon.cannon": "Cannon",
-      "item_group.cannon.potc": "Potc",
       "block.cannon.dutchmansails_3": "Sails Of The Flying Dutchman Bottom",
-      "block.cannon.black_plank_stairs": "Black Plank Stairs",
-      "item.cannon.davy_jones_helmet": "Davy Jones Helmet",
-      "item.cannon.cannonballos": "Cannonballos",
-      "block.cannon.gloriouslantern": "Glorious Lantern"
+      "item.cannon.davy_jones_helmet": "Davy Jones Helmet"
     }
   },
   "foldersRoot": {

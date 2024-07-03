@@ -3,13 +3,13 @@
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "ss_head",
+    "textureHelmet": "hatofdavyjones",
     "enableBody": true,
-    "textureBody": "ss_body",
+    "textureBody": "jacketofdavyjones",
     "enableLeggings": true,
-    "textureLeggings": "ss_leggings",
+    "textureLeggings": "legginsofdavyjones",
     "enableBoots": true,
-    "textureBoots": "ss_boots",
+    "textureBoots": "bootsofdavyjones",
     "creativeTab": {
       "value": "COMBAT"
     },

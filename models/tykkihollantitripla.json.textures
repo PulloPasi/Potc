@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "tykkitekstuuriohollanti",
+        "1": "pasgelia"
+      },
+      "name": "default"
+    }
+  }
+}

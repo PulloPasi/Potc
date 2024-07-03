@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "cannon:item/ss_boots"
+    "layer0": "cannon:item/bootsofdavyjones"
   }
 }

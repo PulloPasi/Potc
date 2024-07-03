@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "cannon:block/ladder_that_has_been_stolen_from_mikaels_backyard"
+    },
+    "facing=east": {
+      "model": "cannon:block/ladder_that_has_been_stolen_from_mikaels_backyard",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "cannon:block/ladder_that_has_been_stolen_from_mikaels_backyard",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "cannon:block/ladder_that_has_been_stolen_from_mikaels_backyard",
+      "y": 270
+    }
+  }
+}
