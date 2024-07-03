@@ -40,11 +40,11 @@
       "registry_name": "cannon",
       "metadata": {
         "files": [
-          "src/main/resources/data/cannon/loot_tables/blocks/cannon.json",
           "src/main/java/net/mcreator/cannon/block/CannonBlock.java",
-          "src/main/resources/assets/cannon/blockstates/cannon.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/cannon.json",
           "src/main/resources/assets/cannon/models/item/cannon.json",
-          "src/main/resources/assets/cannon/models/block/cannon.json"
+          "src/main/resources/assets/cannon/models/block/cannon.json",
+          "src/main/resources/assets/cannon/blockstates/cannon.json"
         ]
       }
     },
@@ -60,6 +60,22 @@
           "src/main/java/net/mcreator/cannon/procedures/CannonOnBlockRightClickedProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
           {
             "name": "world",
             "type": "world"
@@ -290,11 +306,11 @@
       "registry_name": "ferrymans_cannon",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cannon/models/item/ferrymans_cannon.json",
           "src/main/resources/assets/cannon/models/block/ferrymans_cannon.json",
+          "src/main/resources/assets/cannon/models/item/ferrymans_cannon.json",
+          "src/main/resources/assets/cannon/blockstates/ferrymans_cannon.json",
           "src/main/resources/data/cannon/loot_tables/blocks/ferrymans_cannon.json",
-          "src/main/java/net/mcreator/cannon/block/FerrymansCannonBlock.java",
-          "src/main/resources/assets/cannon/blockstates/ferrymans_cannon.json"
+          "src/main/java/net/mcreator/cannon/block/FerrymansCannonBlock.java"
         ]
       }
     },
@@ -309,6 +325,37 @@
         "files": [
           "src/main/resources/assets/cannon/models/item/le_stick_of_fire.json",
           "src/main/java/net/mcreator/cannon/item/LeStickOfFireItem.java"
+        ]
+      }
+    },
+    {
+      "name": "CannonBlockAdded",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cannon_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/procedures/CannonBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       }
     }
