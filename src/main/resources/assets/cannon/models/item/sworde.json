@@ -1,7 +1,0 @@
-{
-  "parent": "cannon:custom/miekakaksi",
-  "textures": {
-    "0": "cannon:block/sword",
-    "particle": "cannon:item/mieka"
-  }
-}

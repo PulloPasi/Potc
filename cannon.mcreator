@@ -35,7 +35,7 @@
       "name": "Cannon",
       "type": "block",
       "sortid": 3,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "cannon",
       "metadata": {
@@ -60,6 +60,22 @@
           "src/main/java/net/mcreator/cannon/procedures/CannonOnBlockRightClickedProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
           {
             "name": "world",
             "type": "world"
@@ -316,7 +332,7 @@
       "name": "LadderThatHasBeenStolenFromMikaelsBackyard",
       "type": "block",
       "sortid": 27,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "ladder_that_has_been_stolen_from_mikaels_backyard",
       "metadata": {
@@ -333,7 +349,7 @@
       "name": "PlanksOfTheFlyingDutchman",
       "type": "block",
       "sortid": 22,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "planks_of_the_flying_dutchman",
       "metadata": {
@@ -350,7 +366,7 @@
       "name": "SlabsOfTheFlyingDutchman",
       "type": "block",
       "sortid": 24,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "slabs_of_the_flying_dutchman",
       "metadata": {
@@ -369,7 +385,7 @@
       "name": "FerrymansChasingCannon",
       "type": "block",
       "sortid": 21,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "ferrymans_chasing_cannon",
       "metadata": {
@@ -386,7 +402,7 @@
       "name": "DoorOfTheFlyingDutchman",
       "type": "block",
       "sortid": 26,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "door_of_the_flying_dutchman",
       "metadata": {
@@ -407,43 +423,10 @@
       }
     },
     {
-      "name": "Sworde",
-      "type": "tool",
-      "sortid": 25,
-      "compiles": false,
-      "locked_code": false,
-      "registry_name": "sworde",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cannon/item/SwordeItem.java",
-          "src/main/resources/assets/cannon/models/item/sworde.json"
-        ]
-      }
-    },
-    {
-      "name": "StairsOfTheFlyingDutchman",
-      "type": "block",
-      "sortid": 23,
-      "compiles": false,
-      "locked_code": false,
-      "registry_name": "stairs_of_the_flying_dutchman",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/cannon/loot_tables/blocks/stairs_of_the_flying_dutchman.json",
-          "src/main/resources/assets/cannon/models/block/stairs_of_the_flying_dutchman_outer.json",
-          "src/main/resources/assets/cannon/models/item/stairs_of_the_flying_dutchman.json",
-          "src/main/java/net/mcreator/cannon/block/StairsOfTheFlyingDutchmanBlock.java",
-          "src/main/resources/assets/cannon/blockstates/stairs_of_the_flying_dutchman.json",
-          "src/main/resources/assets/cannon/models/block/stairs_of_the_flying_dutchman.json",
-          "src/main/resources/assets/cannon/models/block/stairs_of_the_flying_dutchman_inner.json"
-        ]
-      }
-    },
-    {
       "name": "CannonBlockAdded",
       "type": "procedure",
       "sortid": 21,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "cannon_block_added",
       "metadata": {
@@ -488,7 +471,6 @@
       "~CUSTOM:BlackPlankSlab"
     ],
     "BLOCKS:minecraft:stairs": [
-      "~CUSTOM:StairsOfTheFlyingDutchman",
       "~CUSTOM:BlackPlankStairs"
     ]
   },
@@ -498,23 +480,28 @@
       "block.cannon.black_plank_slab": "Black Plank Slab",
       "block.cannon.black_plank_trap_door": "Black Plank Trap Door",
       "block.cannon.face_of_the_ferryman": "Face Of The Ferryman",
-      "subtitles.cannonfire2": "Cannon Fires",
-      "block.cannon.ferrymans_cannon": "Ferrymans Cannon",
+      "block.cannon.ferrymans_chasing_cannon": "Ferrymans Chasing Cannon",
       "block.cannon.dutchmansails": "Sails Of The Flying Dutchman",
       "subtitles.cannon-fire": "Cannon fires",
+      "block.cannon.planks_of_the_flying_dutchman": "Planks Of The Flying Dutchman",
+      "subtitles.cannonfire": "Cannon Fires",
+      "block.cannon.cannon": "Cannon",
+      "item_group.cannon.potc": "Potc",
+      "block.cannon.black_plank_stairs": "Black Plank Stairs",
+      "item.cannon.cannonballos": "Cannonballos",
+      "block.cannon.slabs_of_the_flying_dutchman": "Slabs Of The Flying Dutchman",
+      "block.cannon.gloriouslantern": "Glorious Lantern",
+      "block.cannon.door_of_the_flying_dutchman": "Door Of The Flying Dutchman",
+      "block.cannon.ladder_that_has_been_stolen_from_mikaels_backyard": "Ladder That Has Been Stolen From Mikaels Backyard",
+      "subtitles.cannonfire2": "Cannon Fires",
+      "block.cannon.ferrymans_cannon": "Ferrymans Cannon",
       "item.cannon.davy_jones_leggings": "Davy Jones Leggings",
       "item.cannon.davy_jones_boots": "Davy Jones Boots",
-      "subtitles.cannonfire": "Cannon Fires",
       "item.cannon.le_stick_of_fire": "Le Stick Of Fire",
       "item.cannon.davy_jones_chestplate": "Davy Jones Chestplate",
       "block.cannon.dutchmansails_2": "Sails Of The Flying Dutchman Shaded",
-      "item_group.cannon.potc": "Potc",
-      "block.cannon.cannon": "Cannon",
       "block.cannon.dutchmansails_3": "Sails Of The Flying Dutchman Bottom",
-      "block.cannon.black_plank_stairs": "Black Plank Stairs",
-      "item.cannon.davy_jones_helmet": "Davy Jones Helmet",
-      "item.cannon.cannonballos": "Cannonballos",
-      "block.cannon.gloriouslantern": "Glorious Lantern"
+      "item.cannon.davy_jones_helmet": "Davy Jones Helmet"
     }
   },
   "foldersRoot": {

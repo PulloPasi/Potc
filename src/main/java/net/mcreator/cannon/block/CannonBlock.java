@@ -87,7 +87,7 @@ public class CannonBlock extends Block {
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-		CannonOnBlockRightClickedProcedure.execute(world, x, y, z, entity);
+		CannonOnBlockRightClickedProcedure.execute(world);
 		return InteractionResult.SUCCESS;
 	}
 }

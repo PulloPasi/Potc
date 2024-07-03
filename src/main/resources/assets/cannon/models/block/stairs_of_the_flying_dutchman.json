@@ -1,9 +1,0 @@
-{
-  "parent": "block/stairs",
-  "textures": {
-    "bottom": "cannon:block/dutchwood",
-    "top": "cannon:block/dutchwood",
-    "side": "cannon:block/dutchwood"
-  },
-  "render_type": "solid"
-}

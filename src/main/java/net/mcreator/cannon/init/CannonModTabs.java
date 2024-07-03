@@ -37,9 +37,7 @@ public class CannonModTabs {
 				tabData.accept(CannonModBlocks.FERRYMANS_CANNON.get().asItem());
 				tabData.accept(CannonModBlocks.FERRYMANS_CHASING_CANNON.get().asItem());
 				tabData.accept(CannonModBlocks.PLANKS_OF_THE_FLYING_DUTCHMAN.get().asItem());
-				tabData.accept(CannonModBlocks.STAIRS_OF_THE_FLYING_DUTCHMAN.get().asItem());
 				tabData.accept(CannonModBlocks.SLABS_OF_THE_FLYING_DUTCHMAN.get().asItem());
-				tabData.accept(CannonModItems.SWORDE.get());
 				tabData.accept(CannonModBlocks.DOOR_OF_THE_FLYING_DUTCHMAN.get().asItem());
 				tabData.accept(CannonModBlocks.LADDER_THAT_HAS_BEEN_STOLEN_FROM_MIKAELS_BACKYARD.get().asItem());
 			})
