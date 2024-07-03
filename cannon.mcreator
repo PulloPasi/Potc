@@ -35,7 +35,7 @@
       "name": "Cannon",
       "type": "block",
       "sortid": 3,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "cannon",
       "metadata": {
@@ -452,6 +452,42 @@
           }
         ]
       }
+    },
+    {
+      "name": "StairsOfTheFlyingDutchman",
+      "type": "block",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stairs_of_the_flying_dutchman",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/loot_tables/blocks/stairs_of_the_flying_dutchman.json",
+          "src/main/resources/assets/cannon/models/block/stairs_of_the_flying_dutchman_outer.json",
+          "src/main/resources/assets/cannon/models/item/stairs_of_the_flying_dutchman.json",
+          "src/main/java/net/mcreator/cannon/block/StairsOfTheFlyingDutchmanBlock.java",
+          "src/main/resources/assets/cannon/blockstates/stairs_of_the_flying_dutchman.json",
+          "src/main/resources/assets/cannon/models/block/stairs_of_the_flying_dutchman.json",
+          "src/main/resources/assets/cannon/models/block/stairs_of_the_flying_dutchman_inner.json"
+        ]
+      }
+    },
+    {
+      "name": "Barnacles",
+      "type": "block",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "barnacles",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/block/BarnaclesBlock.java",
+          "src/main/resources/assets/cannon/blockstates/barnacles.json",
+          "src/main/resources/assets/cannon/models/item/barnacles.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/barnacles.json",
+          "src/main/resources/assets/cannon/models/block/barnacles.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -471,6 +507,7 @@
       "~CUSTOM:BlackPlankSlab"
     ],
     "BLOCKS:minecraft:stairs": [
+      "~CUSTOM:StairsOfTheFlyingDutchman",
       "~CUSTOM:BlackPlankStairs"
     ]
   },
@@ -489,8 +526,10 @@
       "item_group.cannon.potc": "Potc",
       "block.cannon.black_plank_stairs": "Black Plank Stairs",
       "item.cannon.cannonballos": "Cannonballos",
+      "block.cannon.barnacles": "Barnacles",
       "block.cannon.slabs_of_the_flying_dutchman": "Slabs Of The Flying Dutchman",
       "block.cannon.gloriouslantern": "Glorious Lantern",
+      "block.cannon.stairs_of_the_flying_dutchman": "Stairs Of The Flying Dutchman",
       "block.cannon.door_of_the_flying_dutchman": "Door Of The Flying Dutchman",
       "block.cannon.ladder_that_has_been_stolen_from_mikaels_backyard": "Ladder That Has Been Stolen From Mikaels Backyard",
       "subtitles.cannonfire2": "Cannon Fires",

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "cannon:stairs_of_the_flying_dutchman",
     "cannon:black_plank_stairs"
   ]
 }
