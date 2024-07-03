@@ -1,57 +1,19 @@
 {
   "variants": {
-    "face=floor,facing=north": {
+    "facing=north": {
       "model": "cannon:block/cannon"
     },
-    "face=floor,facing=east": {
+    "facing=east": {
       "model": "cannon:block/cannon",
       "y": 90
     },
-    "face=floor,facing=south": {
+    "facing=south": {
       "model": "cannon:block/cannon",
       "y": 180
     },
-    "face=floor,facing=west": {
+    "facing=west": {
       "model": "cannon:block/cannon",
       "y": 270
-    },
-    "face=wall,facing=north": {
-      "model": "cannon:block/cannon",
-      "x": 90
-    },
-    "face=wall,facing=east": {
-      "model": "cannon:block/cannon",
-      "x": 90,
-      "y": 90
-    },
-    "face=wall,facing=south": {
-      "model": "cannon:block/cannon",
-      "x": 90,
-      "y": 180
-    },
-    "face=wall,facing=west": {
-      "model": "cannon:block/cannon",
-      "x": 90,
-      "y": 270
-    },
-    "face=ceiling,facing=north": {
-      "model": "cannon:block/cannon",
-      "x": 180,
-      "y": 180
-    },
-    "face=ceiling,facing=east": {
-      "model": "cannon:block/cannon",
-      "x": 180,
-      "y": 270
-    },
-    "face=ceiling,facing=south": {
-      "model": "cannon:block/cannon",
-      "x": 180
-    },
-    "face=ceiling,facing=west": {
-      "model": "cannon:block/cannon",
-      "x": 180,
-      "y": 90
     }
   }
 }
