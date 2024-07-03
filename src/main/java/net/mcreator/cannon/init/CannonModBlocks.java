@@ -11,6 +11,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.cannon.block.GloriouslanternBlock;
+import net.mcreator.cannon.block.FaceOfTheFerrymanBlock;
 import net.mcreator.cannon.block.DutchmansailsBlock;
 import net.mcreator.cannon.block.Dutchmansails3Block;
 import net.mcreator.cannon.block.Dutchmansails2Block;
@@ -32,6 +33,7 @@ public class CannonModBlocks {
 	public static final RegistryObject<Block> BLACK_PLANK_STAIRS = REGISTRY.register("black_plank_stairs", () -> new BlackPlankStairsBlock());
 	public static final RegistryObject<Block> DUTCHMANSAILS_2 = REGISTRY.register("dutchmansails_2", () -> new Dutchmansails2Block());
 	public static final RegistryObject<Block> DUTCHMANSAILS_3 = REGISTRY.register("dutchmansails_3", () -> new Dutchmansails3Block());
+	public static final RegistryObject<Block> FACE_OF_THE_FERRYMAN = REGISTRY.register("face_of_the_ferryman", () -> new FaceOfTheFerrymanBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

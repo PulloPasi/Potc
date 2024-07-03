@@ -263,6 +263,23 @@
           "src/main/resources/assets/cannon/blockstates/dutchmansails_3.json"
         ]
       }
+    },
+    {
+      "name": "FaceOfTheFerryman",
+      "type": "block",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "face_of_the_ferryman",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/item/face_of_the_ferryman.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/face_of_the_ferryman.json",
+          "src/main/java/net/mcreator/cannon/block/FaceOfTheFerrymanBlock.java",
+          "src/main/resources/assets/cannon/models/block/face_of_the_ferryman.json",
+          "src/main/resources/assets/cannon/blockstates/face_of_the_ferryman.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -289,6 +306,7 @@
       "block.cannon.black_planks": "Black Planks",
       "block.cannon.black_plank_slab": "Black Plank Slab",
       "block.cannon.black_plank_trap_door": "Black Plank Trap Door",
+      "block.cannon.face_of_the_ferryman": "Face Of The Ferryman",
       "subtitles.cannonfire2": "Cannon Fires",
       "block.cannon.dutchmansails": "Sails Of The Flying Dutchman",
       "subtitles.cannon-fire": "Cannon fires",

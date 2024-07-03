@@ -33,6 +33,7 @@ public class CannonModTabs {
 				tabData.accept(CannonModBlocks.BLACK_PLANK_STAIRS.get().asItem());
 				tabData.accept(CannonModBlocks.DUTCHMANSAILS_2.get().asItem());
 				tabData.accept(CannonModBlocks.DUTCHMANSAILS_3.get().asItem());
+				tabData.accept(CannonModBlocks.FACE_OF_THE_FERRYMAN.get().asItem());
 			})
 
 					.build());
