@@ -1,9 +1,9 @@
 {
-  "parent": "cannon:custom/cannonyrity527",
+  "parent": "cannon:custom/tykki",
   "textures": {
-    "all": "cannon:block/pippeli",
-    "particle": "cannon:block/pippeli",
-    "0": "cannon:block/pippeli"
+    "all": "cannon:block/tykkitekstuurio",
+    "particle": "cannon:block/tykkitekstuurio",
+    "0": "cannon:block/tykkitekstuurio"
   },
   "render_type": "solid"
 }

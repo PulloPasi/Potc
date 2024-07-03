@@ -4,7 +4,7 @@
     "down": "cannon:block/sailsv3bottom_-_copy",
     "up": "cannon:block/sails1_-_copy",
     "north": "cannon:block/sailsv3",
-    "east": "cannon:block/sails1_-_copy",
+    "east": "cannon:block/sailsv3",
     "south": "cannon:block/sailsv3",
     "west": "cannon:block/sailsv3",
     "particle": "cannon:block/sailsv3bottom_-_copy"

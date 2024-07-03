@@ -2,15 +2,15 @@
   "_fv": 60,
   "_type": "block",
   "definition": {
-    "texture": "sailsv3bottom_-_copy",
-    "textureTop": "sails1_-_copy",
-    "textureLeft": "sailsv3",
-    "textureFront": "sailsv3",
-    "textureRight": "sailsv3",
-    "textureBack": "sailsv3",
-    "renderType": 10,
-    "customModelName": "Normal",
-    "rotationMode": 0,
+    "texture": "tykkitekstuuriohollanti",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
+    "renderType": 2,
+    "customModelName": "tykkihollanti:default",
+    "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -18,7 +18,7 @@
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": false,
+    "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "disableOffset": false,
@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Sails Of The Flying Dutchman Bottom",
+    "name": "Ferrymans Cannon",
     "specialInformation": {
       "fixedValue": []
     },
@@ -54,9 +54,9 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "lightOpacity": 15,
+    "lightOpacity": 0,
     "material": {
-      "value": "CLOTH"
+      "value": "IRON"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -81,7 +81,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "CLOTH"
+      "value": "METAL"
     },
     "breakSound": {
       "value": ""

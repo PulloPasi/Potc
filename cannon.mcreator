@@ -280,6 +280,37 @@
           "src/main/resources/assets/cannon/blockstates/face_of_the_ferryman.json"
         ]
       }
+    },
+    {
+      "name": "FerrymansCannon",
+      "type": "block",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ferrymans_cannon",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/item/ferrymans_cannon.json",
+          "src/main/resources/assets/cannon/models/block/ferrymans_cannon.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/ferrymans_cannon.json",
+          "src/main/java/net/mcreator/cannon/block/FerrymansCannonBlock.java",
+          "src/main/resources/assets/cannon/blockstates/ferrymans_cannon.json"
+        ]
+      }
+    },
+    {
+      "name": "LeStickOfFire",
+      "type": "tool",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "le_stick_of_fire",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/item/le_stick_of_fire.json",
+          "src/main/java/net/mcreator/cannon/item/LeStickOfFireItem.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -308,11 +339,13 @@
       "block.cannon.black_plank_trap_door": "Black Plank Trap Door",
       "block.cannon.face_of_the_ferryman": "Face Of The Ferryman",
       "subtitles.cannonfire2": "Cannon Fires",
+      "block.cannon.ferrymans_cannon": "Ferrymans Cannon",
       "block.cannon.dutchmansails": "Sails Of The Flying Dutchman",
       "subtitles.cannon-fire": "Cannon fires",
       "item.cannon.davy_jones_leggings": "Davy Jones Leggings",
       "item.cannon.davy_jones_boots": "Davy Jones Boots",
       "subtitles.cannonfire": "Cannon Fires",
+      "item.cannon.le_stick_of_fire": "Le Stick Of Fire",
       "item.cannon.davy_jones_chestplate": "Davy Jones Chestplate",
       "block.cannon.dutchmansails_2": "Sails Of The Flying Dutchman Shaded",
       "block.cannon.cannon": "Cannon",
