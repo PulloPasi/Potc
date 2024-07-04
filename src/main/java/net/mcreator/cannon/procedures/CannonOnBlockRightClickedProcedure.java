@@ -141,7 +141,7 @@ public class CannonOnBlockRightClickedProcedure {
 										? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
 										: Direction.NORTH;
 							}
-						}.getDirection((world.getBlockState(BlockPos.containing(x, y, z))))).getStepY() + 0.2), ((new Object() {
+						}.getDirection((world.getBlockState(BlockPos.containing(x, y, z))))).getStepY() + 0.1), ((new Object() {
 							public Direction getDirection(BlockState _bs) {
 								Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
 								if (_prop instanceof DirectionProperty _dp)
