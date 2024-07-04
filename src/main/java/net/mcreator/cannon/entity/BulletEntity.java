@@ -1,34 +1,9 @@
 
 package net.mcreator.cannon.entity;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.network.PlayMessages;
-import net.minecraftforge.network.NetworkHooks;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
-import net.minecraft.world.phys.EntityHitResult;
-import net.minecraft.world.phys.BlockHitResult;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.projectile.ItemSupplier;
-import net.minecraft.world.entity.projectile.AbstractArrow;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.util.RandomSource;
-import net.minecraft.sounds.SoundSource;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.protocol.game.ClientGamePacketListener;
-import net.minecraft.network.protocol.Packet;
-
-import net.mcreator.cannon.procedures.BulletProjectileHitsBlockProcedure;
-import net.mcreator.cannon.init.CannonModItems;
-import net.mcreator.cannon.init.CannonModEntities;
-
 @OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)
 public class BulletEntity extends AbstractArrow implements ItemSupplier {
-	public static final ItemStack PROJECTILE_ITEM = new ItemStack(CannonModItems.BULLETITEM.get());
+	public static final ItemStack PROJECTILE_ITEM = new ItemStack(CannonModItems.DELETED_MOD_ELEMENT.get());
 
 	public BulletEntity(PlayMessages.SpawnEntity packet, Level world) {
 		super(CannonModEntities.BULLET.get(), world);
@@ -71,19 +46,19 @@ public class BulletEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	public void playerTouch(Player entity) {
 		super.playerTouch(entity);
-		BulletProjectileHitsBlockProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
+		BulletProjectileHitsBlockProcedure.execute();
 	}
 
 	@Override
 	public void onHitEntity(EntityHitResult entityHitResult) {
 		super.onHitEntity(entityHitResult);
-		BulletProjectileHitsBlockProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
+		BulletProjectileHitsBlockProcedure.execute();
 	}
 
 	@Override
 	public void onHitBlock(BlockHitResult blockHitResult) {
 		super.onHitBlock(blockHitResult);
-		BulletProjectileHitsBlockProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ());
+		BulletProjectileHitsBlockProcedure.execute();
 	}
 
 	@Override

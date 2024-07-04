@@ -533,30 +533,19 @@
       }
     },
     {
-      "name": "Flintlock",
-      "type": "item",
+      "name": "PartOfTheCrew",
+      "type": "animatedentity",
       "sortid": 35,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "flintlock",
+      "registry_name": "part_of_the_crew",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cannon/item/FlintlockItem.java",
-          "src/main/resources/assets/cannon/models/item/flintlock.json"
-        ]
-      }
-    },
-    {
-      "name": "Bulletitem",
-      "type": "item",
-      "sortid": 36,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bulletitem",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cannon/item/BulletitemItem.java",
-          "src/main/resources/assets/cannon/models/item/bulletitem.json"
+          "src/main/java/net/mcreator/cannon/entity/PartOfTheCrewEntity.java",
+          "src/main/java/net/mcreator/cannon/client/renderer/PartOfTheCrewRenderer.java",
+          "src/main/java/net/mcreator/cannon/entity/model/PartOfTheCrewModel.java",
+          "src/main/resources/assets/cannon/models/item/part_of_the_crew_spawn_egg.json",
+          "src/main/resources/data/cannon/forge/biome_modifier/part_of_the_crew_biome_modifier.json"
         ]
       }
     },
@@ -570,6 +559,20 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/cannon/entity/BulletEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "Bulletitem",
+      "type": "item",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bulletitem",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/item/bulletitem.json",
+          "src/main/java/net/mcreator/cannon/item/BulletitemItem.java"
         ]
       }
     },
@@ -601,6 +604,20 @@
             "name": "world",
             "type": "world"
           }
+        ]
+      }
+    },
+    {
+      "name": "Flintlock",
+      "type": "item",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/item/FlintlockItem.java",
+          "src/main/resources/assets/cannon/models/item/flintlock.json"
         ]
       }
     },
@@ -699,7 +716,6 @@
       "subtitles.cannon-fire": "Cannon fires",
       "block.cannon.planks_of_the_flying_dutchman": "Planks Of The Flying Dutchman",
       "subtitles.cannonfire": "Cannon Fires",
-      "item.cannon.flintlock": "Flintlock",
       "block.cannon.cannon": "Cannon",
       "item_group.cannon.potc": "Potc",
       "block.cannon.black_plank_stairs": "Black Plank Stairs",
@@ -721,7 +737,6 @@
       "block.cannon.dutchmansails_2": "Sails Of The Flying Dutchman Shaded",
       "block.cannon.dutchmansails_3": "Sails Of The Flying Dutchman Bottom",
       "subtitles.cannonball-explosion": "cannonball hit",
-      "item.cannon.bulletitem": "Bulletitem",
       "item.cannon.davy_jones_helmet": "Davy Jones Helmet",
       "block.cannon.rope": "Rope"
     }
