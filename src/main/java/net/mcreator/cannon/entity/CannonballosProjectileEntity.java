@@ -22,6 +22,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
+import net.mcreator.cannon.procedures.CannonballosProjectileWhileProjectileFlyingTickProcedure;
 import net.mcreator.cannon.procedures.CannonballosProjectileHitsBlockProcedure;
 import net.mcreator.cannon.init.CannonModItems;
 import net.mcreator.cannon.init.CannonModEntities;
@@ -89,6 +90,7 @@ public class CannonballosProjectileEntity extends AbstractArrow implements ItemS
 	@Override
 	public void tick() {
 		super.tick();
+		CannonballosProjectileWhileProjectileFlyingTickProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
 		if (this.inGround)
 			this.discard();
 	}
