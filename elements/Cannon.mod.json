@@ -125,9 +125,6 @@
     "onBlockAdded": {
       "name": "CannonBlockAdded"
     },
-    "onTickUpdate": {
-      "name": "CannonOnTickUpdate"
-    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [],
