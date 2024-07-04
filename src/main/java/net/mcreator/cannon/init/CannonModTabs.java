@@ -42,6 +42,7 @@ public class CannonModTabs {
 				tabData.accept(CannonModBlocks.LADDER_THAT_HAS_BEEN_STOLEN_FROM_MIKAELS_BACKYARD.get().asItem());
 				tabData.accept(CannonModBlocks.STAIRS_OF_THE_FLYING_DUTCHMAN.get().asItem());
 				tabData.accept(CannonModBlocks.BARNACLES.get().asItem());
+				tabData.accept(CannonModBlocks.ROPE.get().asItem());
 			})
 
 					.build());

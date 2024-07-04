@@ -44,6 +44,7 @@ public class CannonModItems {
 	public static final RegistryObject<Item> DOOR_OF_THE_FLYING_DUTCHMAN = doubleBlock(CannonModBlocks.DOOR_OF_THE_FLYING_DUTCHMAN);
 	public static final RegistryObject<Item> STAIRS_OF_THE_FLYING_DUTCHMAN = block(CannonModBlocks.STAIRS_OF_THE_FLYING_DUTCHMAN);
 	public static final RegistryObject<Item> BARNACLES = block(CannonModBlocks.BARNACLES);
+	public static final RegistryObject<Item> ROPE = block(CannonModBlocks.ROPE);
 
 	// Start of user code block custom items
 	// End of user code block custom items

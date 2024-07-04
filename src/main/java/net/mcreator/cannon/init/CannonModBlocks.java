@@ -12,6 +12,7 @@ import net.minecraft.world.level.block.Block;
 
 import net.mcreator.cannon.block.StairsOfTheFlyingDutchmanBlock;
 import net.mcreator.cannon.block.SlabsOfTheFlyingDutchmanBlock;
+import net.mcreator.cannon.block.RopeBlock;
 import net.mcreator.cannon.block.PlanksOfTheFlyingDutchmanBlock;
 import net.mcreator.cannon.block.LadderThatHasBeenStolenFromMikaelsBackyardBlock;
 import net.mcreator.cannon.block.GloriouslanternBlock;
@@ -50,6 +51,7 @@ public class CannonModBlocks {
 	public static final RegistryObject<Block> DOOR_OF_THE_FLYING_DUTCHMAN = REGISTRY.register("door_of_the_flying_dutchman", () -> new DoorOfTheFlyingDutchmanBlock());
 	public static final RegistryObject<Block> STAIRS_OF_THE_FLYING_DUTCHMAN = REGISTRY.register("stairs_of_the_flying_dutchman", () -> new StairsOfTheFlyingDutchmanBlock());
 	public static final RegistryObject<Block> BARNACLES = REGISTRY.register("barnacles", () -> new BarnaclesBlock());
+	public static final RegistryObject<Block> ROPE = REGISTRY.register("rope", () -> new RopeBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

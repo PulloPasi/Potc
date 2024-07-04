@@ -38,7 +38,6 @@ public class CannonOnBlockRightClickedProcedure {
 					entityToSpawn.setBaseDamage(damage);
 					entityToSpawn.setKnockback(knockback);
 					entityToSpawn.setSilent(true);
-					entityToSpawn.setSecondsOnFire(100);
 					entityToSpawn.setCritArrow(true);
 					return entityToSpawn;
 				}
@@ -68,7 +67,7 @@ public class CannonOnBlockRightClickedProcedure {
 					_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
 					return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis ? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE) : Direction.NORTH;
 				}
-			}.getDirection((world.getBlockState(BlockPos.containing(x, y, z))))).getStepZ()), 2, 0);
+			}.getDirection((world.getBlockState(BlockPos.containing(x, y, z))))).getStepZ()), 1, 0);
 			projectileLevel.addFreshEntity(_entityToSpawn);
 		}
 	}

@@ -1,0 +1,9 @@
+{
+  "parent": "cannon:custom/ropeso",
+  "textures": {
+    "all": "cannon:block/narusta",
+    "particle": "cannon:block/narusta",
+    "0": "cannon:block/narusta"
+  },
+  "render_type": "solid"
+}
