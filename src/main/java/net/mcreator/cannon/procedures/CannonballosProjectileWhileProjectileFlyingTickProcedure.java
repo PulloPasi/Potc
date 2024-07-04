@@ -22,6 +22,6 @@ public class CannonballosProjectileWhileProjectileFlyingTickProcedure {
 			}
 		}
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles((SimpleParticleType) (CannonModParticleTypes.CANNONTRAIL.get()), x, y, z, 15, 0.2, 0.2, 0.2, 0.1);
+			_level.sendParticles((SimpleParticleType) (CannonModParticleTypes.CANNONTRAIL.get()), x, y, z, 3, 0.2, 0.2, 0.2, 0.1);
 	}
 }

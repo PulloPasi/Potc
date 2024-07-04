@@ -13,21 +13,21 @@ import net.minecraft.core.BlockPos;
 public class CannonballosProjectileHitsBlockProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (world instanceof Level _level && !_level.isClientSide())
-			_level.explode(null, x, y, z, 8, Level.ExplosionInteraction.TNT);
+			_level.explode(null, x, y, z, 3, Level.ExplosionInteraction.TNT);
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
-				_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cannon:canon-explosion")), SoundSource.NEUTRAL, 50, 1);
+				_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cannon:cannonball-explosion")), SoundSource.NEUTRAL, 50, 1);
 			} else {
-				_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cannon:canon-explosion")), SoundSource.NEUTRAL, 50, 1, false);
+				_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cannon:cannonball-explosion")), SoundSource.NEUTRAL, 50, 1, false);
 			}
 		}
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles(ParticleTypes.FLAME, x, y, z, 50, 0.3, 1, 0.3, 0.5);
+			_level.sendParticles(ParticleTypes.FLAME, x, y, z, 8, 0.3, 1, 0.3, 0.5);
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles(ParticleTypes.SMOKE, x, y, z, 50, 1, 0.2, 1, 0.5);
+			_level.sendParticles(ParticleTypes.SMOKE, x, y, z, 8, 1, 0.2, 1, 0.5);
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE, x, y, z, 20, 0.1, 0.1, 0.1, 0.2);
+			_level.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE, x, y, z, 8, 0.1, 0.1, 0.1, 0.2);
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles(ParticleTypes.LARGE_SMOKE, x, y, z, 30, 1, 0.3, 1, 0.5);
+			_level.sendParticles(ParticleTypes.LARGE_SMOKE, x, y, z, 8, 1, 0.3, 1, 0.5);
 	}
 }

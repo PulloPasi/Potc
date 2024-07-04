@@ -19,6 +19,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.cannon.init.CannonModTabs;
 import net.mcreator.cannon.init.CannonModSounds;
+import net.mcreator.cannon.init.CannonModParticleTypes;
 import net.mcreator.cannon.init.CannonModItems;
 import net.mcreator.cannon.init.CannonModEntities;
 import net.mcreator.cannon.init.CannonModBlocks;
@@ -49,6 +50,8 @@ public class CannonMod {
 		CannonModEntities.REGISTRY.register(bus);
 
 		CannonModTabs.REGISTRY.register(bus);
+
+		CannonModParticleTypes.REGISTRY.register(bus);
 
 		// Start of user code block mod init
 		// End of user code block mod init

@@ -7,5 +7,41 @@
         "stream": false
       }
     ]
+  },
+  "cannon-fired": {
+    "subtitle": "subtitles.cannon-fired",
+    "sounds": [
+      {
+        "name": "cannon:tykinampunaani",
+        "stream": false
+      }
+    ]
+  },
+  "cannonball-woosh": {
+    "subtitle": "subtitles.cannonball-woosh",
+    "sounds": [
+      {
+        "name": "cannon:woosh_northern87-91714",
+        "stream": false
+      }
+    ]
+  },
+  "cannonball-explosion": {
+    "subtitle": "subtitles.cannonball-explosion",
+    "sounds": [
+      {
+        "name": "cannon:bombinomicon_explode1",
+        "stream": false
+      }
+    ]
+  },
+  "cannon-load": {
+    "subtitle": "subtitles.cannon-load",
+    "sounds": [
+      {
+        "name": "cannon:kdgun2e-cannon-load",
+        "stream": false
+      }
+    ]
   }
 }
