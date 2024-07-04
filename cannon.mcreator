@@ -40,11 +40,11 @@
       "registry_name": "cannon",
       "metadata": {
         "files": [
-          "src/main/resources/data/cannon/loot_tables/blocks/cannon.json",
+          "src/main/resources/assets/cannon/models/item/cannon.json",
+          "src/main/resources/assets/cannon/models/block/cannon.json",
           "src/main/java/net/mcreator/cannon/block/CannonBlock.java",
           "src/main/resources/assets/cannon/blockstates/cannon.json",
-          "src/main/resources/assets/cannon/models/item/cannon.json",
-          "src/main/resources/assets/cannon/models/block/cannon.json"
+          "src/main/resources/data/cannon/loot_tables/blocks/cannon.json"
         ]
       }
     },
@@ -119,11 +119,11 @@
       "registry_name": "black_planks",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cannon/models/item/black_planks.json",
-          "src/main/resources/data/cannon/loot_tables/blocks/black_planks.json",
-          "src/main/resources/assets/cannon/models/block/black_planks.json",
           "src/main/resources/assets/cannon/blockstates/black_planks.json",
-          "src/main/java/net/mcreator/cannon/block/BlackPlanksBlock.java"
+          "src/main/java/net/mcreator/cannon/block/BlackPlanksBlock.java",
+          "src/main/resources/assets/cannon/models/block/black_planks.json",
+          "src/main/resources/assets/cannon/models/item/black_planks.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/black_planks.json"
         ]
       }
     },
@@ -137,12 +137,12 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/cannon/models/block/black_plank_slab_full.json",
+          "src/main/resources/assets/cannon/models/block/black_plank_slab_top.json",
           "src/main/resources/assets/cannon/models/block/black_plank_slab.json",
           "src/main/resources/data/cannon/loot_tables/blocks/black_plank_slab.json",
-          "src/main/java/net/mcreator/cannon/block/BlackPlankSlabBlock.java",
           "src/main/resources/assets/cannon/models/item/black_plank_slab.json",
-          "src/main/resources/assets/cannon/blockstates/black_plank_slab.json",
-          "src/main/resources/assets/cannon/models/block/black_plank_slab_top.json"
+          "src/main/java/net/mcreator/cannon/block/BlackPlankSlabBlock.java",
+          "src/main/resources/assets/cannon/blockstates/black_plank_slab.json"
         ]
       }
     },
@@ -155,13 +155,13 @@
       "registry_name": "black_plank_trap_door",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cannon/models/block/black_plank_trap_door.json",
-          "src/main/resources/assets/cannon/models/block/black_plank_trap_door_open.json",
-          "src/main/java/net/mcreator/cannon/block/BlackPlankTrapDoorBlock.java",
           "src/main/resources/data/cannon/loot_tables/blocks/black_plank_trap_door.json",
           "src/main/resources/assets/cannon/models/item/black_plank_trap_door.json",
           "src/main/resources/assets/cannon/blockstates/black_plank_trap_door.json",
-          "src/main/resources/assets/cannon/models/block/black_plank_trap_door_top.json"
+          "src/main/resources/assets/cannon/models/block/black_plank_trap_door_top.json",
+          "src/main/java/net/mcreator/cannon/block/BlackPlankTrapDoorBlock.java",
+          "src/main/resources/assets/cannon/models/block/black_plank_trap_door_open.json",
+          "src/main/resources/assets/cannon/models/block/black_plank_trap_door.json"
         ]
       }
     },
@@ -174,11 +174,11 @@
       "registry_name": "dutchmansails",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cannon/models/block/dutchmansails.json",
           "src/main/java/net/mcreator/cannon/block/DutchmansailsBlock.java",
-          "src/main/resources/assets/cannon/blockstates/dutchmansails.json",
+          "src/main/resources/assets/cannon/models/block/dutchmansails.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/dutchmansails.json",
           "src/main/resources/assets/cannon/models/item/dutchmansails.json",
-          "src/main/resources/data/cannon/loot_tables/blocks/dutchmansails.json"
+          "src/main/resources/assets/cannon/blockstates/dutchmansails.json"
         ]
       }
     },
@@ -191,10 +191,10 @@
       "registry_name": "gloriouslantern",
       "metadata": {
         "files": [
-          "src/main/resources/data/cannon/loot_tables/blocks/gloriouslantern.json",
           "src/main/resources/assets/cannon/models/block/gloriouslantern.json",
           "src/main/resources/assets/cannon/blockstates/gloriouslantern.json",
           "src/main/java/net/mcreator/cannon/block/GloriouslanternBlock.java",
+          "src/main/resources/data/cannon/loot_tables/blocks/gloriouslantern.json",
           "src/main/resources/assets/cannon/models/item/gloriouslantern.json"
         ]
       }
@@ -219,13 +219,13 @@
       "registry_name": "black_plank_stairs",
       "metadata": {
         "files": [
-          "src/main/resources/data/cannon/loot_tables/blocks/black_plank_stairs.json",
-          "src/main/resources/assets/cannon/models/item/black_plank_stairs.json",
-          "src/main/resources/assets/cannon/models/block/black_plank_stairs_outer.json",
           "src/main/java/net/mcreator/cannon/block/BlackPlankStairsBlock.java",
-          "src/main/resources/assets/cannon/models/block/black_plank_stairs_inner.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/black_plank_stairs.json",
           "src/main/resources/assets/cannon/blockstates/black_plank_stairs.json",
-          "src/main/resources/assets/cannon/models/block/black_plank_stairs.json"
+          "src/main/resources/assets/cannon/models/block/black_plank_stairs_outer.json",
+          "src/main/resources/assets/cannon/models/item/black_plank_stairs.json",
+          "src/main/resources/assets/cannon/models/block/black_plank_stairs.json",
+          "src/main/resources/assets/cannon/models/block/black_plank_stairs_inner.json"
         ]
       }
     },
@@ -239,10 +239,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/cannon/models/item/davy_jones_boots.json",
-          "src/main/resources/assets/cannon/models/item/davy_jones_leggings.json",
+          "src/main/resources/assets/cannon/models/item/davy_jones_chestplate.json",
           "src/main/java/net/mcreator/cannon/item/DavyJonesItem.java",
           "src/main/resources/assets/cannon/models/item/davy_jones_helmet.json",
-          "src/main/resources/assets/cannon/models/item/davy_jones_chestplate.json"
+          "src/main/resources/assets/cannon/models/item/davy_jones_leggings.json"
         ]
       }
     },
@@ -255,10 +255,10 @@
       "registry_name": "dutchmansails_2",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cannon/blockstates/dutchmansails_2.json",
           "src/main/resources/assets/cannon/models/item/dutchmansails_2.json",
-          "src/main/resources/data/cannon/loot_tables/blocks/dutchmansails_2.json",
           "src/main/java/net/mcreator/cannon/block/Dutchmansails2Block.java",
+          "src/main/resources/data/cannon/loot_tables/blocks/dutchmansails_2.json",
+          "src/main/resources/assets/cannon/blockstates/dutchmansails_2.json",
           "src/main/resources/assets/cannon/models/block/dutchmansails_2.json"
         ]
       }
@@ -273,9 +273,9 @@
       "metadata": {
         "files": [
           "src/main/resources/data/cannon/loot_tables/blocks/dutchmansails_3.json",
-          "src/main/resources/assets/cannon/models/block/dutchmansails_3.json",
           "src/main/java/net/mcreator/cannon/block/Dutchmansails3Block.java",
           "src/main/resources/assets/cannon/models/item/dutchmansails_3.json",
+          "src/main/resources/assets/cannon/models/block/dutchmansails_3.json",
           "src/main/resources/assets/cannon/blockstates/dutchmansails_3.json"
         ]
       }
@@ -290,10 +290,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/cannon/models/item/face_of_the_ferryman.json",
-          "src/main/resources/data/cannon/loot_tables/blocks/face_of_the_ferryman.json",
-          "src/main/java/net/mcreator/cannon/block/FaceOfTheFerrymanBlock.java",
+          "src/main/resources/assets/cannon/blockstates/face_of_the_ferryman.json",
           "src/main/resources/assets/cannon/models/block/face_of_the_ferryman.json",
-          "src/main/resources/assets/cannon/blockstates/face_of_the_ferryman.json"
+          "src/main/resources/data/cannon/loot_tables/blocks/face_of_the_ferryman.json",
+          "src/main/java/net/mcreator/cannon/block/FaceOfTheFerrymanBlock.java"
         ]
       }
     },
@@ -306,11 +306,11 @@
       "registry_name": "ferrymans_cannon",
       "metadata": {
         "files": [
+          "src/main/resources/assets/cannon/blockstates/ferrymans_cannon.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/ferrymans_cannon.json",
           "src/main/resources/assets/cannon/models/item/ferrymans_cannon.json",
           "src/main/resources/assets/cannon/models/block/ferrymans_cannon.json",
-          "src/main/resources/data/cannon/loot_tables/blocks/ferrymans_cannon.json",
-          "src/main/java/net/mcreator/cannon/block/FerrymansCannonBlock.java",
-          "src/main/resources/assets/cannon/blockstates/ferrymans_cannon.json"
+          "src/main/java/net/mcreator/cannon/block/FerrymansCannonBlock.java"
         ]
       }
     },
@@ -323,8 +323,8 @@
       "registry_name": "le_stick_of_fire",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cannon/models/item/le_stick_of_fire.json",
-          "src/main/java/net/mcreator/cannon/item/LeStickOfFireItem.java"
+          "src/main/java/net/mcreator/cannon/item/LeStickOfFireItem.java",
+          "src/main/resources/assets/cannon/models/item/le_stick_of_fire.json"
         ]
       }
     },
@@ -337,11 +337,11 @@
       "registry_name": "ladder_that_has_been_stolen_from_mikaels_backyard",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cannon/models/block/ladder_that_has_been_stolen_from_mikaels_backyard.json",
           "src/main/java/net/mcreator/cannon/block/LadderThatHasBeenStolenFromMikaelsBackyardBlock.java",
-          "src/main/resources/data/cannon/loot_tables/blocks/ladder_that_has_been_stolen_from_mikaels_backyard.json",
           "src/main/resources/assets/cannon/models/item/ladder_that_has_been_stolen_from_mikaels_backyard.json",
-          "src/main/resources/assets/cannon/blockstates/ladder_that_has_been_stolen_from_mikaels_backyard.json"
+          "src/main/resources/assets/cannon/models/block/ladder_that_has_been_stolen_from_mikaels_backyard.json",
+          "src/main/resources/assets/cannon/blockstates/ladder_that_has_been_stolen_from_mikaels_backyard.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/ladder_that_has_been_stolen_from_mikaels_backyard.json"
         ]
       }
     },
@@ -354,11 +354,11 @@
       "registry_name": "planks_of_the_flying_dutchman",
       "metadata": {
         "files": [
+          "src/main/resources/assets/cannon/models/block/planks_of_the_flying_dutchman.json",
           "src/main/java/net/mcreator/cannon/block/PlanksOfTheFlyingDutchmanBlock.java",
-          "src/main/resources/assets/cannon/models/item/planks_of_the_flying_dutchman.json",
-          "src/main/resources/data/cannon/loot_tables/blocks/planks_of_the_flying_dutchman.json",
           "src/main/resources/assets/cannon/blockstates/planks_of_the_flying_dutchman.json",
-          "src/main/resources/assets/cannon/models/block/planks_of_the_flying_dutchman.json"
+          "src/main/resources/assets/cannon/models/item/planks_of_the_flying_dutchman.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/planks_of_the_flying_dutchman.json"
         ]
       }
     },
@@ -371,11 +371,11 @@
       "registry_name": "ferrymans_chasing_cannon",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cannon/blockstates/ferrymans_chasing_cannon.json",
           "src/main/java/net/mcreator/cannon/block/FerrymansChasingCannonBlock.java",
-          "src/main/resources/data/cannon/loot_tables/blocks/ferrymans_chasing_cannon.json",
           "src/main/resources/assets/cannon/models/block/ferrymans_chasing_cannon.json",
-          "src/main/resources/assets/cannon/models/item/ferrymans_chasing_cannon.json"
+          "src/main/resources/assets/cannon/models/item/ferrymans_chasing_cannon.json",
+          "src/main/resources/assets/cannon/blockstates/ferrymans_chasing_cannon.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/ferrymans_chasing_cannon.json"
         ]
       }
     },
@@ -388,18 +388,18 @@
       "registry_name": "door_of_the_flying_dutchman",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cannon/models/block/door_of_the_flying_dutchman_top_left.json",
-          "src/main/resources/assets/cannon/models/block/door_of_the_flying_dutchman_top_right.json",
-          "src/main/resources/assets/cannon/models/block/door_of_the_flying_dutchman_top_right_open.json",
-          "src/main/java/net/mcreator/cannon/block/DoorOfTheFlyingDutchmanBlock.java",
-          "src/main/resources/assets/cannon/models/block/door_of_the_flying_dutchman_bottom_left.json",
-          "src/main/resources/assets/cannon/models/block/door_of_the_flying_dutchman_top_left_open.json",
           "src/main/resources/assets/cannon/blockstates/door_of_the_flying_dutchman.json",
-          "src/main/resources/assets/cannon/models/block/door_of_the_flying_dutchman_bottom_right_open.json",
+          "src/main/resources/assets/cannon/models/block/door_of_the_flying_dutchman_top_right.json",
+          "src/main/resources/assets/cannon/models/block/door_of_the_flying_dutchman_bottom_left.json",
           "src/main/resources/assets/cannon/models/block/door_of_the_flying_dutchman_bottom_left_open.json",
           "src/main/resources/data/cannon/loot_tables/blocks/door_of_the_flying_dutchman.json",
-          "src/main/resources/assets/cannon/models/item/door_of_the_flying_dutchman.json",
-          "src/main/resources/assets/cannon/models/block/door_of_the_flying_dutchman_bottom_right.json"
+          "src/main/resources/assets/cannon/models/block/door_of_the_flying_dutchman_top_left_open.json",
+          "src/main/resources/assets/cannon/models/block/door_of_the_flying_dutchman_top_left.json",
+          "src/main/resources/assets/cannon/models/block/door_of_the_flying_dutchman_bottom_right.json",
+          "src/main/resources/assets/cannon/models/block/door_of_the_flying_dutchman_bottom_right_open.json",
+          "src/main/resources/assets/cannon/models/block/door_of_the_flying_dutchman_top_right_open.json",
+          "src/main/java/net/mcreator/cannon/block/DoorOfTheFlyingDutchmanBlock.java",
+          "src/main/resources/assets/cannon/models/item/door_of_the_flying_dutchman.json"
         ]
       }
     },
@@ -443,13 +443,13 @@
       "registry_name": "stairs_of_the_flying_dutchman",
       "metadata": {
         "files": [
-          "src/main/resources/data/cannon/loot_tables/blocks/stairs_of_the_flying_dutchman.json",
-          "src/main/resources/assets/cannon/models/block/stairs_of_the_flying_dutchman_outer.json",
-          "src/main/resources/assets/cannon/models/item/stairs_of_the_flying_dutchman.json",
-          "src/main/java/net/mcreator/cannon/block/StairsOfTheFlyingDutchmanBlock.java",
           "src/main/resources/assets/cannon/blockstates/stairs_of_the_flying_dutchman.json",
           "src/main/resources/assets/cannon/models/block/stairs_of_the_flying_dutchman.json",
-          "src/main/resources/assets/cannon/models/block/stairs_of_the_flying_dutchman_inner.json"
+          "src/main/resources/assets/cannon/models/item/stairs_of_the_flying_dutchman.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/stairs_of_the_flying_dutchman.json",
+          "src/main/resources/assets/cannon/models/block/stairs_of_the_flying_dutchman_inner.json",
+          "src/main/java/net/mcreator/cannon/block/StairsOfTheFlyingDutchmanBlock.java",
+          "src/main/resources/assets/cannon/models/block/stairs_of_the_flying_dutchman_outer.json"
         ]
       }
     },
@@ -462,11 +462,11 @@
       "registry_name": "barnacles",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cannon/block/BarnaclesBlock.java",
           "src/main/resources/assets/cannon/blockstates/barnacles.json",
-          "src/main/resources/assets/cannon/models/item/barnacles.json",
+          "src/main/java/net/mcreator/cannon/block/BarnaclesBlock.java",
+          "src/main/resources/assets/cannon/models/block/barnacles.json",
           "src/main/resources/data/cannon/loot_tables/blocks/barnacles.json",
-          "src/main/resources/assets/cannon/models/block/barnacles.json"
+          "src/main/resources/assets/cannon/models/item/barnacles.json"
         ]
       }
     },
@@ -481,9 +481,9 @@
         "files": [
           "src/main/resources/data/cannon/loot_tables/blocks/rope.json",
           "src/main/java/net/mcreator/cannon/block/RopeBlock.java",
-          "src/main/resources/assets/cannon/models/block/rope.json",
           "src/main/resources/assets/cannon/blockstates/rope.json",
-          "src/main/resources/assets/cannon/models/item/rope.json"
+          "src/main/resources/assets/cannon/models/item/rope.json",
+          "src/main/resources/assets/cannon/models/block/rope.json"
         ]
       }
     },
@@ -496,8 +496,8 @@
       "registry_name": "cannontrail",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cannon/client/particle/CannontrailParticle.java",
-          "src/main/resources/assets/cannon/particles/cannontrail.json"
+          "src/main/resources/assets/cannon/particles/cannontrail.json",
+          "src/main/java/net/mcreator/cannon/client/particle/CannontrailParticle.java"
         ]
       }
     },
