@@ -19,5 +19,6 @@ public class CannonModEntityRenderers {
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(CannonModEntities.CANNONBALLOS_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(CannonModEntities.PART_OF_THE_CREW.get(), PartOfTheCrewRenderer::new);
+		event.registerEntityRenderer(CannonModEntities.BULLET.get(), ThrownItemRenderer::new);
 	}
 }

@@ -15,8 +15,10 @@ import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.cannon.item.LeStickOfFireItem;
+import net.mcreator.cannon.item.FlintlockItem;
 import net.mcreator.cannon.item.DavyJonesItem;
 import net.mcreator.cannon.item.CannonballosItem;
+import net.mcreator.cannon.item.BulletitemItem;
 import net.mcreator.cannon.CannonMod;
 
 public class CannonModItems {
@@ -46,6 +48,8 @@ public class CannonModItems {
 	public static final RegistryObject<Item> BARNACLES = block(CannonModBlocks.BARNACLES);
 	public static final RegistryObject<Item> ROPE = block(CannonModBlocks.ROPE);
 	public static final RegistryObject<Item> PART_OF_THE_CREW_SPAWN_EGG = REGISTRY.register("part_of_the_crew_spawn_egg", () -> new ForgeSpawnEggItem(CannonModEntities.PART_OF_THE_CREW, -13151692, -1, new Item.Properties()));
+	public static final RegistryObject<Item> BULLETITEM = REGISTRY.register("bulletitem", () -> new BulletitemItem());
+	public static final RegistryObject<Item> FLINTLOCK = REGISTRY.register("flintlock", () -> new FlintlockItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items
