@@ -24,6 +24,7 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.cannon.init.CannonModItems;
 import net.mcreator.cannon.init.CannonModEntities;
 import net.mcreator.cannon.entity.CannonballosProjectileEntity;
+import net.mcreator.cannon.CannonMod;
 
 public class CannonOnBlockRightClickedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -47,6 +48,13 @@ public class CannonOnBlockRightClickedProcedure {
 							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cannon:cannon-fired")), SoundSource.BLOCKS, 50, 2);
 						} else {
 							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cannon:cannon-fired")), SoundSource.BLOCKS, 50, 2, false);
+						}
+					}
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cannon:cannonball-woosh")), SoundSource.BLOCKS, 10, 1);
+						} else {
+							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cannon:cannonball-woosh")), SoundSource.BLOCKS, 10, 1, false);
 						}
 					}
 					fromX = x + 0.5;
@@ -152,6 +160,15 @@ public class CannonOnBlockRightClickedProcedure {
 					}
 					if (entity instanceof Player _player)
 						_player.getCooldowns().addCooldown(CannonModItems.LE_STICK_OF_FIRE.get(), 80);
+					CannonMod.queueServerWork(80, () -> {
+						if (world instanceof Level _level) {
+							if (!_level.isClientSide()) {
+								_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cannon:cannon-load")), SoundSource.BLOCKS, 20, 1);
+							} else {
+								_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cannon:cannon-load")), SoundSource.BLOCKS, 20, 1, false);
+							}
+						}
+					});
 				}
 			}
 		}
