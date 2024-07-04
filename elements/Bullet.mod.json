@@ -1,0 +1,28 @@
+{
+  "_fv": 60,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:Bulletitem"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "CUSTOM:cannonfire"
+    },
+    "igniteFire": false,
+    "power": 3.0,
+    "damage": 6.0,
+    "knockback": 7,
+    "entityModel": "Default",
+    "customModelTexture": "",
+    "onHitsBlock": {
+      "name": "BulletProjectileHitsBlock"
+    },
+    "onHitsPlayer": {
+      "name": "BulletProjectileHitsBlock"
+    },
+    "onHitsEntity": {
+      "name": "BulletProjectileHitsBlock"
+    }
+  }
+}

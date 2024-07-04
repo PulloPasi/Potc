@@ -14,8 +14,10 @@ import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.cannon.item.LeStickOfFireItem;
+import net.mcreator.cannon.item.FlintlockItem;
 import net.mcreator.cannon.item.DavyJonesItem;
 import net.mcreator.cannon.item.CannonballosItem;
+import net.mcreator.cannon.item.BulletitemItem;
 import net.mcreator.cannon.CannonMod;
 
 public class CannonModItems {
@@ -44,6 +46,8 @@ public class CannonModItems {
 	public static final RegistryObject<Item> STAIRS_OF_THE_FLYING_DUTCHMAN = block(CannonModBlocks.STAIRS_OF_THE_FLYING_DUTCHMAN);
 	public static final RegistryObject<Item> BARNACLES = block(CannonModBlocks.BARNACLES);
 	public static final RegistryObject<Item> ROPE = block(CannonModBlocks.ROPE);
+	public static final RegistryObject<Item> FLINTLOCK = REGISTRY.register("flintlock", () -> new FlintlockItem());
+	public static final RegistryObject<Item> BULLETITEM = REGISTRY.register("bulletitem", () -> new BulletitemItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

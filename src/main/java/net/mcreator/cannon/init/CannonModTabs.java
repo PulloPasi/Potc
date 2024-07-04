@@ -43,6 +43,8 @@ public class CannonModTabs {
 				tabData.accept(CannonModBlocks.STAIRS_OF_THE_FLYING_DUTCHMAN.get().asItem());
 				tabData.accept(CannonModBlocks.BARNACLES.get().asItem());
 				tabData.accept(CannonModBlocks.ROPE.get().asItem());
+				tabData.accept(CannonModItems.FLINTLOCK.get());
+				tabData.accept(CannonModItems.BULLETITEM.get());
 			})
 
 					.build());

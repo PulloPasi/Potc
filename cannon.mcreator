@@ -531,6 +531,109 @@
           }
         ]
       }
+    },
+    {
+      "name": "Flintlock",
+      "type": "item",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/item/FlintlockItem.java",
+          "src/main/resources/assets/cannon/models/item/flintlock.json"
+        ]
+      }
+    },
+    {
+      "name": "Bulletitem",
+      "type": "item",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bulletitem",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/item/BulletitemItem.java",
+          "src/main/resources/assets/cannon/models/item/bulletitem.json"
+        ]
+      }
+    },
+    {
+      "name": "Bullet",
+      "type": "projectile",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bullet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/entity/BulletEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "FlintlockRightclicked",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/procedures/FlintlockRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BulletProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bullet_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/procedures/BulletProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -596,6 +699,7 @@
       "subtitles.cannon-fire": "Cannon fires",
       "block.cannon.planks_of_the_flying_dutchman": "Planks Of The Flying Dutchman",
       "subtitles.cannonfire": "Cannon Fires",
+      "item.cannon.flintlock": "Flintlock",
       "block.cannon.cannon": "Cannon",
       "item_group.cannon.potc": "Potc",
       "block.cannon.black_plank_stairs": "Black Plank Stairs",
@@ -617,6 +721,7 @@
       "block.cannon.dutchmansails_2": "Sails Of The Flying Dutchman Shaded",
       "block.cannon.dutchmansails_3": "Sails Of The Flying Dutchman Bottom",
       "subtitles.cannonball-explosion": "cannonball hit",
+      "item.cannon.bulletitem": "Bulletitem",
       "item.cannon.davy_jones_helmet": "Davy Jones Helmet",
       "block.cannon.rope": "Rope"
     }
