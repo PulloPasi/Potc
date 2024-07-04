@@ -39,7 +39,6 @@ public class CannonModItems {
 	public static final RegistryObject<Item> LE_STICK_OF_FIRE = REGISTRY.register("le_stick_of_fire", () -> new LeStickOfFireItem());
 	public static final RegistryObject<Item> LADDER_THAT_HAS_BEEN_STOLEN_FROM_MIKAELS_BACKYARD = block(CannonModBlocks.LADDER_THAT_HAS_BEEN_STOLEN_FROM_MIKAELS_BACKYARD);
 	public static final RegistryObject<Item> PLANKS_OF_THE_FLYING_DUTCHMAN = block(CannonModBlocks.PLANKS_OF_THE_FLYING_DUTCHMAN);
-	public static final RegistryObject<Item> SLABS_OF_THE_FLYING_DUTCHMAN = block(CannonModBlocks.SLABS_OF_THE_FLYING_DUTCHMAN);
 	public static final RegistryObject<Item> FERRYMANS_CHASING_CANNON = block(CannonModBlocks.FERRYMANS_CHASING_CANNON);
 	public static final RegistryObject<Item> DOOR_OF_THE_FLYING_DUTCHMAN = doubleBlock(CannonModBlocks.DOOR_OF_THE_FLYING_DUTCHMAN);
 	public static final RegistryObject<Item> STAIRS_OF_THE_FLYING_DUTCHMAN = block(CannonModBlocks.STAIRS_OF_THE_FLYING_DUTCHMAN);

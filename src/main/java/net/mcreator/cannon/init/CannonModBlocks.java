@@ -11,7 +11,6 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.cannon.block.StairsOfTheFlyingDutchmanBlock;
-import net.mcreator.cannon.block.SlabsOfTheFlyingDutchmanBlock;
 import net.mcreator.cannon.block.RopeBlock;
 import net.mcreator.cannon.block.PlanksOfTheFlyingDutchmanBlock;
 import net.mcreator.cannon.block.LadderThatHasBeenStolenFromMikaelsBackyardBlock;
@@ -46,7 +45,6 @@ public class CannonModBlocks {
 	public static final RegistryObject<Block> FERRYMANS_CANNON = REGISTRY.register("ferrymans_cannon", () -> new FerrymansCannonBlock());
 	public static final RegistryObject<Block> LADDER_THAT_HAS_BEEN_STOLEN_FROM_MIKAELS_BACKYARD = REGISTRY.register("ladder_that_has_been_stolen_from_mikaels_backyard", () -> new LadderThatHasBeenStolenFromMikaelsBackyardBlock());
 	public static final RegistryObject<Block> PLANKS_OF_THE_FLYING_DUTCHMAN = REGISTRY.register("planks_of_the_flying_dutchman", () -> new PlanksOfTheFlyingDutchmanBlock());
-	public static final RegistryObject<Block> SLABS_OF_THE_FLYING_DUTCHMAN = REGISTRY.register("slabs_of_the_flying_dutchman", () -> new SlabsOfTheFlyingDutchmanBlock());
 	public static final RegistryObject<Block> FERRYMANS_CHASING_CANNON = REGISTRY.register("ferrymans_chasing_cannon", () -> new FerrymansChasingCannonBlock());
 	public static final RegistryObject<Block> DOOR_OF_THE_FLYING_DUTCHMAN = REGISTRY.register("door_of_the_flying_dutchman", () -> new DoorOfTheFlyingDutchmanBlock());
 	public static final RegistryObject<Block> STAIRS_OF_THE_FLYING_DUTCHMAN = REGISTRY.register("stairs_of_the_flying_dutchman", () -> new StairsOfTheFlyingDutchmanBlock());

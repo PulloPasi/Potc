@@ -363,25 +363,6 @@
       }
     },
     {
-      "name": "SlabsOfTheFlyingDutchman",
-      "type": "block",
-      "sortid": 24,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "slabs_of_the_flying_dutchman",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cannon/block/SlabsOfTheFlyingDutchmanBlock.java",
-          "src/main/resources/assets/cannon/models/block/slabs_of_the_flying_dutchman_full.json",
-          "src/main/resources/assets/cannon/models/item/slabs_of_the_flying_dutchman.json",
-          "src/main/resources/assets/cannon/models/block/slabs_of_the_flying_dutchman_top.json",
-          "src/main/resources/assets/cannon/models/block/slabs_of_the_flying_dutchman.json",
-          "src/main/resources/assets/cannon/blockstates/slabs_of_the_flying_dutchman.json",
-          "src/main/resources/data/cannon/loot_tables/blocks/slabs_of_the_flying_dutchman.json"
-        ]
-      }
-    },
-    {
       "name": "FerrymansChasingCannon",
       "type": "block",
       "sortid": 21,
@@ -520,7 +501,6 @@
   ],
   "tag_elements": {
     "BLOCKS:minecraft:slabs": [
-      "~CUSTOM:SlabsOfTheFlyingDutchman",
       "~CUSTOM:BlackPlankSlab"
     ],
     "BLOCKS:minecraft:stairs": [
@@ -544,7 +524,6 @@
       "block.cannon.black_plank_stairs": "Black Plank Stairs",
       "item.cannon.cannonballos": "Cannonballos",
       "block.cannon.barnacles": "Barnacles",
-      "block.cannon.slabs_of_the_flying_dutchman": "Slabs Of The Flying Dutchman",
       "block.cannon.gloriouslantern": "Glorious Lantern",
       "block.cannon.stairs_of_the_flying_dutchman": "Stairs Of The Flying Dutchman",
       "block.cannon.door_of_the_flying_dutchman": "Door Of The Flying Dutchman",

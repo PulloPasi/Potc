@@ -35,9 +35,9 @@ public class CannonModTabs {
 				tabData.accept(CannonModBlocks.DUTCHMANSAILS_3.get().asItem());
 				tabData.accept(CannonModBlocks.FACE_OF_THE_FERRYMAN.get().asItem());
 				tabData.accept(CannonModBlocks.FERRYMANS_CANNON.get().asItem());
+				tabData.accept(CannonModItems.LE_STICK_OF_FIRE.get());
 				tabData.accept(CannonModBlocks.FERRYMANS_CHASING_CANNON.get().asItem());
 				tabData.accept(CannonModBlocks.PLANKS_OF_THE_FLYING_DUTCHMAN.get().asItem());
-				tabData.accept(CannonModBlocks.SLABS_OF_THE_FLYING_DUTCHMAN.get().asItem());
 				tabData.accept(CannonModBlocks.DOOR_OF_THE_FLYING_DUTCHMAN.get().asItem());
 				tabData.accept(CannonModBlocks.LADDER_THAT_HAS_BEEN_STOLEN_FROM_MIKAELS_BACKYARD.get().asItem());
 				tabData.accept(CannonModBlocks.STAIRS_OF_THE_FLYING_DUTCHMAN.get().asItem());
@@ -54,8 +54,6 @@ public class CannonModTabs {
 			tabData.accept(CannonModItems.DAVY_JONES_CHESTPLATE.get());
 			tabData.accept(CannonModItems.DAVY_JONES_LEGGINGS.get());
 			tabData.accept(CannonModItems.DAVY_JONES_BOOTS.get());
-		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
-			tabData.accept(CannonModItems.LE_STICK_OF_FIRE.get());
 		}
 	}
 }

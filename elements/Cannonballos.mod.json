@@ -12,16 +12,16 @@
     "creativeTab": {
       "value": "CUSTOM:Potc"
     },
-    "stackSize": 64,
+    "stackSize": 16,
     "enchantability": 0,
     "useDuration": 72000,
     "toolType": 0.0,
-    "damageCount": 100,
+    "damageCount": 0,
     "recipeRemainder": {
       "value": ""
     },
     "destroyAnyBlock": false,
-    "immuneToFire": false,
+    "immuneToFire": true,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
@@ -32,9 +32,10 @@
     "glowCondition": {
       "fixedValue": false
     },
+    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
-    "inventoryStackSize": 64,
-    "enableRanged": true,
+    "inventoryStackSize": 16,
+    "enableRanged": false,
     "shootConstantly": false,
     "projectile": {
       "value": "CUSTOM:CannonballosProjectile"
