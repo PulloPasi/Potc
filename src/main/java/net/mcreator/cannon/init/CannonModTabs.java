@@ -56,6 +56,8 @@ public class CannonModTabs {
 			tabData.accept(CannonModItems.DAVY_JONES_CHESTPLATE.get());
 			tabData.accept(CannonModItems.DAVY_JONES_LEGGINGS.get());
 			tabData.accept(CannonModItems.DAVY_JONES_BOOTS.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+			tabData.accept(CannonModItems.PART_OF_THE_CREW_SPAWN_EGG.get());
 		}
 	}
 }
