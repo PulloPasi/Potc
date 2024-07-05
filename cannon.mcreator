@@ -443,13 +443,13 @@
       "registry_name": "stairs_of_the_flying_dutchman",
       "metadata": {
         "files": [
+          "src/main/resources/data/cannon/loot_tables/blocks/stairs_of_the_flying_dutchman.json",
+          "src/main/resources/assets/cannon/models/block/stairs_of_the_flying_dutchman_outer.json",
+          "src/main/resources/assets/cannon/models/item/stairs_of_the_flying_dutchman.json",
+          "src/main/java/net/mcreator/cannon/block/StairsOfTheFlyingDutchmanBlock.java",
           "src/main/resources/assets/cannon/blockstates/stairs_of_the_flying_dutchman.json",
           "src/main/resources/assets/cannon/models/block/stairs_of_the_flying_dutchman.json",
-          "src/main/resources/assets/cannon/models/item/stairs_of_the_flying_dutchman.json",
-          "src/main/resources/data/cannon/loot_tables/blocks/stairs_of_the_flying_dutchman.json",
-          "src/main/resources/assets/cannon/models/block/stairs_of_the_flying_dutchman_inner.json",
-          "src/main/java/net/mcreator/cannon/block/StairsOfTheFlyingDutchmanBlock.java",
-          "src/main/resources/assets/cannon/models/block/stairs_of_the_flying_dutchman_outer.json"
+          "src/main/resources/assets/cannon/models/block/stairs_of_the_flying_dutchman_inner.json"
         ]
       }
     },
@@ -651,6 +651,42 @@
           }
         ]
       }
+    },
+    {
+      "name": "SlabsOfTheFlyingDutchman",
+      "type": "block",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slabs_of_the_flying_dutchman",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/block/SlabsOfTheFlyingDutchmanBlock.java",
+          "src/main/resources/assets/cannon/models/block/slabs_of_the_flying_dutchman_full.json",
+          "src/main/resources/assets/cannon/models/item/slabs_of_the_flying_dutchman.json",
+          "src/main/resources/assets/cannon/models/block/slabs_of_the_flying_dutchman_top.json",
+          "src/main/resources/assets/cannon/models/block/slabs_of_the_flying_dutchman.json",
+          "src/main/resources/assets/cannon/blockstates/slabs_of_the_flying_dutchman.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/slabs_of_the_flying_dutchman.json"
+        ]
+      }
+    },
+    {
+      "name": "BillTurner",
+      "type": "armor",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bill_turner",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/item/bill_turner_chestplate.json",
+          "src/main/resources/assets/cannon/models/item/bill_turner_leggings.json",
+          "src/main/java/net/mcreator/cannon/item/BillTurnerItem.java",
+          "src/main/resources/assets/cannon/models/item/bill_turner_helmet.json",
+          "src/main/resources/assets/cannon/models/item/bill_turner_boots.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -698,6 +734,7 @@
   ],
   "tag_elements": {
     "BLOCKS:minecraft:slabs": [
+      "~CUSTOM:SlabsOfTheFlyingDutchman",
       "~CUSTOM:BlackPlankSlab"
     ],
     "BLOCKS:minecraft:stairs": [
@@ -710,6 +747,8 @@
       "block.cannon.black_planks": "Black Planks",
       "block.cannon.black_plank_slab": "Black Plank Slab",
       "block.cannon.black_plank_trap_door": "Black Plank Trap Door",
+      "item.cannon.bill_turner_boots": "Bill Turner Boots",
+      "item.cannon.bill_turner_helmet": "Bill Turner Helmet",
       "block.cannon.face_of_the_ferryman": "Face Of The Ferryman",
       "block.cannon.ferrymans_chasing_cannon": "Ferrymans Chasing Cannon",
       "block.cannon.dutchmansails": "Sails Of The Flying Dutchman",
@@ -723,6 +762,7 @@
       "block.cannon.black_plank_stairs": "Black Plank Stairs",
       "item.cannon.cannonballos": "Cannonballos",
       "block.cannon.barnacles": "Barnacles",
+      "block.cannon.slabs_of_the_flying_dutchman": "Slabs Of The Flying Dutchman",
       "block.cannon.gloriouslantern": "Glorious Lantern",
       "block.cannon.stairs_of_the_flying_dutchman": "Stairs Of The Flying Dutchman",
       "subtitles.cannon-load": "cannon load",
@@ -732,12 +772,14 @@
       "subtitles.cannonfire2": "Cannon Fires",
       "block.cannon.ferrymans_cannon": "Ferrymans Cannon",
       "item.cannon.part_of_the_crew_spawn_egg": "Part Of The Crew Spawn Egg",
+      "item.cannon.bill_turner_leggings": "Bill Turner Leggings",
       "item.cannon.davy_jones_leggings": "Davy Jones Leggings",
       "subtitles.cannonball-woosh": "cannonball flyby",
       "item.cannon.davy_jones_boots": "Davy Jones Boots",
       "item.cannon.le_stick_of_fire": "Le Stick Of Fire",
       "item.cannon.davy_jones_chestplate": "Davy Jones Chestplate",
       "block.cannon.dutchmansails_2": "Sails Of The Flying Dutchman Shaded",
+      "item.cannon.bill_turner_chestplate": "Bill Turner Chestplate",
       "block.cannon.dutchmansails_3": "Sails Of The Flying Dutchman Bottom",
       "subtitles.cannonball-explosion": "cannonball hit",
       "item.cannon.bulletitem": "Bulletitem",

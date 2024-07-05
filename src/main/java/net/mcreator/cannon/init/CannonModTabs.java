@@ -43,8 +43,14 @@ public class CannonModTabs {
 				tabData.accept(CannonModBlocks.STAIRS_OF_THE_FLYING_DUTCHMAN.get().asItem());
 				tabData.accept(CannonModBlocks.BARNACLES.get().asItem());
 				tabData.accept(CannonModBlocks.ROPE.get().asItem());
+				tabData.accept(CannonModItems.PART_OF_THE_CREW_SPAWN_EGG.get());
 				tabData.accept(CannonModItems.FLINTLOCK.get());
 				tabData.accept(CannonModItems.BULLETITEM.get());
+				tabData.accept(CannonModBlocks.SLABS_OF_THE_FLYING_DUTCHMAN.get().asItem());
+				tabData.accept(CannonModItems.BILL_TURNER_HELMET.get());
+				tabData.accept(CannonModItems.BILL_TURNER_CHESTPLATE.get());
+				tabData.accept(CannonModItems.BILL_TURNER_LEGGINGS.get());
+				tabData.accept(CannonModItems.BILL_TURNER_BOOTS.get());
 			})
 
 					.build());
@@ -56,8 +62,6 @@ public class CannonModTabs {
 			tabData.accept(CannonModItems.DAVY_JONES_CHESTPLATE.get());
 			tabData.accept(CannonModItems.DAVY_JONES_LEGGINGS.get());
 			tabData.accept(CannonModItems.DAVY_JONES_BOOTS.get());
-		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
-			tabData.accept(CannonModItems.PART_OF_THE_CREW_SPAWN_EGG.get());
 		}
 	}
 }

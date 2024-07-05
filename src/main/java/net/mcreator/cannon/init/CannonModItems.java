@@ -19,6 +19,7 @@ import net.mcreator.cannon.item.FlintlockItem;
 import net.mcreator.cannon.item.DavyJonesItem;
 import net.mcreator.cannon.item.CannonballosItem;
 import net.mcreator.cannon.item.BulletitemItem;
+import net.mcreator.cannon.item.BillTurnerItem;
 import net.mcreator.cannon.CannonMod;
 
 public class CannonModItems {
@@ -50,6 +51,11 @@ public class CannonModItems {
 	public static final RegistryObject<Item> PART_OF_THE_CREW_SPAWN_EGG = REGISTRY.register("part_of_the_crew_spawn_egg", () -> new ForgeSpawnEggItem(CannonModEntities.PART_OF_THE_CREW, -13151692, -1, new Item.Properties()));
 	public static final RegistryObject<Item> BULLETITEM = REGISTRY.register("bulletitem", () -> new BulletitemItem());
 	public static final RegistryObject<Item> FLINTLOCK = REGISTRY.register("flintlock", () -> new FlintlockItem());
+	public static final RegistryObject<Item> SLABS_OF_THE_FLYING_DUTCHMAN = block(CannonModBlocks.SLABS_OF_THE_FLYING_DUTCHMAN);
+	public static final RegistryObject<Item> BILL_TURNER_HELMET = REGISTRY.register("bill_turner_helmet", () -> new BillTurnerItem.Helmet());
+	public static final RegistryObject<Item> BILL_TURNER_CHESTPLATE = REGISTRY.register("bill_turner_chestplate", () -> new BillTurnerItem.Chestplate());
+	public static final RegistryObject<Item> BILL_TURNER_LEGGINGS = REGISTRY.register("bill_turner_leggings", () -> new BillTurnerItem.Leggings());
+	public static final RegistryObject<Item> BILL_TURNER_BOOTS = REGISTRY.register("bill_turner_boots", () -> new BillTurnerItem.Boots());
 
 	// Start of user code block custom items
 	// End of user code block custom items
