@@ -12,6 +12,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
 import net.mcreator.cannon.client.renderer.PartOfTheCrewRenderer;
+import net.mcreator.cannon.client.renderer.KarbRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class CannonModEntityRenderers {
@@ -20,5 +21,6 @@ public class CannonModEntityRenderers {
 		event.registerEntityRenderer(CannonModEntities.CANNONBALLOS_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(CannonModEntities.PART_OF_THE_CREW.get(), PartOfTheCrewRenderer::new);
 		event.registerEntityRenderer(CannonModEntities.BULLET.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(CannonModEntities.KARB.get(), KarbRenderer::new);
 	}
 }

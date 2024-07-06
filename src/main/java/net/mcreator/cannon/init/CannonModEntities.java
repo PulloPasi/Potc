@@ -17,6 +17,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.cannon.entity.PartOfTheCrewEntity;
+import net.mcreator.cannon.entity.KarbEntity;
 import net.mcreator.cannon.entity.CannonballosProjectileEntity;
 import net.mcreator.cannon.entity.BulletEntity;
 import net.mcreator.cannon.CannonMod;
@@ -32,6 +33,10 @@ public class CannonModEntities {
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<BulletEntity>> BULLET = register("bullet",
 			EntityType.Builder.<BulletEntity>of(BulletEntity::new, MobCategory.MISC).setCustomClientFactory(BulletEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<KarbEntity>> KARB = register("karb",
+			EntityType.Builder.<KarbEntity>of(KarbEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(KarbEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -41,11 +46,13 @@ public class CannonModEntities {
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			PartOfTheCrewEntity.init();
+			KarbEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(PART_OF_THE_CREW.get(), PartOfTheCrewEntity.createAttributes().build());
+		event.put(KARB.get(), KarbEntity.createAttributes().build());
 	}
 }

@@ -687,6 +687,23 @@
           "src/main/resources/assets/cannon/models/item/bill_turner_boots.json"
         ]
       }
+    },
+    {
+      "name": "Karb",
+      "type": "animatedentity",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "karb",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/entity/KarbEntity.java",
+          "src/main/java/net/mcreator/cannon/entity/model/KarbModel.java",
+          "src/main/resources/assets/cannon/models/item/karb_spawn_egg.json",
+          "src/main/java/net/mcreator/cannon/client/renderer/KarbRenderer.java",
+          "src/main/resources/data/cannon/forge/biome_modifier/karb_biome_modifier.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -752,6 +769,7 @@
       "block.cannon.face_of_the_ferryman": "Face Of The Ferryman",
       "block.cannon.ferrymans_chasing_cannon": "Ferrymans Chasing Cannon",
       "block.cannon.dutchmansails": "Sails Of The Flying Dutchman",
+      "item.cannon.karb_spawn_egg": "Karb Spawn Egg",
       "subtitles.cannon-fire": "Cannon fires",
       "entity.cannon.part_of_the_crew": "Part Of The Crew",
       "block.cannon.planks_of_the_flying_dutchman": "Planks Of The Flying Dutchman",
@@ -764,6 +782,7 @@
       "block.cannon.barnacles": "Barnacles",
       "block.cannon.slabs_of_the_flying_dutchman": "Slabs Of The Flying Dutchman",
       "block.cannon.gloriouslantern": "Glorious Lantern",
+      "entity.cannon.karb": "Karb",
       "block.cannon.stairs_of_the_flying_dutchman": "Stairs Of The Flying Dutchman",
       "subtitles.cannon-load": "cannon load",
       "block.cannon.door_of_the_flying_dutchman": "Door Of The Flying Dutchman",

@@ -56,6 +56,7 @@ public class CannonModItems {
 	public static final RegistryObject<Item> BILL_TURNER_CHESTPLATE = REGISTRY.register("bill_turner_chestplate", () -> new BillTurnerItem.Chestplate());
 	public static final RegistryObject<Item> BILL_TURNER_LEGGINGS = REGISTRY.register("bill_turner_leggings", () -> new BillTurnerItem.Leggings());
 	public static final RegistryObject<Item> BILL_TURNER_BOOTS = REGISTRY.register("bill_turner_boots", () -> new BillTurnerItem.Boots());
+	public static final RegistryObject<Item> KARB_SPAWN_EGG = REGISTRY.register("karb_spawn_egg", () -> new ForgeSpawnEggItem(CannonModEntities.KARB, -373243, -1, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items
