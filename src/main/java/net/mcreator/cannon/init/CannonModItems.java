@@ -57,6 +57,8 @@ public class CannonModItems {
 	public static final RegistryObject<Item> BILL_TURNER_LEGGINGS = REGISTRY.register("bill_turner_leggings", () -> new BillTurnerItem.Leggings());
 	public static final RegistryObject<Item> BILL_TURNER_BOOTS = REGISTRY.register("bill_turner_boots", () -> new BillTurnerItem.Boots());
 	public static final RegistryObject<Item> KARB_SPAWN_EGG = REGISTRY.register("karb_spawn_egg", () -> new ForgeSpawnEggItem(CannonModEntities.KARB, -373243, -1, new Item.Properties()));
+	public static final RegistryObject<Item> PART_OF_THE_CREW_STRONG_SPAWN_EGG = REGISTRY.register("part_of_the_crew_strong_spawn_egg",
+			() -> new ForgeSpawnEggItem(CannonModEntities.PART_OF_THE_CREW_STRONG, -15196647, -16775168, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items
