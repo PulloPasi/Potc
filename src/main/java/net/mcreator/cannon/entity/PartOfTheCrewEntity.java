@@ -70,7 +70,7 @@ public class PartOfTheCrewEntity extends Monster implements GeoEntity {
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "dutchcrew");
+		this.entityData.define(TEXTURE, "duthcsada");
 	}
 
 	public void setTexture(String texture) {
