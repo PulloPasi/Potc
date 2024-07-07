@@ -354,11 +354,11 @@
       "registry_name": "planks_of_the_flying_dutchman",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cannon/models/block/planks_of_the_flying_dutchman.json",
           "src/main/java/net/mcreator/cannon/block/PlanksOfTheFlyingDutchmanBlock.java",
-          "src/main/resources/assets/cannon/blockstates/planks_of_the_flying_dutchman.json",
           "src/main/resources/assets/cannon/models/item/planks_of_the_flying_dutchman.json",
-          "src/main/resources/data/cannon/loot_tables/blocks/planks_of_the_flying_dutchman.json"
+          "src/main/resources/data/cannon/loot_tables/blocks/planks_of_the_flying_dutchman.json",
+          "src/main/resources/assets/cannon/blockstates/planks_of_the_flying_dutchman.json",
+          "src/main/resources/assets/cannon/models/block/planks_of_the_flying_dutchman.json"
         ]
       }
     },
@@ -740,6 +740,20 @@
           }
         ]
       }
+    },
+    {
+      "name": "Swordos",
+      "type": "tool",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swordos",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/item/SwordosItem.java",
+          "src/main/resources/assets/cannon/models/item/swordos.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -841,6 +855,7 @@
       "subtitles.cannonball-explosion": "cannonball hit",
       "item.cannon.bulletitem": "Bulletitem",
       "item.cannon.davy_jones_helmet": "Davy Jones Helmet",
+      "item.cannon.swordos": "Swordos",
       "block.cannon.rope": "Rope"
     }
   },

@@ -1,9 +1,9 @@
 {
   "parent": "block/slab",
   "textures": {
-    "bottom": "cannon:block/dutchwood",
-    "top": "cannon:block/dutchwood",
-    "side": "cannon:block/dutchwood"
+    "bottom": "cannon:block/puu",
+    "top": "cannon:block/puu",
+    "side": "cannon:block/puu"
   },
   "render_type": "solid"
 }

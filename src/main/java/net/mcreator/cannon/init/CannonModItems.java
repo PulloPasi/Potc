@@ -14,6 +14,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.cannon.item.SwordosItem;
 import net.mcreator.cannon.item.LeStickOfFireItem;
 import net.mcreator.cannon.item.FlintlockItem;
 import net.mcreator.cannon.item.DavyJonesItem;
@@ -59,6 +60,7 @@ public class CannonModItems {
 	public static final RegistryObject<Item> KARB_SPAWN_EGG = REGISTRY.register("karb_spawn_egg", () -> new ForgeSpawnEggItem(CannonModEntities.KARB, -373243, -1, new Item.Properties()));
 	public static final RegistryObject<Item> PART_OF_THE_CREW_STRONG_SPAWN_EGG = REGISTRY.register("part_of_the_crew_strong_spawn_egg",
 			() -> new ForgeSpawnEggItem(CannonModEntities.PART_OF_THE_CREW_STRONG, -15196647, -16775168, new Item.Properties()));
+	public static final RegistryObject<Item> SWORDOS = REGISTRY.register("swordos", () -> new SwordosItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items
