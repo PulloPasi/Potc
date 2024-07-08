@@ -53,6 +53,12 @@ public class CannonModTabs {
 				tabData.accept(CannonModItems.KARB_SPAWN_EGG.get());
 				tabData.accept(CannonModItems.PART_OF_THE_CREW_STRONG_SPAWN_EGG.get());
 				tabData.accept(CannonModItems.SWORDOS.get());
+				tabData.accept(CannonModBlocks.SAILS_OF_THE_BLACK_PEARL.get().asItem());
+				tabData.accept(CannonModBlocks.SAILS_OF_THE_BLACK_PEARL_PATCH.get().asItem());
+				tabData.accept(CannonModItems.JACK_SPARROW_HELMET.get());
+				tabData.accept(CannonModItems.JACK_SPARROW_CHESTPLATE.get());
+				tabData.accept(CannonModItems.JACK_SPARROW_LEGGINGS.get());
+				tabData.accept(CannonModItems.JACK_SPARROW_BOOTS.get());
 			})
 
 					.build());

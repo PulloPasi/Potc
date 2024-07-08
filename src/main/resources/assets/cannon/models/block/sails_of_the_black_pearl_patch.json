@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cannon:block/sailgray",
+    "up": "cannon:block/sailgray",
+    "north": "cannon:block/sailgray",
+    "east": "cannon:block/sailgray",
+    "south": "cannon:block/sailgray",
+    "west": "cannon:block/sailgray",
+    "particle": "cannon:block/sailgray"
+  },
+  "render_type": "solid"
+}

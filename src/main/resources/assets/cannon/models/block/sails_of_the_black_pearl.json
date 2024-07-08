@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cannon:block/blackpearlsailsblack",
+    "up": "cannon:block/blackpearlsailsblack",
+    "north": "cannon:block/blackpearlsailsblack",
+    "east": "cannon:block/blackpearlsailsblack",
+    "south": "cannon:block/blackpearlsailsblack",
+    "west": "cannon:block/blackpearlsailsblack",
+    "particle": "cannon:block/blackpearlsailsblack"
+  },
+  "render_type": "solid"
+}
