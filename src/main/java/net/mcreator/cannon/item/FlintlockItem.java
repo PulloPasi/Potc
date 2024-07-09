@@ -39,7 +39,7 @@ public class FlintlockItem extends Item {
 			ar = InteractionResultHolder.success(entity.getItemInHand(hand));
 			entity.startUsingItem(hand);
 		}
-		FlintlockRightclickedProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ());
+		FlintlockRightclickedProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);
 		return ar;
 	}
 

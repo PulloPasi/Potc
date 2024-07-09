@@ -44,6 +44,7 @@
           "src/main/resources/assets/cannon/models/block/cannon.json",
           "src/main/java/net/mcreator/cannon/block/CannonBlock.java",
           "src/main/resources/assets/cannon/blockstates/cannon.json",
+          "src/main/java/net/mcreator/cannon/block/entity/CannonBlockEntity.java",
           "src/main/resources/data/cannon/loot_tables/blocks/cannon.json"
         ]
       }
@@ -375,6 +376,7 @@
           "src/main/resources/assets/cannon/models/block/ferrymans_chasing_cannon.json",
           "src/main/resources/assets/cannon/models/item/ferrymans_chasing_cannon.json",
           "src/main/resources/assets/cannon/blockstates/ferrymans_chasing_cannon.json",
+          "src/main/java/net/mcreator/cannon/block/entity/FerrymansChasingCannonBlockEntity.java",
           "src/main/resources/data/cannon/loot_tables/blocks/ferrymans_chasing_cannon.json"
         ]
       }
@@ -589,6 +591,10 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -752,6 +758,41 @@
         "files": [
           "src/main/java/net/mcreator/cannon/item/SwordosItem.java",
           "src/main/resources/assets/cannon/models/item/swordos.json"
+        ]
+      }
+    },
+    {
+      "name": "FerrymansChasingCannonOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ferrymans_chasing_cannon_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/procedures/FerrymansChasingCannonOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       }
     }
