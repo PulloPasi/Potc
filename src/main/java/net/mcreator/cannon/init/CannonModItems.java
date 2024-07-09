@@ -68,6 +68,7 @@ public class CannonModItems {
 	public static final RegistryObject<Item> JACK_SPARROW_CHESTPLATE = REGISTRY.register("jack_sparrow_chestplate", () -> new JackSparrowItem.Chestplate());
 	public static final RegistryObject<Item> JACK_SPARROW_LEGGINGS = REGISTRY.register("jack_sparrow_leggings", () -> new JackSparrowItem.Leggings());
 	public static final RegistryObject<Item> JACK_SPARROW_BOOTS = REGISTRY.register("jack_sparrow_boots", () -> new JackSparrowItem.Boots());
+	public static final RegistryObject<Item> PULLEY = block(CannonModBlocks.PULLEY);
 
 	// Start of user code block custom items
 	// End of user code block custom items

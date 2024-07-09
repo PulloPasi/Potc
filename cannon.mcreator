@@ -805,6 +805,23 @@
           "src/main/resources/assets/cannon/models/item/jack_sparrow_helmet.json"
         ]
       }
+    },
+    {
+      "name": "Pulley",
+      "type": "block",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pulley",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/loot_tables/blocks/pulley.json",
+          "src/main/resources/assets/cannon/blockstates/pulley.json",
+          "src/main/resources/assets/cannon/models/block/pulley.json",
+          "src/main/java/net/mcreator/cannon/block/PulleyBlock.java",
+          "src/main/resources/assets/cannon/models/item/pulley.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -906,6 +923,7 @@
       "subtitles.cannon-load": "cannon load",
       "subtitles.cannon-fired": "cannon fired",
       "block.cannon.ladder_that_has_been_stolen_from_mikaels_backyard": "Ladder That Has Been Stolen From Mikaels Backyard",
+      "block.cannon.pulley": "Pulley",
       "subtitles.cannonball-woosh": "cannonball flyby",
       "block.cannon.sails_of_the_black_pearl": "Sails Of The Black Pearl",
       "block.cannon.dutchmansails_2": "Sails Of The Flying Dutchman Shaded",
