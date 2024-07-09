@@ -591,10 +591,6 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -795,6 +791,74 @@
           }
         ]
       }
+    },
+    {
+      "name": "SailsOfTheBlackPearl",
+      "type": "block",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sails_of_the_black_pearl",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/item/sails_of_the_black_pearl.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/sails_of_the_black_pearl.json",
+          "src/main/resources/assets/cannon/blockstates/sails_of_the_black_pearl.json",
+          "src/main/java/net/mcreator/cannon/block/SailsOfTheBlackPearlBlock.java",
+          "src/main/resources/assets/cannon/models/block/sails_of_the_black_pearl.json"
+        ]
+      }
+    },
+    {
+      "name": "JackSparrow",
+      "type": "armor",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jack_sparrow",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/item/JackSparrowItem.java",
+          "src/main/resources/assets/cannon/models/item/jack_sparrow_helmet.json",
+          "src/main/resources/assets/cannon/models/item/jack_sparrow_chestplate.json",
+          "src/main/resources/assets/cannon/models/item/jack_sparrow_boots.json",
+          "src/main/resources/assets/cannon/models/item/jack_sparrow_leggings.json"
+        ]
+      }
+    },
+    {
+      "name": "SailsOfTheBlackPearlPatch",
+      "type": "block",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sails_of_the_black_pearl_patch",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/blockstates/sails_of_the_black_pearl_patch.json",
+          "src/main/resources/assets/cannon/models/item/sails_of_the_black_pearl_patch.json",
+          "src/main/resources/assets/cannon/models/block/sails_of_the_black_pearl_patch.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/sails_of_the_black_pearl_patch.json",
+          "src/main/java/net/mcreator/cannon/block/SailsOfTheBlackPearlPatchBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "Pulley",
+      "type": "block",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pulley",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/loot_tables/blocks/pulley.json",
+          "src/main/resources/assets/cannon/blockstates/pulley.json",
+          "src/main/java/net/mcreator/cannon/block/PulleyBlock.java",
+          "src/main/resources/assets/cannon/models/block/pulley.json",
+          "src/main/resources/assets/cannon/models/item/pulley.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -852,52 +916,52 @@
   },
   "language_map": {
     "en_us": {
-      "block.cannon.black_planks": "Black Planks",
       "block.cannon.black_plank_slab": "Black Plank Slab",
       "block.cannon.black_plank_trap_door": "Black Plank Trap Door",
       "item.cannon.bill_turner_boots": "Bill Turner Boots",
-      "item.cannon.bill_turner_helmet": "Bill Turner Helmet",
-      "block.cannon.face_of_the_ferryman": "Face Of The Ferryman",
-      "block.cannon.ferrymans_chasing_cannon": "Ferrymans Chasing Cannon",
-      "block.cannon.dutchmansails": "Sails Of The Flying Dutchman",
-      "item.cannon.karb_spawn_egg": "Karb Spawn Egg",
       "entity.cannon.part_of_the_crew_strong": "Part Of The Crew Strong",
-      "subtitles.cannon-fire": "Cannon fires",
       "entity.cannon.part_of_the_crew": "Part Of The Crew",
-      "block.cannon.planks_of_the_flying_dutchman": "Planks Of The Flying Dutchman",
-      "subtitles.cannonfire": "Cannon Fires",
-      "item.cannon.flintlock": "Flintlock",
-      "item.cannon.part_of_the_crew_strong_spawn_egg": "Part Of The Crew Strong Spawn Egg",
       "block.cannon.cannon": "Cannon",
       "item_group.cannon.potc": "Potc",
-      "block.cannon.black_plank_stairs": "Black Plank Stairs",
-      "item.cannon.cannonballos": "Cannonballos",
-      "block.cannon.barnacles": "Barnacles",
-      "block.cannon.slabs_of_the_flying_dutchman": "Slabs Of The Flying Dutchman",
       "block.cannon.gloriouslantern": "Glorious Lantern",
-      "entity.cannon.karb": "Karb",
-      "block.cannon.stairs_of_the_flying_dutchman": "Stairs Of The Flying Dutchman",
-      "subtitles.cannon-load": "cannon load",
       "block.cannon.door_of_the_flying_dutchman": "Door Of The Flying Dutchman",
-      "subtitles.cannon-fired": "cannon fired",
-      "block.cannon.ladder_that_has_been_stolen_from_mikaels_backyard": "Ladder That Has Been Stolen From Mikaels Backyard",
       "subtitles.cannonfire2": "Cannon Fires",
       "block.cannon.ferrymans_cannon": "Ferrymans Cannon",
       "item.cannon.part_of_the_crew_spawn_egg": "Part Of The Crew Spawn Egg",
       "item.cannon.bill_turner_leggings": "Bill Turner Leggings",
       "item.cannon.davy_jones_leggings": "Davy Jones Leggings",
-      "subtitles.cannonball-woosh": "cannonball flyby",
       "item.cannon.davy_jones_boots": "Davy Jones Boots",
       "item.cannon.le_stick_of_fire": "Le Stick Of Fire",
       "item.cannon.davy_jones_chestplate": "Davy Jones Chestplate",
+      "item.cannon.davy_jones_helmet": "Davy Jones Helmet",
+      "block.cannon.rope": "Rope",
+      "block.cannon.black_planks": "Black Planks",
+      "item.cannon.bill_turner_helmet": "Bill Turner Helmet",
+      "block.cannon.face_of_the_ferryman": "Face Of The Ferryman",
+      "block.cannon.ferrymans_chasing_cannon": "Ferrymans Chasing Cannon",
+      "block.cannon.dutchmansails": "Sails Of The Flying Dutchman",
+      "item.cannon.karb_spawn_egg": "Karb Spawn Egg",
+      "subtitles.cannon-fire": "Cannon fires",
+      "block.cannon.planks_of_the_flying_dutchman": "Planks Of The Flying Dutchman",
+      "subtitles.cannonfire": "Cannon Fires",
+      "item.cannon.flintlock": "Flintlock",
+      "item.cannon.part_of_the_crew_strong_spawn_egg": "Part Of The Crew Strong Spawn Egg",
+      "block.cannon.black_plank_stairs": "Black Plank Stairs",
+      "item.cannon.cannonballos": "Cannonballos",
+      "block.cannon.barnacles": "Barnacles",
+      "block.cannon.slabs_of_the_flying_dutchman": "Slabs Of The Flying Dutchman",
+      "entity.cannon.karb": "Karb",
+      "block.cannon.stairs_of_the_flying_dutchman": "Stairs Of The Flying Dutchman",
+      "subtitles.cannon-load": "cannon load",
+      "subtitles.cannon-fired": "cannon fired",
+      "block.cannon.ladder_that_has_been_stolen_from_mikaels_backyard": "Ladder That Has Been Stolen From Mikaels Backyard",
+      "subtitles.cannonball-woosh": "cannonball flyby",
       "block.cannon.dutchmansails_2": "Sails Of The Flying Dutchman Shaded",
       "item.cannon.bill_turner_chestplate": "Bill Turner Chestplate",
       "block.cannon.dutchmansails_3": "Sails Of The Flying Dutchman Bottom",
       "subtitles.cannonball-explosion": "cannonball hit",
       "item.cannon.bulletitem": "Bulletitem",
-      "item.cannon.davy_jones_helmet": "Davy Jones Helmet",
-      "item.cannon.swordos": "Swordos",
-      "block.cannon.rope": "Rope"
+      "item.cannon.swordos": "Swordos"
     }
   },
   "foldersRoot": {

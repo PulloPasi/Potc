@@ -31,6 +31,15 @@
         "My": 16.0,
         "Mz": 16.0,
         "subtract": false
+      },
+      {
+        "mx": 11.0,
+        "my": 16.0,
+        "mz": 0.0,
+        "Mx": 5.0,
+        "My": 10.0,
+        "Mz": -12.0,
+        "subtract": false
       }
     ],
     "name": "Cannon",

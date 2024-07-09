@@ -12,7 +12,10 @@ import net.minecraft.world.level.block.Block;
 
 import net.mcreator.cannon.block.StairsOfTheFlyingDutchmanBlock;
 import net.mcreator.cannon.block.SlabsOfTheFlyingDutchmanBlock;
+import net.mcreator.cannon.block.SailsOfTheBlackPearlPatchBlock;
+import net.mcreator.cannon.block.SailsOfTheBlackPearlBlock;
 import net.mcreator.cannon.block.RopeBlock;
+import net.mcreator.cannon.block.PulleyBlock;
 import net.mcreator.cannon.block.PlanksOfTheFlyingDutchmanBlock;
 import net.mcreator.cannon.block.LadderThatHasBeenStolenFromMikaelsBackyardBlock;
 import net.mcreator.cannon.block.GloriouslanternBlock;
@@ -52,6 +55,9 @@ public class CannonModBlocks {
 	public static final RegistryObject<Block> BARNACLES = REGISTRY.register("barnacles", () -> new BarnaclesBlock());
 	public static final RegistryObject<Block> ROPE = REGISTRY.register("rope", () -> new RopeBlock());
 	public static final RegistryObject<Block> SLABS_OF_THE_FLYING_DUTCHMAN = REGISTRY.register("slabs_of_the_flying_dutchman", () -> new SlabsOfTheFlyingDutchmanBlock());
+	public static final RegistryObject<Block> SAILS_OF_THE_BLACK_PEARL = REGISTRY.register("sails_of_the_black_pearl", () -> new SailsOfTheBlackPearlBlock());
+	public static final RegistryObject<Block> SAILS_OF_THE_BLACK_PEARL_PATCH = REGISTRY.register("sails_of_the_black_pearl_patch", () -> new SailsOfTheBlackPearlPatchBlock());
+	public static final RegistryObject<Block> PULLEY = REGISTRY.register("pulley", () -> new PulleyBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

@@ -16,6 +16,7 @@ import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.cannon.item.SwordosItem;
 import net.mcreator.cannon.item.LeStickOfFireItem;
+import net.mcreator.cannon.item.JackSparrowItem;
 import net.mcreator.cannon.item.FlintlockItem;
 import net.mcreator.cannon.item.DavyJonesItem;
 import net.mcreator.cannon.item.CannonballosItem;
@@ -61,6 +62,13 @@ public class CannonModItems {
 	public static final RegistryObject<Item> PART_OF_THE_CREW_STRONG_SPAWN_EGG = REGISTRY.register("part_of_the_crew_strong_spawn_egg",
 			() -> new ForgeSpawnEggItem(CannonModEntities.PART_OF_THE_CREW_STRONG, -15196647, -16775168, new Item.Properties()));
 	public static final RegistryObject<Item> SWORDOS = REGISTRY.register("swordos", () -> new SwordosItem());
+	public static final RegistryObject<Item> SAILS_OF_THE_BLACK_PEARL = block(CannonModBlocks.SAILS_OF_THE_BLACK_PEARL);
+	public static final RegistryObject<Item> JACK_SPARROW_HELMET = REGISTRY.register("jack_sparrow_helmet", () -> new JackSparrowItem.Helmet());
+	public static final RegistryObject<Item> JACK_SPARROW_CHESTPLATE = REGISTRY.register("jack_sparrow_chestplate", () -> new JackSparrowItem.Chestplate());
+	public static final RegistryObject<Item> JACK_SPARROW_LEGGINGS = REGISTRY.register("jack_sparrow_leggings", () -> new JackSparrowItem.Leggings());
+	public static final RegistryObject<Item> JACK_SPARROW_BOOTS = REGISTRY.register("jack_sparrow_boots", () -> new JackSparrowItem.Boots());
+	public static final RegistryObject<Item> SAILS_OF_THE_BLACK_PEARL_PATCH = block(CannonModBlocks.SAILS_OF_THE_BLACK_PEARL_PATCH);
+	public static final RegistryObject<Item> PULLEY = block(CannonModBlocks.PULLEY);
 
 	// Start of user code block custom items
 	// End of user code block custom items
