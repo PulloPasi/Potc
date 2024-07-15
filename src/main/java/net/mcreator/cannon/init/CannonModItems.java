@@ -27,6 +27,7 @@ import net.mcreator.cannon.item.DutchmanpeaceItem;
 import net.mcreator.cannon.item.DavyJonesItem;
 import net.mcreator.cannon.item.CannonballosItem;
 import net.mcreator.cannon.item.BulletitemItem;
+import net.mcreator.cannon.item.BlackBeardItem;
 import net.mcreator.cannon.item.BillTurnerItem;
 import net.mcreator.cannon.item.BandanaItem;
 import net.mcreator.cannon.item.BananItem;
@@ -88,6 +89,10 @@ public class CannonModItems {
 	public static final RegistryObject<Item> KOLMIKULMA_HAT_HELMET = REGISTRY.register("kolmikulma_hat_helmet", () -> new KolmikulmaHatItem.Helmet());
 	public static final RegistryObject<Item> PIPO_HELMET = REGISTRY.register("pipo_helmet", () -> new PipoItem.Helmet());
 	public static final RegistryObject<Item> DUTCHMANPEACE = REGISTRY.register("dutchmanpeace", () -> new DutchmanpeaceItem());
+	public static final RegistryObject<Item> BLACK_BEARD_HELMET = REGISTRY.register("black_beard_helmet", () -> new BlackBeardItem.Helmet());
+	public static final RegistryObject<Item> BLACK_BEARD_CHESTPLATE = REGISTRY.register("black_beard_chestplate", () -> new BlackBeardItem.Chestplate());
+	public static final RegistryObject<Item> BLACK_BEARD_LEGGINGS = REGISTRY.register("black_beard_leggings", () -> new BlackBeardItem.Leggings());
+	public static final RegistryObject<Item> BLACK_BEARD_BOOTS = REGISTRY.register("black_beard_boots", () -> new BlackBeardItem.Boots());
 
 	// Start of user code block custom items
 	// End of user code block custom items

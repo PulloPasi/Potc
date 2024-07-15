@@ -1141,6 +1141,23 @@
           "src/main/java/net/mcreator/cannon/item/DutchmanpeaceItem.java"
         ]
       }
+    },
+    {
+      "name": "BlackBeard",
+      "type": "armor",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_beard",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/item/black_beard_boots.json",
+          "src/main/java/net/mcreator/cannon/item/BlackBeardItem.java",
+          "src/main/resources/assets/cannon/models/item/black_beard_chestplate.json",
+          "src/main/resources/assets/cannon/models/item/black_beard_helmet.json",
+          "src/main/resources/assets/cannon/models/item/black_beard_leggings.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1209,7 +1226,9 @@
       "block.cannon.cannon": "Cannon",
       "item_group.cannon.potc": "Potc",
       "block.cannon.gloriouslantern": "Glorious Lantern",
+      "item.cannon.black_beard_boots": "Black Beard Boots",
       "block.cannon.door_of_the_flying_dutchman": "Door Of The Flying Dutchman",
+      "item.cannon.black_beard_helmet": "Black Beard Helmet",
       "item.cannon.jack_sparrow_boots": "Jack Sparrow Boots",
       "block.cannon.ferrymans_cannon": "Ferrymans Cannon",
       "subtitles.cannonfire2": "Cannon Fires",
@@ -1232,6 +1251,8 @@
       "block.cannon.ferrymans_chasing_cannon": "Ferrymans Chasing Cannon",
       "block.cannon.dutchmansails": "Sails Of The Flying Dutchman",
       "item.cannon.karb_spawn_egg": "Karb Spawn Egg",
+      "item.cannon.black_beard_leggings": "Black Beard Leggings",
+      "item.cannon.black_beard_chestplate": "Black Beard Chestplate",
       "subtitles.cannon-fire": "Cannon fires",
       "block.cannon.planks_of_the_flying_dutchman": "Planks Of The Flying Dutchman",
       "item.cannon.jack_sparrow_helmet": "Jack Sparrow Helmet",
