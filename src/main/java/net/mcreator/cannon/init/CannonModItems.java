@@ -23,6 +23,7 @@ import net.mcreator.cannon.item.JackSparrowItem;
 import net.mcreator.cannon.item.HeartOfDavidJonesItem;
 import net.mcreator.cannon.item.HalfEatenBananItem;
 import net.mcreator.cannon.item.FlintlockItem;
+import net.mcreator.cannon.item.DutchmanpeaceItem;
 import net.mcreator.cannon.item.DavyJonesItem;
 import net.mcreator.cannon.item.CannonballosItem;
 import net.mcreator.cannon.item.BulletitemItem;
@@ -86,6 +87,7 @@ public class CannonModItems {
 	public static final RegistryObject<Item> BANDANA_HELMET = REGISTRY.register("bandana_helmet", () -> new BandanaItem.Helmet());
 	public static final RegistryObject<Item> KOLMIKULMA_HAT_HELMET = REGISTRY.register("kolmikulma_hat_helmet", () -> new KolmikulmaHatItem.Helmet());
 	public static final RegistryObject<Item> PIPO_HELMET = REGISTRY.register("pipo_helmet", () -> new PipoItem.Helmet());
+	public static final RegistryObject<Item> DUTCHMANPEACE = REGISTRY.register("dutchmanpeace", () -> new DutchmanpeaceItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

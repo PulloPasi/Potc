@@ -1127,6 +1127,20 @@
           "src/main/resources/assets/cannon/models/item/pipo_helmet.json"
         ]
       }
+    },
+    {
+      "name": "Dutchmanpeace",
+      "type": "item",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dutchmanpeace",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/item/dutchmanpeace.json",
+          "src/main/java/net/mcreator/cannon/item/DutchmanpeaceItem.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1192,8 +1206,8 @@
       "entity.cannon.part_of_the_crew_strong": "Part Of The Crew Strong",
       "entity.cannon.part_of_the_crew": "Part Of The Crew",
       "block.cannon.sails_of_the_black_pearl_patch": "Sails Of The Black Pearl Patch",
-      "item_group.cannon.potc": "Potc",
       "block.cannon.cannon": "Cannon",
+      "item_group.cannon.potc": "Potc",
       "block.cannon.gloriouslantern": "Glorious Lantern",
       "block.cannon.door_of_the_flying_dutchman": "Door Of The Flying Dutchman",
       "item.cannon.jack_sparrow_boots": "Jack Sparrow Boots",
@@ -1224,6 +1238,7 @@
       "subtitles.cannonfire": "Cannon Fires",
       "item.cannon.flintlock": "Flintlock",
       "item.cannon.part_of_the_crew_strong_spawn_egg": "Part Of The Crew Strong Spawn Egg",
+      "item.cannon.dutchmanpeace": "Talisman Of The Flying Dutchman",
       "item.cannon.key": "Key",
       "block.cannon.black_plank_stairs": "Black Plank Stairs",
       "item.cannon.jack_sparrow_leggings": "Jack Sparrow Leggings",

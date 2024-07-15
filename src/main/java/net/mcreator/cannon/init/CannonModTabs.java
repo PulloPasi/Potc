@@ -69,6 +69,7 @@ public class CannonModTabs {
 				tabData.accept(CannonModItems.BANDANA_HELMET.get());
 				tabData.accept(CannonModItems.KOLMIKULMA_HAT_HELMET.get());
 				tabData.accept(CannonModItems.PIPO_HELMET.get());
+				tabData.accept(CannonModItems.DUTCHMANPEACE.get());
 			})
 
 					.build());
