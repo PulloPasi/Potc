@@ -18,6 +18,7 @@ import net.mcreator.cannon.block.RopeBlock;
 import net.mcreator.cannon.block.PulleyBlock;
 import net.mcreator.cannon.block.PlanksOfTheFlyingDutchmanBlock;
 import net.mcreator.cannon.block.LadderThatHasBeenStolenFromMikaelsBackyardBlock;
+import net.mcreator.cannon.block.GunpowderbarrelBlock;
 import net.mcreator.cannon.block.GloriouslanternBlock;
 import net.mcreator.cannon.block.FerrymansChasingCannonBlock;
 import net.mcreator.cannon.block.FerrymansCannonBlock;
@@ -26,6 +27,7 @@ import net.mcreator.cannon.block.DutchmansailsBlock;
 import net.mcreator.cannon.block.Dutchmansails3Block;
 import net.mcreator.cannon.block.Dutchmansails2Block;
 import net.mcreator.cannon.block.DoorOfTheFlyingDutchmanBlock;
+import net.mcreator.cannon.block.DeadMansChestBlock;
 import net.mcreator.cannon.block.CannonBlock;
 import net.mcreator.cannon.block.BlackPlanksBlock;
 import net.mcreator.cannon.block.BlackPlankTrapDoorBlock;
@@ -58,6 +60,8 @@ public class CannonModBlocks {
 	public static final RegistryObject<Block> SAILS_OF_THE_BLACK_PEARL = REGISTRY.register("sails_of_the_black_pearl", () -> new SailsOfTheBlackPearlBlock());
 	public static final RegistryObject<Block> SAILS_OF_THE_BLACK_PEARL_PATCH = REGISTRY.register("sails_of_the_black_pearl_patch", () -> new SailsOfTheBlackPearlPatchBlock());
 	public static final RegistryObject<Block> PULLEY = REGISTRY.register("pulley", () -> new PulleyBlock());
+	public static final RegistryObject<Block> GUNPOWDERBARREL = REGISTRY.register("gunpowderbarrel", () -> new GunpowderbarrelBlock());
+	public static final RegistryObject<Block> DEAD_MANS_CHEST = REGISTRY.register("dead_mans_chest", () -> new DeadMansChestBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

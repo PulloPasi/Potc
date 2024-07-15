@@ -1,14 +1,43 @@
 
 package net.mcreator.cannon.block;
 
-import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
+import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.block.state.properties.EnumProperty;
+import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.block.state.properties.AttachFace;
+import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.Rotation;
+import net.minecraft.world.level.block.Mirror;
+import net.minecraft.world.level.block.HorizontalDirectionalBlock;
+import net.minecraft.world.level.block.FallingBlock;
+import net.minecraft.world.level.block.FaceAttachedHorizontalDirectionalBlock;
+import net.minecraft.world.level.block.EntityBlock;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.Explosion;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.entity.projectile.Projectile;
+import net.minecraft.world.MenuProvider;
+import net.minecraft.world.Containers;
+import net.minecraft.core.Direction;
+import net.minecraft.core.BlockPos;
+
+import net.mcreator.cannon.procedures.GunpowderbarrelexplodeProcedure;
+import net.mcreator.cannon.block.entity.GunpowderbarrelBlockEntity;
 
 public class GunpowderbarrelBlock extends FallingBlock implements EntityBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 	public static final EnumProperty<AttachFace> FACE = FaceAttachedHorizontalDirectionalBlock.FACE;
 
 	public GunpowderbarrelBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(1f, 10f));
+		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.BAMBOO_WOOD).strength(1f, 10f));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(FACE, AttachFace.WALL));
 	}
 
@@ -45,12 +74,12 @@ public class GunpowderbarrelBlock extends FallingBlock implements EntityBlock {
 	@Override
 	public void wasExploded(Level world, BlockPos pos, Explosion e) {
 		super.wasExploded(world, pos, e);
-		GunpowderbarrelexplodeProcedure.execute();
+		GunpowderbarrelexplodeProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override
 	public void onProjectileHit(Level world, BlockState blockstate, BlockHitResult hit, Projectile entity) {
-		GunpowderbarrelexplodeProcedure.execute();
+		GunpowderbarrelexplodeProcedure.execute(world, hit.getBlockPos().getX(), hit.getBlockPos().getY(), hit.getBlockPos().getZ());
 	}
 
 	@Override

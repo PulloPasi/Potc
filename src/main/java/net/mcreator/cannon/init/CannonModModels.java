@@ -9,10 +9,13 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.mcreator.cannon.client.model.Modeltrihat;
+import net.mcreator.cannon.client.model.Modelpipo;
 import net.mcreator.cannon.client.model.Modeljonetsiversiokaksi;
 import net.mcreator.cannon.client.model.Modeljack;
 import net.mcreator.cannon.client.model.Modelbillvkaks;
 import net.mcreator.cannon.client.model.Modelbillkolme;
+import net.mcreator.cannon.client.model.Modelbandana;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class CannonModModels {
@@ -21,6 +24,9 @@ public class CannonModModels {
 		event.registerLayerDefinition(Modelbillkolme.LAYER_LOCATION, Modelbillkolme::createBodyLayer);
 		event.registerLayerDefinition(Modeljonetsiversiokaksi.LAYER_LOCATION, Modeljonetsiversiokaksi::createBodyLayer);
 		event.registerLayerDefinition(Modeljack.LAYER_LOCATION, Modeljack::createBodyLayer);
+		event.registerLayerDefinition(Modelbandana.LAYER_LOCATION, Modelbandana::createBodyLayer);
+		event.registerLayerDefinition(Modelpipo.LAYER_LOCATION, Modelpipo::createBodyLayer);
 		event.registerLayerDefinition(Modelbillvkaks.LAYER_LOCATION, Modelbillvkaks::createBodyLayer);
+		event.registerLayerDefinition(Modeltrihat.LAYER_LOCATION, Modeltrihat::createBodyLayer);
 	}
 }

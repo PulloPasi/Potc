@@ -1,6 +1,28 @@
 package net.mcreator.cannon.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraftforge.registries.ForgeRegistries;
+
+import net.minecraft.world.level.block.state.properties.Property;
+import net.minecraft.world.level.block.state.properties.EnumProperty;
+import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.projectile.Projectile;
+import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.Direction;
+import net.minecraft.core.BlockPos;
+
+import net.mcreator.cannon.init.CannonModItems;
+import net.mcreator.cannon.init.CannonModEntities;
+import net.mcreator.cannon.entity.CannonballosProjectileEntity;
 
 public class FerrymansChasingCannonOnBlockRightClickedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -111,7 +133,7 @@ public class FerrymansChasingCannonOnBlockRightClickedProcedure {
 										? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
 										: Direction.NORTH;
 							}
-						}.getDirection((world.getBlockState(BlockPos.containing(x, y, z))))).getStepZ()), 5, 2);
+						}.getDirection((world.getBlockState(BlockPos.containing(x, y, z))))).getStepZ()), 5, 1);
 						projectileLevel.addFreshEntity(_entityToSpawn);
 					}
 					if (entity instanceof Player _player) {
