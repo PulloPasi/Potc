@@ -56,6 +56,16 @@ public class FerrymansCannonBlock extends Block implements EntityBlock {
 	}
 
 	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return switch (state.getValue(FACING)) {
+			default -> Shapes.or(box(0, 0, 0, 16, 16, 16), box(5, 10, 16, 11, 16, 28));
+			case NORTH -> Shapes.or(box(0, 0, 0, 16, 16, 16), box(5, 10, -12, 11, 16, 0));
+			case EAST -> Shapes.or(box(0, 0, 0, 16, 16, 16), box(16, 10, 5, 28, 16, 11));
+			case WEST -> Shapes.or(box(0, 0, 0, 16, 16, 16), box(-12, 10, 5, 0, 16, 11));
+		};
+	}
+
+	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
 		builder.add(FACING);
 	}

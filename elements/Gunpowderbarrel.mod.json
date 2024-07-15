@@ -2,23 +2,23 @@
   "_fv": 60,
   "_type": "block",
   "definition": {
-    "texture": "tykkitekstuuriohollanti",
-    "textureTop": "",
-    "textureLeft": "",
-    "textureFront": "",
-    "textureRight": "",
-    "textureBack": "",
-    "renderType": 2,
-    "customModelName": "tykkihollanti:default",
+    "texture": "barrelbottom",
+    "textureTop": "barreltop",
+    "textureLeft": "barrelside",
+    "textureFront": "barrelside",
+    "textureRight": "barrelside",
+    "textureBack": "barrelside",
+    "renderType": 10,
+    "customModelName": "Normal",
     "rotationMode": 1,
-    "enablePitch": false,
+    "enablePitch": true,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": true,
+    "hasTransparency": false,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "disableOffset": false,
@@ -31,24 +31,15 @@
         "My": 16.0,
         "Mz": 16.0,
         "subtract": false
-      },
-      {
-        "mx": 11.0,
-        "my": 16.0,
-        "mz": 0.0,
-        "Mx": 5.0,
-        "My": 10.0,
-        "Mz": -12.0,
-        "subtract": false
       }
     ],
-    "name": "Ferrymans Cannon",
+    "name": "Gunpowder Barrel",
     "specialInformation": {
       "fixedValue": []
     },
     "hardness": 1.0,
     "resistance": 10.0,
-    "hasGravity": false,
+    "hasGravity": true,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:Potc"
@@ -63,9 +54,9 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "lightOpacity": 0,
+    "lightOpacity": 15,
     "material": {
-      "value": "IRON"
+      "value": "WOOD"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -90,7 +81,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "METAL"
+      "value": "WOOD"
     },
     "breakSound": {
       "value": ""
@@ -114,8 +105,8 @@
     "hasInventory": true,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
-    "inventorySize": 9,
-    "inventoryStackSize": 64,
+    "inventorySize": 0,
+    "inventoryStackSize": 1,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [],
@@ -128,11 +119,11 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRightClicked": {
-      "name": "CannonOnBlockRightClicked1"
+    "onDestroyedByExplosion": {
+      "name": "Gunpowderbarrelexplode"
     },
-    "onBlockAdded": {
-      "name": "CannonBlockAdded"
+    "onHitByProjectile": {
+      "name": "Gunpowderbarrelexplode"
     },
     "generateFeature": false,
     "restrictionBiomes": [],

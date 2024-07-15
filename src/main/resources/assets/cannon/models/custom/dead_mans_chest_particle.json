@@ -1,0 +1,6 @@
+{
+  "parent": "cannon:displaysettings/dedmanchest.item",
+  "textures": {
+    "particle": "cannon:block/chest"
+  }
+}
