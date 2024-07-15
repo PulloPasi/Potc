@@ -29,7 +29,7 @@ public class CannonModEntities {
 	public static final RegistryObject<EntityType<CannonballosProjectileEntity>> CANNONBALLOS_PROJECTILE = register("cannonballos_projectile", EntityType.Builder.<CannonballosProjectileEntity>of(CannonballosProjectileEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(CannonballosProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<PartOfTheCrewEntity>> PART_OF_THE_CREW = register("part_of_the_crew",
-			EntityType.Builder.<PartOfTheCrewEntity>of(PartOfTheCrewEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PartOfTheCrewEntity::new)
+			EntityType.Builder.<PartOfTheCrewEntity>of(PartOfTheCrewEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PartOfTheCrewEntity::new)
 
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<BulletEntity>> BULLET = register("bullet",

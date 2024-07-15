@@ -1158,6 +1158,26 @@
           "src/main/resources/assets/cannon/models/item/black_beard_leggings.json"
         ]
       }
+    },
+    {
+      "name": "PartOfCrewAttackCondition",
+      "type": "procedure",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "part_of_crew_attack_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/cannon/procedures/PartOfCrewAttackConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1215,7 +1235,6 @@
   },
   "language_map": {
     "en_us": {
-      "item.cannon.banan": "Banan",
       "block.cannon.black_plank_slab": "Black Plank Slab",
       "block.cannon.black_plank_trap_door": "Black Plank Trap Door",
       "item.cannon.bill_turner_boots": "Bill Turner Boots",
@@ -1223,12 +1242,10 @@
       "entity.cannon.part_of_the_crew_strong": "Part Of The Crew Strong",
       "entity.cannon.part_of_the_crew": "Part Of The Crew",
       "block.cannon.sails_of_the_black_pearl_patch": "Sails Of The Black Pearl Patch",
-      "block.cannon.cannon": "Cannon",
       "item_group.cannon.potc": "Potc",
+      "block.cannon.cannon": "Cannon",
       "block.cannon.gloriouslantern": "Glorious Lantern",
-      "item.cannon.black_beard_boots": "Black Beard Boots",
       "block.cannon.door_of_the_flying_dutchman": "Door Of The Flying Dutchman",
-      "item.cannon.black_beard_helmet": "Black Beard Helmet",
       "item.cannon.jack_sparrow_boots": "Jack Sparrow Boots",
       "block.cannon.ferrymans_cannon": "Ferrymans Cannon",
       "subtitles.cannonfire2": "Cannon Fires",
@@ -1237,29 +1254,23 @@
       "item.cannon.jack_sparrow_chestplate": "Jack Sparrow Chestplate",
       "item.cannon.davy_jones_leggings": "Davy Jones Leggings",
       "item.cannon.davy_jones_boots": "Davy Jones Boots",
-      "item.cannon.heart_of_david_jones": "Heart Of David Jones",
       "item.cannon.le_stick_of_fire": "Le Stick Of Fire",
       "item.cannon.davy_jones_chestplate": "Davy Jones Chestplate",
       "item.cannon.davy_jones_helmet": "Davy Jones Helmet",
       "block.cannon.dead_mans_chest": "Dead Mans Chest",
       "block.cannon.rope": "Rope",
-      "item.cannon.kolmikulma_hat_helmet": "Kolmikulma Hat ",
       "block.cannon.black_planks": "Black Planks",
       "item.cannon.bill_turner_helmet": "Bill Turner Helmet",
       "block.cannon.face_of_the_ferryman": "Face Of The Ferryman",
-      "item.cannon.pipo_helmet": "Pipo ",
       "block.cannon.ferrymans_chasing_cannon": "Ferrymans Chasing Cannon",
       "block.cannon.dutchmansails": "Sails Of The Flying Dutchman",
       "item.cannon.karb_spawn_egg": "Karb Spawn Egg",
-      "item.cannon.black_beard_leggings": "Black Beard Leggings",
-      "item.cannon.black_beard_chestplate": "Black Beard Chestplate",
       "subtitles.cannon-fire": "Cannon fires",
       "block.cannon.planks_of_the_flying_dutchman": "Planks Of The Flying Dutchman",
       "item.cannon.jack_sparrow_helmet": "Jack Sparrow Helmet",
       "subtitles.cannonfire": "Cannon Fires",
       "item.cannon.flintlock": "Flintlock",
       "item.cannon.part_of_the_crew_strong_spawn_egg": "Part Of The Crew Strong Spawn Egg",
-      "item.cannon.dutchmanpeace": "Talisman Of The Flying Dutchman",
       "item.cannon.key": "Key",
       "block.cannon.black_plank_stairs": "Black Plank Stairs",
       "item.cannon.jack_sparrow_leggings": "Jack Sparrow Leggings",
@@ -1277,11 +1288,9 @@
       "block.cannon.dutchmansails_2": "Sails Of The Flying Dutchman Shaded",
       "item.cannon.bill_turner_chestplate": "Bill Turner Chestplate",
       "block.cannon.dutchmansails_3": "Sails Of The Flying Dutchman Bottom",
-      "item.cannon.half_eaten_banan": "Half Eaten Banan",
       "subtitles.cannonball-explosion": "cannonball hit",
       "item.cannon.bulletitem": "Bulletitem",
-      "item.cannon.swordos": "Swordos",
-      "item.cannon.bandana_helmet": "Bandana "
+      "item.cannon.swordos": "Swordos"
     }
   },
   "foldersRoot": {
