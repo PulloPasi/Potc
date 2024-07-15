@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "key",
+    "texture": "heart",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Key",
+    "name": "Heart Of David Jones",
     "rarity": "EPIC",
     "creativeTab": {
       "value": "CUSTOM:Potc"
@@ -21,7 +21,7 @@
       "value": ""
     },
     "destroyAnyBlock": false,
-    "immuneToFire": true,
+    "immuneToFire": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,

@@ -15,14 +15,21 @@ import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.cannon.item.SwordosItem;
+import net.mcreator.cannon.item.PipoItem;
 import net.mcreator.cannon.item.LeStickOfFireItem;
+import net.mcreator.cannon.item.KolmikulmaHatItem;
 import net.mcreator.cannon.item.KeyItem;
 import net.mcreator.cannon.item.JackSparrowItem;
+import net.mcreator.cannon.item.HeartOfDavidJonesItem;
+import net.mcreator.cannon.item.HalfEatenBananItem;
 import net.mcreator.cannon.item.FlintlockItem;
+import net.mcreator.cannon.item.DutchmanpeaceItem;
 import net.mcreator.cannon.item.DavyJonesItem;
 import net.mcreator.cannon.item.CannonballosItem;
 import net.mcreator.cannon.item.BulletitemItem;
 import net.mcreator.cannon.item.BillTurnerItem;
+import net.mcreator.cannon.item.BandanaItem;
+import net.mcreator.cannon.item.BananItem;
 import net.mcreator.cannon.block.display.DeadMansChestDisplayItem;
 import net.mcreator.cannon.CannonMod;
 
@@ -74,6 +81,13 @@ public class CannonModItems {
 	public static final RegistryObject<Item> GUNPOWDERBARREL = block(CannonModBlocks.GUNPOWDERBARREL);
 	public static final RegistryObject<Item> DEAD_MANS_CHEST = REGISTRY.register(CannonModBlocks.DEAD_MANS_CHEST.getId().getPath(), () -> new DeadMansChestDisplayItem(CannonModBlocks.DEAD_MANS_CHEST.get(), new Item.Properties()));
 	public static final RegistryObject<Item> KEY = REGISTRY.register("key", () -> new KeyItem());
+	public static final RegistryObject<Item> BANDANA_HELMET = REGISTRY.register("bandana_helmet", () -> new BandanaItem.Helmet());
+	public static final RegistryObject<Item> KOLMIKULMA_HAT_HELMET = REGISTRY.register("kolmikulma_hat_helmet", () -> new KolmikulmaHatItem.Helmet());
+	public static final RegistryObject<Item> DUTCHMANPEACE = REGISTRY.register("dutchmanpeace", () -> new DutchmanpeaceItem());
+	public static final RegistryObject<Item> BANAN = REGISTRY.register("banan", () -> new BananItem());
+	public static final RegistryObject<Item> HALF_EATEN_BANAN = REGISTRY.register("half_eaten_banan", () -> new HalfEatenBananItem());
+	public static final RegistryObject<Item> PIPO_HELMET = REGISTRY.register("pipo_helmet", () -> new PipoItem.Helmet());
+	public static final RegistryObject<Item> HEART_OF_DAVID_JONES = REGISTRY.register("heart_of_david_jones", () -> new HeartOfDavidJonesItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

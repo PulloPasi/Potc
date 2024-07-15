@@ -63,6 +63,13 @@ public class CannonModTabs {
 				tabData.accept(CannonModBlocks.GUNPOWDERBARREL.get().asItem());
 				tabData.accept(CannonModBlocks.DEAD_MANS_CHEST.get().asItem());
 				tabData.accept(CannonModItems.KEY.get());
+				tabData.accept(CannonModItems.HEART_OF_DAVID_JONES.get());
+				tabData.accept(CannonModItems.BANAN.get());
+				tabData.accept(CannonModItems.HALF_EATEN_BANAN.get());
+				tabData.accept(CannonModItems.BANDANA_HELMET.get());
+				tabData.accept(CannonModItems.KOLMIKULMA_HAT_HELMET.get());
+				tabData.accept(CannonModItems.PIPO_HELMET.get());
+				tabData.accept(CannonModItems.DUTCHMANPEACE.get());
 			})
 
 					.build());

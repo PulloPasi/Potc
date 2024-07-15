@@ -167,7 +167,7 @@ public class CannonOnBlockRightClicked1Procedure {
 						ItemStack _stktoremove = new ItemStack(CannonModItems.CANNONBALLOS.get());
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 					}
-					CannonMod.queueServerWork(80, () -> {
+					CannonMod.queueServerWork(81, () -> {
 						if (world instanceof Level _level) {
 							if (!_level.isClientSide()) {
 								_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cannon:cannon-load")), SoundSource.BLOCKS, 20, 1);

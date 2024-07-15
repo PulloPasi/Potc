@@ -133,7 +133,7 @@ public class FerrymansChasingCannonOnBlockRightClickedProcedure {
 										? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
 										: Direction.NORTH;
 							}
-						}.getDirection((world.getBlockState(BlockPos.containing(x, y, z))))).getStepZ()), 5, 2);
+						}.getDirection((world.getBlockState(BlockPos.containing(x, y, z))))).getStepZ()), 5, 1);
 						projectileLevel.addFreshEntity(_entityToSpawn);
 					}
 					if (entity instanceof Player _player) {

@@ -160,7 +160,7 @@ public class CannonOnBlockRightClickedProcedure {
 					}
 					if (entity instanceof Player _player)
 						_player.getCooldowns().addCooldown(CannonModItems.LE_STICK_OF_FIRE.get(), 80);
-					CannonMod.queueServerWork(80, () -> {
+					CannonMod.queueServerWork(81, () -> {
 						if (world instanceof Level _level) {
 							if (!_level.isClientSide()) {
 								_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cannon:cannon-load")), SoundSource.BLOCKS, 20, 1);

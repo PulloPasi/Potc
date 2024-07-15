@@ -3,12 +3,12 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "key",
+    "texture": "talismanofthedutchman",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Key",
-    "rarity": "EPIC",
+    "name": "Talisman Of The Flying Dutchman",
+    "rarity": "RARE",
     "creativeTab": {
       "value": "CUSTOM:Potc"
     },
@@ -21,7 +21,7 @@
       "value": ""
     },
     "destroyAnyBlock": false,
-    "immuneToFire": true,
+    "immuneToFire": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,

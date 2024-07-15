@@ -6,6 +6,6 @@ import net.minecraft.world.item.Item;
 
 public class KeyItem extends Item {
 	public KeyItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.EPIC));
+		super(new Item.Properties().stacksTo(64).fireResistant().rarity(Rarity.EPIC));
 	}
 }
