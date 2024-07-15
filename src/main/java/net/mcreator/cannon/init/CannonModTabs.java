@@ -60,6 +60,9 @@ public class CannonModTabs {
 				tabData.accept(CannonModItems.JACK_SPARROW_LEGGINGS.get());
 				tabData.accept(CannonModItems.JACK_SPARROW_BOOTS.get());
 				tabData.accept(CannonModBlocks.PULLEY.get().asItem());
+				tabData.accept(CannonModBlocks.GUNPOWDERBARREL.get().asItem());
+				tabData.accept(CannonModBlocks.DEAD_MANS_CHEST.get().asItem());
+				tabData.accept(CannonModItems.KEY.get());
 			})
 
 					.build());
