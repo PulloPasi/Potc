@@ -1,15 +1,14 @@
 {
   "_fv": 60,
-  "_type": "block",
+  "_type": "animatedblock",
   "definition": {
-    "texture": "tykkitekstuuriohollanti",
+    "texture": "chest",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 2,
-    "customModelName": "tykkihollanti:default",
+    "renderType": 0,
     "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
@@ -21,28 +20,19 @@
     "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "SOLID",
-    "disableOffset": false,
+    "disableOffset": true,
     "boundingBoxes": [
       {
-        "mx": 0.0,
-        "my": 0.0,
-        "mz": 0.0,
-        "Mx": 16.0,
-        "My": 16.0,
-        "Mz": 16.0,
-        "subtract": false
-      },
-      {
-        "mx": 11.0,
-        "my": 16.0,
-        "mz": 0.0,
-        "Mx": 5.0,
-        "My": 10.0,
-        "Mz": -12.0,
+        "mx": 15.0,
+        "my": 10.0,
+        "mz": 4.0,
+        "Mx": 1.0,
+        "My": 0.0,
+        "Mz": 12.0,
         "subtract": false
       }
     ],
-    "name": "Ferrymans Cannon",
+    "name": "Dead Mans Chest",
     "specialInformation": {
       "fixedValue": []
     },
@@ -86,11 +76,12 @@
     "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
+    "animationCount": 1,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "METAL"
+      "value": "COPPER"
     },
     "breakSound": {
       "value": ""
@@ -110,7 +101,6 @@
     "luminance": 0,
     "unbreakable": false,
     "breakHarvestLevel": 1,
-    "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
@@ -118,6 +108,7 @@
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
+    "generateFeature": false,
     "inventoryOutSlotIDs": [],
     "inventoryInSlotIDs": [],
     "hasEnergyStorage": false,
@@ -128,10 +119,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRightClicked": {
-      "name": "CannonOnBlockRightClicked"
-    },
-    "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
@@ -142,6 +129,9 @@
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 64
+    "maxGenerateHeight": 64,
+    "normal": "dedmanchest.geo.json",
+    "displaySettings": "dedmanchest.item.json",
+    "blockstateList": []
   }
 }

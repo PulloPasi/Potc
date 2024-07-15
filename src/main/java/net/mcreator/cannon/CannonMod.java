@@ -23,6 +23,7 @@ import net.mcreator.cannon.init.CannonModParticleTypes;
 import net.mcreator.cannon.init.CannonModItems;
 import net.mcreator.cannon.init.CannonModEntities;
 import net.mcreator.cannon.init.CannonModBlocks;
+import net.mcreator.cannon.init.CannonModBlockEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -45,7 +46,7 @@ public class CannonMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		CannonModSounds.REGISTRY.register(bus);
 		CannonModBlocks.REGISTRY.register(bus);
-
+		CannonModBlockEntities.REGISTRY.register(bus);
 		CannonModItems.REGISTRY.register(bus);
 		CannonModEntities.REGISTRY.register(bus);
 
