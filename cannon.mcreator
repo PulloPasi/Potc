@@ -355,11 +355,11 @@
       "registry_name": "planks_of_the_flying_dutchman",
       "metadata": {
         "files": [
+          "src/main/resources/assets/cannon/models/block/planks_of_the_flying_dutchman.json",
           "src/main/java/net/mcreator/cannon/block/PlanksOfTheFlyingDutchmanBlock.java",
-          "src/main/resources/assets/cannon/models/item/planks_of_the_flying_dutchman.json",
-          "src/main/resources/data/cannon/loot_tables/blocks/planks_of_the_flying_dutchman.json",
           "src/main/resources/assets/cannon/blockstates/planks_of_the_flying_dutchman.json",
-          "src/main/resources/assets/cannon/models/block/planks_of_the_flying_dutchman.json"
+          "src/main/resources/assets/cannon/models/item/planks_of_the_flying_dutchman.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/planks_of_the_flying_dutchman.json"
         ]
       }
     },
@@ -445,13 +445,13 @@
       "registry_name": "stairs_of_the_flying_dutchman",
       "metadata": {
         "files": [
-          "src/main/resources/data/cannon/loot_tables/blocks/stairs_of_the_flying_dutchman.json",
-          "src/main/resources/assets/cannon/models/block/stairs_of_the_flying_dutchman_outer.json",
-          "src/main/resources/assets/cannon/models/item/stairs_of_the_flying_dutchman.json",
-          "src/main/java/net/mcreator/cannon/block/StairsOfTheFlyingDutchmanBlock.java",
           "src/main/resources/assets/cannon/blockstates/stairs_of_the_flying_dutchman.json",
           "src/main/resources/assets/cannon/models/block/stairs_of_the_flying_dutchman.json",
-          "src/main/resources/assets/cannon/models/block/stairs_of_the_flying_dutchman_inner.json"
+          "src/main/resources/assets/cannon/models/item/stairs_of_the_flying_dutchman.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/stairs_of_the_flying_dutchman.json",
+          "src/main/resources/assets/cannon/models/block/stairs_of_the_flying_dutchman_inner.json",
+          "src/main/java/net/mcreator/cannon/block/StairsOfTheFlyingDutchmanBlock.java",
+          "src/main/resources/assets/cannon/models/block/stairs_of_the_flying_dutchman_outer.json"
         ]
       }
     },
@@ -543,10 +543,10 @@
       "registry_name": "part_of_the_crew",
       "metadata": {
         "files": [
+          "src/main/resources/assets/cannon/models/item/part_of_the_crew_spawn_egg.json",
           "src/main/java/net/mcreator/cannon/entity/PartOfTheCrewEntity.java",
           "src/main/java/net/mcreator/cannon/client/renderer/PartOfTheCrewRenderer.java",
           "src/main/java/net/mcreator/cannon/entity/model/PartOfTheCrewModel.java",
-          "src/main/resources/assets/cannon/models/item/part_of_the_crew_spawn_egg.json",
           "src/main/resources/data/cannon/forge/biome_modifier/part_of_the_crew_biome_modifier.json"
         ]
       }
@@ -573,8 +573,8 @@
       "registry_name": "bulletitem",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cannon/models/item/bulletitem.json",
-          "src/main/java/net/mcreator/cannon/item/BulletitemItem.java"
+          "src/main/java/net/mcreator/cannon/item/BulletitemItem.java",
+          "src/main/resources/assets/cannon/models/item/bulletitem.json"
         ]
       }
     },
@@ -590,6 +590,10 @@
           "src/main/java/net/mcreator/cannon/procedures/FlintlockRightclickedProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "x",
             "type": "number"
@@ -663,13 +667,13 @@
       "registry_name": "slabs_of_the_flying_dutchman",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cannon/block/SlabsOfTheFlyingDutchmanBlock.java",
-          "src/main/resources/assets/cannon/models/block/slabs_of_the_flying_dutchman_full.json",
-          "src/main/resources/assets/cannon/models/item/slabs_of_the_flying_dutchman.json",
-          "src/main/resources/assets/cannon/models/block/slabs_of_the_flying_dutchman_top.json",
           "src/main/resources/assets/cannon/models/block/slabs_of_the_flying_dutchman.json",
+          "src/main/resources/assets/cannon/models/block/slabs_of_the_flying_dutchman_top.json",
+          "src/main/resources/assets/cannon/models/block/slabs_of_the_flying_dutchman_full.json",
           "src/main/resources/assets/cannon/blockstates/slabs_of_the_flying_dutchman.json",
-          "src/main/resources/data/cannon/loot_tables/blocks/slabs_of_the_flying_dutchman.json"
+          "src/main/resources/data/cannon/loot_tables/blocks/slabs_of_the_flying_dutchman.json",
+          "src/main/java/net/mcreator/cannon/block/SlabsOfTheFlyingDutchmanBlock.java",
+          "src/main/resources/assets/cannon/models/item/slabs_of_the_flying_dutchman.json"
         ]
       }
     },
@@ -683,10 +687,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/cannon/models/item/bill_turner_chestplate.json",
+          "src/main/resources/assets/cannon/models/item/bill_turner_boots.json",
           "src/main/resources/assets/cannon/models/item/bill_turner_leggings.json",
-          "src/main/java/net/mcreator/cannon/item/BillTurnerItem.java",
           "src/main/resources/assets/cannon/models/item/bill_turner_helmet.json",
-          "src/main/resources/assets/cannon/models/item/bill_turner_boots.json"
+          "src/main/java/net/mcreator/cannon/item/BillTurnerItem.java"
         ]
       }
     },
@@ -699,10 +703,10 @@
       "registry_name": "karb",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/cannon/client/renderer/KarbRenderer.java",
+          "src/main/resources/assets/cannon/models/item/karb_spawn_egg.json",
           "src/main/java/net/mcreator/cannon/entity/KarbEntity.java",
           "src/main/java/net/mcreator/cannon/entity/model/KarbModel.java",
-          "src/main/resources/assets/cannon/models/item/karb_spawn_egg.json",
-          "src/main/java/net/mcreator/cannon/client/renderer/KarbRenderer.java",
           "src/main/resources/data/cannon/forge/biome_modifier/karb_biome_modifier.json"
         ]
       }
@@ -716,11 +720,11 @@
       "registry_name": "part_of_the_crew_strong",
       "metadata": {
         "files": [
-          "src/main/resources/data/cannon/forge/biome_modifier/part_of_the_crew_strong_biome_modifier.json",
-          "src/main/java/net/mcreator/cannon/entity/model/PartOfTheCrewStrongModel.java",
           "src/main/java/net/mcreator/cannon/entity/PartOfTheCrewStrongEntity.java",
           "src/main/resources/assets/cannon/models/item/part_of_the_crew_strong_spawn_egg.json",
-          "src/main/java/net/mcreator/cannon/client/renderer/PartOfTheCrewStrongRenderer.java"
+          "src/main/resources/data/cannon/forge/biome_modifier/part_of_the_crew_strong_biome_modifier.json",
+          "src/main/java/net/mcreator/cannon/client/renderer/PartOfTheCrewStrongRenderer.java",
+          "src/main/java/net/mcreator/cannon/entity/model/PartOfTheCrewStrongModel.java"
         ]
       }
     },
@@ -859,6 +863,41 @@
           "src/main/resources/assets/cannon/models/item/pulley.json"
         ]
       }
+    },
+    {
+      "name": "CannonOnBlockRightClicked1",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cannon_on_block_right_clicked_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/procedures/CannonOnBlockRightClicked1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -921,14 +960,17 @@
       "item.cannon.bill_turner_boots": "Bill Turner Boots",
       "entity.cannon.part_of_the_crew_strong": "Part Of The Crew Strong",
       "entity.cannon.part_of_the_crew": "Part Of The Crew",
+      "block.cannon.sails_of_the_black_pearl_patch": "Sails Of The Black Pearl Patch",
       "block.cannon.cannon": "Cannon",
       "item_group.cannon.potc": "Potc",
       "block.cannon.gloriouslantern": "Glorious Lantern",
       "block.cannon.door_of_the_flying_dutchman": "Door Of The Flying Dutchman",
       "subtitles.cannonfire2": "Cannon Fires",
       "block.cannon.ferrymans_cannon": "Ferrymans Cannon",
+      "item.cannon.jack_sparrow_boots": "Jack Sparrow Boots",
       "item.cannon.part_of_the_crew_spawn_egg": "Part Of The Crew Spawn Egg",
       "item.cannon.bill_turner_leggings": "Bill Turner Leggings",
+      "item.cannon.jack_sparrow_chestplate": "Jack Sparrow Chestplate",
       "item.cannon.davy_jones_leggings": "Davy Jones Leggings",
       "item.cannon.davy_jones_boots": "Davy Jones Boots",
       "item.cannon.le_stick_of_fire": "Le Stick Of Fire",
@@ -943,10 +985,12 @@
       "item.cannon.karb_spawn_egg": "Karb Spawn Egg",
       "subtitles.cannon-fire": "Cannon fires",
       "block.cannon.planks_of_the_flying_dutchman": "Planks Of The Flying Dutchman",
+      "item.cannon.jack_sparrow_helmet": "Jack Sparrow Helmet",
       "subtitles.cannonfire": "Cannon Fires",
       "item.cannon.flintlock": "Flintlock",
       "item.cannon.part_of_the_crew_strong_spawn_egg": "Part Of The Crew Strong Spawn Egg",
       "block.cannon.black_plank_stairs": "Black Plank Stairs",
+      "item.cannon.jack_sparrow_leggings": "Jack Sparrow Leggings",
       "item.cannon.cannonballos": "Cannonballos",
       "block.cannon.barnacles": "Barnacles",
       "block.cannon.slabs_of_the_flying_dutchman": "Slabs Of The Flying Dutchman",
@@ -955,7 +999,9 @@
       "subtitles.cannon-load": "cannon load",
       "subtitles.cannon-fired": "cannon fired",
       "block.cannon.ladder_that_has_been_stolen_from_mikaels_backyard": "Ladder That Has Been Stolen From Mikaels Backyard",
+      "block.cannon.pulley": "Pulley",
       "subtitles.cannonball-woosh": "cannonball flyby",
+      "block.cannon.sails_of_the_black_pearl": "Sails Of The Black Pearl",
       "block.cannon.dutchmansails_2": "Sails Of The Flying Dutchman Shaded",
       "item.cannon.bill_turner_chestplate": "Bill Turner Chestplate",
       "block.cannon.dutchmansails_3": "Sails Of The Flying Dutchman Bottom",

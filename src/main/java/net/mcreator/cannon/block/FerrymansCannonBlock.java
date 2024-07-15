@@ -23,7 +23,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.cannon.procedures.CannonOnBlockRightClickedProcedure;
+import net.mcreator.cannon.procedures.CannonOnBlockRightClicked1Procedure;
 
 public class FerrymansCannonBlock extends Block {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
@@ -76,7 +76,7 @@ public class FerrymansCannonBlock extends Block {
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-		CannonOnBlockRightClickedProcedure.execute(world, x, y, z, entity);
+		CannonOnBlockRightClicked1Procedure.execute(world, x, y, z, entity);
 		return InteractionResult.SUCCESS;
 	}
 }

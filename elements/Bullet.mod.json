@@ -9,10 +9,10 @@
     "actionSound": {
       "value": "CUSTOM:cannonfire"
     },
-    "igniteFire": false,
+    "igniteFire": true,
     "power": 3.0,
-    "damage": 6.0,
-    "knockback": 7,
+    "damage": 4.0,
+    "knockback": 4,
     "entityModel": "Default",
     "customModelTexture": "",
     "onHitsBlock": {
