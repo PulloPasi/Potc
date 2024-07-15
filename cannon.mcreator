@@ -40,11 +40,12 @@
       "registry_name": "cannon",
       "metadata": {
         "files": [
-          "src/main/resources/data/cannon/loot_tables/blocks/cannon.json",
+          "src/main/resources/assets/cannon/models/item/cannon.json",
+          "src/main/resources/assets/cannon/models/block/cannon.json",
           "src/main/java/net/mcreator/cannon/block/CannonBlock.java",
           "src/main/resources/assets/cannon/blockstates/cannon.json",
-          "src/main/resources/assets/cannon/models/item/cannon.json",
-          "src/main/resources/assets/cannon/models/block/cannon.json"
+          "src/main/java/net/mcreator/cannon/block/entity/CannonBlockEntity.java",
+          "src/main/resources/data/cannon/loot_tables/blocks/cannon.json"
         ]
       }
     },
@@ -310,7 +311,8 @@
           "src/main/resources/data/cannon/loot_tables/blocks/ferrymans_cannon.json",
           "src/main/resources/assets/cannon/models/item/ferrymans_cannon.json",
           "src/main/resources/assets/cannon/models/block/ferrymans_cannon.json",
-          "src/main/java/net/mcreator/cannon/block/FerrymansCannonBlock.java"
+          "src/main/java/net/mcreator/cannon/block/FerrymansCannonBlock.java",
+          "src/main/java/net/mcreator/cannon/block/entity/FerrymansCannonBlockEntity.java"
         ]
       }
     },
@@ -354,11 +356,11 @@
       "registry_name": "planks_of_the_flying_dutchman",
       "metadata": {
         "files": [
+          "src/main/resources/assets/cannon/models/block/planks_of_the_flying_dutchman.json",
           "src/main/java/net/mcreator/cannon/block/PlanksOfTheFlyingDutchmanBlock.java",
-          "src/main/resources/assets/cannon/models/item/planks_of_the_flying_dutchman.json",
-          "src/main/resources/data/cannon/loot_tables/blocks/planks_of_the_flying_dutchman.json",
           "src/main/resources/assets/cannon/blockstates/planks_of_the_flying_dutchman.json",
-          "src/main/resources/assets/cannon/models/block/planks_of_the_flying_dutchman.json"
+          "src/main/resources/assets/cannon/models/item/planks_of_the_flying_dutchman.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/planks_of_the_flying_dutchman.json"
         ]
       }
     },
@@ -371,11 +373,12 @@
       "registry_name": "ferrymans_chasing_cannon",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cannon/blockstates/ferrymans_chasing_cannon.json",
           "src/main/java/net/mcreator/cannon/block/FerrymansChasingCannonBlock.java",
-          "src/main/resources/data/cannon/loot_tables/blocks/ferrymans_chasing_cannon.json",
           "src/main/resources/assets/cannon/models/block/ferrymans_chasing_cannon.json",
-          "src/main/resources/assets/cannon/models/item/ferrymans_chasing_cannon.json"
+          "src/main/resources/assets/cannon/models/item/ferrymans_chasing_cannon.json",
+          "src/main/resources/assets/cannon/blockstates/ferrymans_chasing_cannon.json",
+          "src/main/java/net/mcreator/cannon/block/entity/FerrymansChasingCannonBlockEntity.java",
+          "src/main/resources/data/cannon/loot_tables/blocks/ferrymans_chasing_cannon.json"
         ]
       }
     },
@@ -443,13 +446,13 @@
       "registry_name": "stairs_of_the_flying_dutchman",
       "metadata": {
         "files": [
-          "src/main/resources/data/cannon/loot_tables/blocks/stairs_of_the_flying_dutchman.json",
-          "src/main/resources/assets/cannon/models/block/stairs_of_the_flying_dutchman_outer.json",
-          "src/main/resources/assets/cannon/models/item/stairs_of_the_flying_dutchman.json",
-          "src/main/java/net/mcreator/cannon/block/StairsOfTheFlyingDutchmanBlock.java",
           "src/main/resources/assets/cannon/blockstates/stairs_of_the_flying_dutchman.json",
           "src/main/resources/assets/cannon/models/block/stairs_of_the_flying_dutchman.json",
-          "src/main/resources/assets/cannon/models/block/stairs_of_the_flying_dutchman_inner.json"
+          "src/main/resources/assets/cannon/models/item/stairs_of_the_flying_dutchman.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/stairs_of_the_flying_dutchman.json",
+          "src/main/resources/assets/cannon/models/block/stairs_of_the_flying_dutchman_inner.json",
+          "src/main/java/net/mcreator/cannon/block/StairsOfTheFlyingDutchmanBlock.java",
+          "src/main/resources/assets/cannon/models/block/stairs_of_the_flying_dutchman_outer.json"
         ]
       }
     },
@@ -541,10 +544,10 @@
       "registry_name": "part_of_the_crew",
       "metadata": {
         "files": [
+          "src/main/resources/assets/cannon/models/item/part_of_the_crew_spawn_egg.json",
           "src/main/java/net/mcreator/cannon/entity/PartOfTheCrewEntity.java",
           "src/main/java/net/mcreator/cannon/client/renderer/PartOfTheCrewRenderer.java",
           "src/main/java/net/mcreator/cannon/entity/model/PartOfTheCrewModel.java",
-          "src/main/resources/assets/cannon/models/item/part_of_the_crew_spawn_egg.json",
           "src/main/resources/data/cannon/forge/biome_modifier/part_of_the_crew_biome_modifier.json"
         ]
       }
@@ -571,8 +574,8 @@
       "registry_name": "bulletitem",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cannon/models/item/bulletitem.json",
-          "src/main/java/net/mcreator/cannon/item/BulletitemItem.java"
+          "src/main/java/net/mcreator/cannon/item/BulletitemItem.java",
+          "src/main/resources/assets/cannon/models/item/bulletitem.json"
         ]
       }
     },
@@ -588,6 +591,10 @@
           "src/main/java/net/mcreator/cannon/procedures/FlintlockRightclickedProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "x",
             "type": "number"
@@ -661,13 +668,13 @@
       "registry_name": "slabs_of_the_flying_dutchman",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cannon/block/SlabsOfTheFlyingDutchmanBlock.java",
-          "src/main/resources/assets/cannon/models/block/slabs_of_the_flying_dutchman_full.json",
-          "src/main/resources/assets/cannon/models/item/slabs_of_the_flying_dutchman.json",
-          "src/main/resources/assets/cannon/models/block/slabs_of_the_flying_dutchman_top.json",
           "src/main/resources/assets/cannon/models/block/slabs_of_the_flying_dutchman.json",
+          "src/main/resources/assets/cannon/models/block/slabs_of_the_flying_dutchman_top.json",
+          "src/main/resources/assets/cannon/models/block/slabs_of_the_flying_dutchman_full.json",
           "src/main/resources/assets/cannon/blockstates/slabs_of_the_flying_dutchman.json",
-          "src/main/resources/data/cannon/loot_tables/blocks/slabs_of_the_flying_dutchman.json"
+          "src/main/resources/data/cannon/loot_tables/blocks/slabs_of_the_flying_dutchman.json",
+          "src/main/java/net/mcreator/cannon/block/SlabsOfTheFlyingDutchmanBlock.java",
+          "src/main/resources/assets/cannon/models/item/slabs_of_the_flying_dutchman.json"
         ]
       }
     },
@@ -681,10 +688,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/cannon/models/item/bill_turner_chestplate.json",
+          "src/main/resources/assets/cannon/models/item/bill_turner_boots.json",
           "src/main/resources/assets/cannon/models/item/bill_turner_leggings.json",
-          "src/main/java/net/mcreator/cannon/item/BillTurnerItem.java",
           "src/main/resources/assets/cannon/models/item/bill_turner_helmet.json",
-          "src/main/resources/assets/cannon/models/item/bill_turner_boots.json"
+          "src/main/java/net/mcreator/cannon/item/BillTurnerItem.java"
         ]
       }
     },
@@ -697,10 +704,10 @@
       "registry_name": "karb",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/cannon/client/renderer/KarbRenderer.java",
+          "src/main/resources/assets/cannon/models/item/karb_spawn_egg.json",
           "src/main/java/net/mcreator/cannon/entity/KarbEntity.java",
           "src/main/java/net/mcreator/cannon/entity/model/KarbModel.java",
-          "src/main/resources/assets/cannon/models/item/karb_spawn_egg.json",
-          "src/main/java/net/mcreator/cannon/client/renderer/KarbRenderer.java",
           "src/main/resources/data/cannon/forge/biome_modifier/karb_biome_modifier.json"
         ]
       }
@@ -714,11 +721,11 @@
       "registry_name": "part_of_the_crew_strong",
       "metadata": {
         "files": [
-          "src/main/resources/data/cannon/forge/biome_modifier/part_of_the_crew_strong_biome_modifier.json",
-          "src/main/java/net/mcreator/cannon/entity/model/PartOfTheCrewStrongModel.java",
           "src/main/java/net/mcreator/cannon/entity/PartOfTheCrewStrongEntity.java",
           "src/main/resources/assets/cannon/models/item/part_of_the_crew_strong_spawn_egg.json",
-          "src/main/java/net/mcreator/cannon/client/renderer/PartOfTheCrewStrongRenderer.java"
+          "src/main/resources/data/cannon/forge/biome_modifier/part_of_the_crew_strong_biome_modifier.json",
+          "src/main/java/net/mcreator/cannon/client/renderer/PartOfTheCrewStrongRenderer.java",
+          "src/main/java/net/mcreator/cannon/entity/model/PartOfTheCrewStrongModel.java"
         ]
       }
     },
@@ -764,10 +771,10 @@
       "registry_name": "sails_of_the_black_pearl",
       "metadata": {
         "files": [
-          "src/main/resources/data/cannon/loot_tables/blocks/sails_of_the_black_pearl.json",
           "src/main/resources/assets/cannon/models/item/sails_of_the_black_pearl.json",
-          "src/main/java/net/mcreator/cannon/block/SailsOfTheBlackPearlBlock.java",
+          "src/main/resources/data/cannon/loot_tables/blocks/sails_of_the_black_pearl.json",
           "src/main/resources/assets/cannon/blockstates/sails_of_the_black_pearl.json",
+          "src/main/java/net/mcreator/cannon/block/SailsOfTheBlackPearlBlock.java",
           "src/main/resources/assets/cannon/models/block/sails_of_the_black_pearl.json"
         ]
       }
@@ -781,11 +788,11 @@
       "registry_name": "sails_of_the_black_pearl_patch",
       "metadata": {
         "files": [
+          "src/main/resources/assets/cannon/blockstates/sails_of_the_black_pearl_patch.json",
+          "src/main/resources/assets/cannon/models/item/sails_of_the_black_pearl_patch.json",
           "src/main/resources/assets/cannon/models/block/sails_of_the_black_pearl_patch.json",
           "src/main/resources/data/cannon/loot_tables/blocks/sails_of_the_black_pearl_patch.json",
-          "src/main/java/net/mcreator/cannon/block/SailsOfTheBlackPearlPatchBlock.java",
-          "src/main/resources/assets/cannon/blockstates/sails_of_the_black_pearl_patch.json",
-          "src/main/resources/assets/cannon/models/item/sails_of_the_black_pearl_patch.json"
+          "src/main/java/net/mcreator/cannon/block/SailsOfTheBlackPearlPatchBlock.java"
         ]
       }
     },
@@ -799,10 +806,10 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/cannon/item/JackSparrowItem.java",
-          "src/main/resources/assets/cannon/models/item/jack_sparrow_boots.json",
+          "src/main/resources/assets/cannon/models/item/jack_sparrow_helmet.json",
           "src/main/resources/assets/cannon/models/item/jack_sparrow_chestplate.json",
-          "src/main/resources/assets/cannon/models/item/jack_sparrow_leggings.json",
-          "src/main/resources/assets/cannon/models/item/jack_sparrow_helmet.json"
+          "src/main/resources/assets/cannon/models/item/jack_sparrow_boots.json",
+          "src/main/resources/assets/cannon/models/item/jack_sparrow_leggings.json"
         ]
       }
     },
@@ -817,8 +824,8 @@
         "files": [
           "src/main/resources/data/cannon/loot_tables/blocks/pulley.json",
           "src/main/resources/assets/cannon/blockstates/pulley.json",
-          "src/main/resources/assets/cannon/models/block/pulley.json",
           "src/main/java/net/mcreator/cannon/block/PulleyBlock.java",
+          "src/main/resources/assets/cannon/models/block/pulley.json",
           "src/main/resources/assets/cannon/models/item/pulley.json"
         ]
       }
@@ -832,12 +839,12 @@
       "registry_name": "gunpowderbarrel",
       "metadata": {
         "files": [
-          "src/main/resources/data/cannon/loot_tables/blocks/gunpowderbarrel.json",
-          "src/main/java/net/mcreator/cannon/block/entity/GunpowderbarrelBlockEntity.java",
-          "src/main/resources/assets/cannon/blockstates/gunpowderbarrel.json",
           "src/main/java/net/mcreator/cannon/block/GunpowderbarrelBlock.java",
+          "src/main/java/net/mcreator/cannon/block/entity/GunpowderbarrelBlockEntity.java",
+          "src/main/resources/assets/cannon/models/block/gunpowderbarrel.json",
           "src/main/resources/assets/cannon/models/item/gunpowderbarrel.json",
-          "src/main/resources/assets/cannon/models/block/gunpowderbarrel.json"
+          "src/main/resources/assets/cannon/blockstates/gunpowderbarrel.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/gunpowderbarrel.json"
         ]
       }
     },
@@ -903,8 +910,8 @@
       "registry_name": "key",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cannon/item/KeyItem.java",
-          "src/main/resources/assets/cannon/models/item/key.json"
+          "src/main/resources/assets/cannon/models/item/key.json",
+          "src/main/java/net/mcreator/cannon/item/KeyItem.java"
         ]
       }
     },
@@ -1161,6 +1168,50 @@
           "src/main/java/net/mcreator/cannon/item/HeartOfDavidJonesItem.java"
         ]
       }
+    },
+    {
+      "name": "PartOfCrewLootTable",
+      "type": "loottable",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "part_of_crew_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/loot_tables/entities/part_of_crew_loot_table.json"
+        ]
+      }
+    },
+    {
+      "name": "PartOfTheCrewEntityDies",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "part_of_the_crew_entity_dies",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/procedures/PartOfTheCrewEntityDiesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1218,6 +1269,7 @@
   },
   "language_map": {
     "en_us": {
+      "item.cannon.banan": "Banan",
       "block.cannon.black_plank_slab": "Black Plank Slab",
       "block.cannon.black_plank_trap_door": "Black Plank Trap Door",
       "item.cannon.bill_turner_boots": "Bill Turner Boots",
@@ -1225,26 +1277,29 @@
       "entity.cannon.part_of_the_crew_strong": "Part Of The Crew Strong",
       "entity.cannon.part_of_the_crew": "Part Of The Crew",
       "block.cannon.sails_of_the_black_pearl_patch": "Sails Of The Black Pearl Patch",
-      "block.cannon.cannon": "Cannon",
       "item_group.cannon.potc": "Potc",
+      "block.cannon.cannon": "Cannon",
       "block.cannon.gloriouslantern": "Glorious Lantern",
       "block.cannon.door_of_the_flying_dutchman": "Door Of The Flying Dutchman",
-      "subtitles.cannonfire2": "Cannon Fires",
-      "block.cannon.ferrymans_cannon": "Ferrymans Cannon",
       "item.cannon.jack_sparrow_boots": "Jack Sparrow Boots",
+      "block.cannon.ferrymans_cannon": "Ferrymans Cannon",
+      "subtitles.cannonfire2": "Cannon Fires",
       "item.cannon.part_of_the_crew_spawn_egg": "Part Of The Crew Spawn Egg",
       "item.cannon.bill_turner_leggings": "Bill Turner Leggings",
       "item.cannon.jack_sparrow_chestplate": "Jack Sparrow Chestplate",
       "item.cannon.davy_jones_leggings": "Davy Jones Leggings",
       "item.cannon.davy_jones_boots": "Davy Jones Boots",
+      "item.cannon.heart_of_david_jones": "Heart Of David Jones",
       "item.cannon.le_stick_of_fire": "Le Stick Of Fire",
       "item.cannon.davy_jones_chestplate": "Davy Jones Chestplate",
       "item.cannon.davy_jones_helmet": "Davy Jones Helmet",
       "block.cannon.dead_mans_chest": "Dead Mans Chest",
       "block.cannon.rope": "Rope",
+      "item.cannon.kolmikulma_hat_helmet": "Kolmikulma Hat ",
       "block.cannon.black_planks": "Black Planks",
       "item.cannon.bill_turner_helmet": "Bill Turner Helmet",
       "block.cannon.face_of_the_ferryman": "Face Of The Ferryman",
+      "item.cannon.pipo_helmet": "Pipo ",
       "block.cannon.ferrymans_chasing_cannon": "Ferrymans Chasing Cannon",
       "block.cannon.dutchmansails": "Sails Of The Flying Dutchman",
       "item.cannon.karb_spawn_egg": "Karb Spawn Egg",
@@ -1254,6 +1309,7 @@
       "subtitles.cannonfire": "Cannon Fires",
       "item.cannon.flintlock": "Flintlock",
       "item.cannon.part_of_the_crew_strong_spawn_egg": "Part Of The Crew Strong Spawn Egg",
+      "item.cannon.dutchmanpeace": "Talisman Of The Flying Dutchman",
       "item.cannon.key": "Key",
       "block.cannon.black_plank_stairs": "Black Plank Stairs",
       "item.cannon.jack_sparrow_leggings": "Jack Sparrow Leggings",
@@ -1271,9 +1327,11 @@
       "block.cannon.dutchmansails_2": "Sails Of The Flying Dutchman Shaded",
       "item.cannon.bill_turner_chestplate": "Bill Turner Chestplate",
       "block.cannon.dutchmansails_3": "Sails Of The Flying Dutchman Bottom",
+      "item.cannon.half_eaten_banan": "Half Eaten Banan",
       "subtitles.cannonball-explosion": "cannonball hit",
       "item.cannon.bulletitem": "Bulletitem",
-      "item.cannon.swordos": "Swordos"
+      "item.cannon.swordos": "Swordos",
+      "item.cannon.bandana_helmet": "Bandana "
     }
   },
   "foldersRoot": {

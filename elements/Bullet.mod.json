@@ -12,7 +12,7 @@
     "igniteFire": true,
     "power": 3.0,
     "damage": 3.0,
-    "knockback": 4,
+    "knockback": 2,
     "entityModel": "Default",
     "customModelTexture": "",
     "onHitsBlock": {

@@ -22,6 +22,6 @@ public class BulletProjectileHitsBlockProcedure {
 		if (world instanceof ServerLevel _level)
 			_level.sendParticles(ParticleTypes.FLAME, x, y, z, 5, 0.3, 0.3, 0.3, 0.2);
 		if (world instanceof Level _level && !_level.isClientSide())
-			_level.explode(null, x, y, z, (float) 0.1, Level.ExplosionInteraction.TNT);
+			_level.explode(null, x, y, z, (float) 0.001, Level.ExplosionInteraction.TNT);
 	}
 }

@@ -94,7 +94,7 @@ public class BulletEntity extends AbstractArrow implements ItemSupplier {
 	}
 
 	public static BulletEntity shoot(Level world, LivingEntity entity, RandomSource source) {
-		return shoot(world, entity, source, 3f, 3, 4);
+		return shoot(world, entity, source, 3f, 3, 2);
 	}
 
 	public static BulletEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
@@ -118,7 +118,7 @@ public class BulletEntity extends AbstractArrow implements ItemSupplier {
 		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 3f * 2, 12.0F);
 		entityarrow.setSilent(true);
 		entityarrow.setBaseDamage(3);
-		entityarrow.setKnockback(4);
+		entityarrow.setKnockback(2);
 		entityarrow.setCritArrow(false);
 		entityarrow.setSecondsOnFire(100);
 		entity.level().addFreshEntity(entityarrow);

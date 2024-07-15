@@ -56,7 +56,7 @@
     "attackStrength": 6,
     "attackKnockback": 0.0,
     "knockbackResistance": 0.0,
-    "movementSpeed": 0.5,
+    "movementSpeed": 0.45,
     "armorBaseValue": 3.0,
     "trackingRange": 64,
     "followRange": 16,
@@ -70,9 +70,9 @@
     "deathTime": 20,
     "lerp": 4,
     "disableCollisions": false,
-    "ridable": true,
-    "canControlForward": true,
-    "canControlStrafe": true,
+    "ridable": false,
+    "canControlForward": false,
+    "canControlStrafe": false,
     "immuneToFire": false,
     "immuneToArrows": false,
     "immuneToFallDamage": false,
@@ -87,7 +87,7 @@
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": "CUSTOM:Flintlock"
+      "value": ""
     },
     "livingSound": {
       "value": ""
@@ -101,9 +101,12 @@
     "stepSound": {
       "value": ""
     },
+    "whenMobDies": {
+      "name": "PartOfTheCrewEntityDies"
+    },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"-21\" y=\"27\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">PartOfCrewAttackCondition,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">PartOfCrewAttackCondition,null</field><next><block type=\"wander\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">PartOfCrewAttackCondition,null</field></block></next></block></next></block></next></block></next></block></next></block><block type=\"wander\" x=\"602\" y=\"37\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field></block><block type=\"attack_on_collide\" x=\"761\" y=\"153\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field></block></next></block></next></block><block type=\"attack_entity\" x=\"732\" y=\"280\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityVillager</field><field name=\"condition\">null,null</field></block><block type=\"wander_avoid_water\" x=\"-11\" y=\"385\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"watch_closest_entity\"><field name=\"entity\">EntityPlayer</field><field name=\"radius\">6</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block><block type=\"look_around\" x=\"701\" y=\"409\"><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"-21\" y=\"27\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">PartOfCrewAttackCondition,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">TRUE</field><field name=\"condition\">PartOfCrewAttackCondition,null</field><next><block type=\"wander\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayerMP</field><field name=\"condition\">PartOfCrewAttackCondition,null</field></block></next></block></next></block></next></block></next></block></next></block><block type=\"wander\" x=\"602\" y=\"37\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field></block><block type=\"attack_on_collide\" x=\"761\" y=\"153\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field></block></next></block></next></block><block type=\"attack_entity\" x=\"732\" y=\"280\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityVillager</field><field name=\"condition\">null,null</field></block><block type=\"wander_avoid_water\" x=\"-11\" y=\"385\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"watch_closest_entity\"><field name=\"entity\">EntityPlayer</field><field name=\"radius\">6</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block><block type=\"look_around\" x=\"701\" y=\"409\"><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field></block></next></block></xml>",
     "model": "hollantiorja.geo.json",
     "groupName": "Head",
     "animation1": "idle",

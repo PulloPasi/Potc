@@ -1,5 +1,11 @@
 package net.mcreator.cannon.block.model;
 
+import software.bernie.geckolib.model.GeoModel;
+
+import net.minecraft.resources.ResourceLocation;
+
+import net.mcreator.cannon.block.display.DeadMansChestDisplayItem;
+
 public class DeadMansChestDisplayModel extends GeoModel<DeadMansChestDisplayItem> {
 	@Override
 	public ResourceLocation getAnimationResource(DeadMansChestDisplayItem animatable) {
