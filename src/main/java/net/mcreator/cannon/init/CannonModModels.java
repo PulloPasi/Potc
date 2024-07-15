@@ -13,6 +13,7 @@ import net.mcreator.cannon.client.model.Modeltrihat;
 import net.mcreator.cannon.client.model.Modelpipo;
 import net.mcreator.cannon.client.model.Modeljonetsiversiokaksi;
 import net.mcreator.cannon.client.model.Modeljack;
+import net.mcreator.cannon.client.model.Modelblackbeard;
 import net.mcreator.cannon.client.model.Modelbillvkaks;
 import net.mcreator.cannon.client.model.Modelbillkolme;
 import net.mcreator.cannon.client.model.Modelbandana;
@@ -28,5 +29,6 @@ public class CannonModModels {
 		event.registerLayerDefinition(Modelpipo.LAYER_LOCATION, Modelpipo::createBodyLayer);
 		event.registerLayerDefinition(Modelbillvkaks.LAYER_LOCATION, Modelbillvkaks::createBodyLayer);
 		event.registerLayerDefinition(Modeltrihat.LAYER_LOCATION, Modeltrihat::createBodyLayer);
+		event.registerLayerDefinition(Modelblackbeard.LAYER_LOCATION, Modelblackbeard::createBodyLayer);
 	}
 }

@@ -889,15 +889,15 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/cannon/block/renderer/DeadMansChestTileRenderer.java",
-          "src/main/java/net/mcreator/cannon/block/renderer/DeadMansChestDisplayItemRenderer.java",
           "src/main/java/net/mcreator/cannon/block/model/DeadMansChestBlockModel.java",
           "src/main/java/net/mcreator/cannon/block/entity/DeadMansChestTileEntity.java",
-          "src/main/java/net/mcreator/cannon/block/model/DeadMansChestDisplayModel.java",
-          "src/main/java/net/mcreator/cannon/block/display/DeadMansChestDisplayItem.java",
-          "src/main/java/net/mcreator/cannon/block/DeadMansChestBlock.java",
-          "src/main/resources/assets/cannon/blockstates/dead_mans_chest.json",
           "src/main/resources/assets/cannon/models/custom/dead_mans_chest_particle.json",
-          "src/main/resources/assets/cannon/models/item/dead_mans_chest.json"
+          "src/main/java/net/mcreator/cannon/block/renderer/DeadMansChestDisplayItemRenderer.java",
+          "src/main/resources/assets/cannon/blockstates/dead_mans_chest.json",
+          "src/main/java/net/mcreator/cannon/block/DeadMansChestBlock.java",
+          "src/main/java/net/mcreator/cannon/block/display/DeadMansChestDisplayItem.java",
+          "src/main/resources/assets/cannon/models/item/dead_mans_chest.json",
+          "src/main/java/net/mcreator/cannon/block/model/DeadMansChestDisplayModel.java"
         ]
       }
     },
@@ -1052,64 +1052,16 @@
       }
     },
     {
-      "name": "PartOfCrewAttackCondition",
-      "type": "procedure",
+      "name": "HeartOfDavidJones",
+      "type": "item",
       "sortid": 54,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "part_of_crew_attack_condition",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/cannon/procedures/PartOfCrewAttackConditionProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Bandana",
-      "type": "armor",
-      "sortid": 57,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bandana",
+      "registry_name": "heart_of_david_jones",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cannon/item/BandanaItem.java",
-          "src/main/resources/assets/cannon/models/item/bandana_helmet.json"
-        ]
-      }
-    },
-    {
-      "name": "KolmikulmaHat",
-      "type": "armor",
-      "sortid": 58,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "kolmikulma_hat",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cannon/item/KolmikulmaHatItem.java",
-          "src/main/resources/assets/cannon/models/item/kolmikulma_hat_helmet.json"
-        ]
-      }
-    },
-    {
-      "name": "Dutchmanpeace",
-      "type": "item",
-      "sortid": 60,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dutchmanpeace",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/cannon/models/item/dutchmanpeace.json",
-          "src/main/java/net/mcreator/cannon/item/DutchmanpeaceItem.java"
+          "src/main/resources/assets/cannon/models/item/heart_of_david_jones.json",
+          "src/main/java/net/mcreator/cannon/item/HeartOfDavidJonesItem.java"
         ]
       }
     },
@@ -1136,8 +1088,36 @@
       "registry_name": "half_eaten_banan",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cannon/item/HalfEatenBananItem.java",
-          "src/main/resources/assets/cannon/models/item/half_eaten_banan.json"
+          "src/main/resources/assets/cannon/models/item/half_eaten_banan.json",
+          "src/main/java/net/mcreator/cannon/item/HalfEatenBananItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Bandana",
+      "type": "armor",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bandana",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/item/bandana_helmet.json",
+          "src/main/java/net/mcreator/cannon/item/BandanaItem.java"
+        ]
+      }
+    },
+    {
+      "name": "KolmikulmaHat",
+      "type": "armor",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kolmikulma_hat",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/item/KolmikulmaHatItem.java",
+          "src/main/resources/assets/cannon/models/item/kolmikulma_hat_helmet.json"
         ]
       }
     },
@@ -1150,22 +1130,59 @@
       "registry_name": "pipo",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cannon/models/item/pipo_helmet.json",
-          "src/main/java/net/mcreator/cannon/item/PipoItem.java"
+          "src/main/java/net/mcreator/cannon/item/PipoItem.java",
+          "src/main/resources/assets/cannon/models/item/pipo_helmet.json"
         ]
       }
     },
     {
-      "name": "HeartOfDavidJones",
+      "name": "Dutchmanpeace",
       "type": "item",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dutchmanpeace",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/item/dutchmanpeace.json",
+          "src/main/java/net/mcreator/cannon/item/DutchmanpeaceItem.java"
+        ]
+      }
+    },
+    {
+      "name": "BlackBeard",
+      "type": "armor",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_beard",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/item/black_beard_boots.json",
+          "src/main/java/net/mcreator/cannon/item/BlackBeardItem.java",
+          "src/main/resources/assets/cannon/models/item/black_beard_chestplate.json",
+          "src/main/resources/assets/cannon/models/item/black_beard_helmet.json",
+          "src/main/resources/assets/cannon/models/item/black_beard_leggings.json"
+        ]
+      }
+    },
+    {
+      "name": "PartOfCrewAttackCondition",
+      "type": "procedure",
       "sortid": 54,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "heart_of_david_jones",
+      "registry_name": "part_of_crew_attack_condition",
       "metadata": {
+        "return_type": "logic",
         "files": [
-          "src/main/resources/assets/cannon/models/item/heart_of_david_jones.json",
-          "src/main/java/net/mcreator/cannon/item/HeartOfDavidJonesItem.java"
+          "src/main/java/net/mcreator/cannon/procedures/PartOfCrewAttackConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
         ]
       }
     },

@@ -27,6 +27,7 @@ import net.mcreator.cannon.item.DutchmanpeaceItem;
 import net.mcreator.cannon.item.DavyJonesItem;
 import net.mcreator.cannon.item.CannonballosItem;
 import net.mcreator.cannon.item.BulletitemItem;
+import net.mcreator.cannon.item.BlackBeardItem;
 import net.mcreator.cannon.item.BillTurnerItem;
 import net.mcreator.cannon.item.BandanaItem;
 import net.mcreator.cannon.item.BananItem;
@@ -81,13 +82,17 @@ public class CannonModItems {
 	public static final RegistryObject<Item> GUNPOWDERBARREL = block(CannonModBlocks.GUNPOWDERBARREL);
 	public static final RegistryObject<Item> DEAD_MANS_CHEST = REGISTRY.register(CannonModBlocks.DEAD_MANS_CHEST.getId().getPath(), () -> new DeadMansChestDisplayItem(CannonModBlocks.DEAD_MANS_CHEST.get(), new Item.Properties()));
 	public static final RegistryObject<Item> KEY = REGISTRY.register("key", () -> new KeyItem());
-	public static final RegistryObject<Item> BANDANA_HELMET = REGISTRY.register("bandana_helmet", () -> new BandanaItem.Helmet());
-	public static final RegistryObject<Item> KOLMIKULMA_HAT_HELMET = REGISTRY.register("kolmikulma_hat_helmet", () -> new KolmikulmaHatItem.Helmet());
-	public static final RegistryObject<Item> DUTCHMANPEACE = REGISTRY.register("dutchmanpeace", () -> new DutchmanpeaceItem());
+	public static final RegistryObject<Item> HEART_OF_DAVID_JONES = REGISTRY.register("heart_of_david_jones", () -> new HeartOfDavidJonesItem());
 	public static final RegistryObject<Item> BANAN = REGISTRY.register("banan", () -> new BananItem());
 	public static final RegistryObject<Item> HALF_EATEN_BANAN = REGISTRY.register("half_eaten_banan", () -> new HalfEatenBananItem());
+	public static final RegistryObject<Item> BANDANA_HELMET = REGISTRY.register("bandana_helmet", () -> new BandanaItem.Helmet());
+	public static final RegistryObject<Item> KOLMIKULMA_HAT_HELMET = REGISTRY.register("kolmikulma_hat_helmet", () -> new KolmikulmaHatItem.Helmet());
 	public static final RegistryObject<Item> PIPO_HELMET = REGISTRY.register("pipo_helmet", () -> new PipoItem.Helmet());
-	public static final RegistryObject<Item> HEART_OF_DAVID_JONES = REGISTRY.register("heart_of_david_jones", () -> new HeartOfDavidJonesItem());
+	public static final RegistryObject<Item> DUTCHMANPEACE = REGISTRY.register("dutchmanpeace", () -> new DutchmanpeaceItem());
+	public static final RegistryObject<Item> BLACK_BEARD_HELMET = REGISTRY.register("black_beard_helmet", () -> new BlackBeardItem.Helmet());
+	public static final RegistryObject<Item> BLACK_BEARD_CHESTPLATE = REGISTRY.register("black_beard_chestplate", () -> new BlackBeardItem.Chestplate());
+	public static final RegistryObject<Item> BLACK_BEARD_LEGGINGS = REGISTRY.register("black_beard_leggings", () -> new BlackBeardItem.Leggings());
+	public static final RegistryObject<Item> BLACK_BEARD_BOOTS = REGISTRY.register("black_beard_boots", () -> new BlackBeardItem.Boots());
 
 	// Start of user code block custom items
 	// End of user code block custom items
