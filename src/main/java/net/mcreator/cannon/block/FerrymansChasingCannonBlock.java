@@ -28,7 +28,8 @@ import net.minecraft.world.Containers;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.cannon.procedures.FerrymansChasingCannonOnBlockRightClickedProcedure;
+import net.mcreator.cannon.procedures.FerrymansChasingCannonBlockAddedProcedure;
+import net.mcreator.cannon.procedures.FerrymanChasingCannonRightClicked1Procedure;
 import net.mcreator.cannon.block.entity.FerrymansChasingCannonBlockEntity;
 
 public class FerrymansChasingCannonBlock extends Block implements EntityBlock {
@@ -83,6 +84,12 @@ public class FerrymansChasingCannonBlock extends Block implements EntityBlock {
 	}
 
 	@Override
+	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
+		super.onPlace(blockstate, world, pos, oldState, moving);
+		FerrymansChasingCannonBlockAddedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+	}
+
+	@Override
 	public InteractionResult use(BlockState blockstate, Level world, BlockPos pos, Player entity, InteractionHand hand, BlockHitResult hit) {
 		super.use(blockstate, world, pos, entity, hand, hit);
 		int x = pos.getX();
@@ -92,7 +99,7 @@ public class FerrymansChasingCannonBlock extends Block implements EntityBlock {
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-		FerrymansChasingCannonOnBlockRightClickedProcedure.execute(world, x, y, z, entity);
+		FerrymanChasingCannonRightClicked1Procedure.execute(world, x, y, z, entity);
 		return InteractionResult.SUCCESS;
 	}
 

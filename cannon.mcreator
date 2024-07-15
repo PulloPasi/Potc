@@ -898,6 +898,72 @@
           }
         ]
       }
+    },
+    {
+      "name": "FerrymanChasingCannonRightClicked1",
+      "type": "procedure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ferryman_chasing_cannon_right_clicked_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/procedures/FerrymanChasingCannonRightClicked1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FerrymansChasingCannonBlockAdded",
+      "type": "procedure",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ferrymans_chasing_cannon_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/procedures/FerrymansChasingCannonBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -965,9 +1031,9 @@
       "item_group.cannon.potc": "Potc",
       "block.cannon.gloriouslantern": "Glorious Lantern",
       "block.cannon.door_of_the_flying_dutchman": "Door Of The Flying Dutchman",
-      "subtitles.cannonfire2": "Cannon Fires",
-      "block.cannon.ferrymans_cannon": "Ferrymans Cannon",
       "item.cannon.jack_sparrow_boots": "Jack Sparrow Boots",
+      "block.cannon.ferrymans_cannon": "Ferrymans Cannon",
+      "subtitles.cannonfire2": "Cannon Fires",
       "item.cannon.part_of_the_crew_spawn_egg": "Part Of The Crew Spawn Egg",
       "item.cannon.bill_turner_leggings": "Bill Turner Leggings",
       "item.cannon.jack_sparrow_chestplate": "Jack Sparrow Chestplate",

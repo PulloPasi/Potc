@@ -129,7 +129,10 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onRightClicked": {
-      "name": "FerrymansChasingCannonOnBlockRightClicked"
+      "name": "FerrymanChasingCannonRightClicked1"
+    },
+    "onBlockAdded": {
+      "name": "FerrymansChasingCannonBlockAdded"
     },
     "generateFeature": false,
     "restrictionBiomes": [],
