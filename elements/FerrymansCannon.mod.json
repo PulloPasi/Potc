@@ -129,7 +129,7 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onRightClicked": {
-      "name": "CannonOnBlockRightClicked"
+      "name": "CannonOnBlockRightClicked1"
     },
     "generateFeature": false,
     "restrictionBiomes": [],

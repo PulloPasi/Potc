@@ -111,7 +111,7 @@
     "unbreakable": false,
     "breakHarvestLevel": 1,
     "isBonemealable": false,
-    "hasInventory": false,
+    "hasInventory": true,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
@@ -129,7 +129,7 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onRightClicked": {
-      "name": "CannonOnBlockRightClicked"
+      "name": "CannonOnBlockRightClicked1"
     },
     "onBlockAdded": {
       "name": "CannonBlockAdded"

@@ -2,35 +2,44 @@ package net.mcreator.cannon.procedures;
 
 import net.minecraftforge.eventbus.api.Event;
 
-public class CannonOnBlockRightClickedProcedure {
+public class CannonOnBlockRightClicked1Procedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		ItemStack sytytystiku = ItemStack.EMPTY;
-		Entity ball = null;
-		Direction cannon_direction = Direction.NORTH;
-		boolean isLoaded = false;
-		BlockState fired = Blocks.AIR.defaultBlockState();
-		BlockState notfired = Blocks.AIR.defaultBlockState();
-		double fromZ = 0;
 		double fromX = 0;
 		double fromY = 0;
-		double localcooldown = 0;
+		double fromZ = 0;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == CannonModItems.LE_STICK_OF_FIRE.get()) {
-			if (!(entity instanceof Player _plrCldCheck3 && _plrCldCheck3.getCooldowns().isOnCooldown((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()))) {
-				if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(CannonModItems.CANNONBALLOS.get())) : false) {
+			if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(CannonModItems.CANNONBALLOS.get())) : false) {
+				if ((new Object() {
+					public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
+						BlockEntity blockEntity = world.getBlockEntity(pos);
+						if (blockEntity != null)
+							return blockEntity.getPersistentData().getBoolean(tag);
+						return false;
+					}
+				}.getValue(world, BlockPos.containing(x, y, z), "isloaded")) == true) {
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putBoolean("isloaded", false);
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
-							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cannon:cannon-fired")), SoundSource.BLOCKS, 15, 2);
+							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cannon:cannon-fired")), SoundSource.BLOCKS, 70, 1);
 						} else {
-							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cannon:cannon-fired")), SoundSource.BLOCKS, 15, 2, false);
+							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cannon:cannon-fired")), SoundSource.BLOCKS, 70, 1, false);
 						}
 					}
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
-							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cannon:cannonball-woosh")), SoundSource.BLOCKS, 2, 1);
+							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cannon:cannonball-woosh")), SoundSource.BLOCKS, 5, 1);
 						} else {
-							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cannon:cannonball-woosh")), SoundSource.BLOCKS, 2, 1, false);
+							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cannon:cannonball-woosh")), SoundSource.BLOCKS, 5, 1, false);
 						}
 					}
 					fromX = x + 0.5;
@@ -134,8 +143,6 @@ public class CannonOnBlockRightClickedProcedure {
 						ItemStack _stktoremove = new ItemStack(CannonModItems.CANNONBALLOS.get());
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 					}
-					if (entity instanceof Player _player)
-						_player.getCooldowns().addCooldown(CannonModItems.LE_STICK_OF_FIRE.get(), 80);
 					CannonMod.queueServerWork(80, () -> {
 						if (world instanceof Level _level) {
 							if (!_level.isClientSide()) {
@@ -143,6 +150,15 @@ public class CannonOnBlockRightClickedProcedure {
 							} else {
 								_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cannon:cannon-load")), SoundSource.BLOCKS, 20, 1, false);
 							}
+						}
+						if (!world.isClientSide()) {
+							BlockPos _bp = BlockPos.containing(x, y, z);
+							BlockEntity _blockEntity = world.getBlockEntity(_bp);
+							BlockState _bs = world.getBlockState(_bp);
+							if (_blockEntity != null)
+								_blockEntity.getPersistentData().putBoolean("isloaded", true);
+							if (world instanceof Level _level)
+								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
 					});
 				}

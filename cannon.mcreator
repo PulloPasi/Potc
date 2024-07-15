@@ -306,11 +306,11 @@
       "registry_name": "ferrymans_cannon",
       "metadata": {
         "files": [
+          "src/main/resources/assets/cannon/blockstates/ferrymans_cannon.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/ferrymans_cannon.json",
           "src/main/resources/assets/cannon/models/item/ferrymans_cannon.json",
           "src/main/resources/assets/cannon/models/block/ferrymans_cannon.json",
-          "src/main/resources/data/cannon/loot_tables/blocks/ferrymans_cannon.json",
-          "src/main/java/net/mcreator/cannon/block/FerrymansCannonBlock.java",
-          "src/main/resources/assets/cannon/blockstates/ferrymans_cannon.json"
+          "src/main/java/net/mcreator/cannon/block/FerrymansCannonBlock.java"
         ]
       }
     },
@@ -824,6 +824,24 @@
       }
     },
     {
+      "name": "Gunpowderbarrel",
+      "type": "block",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gunpowderbarrel",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/loot_tables/blocks/gunpowderbarrel.json",
+          "src/main/java/net/mcreator/cannon/block/entity/GunpowderbarrelBlockEntity.java",
+          "src/main/resources/assets/cannon/blockstates/gunpowderbarrel.json",
+          "src/main/java/net/mcreator/cannon/block/GunpowderbarrelBlock.java",
+          "src/main/resources/assets/cannon/models/item/gunpowderbarrel.json",
+          "src/main/resources/assets/cannon/models/block/gunpowderbarrel.json"
+        ]
+      }
+    },
+    {
       "name": "Gunpowderbarrelexplode",
       "type": "procedure",
       "sortid": 50,
@@ -851,24 +869,6 @@
             "name": "world",
             "type": "world"
           }
-        ]
-      }
-    },
-    {
-      "name": "Gunpowderbarrel",
-      "type": "block",
-      "sortid": 51,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gunpowderbarrel",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/cannon/loot_tables/blocks/gunpowderbarrel.json",
-          "src/main/java/net/mcreator/cannon/block/entity/GunpowderbarrelBlockEntity.java",
-          "src/main/resources/assets/cannon/blockstates/gunpowderbarrel.json",
-          "src/main/java/net/mcreator/cannon/block/GunpowderbarrelBlock.java",
-          "src/main/resources/assets/cannon/models/item/gunpowderbarrel.json",
-          "src/main/resources/assets/cannon/models/block/gunpowderbarrel.json"
         ]
       }
     },
@@ -905,6 +905,76 @@
         "files": [
           "src/main/java/net/mcreator/cannon/item/KeyItem.java",
           "src/main/resources/assets/cannon/models/item/key.json"
+        ]
+      }
+    },
+    {
+      "name": "FerrymansChasingCannonOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ferrymans_chasing_cannon_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/procedures/FerrymansChasingCannonOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CannonOnBlockRightClicked1",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cannon_on_block_right_clicked_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/procedures/CannonOnBlockRightClicked1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       }
     }
@@ -967,7 +1037,6 @@
       "block.cannon.black_plank_slab": "Black Plank Slab",
       "block.cannon.black_plank_trap_door": "Black Plank Trap Door",
       "item.cannon.bill_turner_boots": "Bill Turner Boots",
-      "block.cannon.gunpowderbarrel": "Gunpowder Barrel",
       "entity.cannon.part_of_the_crew_strong": "Part Of The Crew Strong",
       "entity.cannon.part_of_the_crew": "Part Of The Crew",
       "block.cannon.sails_of_the_black_pearl_patch": "Sails Of The Black Pearl Patch",
@@ -975,9 +1044,9 @@
       "item_group.cannon.potc": "Potc",
       "block.cannon.gloriouslantern": "Glorious Lantern",
       "block.cannon.door_of_the_flying_dutchman": "Door Of The Flying Dutchman",
-      "subtitles.cannonfire2": "Cannon Fires",
-      "block.cannon.ferrymans_cannon": "Ferrymans Cannon",
       "item.cannon.jack_sparrow_boots": "Jack Sparrow Boots",
+      "block.cannon.ferrymans_cannon": "Ferrymans Cannon",
+      "subtitles.cannonfire2": "Cannon Fires",
       "item.cannon.part_of_the_crew_spawn_egg": "Part Of The Crew Spawn Egg",
       "item.cannon.bill_turner_leggings": "Bill Turner Leggings",
       "item.cannon.jack_sparrow_chestplate": "Jack Sparrow Chestplate",
@@ -986,7 +1055,6 @@
       "item.cannon.le_stick_of_fire": "Le Stick Of Fire",
       "item.cannon.davy_jones_chestplate": "Davy Jones Chestplate",
       "item.cannon.davy_jones_helmet": "Davy Jones Helmet",
-      "block.cannon.dead_mans_chest": "Dead Mans Chest",
       "block.cannon.rope": "Rope",
       "block.cannon.black_planks": "Black Planks",
       "item.cannon.bill_turner_helmet": "Bill Turner Helmet",
@@ -1000,7 +1068,6 @@
       "subtitles.cannonfire": "Cannon Fires",
       "item.cannon.flintlock": "Flintlock",
       "item.cannon.part_of_the_crew_strong_spawn_egg": "Part Of The Crew Strong Spawn Egg",
-      "item.cannon.key": "Key",
       "block.cannon.black_plank_stairs": "Black Plank Stairs",
       "item.cannon.jack_sparrow_leggings": "Jack Sparrow Leggings",
       "item.cannon.cannonballos": "Cannonballos",
