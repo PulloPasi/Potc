@@ -15,6 +15,8 @@ import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.cannon.item.SwordosItem;
+import net.mcreator.cannon.item.SwordoftrtitonbombItem;
+import net.mcreator.cannon.item.SwordOfTritonItem;
 import net.mcreator.cannon.item.PipoItem;
 import net.mcreator.cannon.item.LeStickOfFireItem;
 import net.mcreator.cannon.item.KolmikulmaHatItem;
@@ -25,6 +27,8 @@ import net.mcreator.cannon.item.HalfEatenBananItem;
 import net.mcreator.cannon.item.FlintlockItem;
 import net.mcreator.cannon.item.DutchmanpeaceItem;
 import net.mcreator.cannon.item.DavyJonesItem;
+import net.mcreator.cannon.item.ChalicefullItem;
+import net.mcreator.cannon.item.ChaliceItem;
 import net.mcreator.cannon.item.CannonballosItem;
 import net.mcreator.cannon.item.BulletitemItem;
 import net.mcreator.cannon.item.BlackBeardItem;
@@ -93,6 +97,11 @@ public class CannonModItems {
 	public static final RegistryObject<Item> BLACK_BEARD_CHESTPLATE = REGISTRY.register("black_beard_chestplate", () -> new BlackBeardItem.Chestplate());
 	public static final RegistryObject<Item> BLACK_BEARD_LEGGINGS = REGISTRY.register("black_beard_leggings", () -> new BlackBeardItem.Leggings());
 	public static final RegistryObject<Item> BLACK_BEARD_BOOTS = REGISTRY.register("black_beard_boots", () -> new BlackBeardItem.Boots());
+	public static final RegistryObject<Item> CHALICEFULL = REGISTRY.register("chalicefull", () -> new ChalicefullItem());
+	public static final RegistryObject<Item> BRIISH_SPAWN_EGG = REGISTRY.register("briish_spawn_egg", () -> new ForgeSpawnEggItem(CannonModEntities.BRIISH, -3407872, -1, new Item.Properties()));
+	public static final RegistryObject<Item> SWORD_OF_TRITON = REGISTRY.register("sword_of_triton", () -> new SwordOfTritonItem());
+	public static final RegistryObject<Item> SWORDOFTRTITONBOMB = REGISTRY.register("swordoftrtitonbomb", () -> new SwordoftrtitonbombItem());
+	public static final RegistryObject<Item> CHALICE = REGISTRY.register("chalice", () -> new ChaliceItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

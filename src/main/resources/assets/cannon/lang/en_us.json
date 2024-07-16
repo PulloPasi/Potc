@@ -1,4 +1,5 @@
 {
+  "subtitles.gunfire": "",
   "item.cannon.banan": "Banan",
   "block.cannon.black_plank_slab": "Black Plank Slab",
   "block.cannon.black_plank_trap_door": "Black Plank Trap Door",
@@ -10,7 +11,9 @@
   "item_group.cannon.potc": "Potc",
   "block.cannon.cannon": "Cannon",
   "block.cannon.gloriouslantern": "Glorious Lantern",
+  "item.cannon.black_beard_boots": "Black Beard Boots",
   "block.cannon.door_of_the_flying_dutchman": "Door Of The Flying Dutchman",
+  "item.cannon.black_beard_helmet": "Black Beard Helmet",
   "item.cannon.jack_sparrow_boots": "Jack Sparrow Boots",
   "block.cannon.ferrymans_cannon": "Ferrymans Cannon",
   "subtitles.cannonfire2": "Cannon Fires",
@@ -33,7 +36,10 @@
   "block.cannon.ferrymans_chasing_cannon": "Ferrymans Chasing Cannon",
   "block.cannon.dutchmansails": "Sails Of The Flying Dutchman",
   "item.cannon.karb_spawn_egg": "Karb Spawn Egg",
+  "item.cannon.black_beard_leggings": "Black Beard Leggings",
+  "item.cannon.black_beard_chestplate": "Black Beard Chestplate",
   "subtitles.cannon-fire": "Cannon fires",
+  "subtitles.swowrddraw": "",
   "block.cannon.planks_of_the_flying_dutchman": "Planks Of The Flying Dutchman",
   "item.cannon.jack_sparrow_helmet": "Jack Sparrow Helmet",
   "subtitles.cannonfire": "Cannon Fires",
@@ -60,6 +66,7 @@
   "item.cannon.half_eaten_banan": "Half Eaten Banan",
   "subtitles.cannonball-explosion": "cannonball hit",
   "item.cannon.bulletitem": "Bulletitem",
+  "subtitles.swordfire": "",
   "item.cannon.swordos": "Swordos",
   "item.cannon.bandana_helmet": "Bandana "
 }

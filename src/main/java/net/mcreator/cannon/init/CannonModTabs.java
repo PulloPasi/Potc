@@ -74,6 +74,10 @@ public class CannonModTabs {
 				tabData.accept(CannonModItems.BLACK_BEARD_CHESTPLATE.get());
 				tabData.accept(CannonModItems.BLACK_BEARD_LEGGINGS.get());
 				tabData.accept(CannonModItems.BLACK_BEARD_BOOTS.get());
+				tabData.accept(CannonModItems.BRIISH_SPAWN_EGG.get());
+				tabData.accept(CannonModItems.SWORD_OF_TRITON.get());
+				tabData.accept(CannonModItems.CHALICE.get());
+				tabData.accept(CannonModItems.CHALICEFULL.get());
 			})
 
 					.build());

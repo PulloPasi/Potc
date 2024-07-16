@@ -3,13 +3,13 @@
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "ss_head",
+    "textureHelmet": "blackbeardhat",
     "enableBody": true,
-    "textureBody": "ss_body",
+    "textureBody": "blackbeardchest",
     "enableLeggings": true,
-    "textureLeggings": "ss_leggings",
+    "textureLeggings": "blackbeardpant",
     "enableBoots": true,
-    "textureBoots": "ss_boots",
+    "textureBoots": "blackbeardboots",
     "creativeTab": {
       "value": "CUSTOM:Potc"
     },
@@ -70,14 +70,14 @@
     "bootsPiglinNeutral": {
       "fixedValue": false
     },
-    "maxDamage": 15,
-    "damageValueHelmet": 2,
-    "damageValueBody": 6,
-    "damageValueLeggings": 5,
-    "damageValueBoots": 2,
+    "maxDamage": 200,
+    "damageValueHelmet": 35,
+    "damageValueBody": 35,
+    "damageValueLeggings": 35,
+    "damageValueBoots": 35,
     "enchantability": 9,
-    "toughness": 0.0,
-    "knockbackResistance": 0.0,
+    "toughness": 2.0,
+    "knockbackResistance": 0.1,
     "equipSound": {
       "value": ""
     },

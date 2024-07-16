@@ -43,5 +43,29 @@
         "stream": false
       }
     ]
+  },
+  "gunfire": {
+    "sounds": [
+      {
+        "name": "cannon:musketfire",
+        "stream": false
+      }
+    ]
+  },
+  "swordfire": {
+    "sounds": [
+      {
+        "name": "cannon:swordfire",
+        "stream": false
+      }
+    ]
+  },
+  "swowrddraw": {
+    "sounds": [
+      {
+        "name": "cannon:sworddraw",
+        "stream": false
+      }
+    ]
   }
 }

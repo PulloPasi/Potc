@@ -20,4 +20,7 @@ public class CannonModSounds {
 	public static final RegistryObject<SoundEvent> CANNONBALL_WOOSH = REGISTRY.register("cannonball-woosh", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("cannon", "cannonball-woosh")));
 	public static final RegistryObject<SoundEvent> CANNONBALL_EXPLOSION = REGISTRY.register("cannonball-explosion", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("cannon", "cannonball-explosion")));
 	public static final RegistryObject<SoundEvent> CANNON_LOAD = REGISTRY.register("cannon-load", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("cannon", "cannon-load")));
+	public static final RegistryObject<SoundEvent> GUNFIRE = REGISTRY.register("gunfire", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("cannon", "gunfire")));
+	public static final RegistryObject<SoundEvent> SWORDFIRE = REGISTRY.register("swordfire", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("cannon", "swordfire")));
+	public static final RegistryObject<SoundEvent> SWOWRDDRAW = REGISTRY.register("swowrddraw", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("cannon", "swowrddraw")));
 }

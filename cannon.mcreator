@@ -1243,6 +1243,146 @@
         ],
         "dependencies": []
       }
+    },
+    {
+      "name": "Chalicefull",
+      "type": "item",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chalicefull",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/item/ChalicefullItem.java",
+          "src/main/resources/assets/cannon/models/item/chalicefull.json"
+        ]
+      }
+    },
+    {
+      "name": "Swordoftritonprojectile",
+      "type": "projectile",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swordoftritonprojectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/entity/SwordoftritonprojectileEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "Briish",
+      "type": "animatedentity",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "briish",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/item/briish_spawn_egg.json",
+          "src/main/java/net/mcreator/cannon/entity/model/BriishModel.java",
+          "src/main/java/net/mcreator/cannon/entity/BriishEntity.java",
+          "src/main/java/net/mcreator/cannon/client/renderer/BriishRenderer.java",
+          "src/main/resources/data/cannon/forge/biome_modifier/briish_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "SwordOfTriton",
+      "type": "tool",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sword_of_triton",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/item/sword_of_triton.json",
+          "src/main/java/net/mcreator/cannon/item/SwordOfTritonItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Swordoftrtitonbomb",
+      "type": "item",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swordoftrtitonbomb",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/item/swordoftrtitonbomb.json",
+          "src/main/java/net/mcreator/cannon/item/SwordoftrtitonbombItem.java"
+        ]
+      }
+    },
+    {
+      "name": "SwordOfTritonRightclicked",
+      "type": "procedure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sword_of_triton_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/procedures/SwordOfTritonRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Chalice",
+      "type": "item",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chalice",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/item/chalice.json",
+          "src/main/java/net/mcreator/cannon/item/ChaliceItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Davidjonesarmoreffect",
+      "type": "procedure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "davidjonesarmoreffect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/procedures/DavidjonesarmoreffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1286,6 +1426,30 @@
       ],
       "category": "neutral",
       "subtitle": "cannon load"
+    },
+    {
+      "name": "gunfire",
+      "files": [
+        "musketfire"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "swordfire",
+      "files": [
+        "swordfire"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "swowrddraw",
+      "files": [
+        "sworddraw"
+      ],
+      "category": "neutral",
+      "subtitle": ""
     }
   ],
   "tag_elements": {
@@ -1300,6 +1464,7 @@
   },
   "language_map": {
     "en_us": {
+      "subtitles.gunfire": "",
       "item.cannon.banan": "Banan",
       "block.cannon.black_plank_slab": "Black Plank Slab",
       "block.cannon.black_plank_trap_door": "Black Plank Trap Door",
@@ -1308,10 +1473,12 @@
       "entity.cannon.part_of_the_crew_strong": "Part Of The Crew Strong",
       "entity.cannon.part_of_the_crew": "Part Of The Crew",
       "block.cannon.sails_of_the_black_pearl_patch": "Sails Of The Black Pearl Patch",
-      "item_group.cannon.potc": "Potc",
       "block.cannon.cannon": "Cannon",
+      "item_group.cannon.potc": "Potc",
       "block.cannon.gloriouslantern": "Glorious Lantern",
+      "item.cannon.black_beard_boots": "Black Beard Boots",
       "block.cannon.door_of_the_flying_dutchman": "Door Of The Flying Dutchman",
+      "item.cannon.black_beard_helmet": "Black Beard Helmet",
       "item.cannon.jack_sparrow_boots": "Jack Sparrow Boots",
       "block.cannon.ferrymans_cannon": "Ferrymans Cannon",
       "subtitles.cannonfire2": "Cannon Fires",
@@ -1334,7 +1501,10 @@
       "block.cannon.ferrymans_chasing_cannon": "Ferrymans Chasing Cannon",
       "block.cannon.dutchmansails": "Sails Of The Flying Dutchman",
       "item.cannon.karb_spawn_egg": "Karb Spawn Egg",
+      "item.cannon.black_beard_leggings": "Black Beard Leggings",
+      "item.cannon.black_beard_chestplate": "Black Beard Chestplate",
       "subtitles.cannon-fire": "Cannon fires",
+      "subtitles.swowrddraw": "",
       "block.cannon.planks_of_the_flying_dutchman": "Planks Of The Flying Dutchman",
       "item.cannon.jack_sparrow_helmet": "Jack Sparrow Helmet",
       "subtitles.cannonfire": "Cannon Fires",
@@ -1361,6 +1531,7 @@
       "item.cannon.half_eaten_banan": "Half Eaten Banan",
       "subtitles.cannonball-explosion": "cannonball hit",
       "item.cannon.bulletitem": "Bulletitem",
+      "subtitles.swordfire": "",
       "item.cannon.swordos": "Swordos",
       "item.cannon.bandana_helmet": "Bandana "
     }

@@ -10,7 +10,7 @@ public class SwordosItem extends SwordItem {
 	public SwordosItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 100;
+				return 1000;
 			}
 
 			public float getSpeed() {
@@ -18,7 +18,7 @@ public class SwordosItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 0f;
+				return 3f;
 			}
 
 			public int getLevel() {
