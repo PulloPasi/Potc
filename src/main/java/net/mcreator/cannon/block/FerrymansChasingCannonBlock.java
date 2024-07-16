@@ -1,6 +1,10 @@
 
 package net.mcreator.cannon.block;
 
+import net.minecraftforge.client.event.RegisterColorHandlersEvent;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
+
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -13,10 +17,11 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.Mirror;
-import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.EntityBlock;
+import net.minecraft.world.level.block.DirectionalBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.GrassColor;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.inventory.AbstractContainerMenu;
@@ -27,13 +32,15 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.Containers;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
+import net.minecraft.client.renderer.BiomeColors;
 
 import net.mcreator.cannon.procedures.FerrymansChasingCannonBlockAddedProcedure;
 import net.mcreator.cannon.procedures.FerrymanChasingCannonRightClicked1Procedure;
+import net.mcreator.cannon.init.CannonModBlocks;
 import net.mcreator.cannon.block.entity.FerrymansChasingCannonBlockEntity;
 
 public class FerrymansChasingCannonBlock extends Block implements EntityBlock {
-	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
+	public static final DirectionProperty FACING = DirectionalBlock.FACING;
 
 	public FerrymansChasingCannonBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
@@ -62,6 +69,8 @@ public class FerrymansChasingCannonBlock extends Block implements EntityBlock {
 			case NORTH -> Shapes.or(box(0, 0, 0, 16, 16, 16), box(5, 10, -12, 11, 16, 0));
 			case EAST -> Shapes.or(box(0, 0, 0, 16, 16, 16), box(16, 10, 5, 28, 16, 11));
 			case WEST -> Shapes.or(box(0, 0, 0, 16, 16, 16), box(-12, 10, 5, 0, 16, 11));
+			case UP -> Shapes.or(box(0, 0, 0, 16, 16, 16), box(5, 16, 10, 11, 28, 16));
+			case DOWN -> Shapes.or(box(0, 0, 0, 16, 16, 16), box(5, -12, 0, 11, 0, 6));
 		};
 	}
 
@@ -72,7 +81,7 @@ public class FerrymansChasingCannonBlock extends Block implements EntityBlock {
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite());
+		return this.defaultBlockState().setValue(FACING, context.getClickedFace());
 	}
 
 	public BlockState rotate(BlockState state, Rotation rot) {
@@ -145,5 +154,19 @@ public class FerrymansChasingCannonBlock extends Block implements EntityBlock {
 			return AbstractContainerMenu.getRedstoneSignalFromContainer(be);
 		else
 			return 0;
+	}
+
+	@OnlyIn(Dist.CLIENT)
+	public static void blockColorLoad(RegisterColorHandlersEvent.Block event) {
+		event.getBlockColors().register((bs, world, pos, index) -> {
+			return world != null && pos != null ? BiomeColors.getAverageGrassColor(world, pos) : GrassColor.get(0.5D, 1.0D);
+		}, CannonModBlocks.FERRYMANS_CHASING_CANNON.get());
+	}
+
+	@OnlyIn(Dist.CLIENT)
+	public static void itemColorLoad(RegisterColorHandlersEvent.Item event) {
+		event.getItemColors().register((stack, index) -> {
+			return GrassColor.get(0.5D, 1.0D);
+		}, CannonModBlocks.FERRYMANS_CHASING_CANNON.get());
 	}
 }
