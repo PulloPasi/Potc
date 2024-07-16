@@ -1,4 +1,5 @@
 {
+  "subtitles.gunfire": "",
   "item.cannon.banan": "Banan",
   "block.cannon.black_plank_slab": "Black Plank Slab",
   "block.cannon.black_plank_trap_door": "Black Plank Trap Door",
@@ -41,6 +42,7 @@
   "item.cannon.black_beard_chestplate": "Black Beard Chestplate",
   "item.cannon.chalice": "Chalice Of Cartagena",
   "subtitles.cannon-fire": "Cannon fires",
+  "subtitles.swowrddraw": "",
   "block.cannon.planks_of_the_flying_dutchman": "Planks Of The Flying Dutchman",
   "item.cannon.jack_sparrow_helmet": "Jack Sparrow Helmet",
   "subtitles.cannonfire": "Cannon Fires",
@@ -69,6 +71,7 @@
   "item.cannon.half_eaten_banan": "Half Eaten Banan",
   "subtitles.cannonball-explosion": "cannonball hit",
   "item.cannon.bulletitem": "Bulletitem",
+  "subtitles.swordfire": "",
   "item.cannon.swordos": "Swordos",
   "item.cannon.bandana_helmet": "Bandana ",
   "item.cannon.briish_spawn_egg": "British Gunman Spawn Egg"
