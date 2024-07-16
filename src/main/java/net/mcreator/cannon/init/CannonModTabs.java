@@ -79,6 +79,9 @@ public class CannonModTabs {
 				tabData.accept(CannonModItems.CHALICE.get());
 				tabData.accept(CannonModItems.CHALICEFULL.get());
 				tabData.accept(CannonModItems.MERMAID_SPAWN_EGG.get());
+				tabData.accept(CannonModItems.MERMAIDTEAR.get());
+				tabData.accept(CannonModBlocks.FOUNTAIN_OF_YOUTH_DRIP.get().asItem());
+				tabData.accept(CannonModItems.CHALICEWITHTEAR.get());
 			})
 
 					.build());

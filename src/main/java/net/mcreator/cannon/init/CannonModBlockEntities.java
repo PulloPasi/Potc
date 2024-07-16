@@ -12,6 +12,7 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.cannon.block.entity.GunpowderbarrelBlockEntity;
+import net.mcreator.cannon.block.entity.FountainOfYouthDripBlockEntity;
 import net.mcreator.cannon.block.entity.FerrymansChasingCannonBlockEntity;
 import net.mcreator.cannon.block.entity.FerrymansCannonBlockEntity;
 import net.mcreator.cannon.block.entity.DeadMansChestTileEntity;
@@ -26,6 +27,7 @@ public class CannonModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> GUNPOWDERBARREL = register("gunpowderbarrel", CannonModBlocks.GUNPOWDERBARREL, GunpowderbarrelBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<DeadMansChestTileEntity>> DEAD_MANS_CHEST = REGISTRY.register("dead_mans_chest",
 			() -> BlockEntityType.Builder.of(DeadMansChestTileEntity::new, CannonModBlocks.DEAD_MANS_CHEST.get()).build(null));
+	public static final RegistryObject<BlockEntityType<?>> FOUNTAIN_OF_YOUTH_DRIP = register("fountain_of_youth_drip", CannonModBlocks.FOUNTAIN_OF_YOUTH_DRIP, FountainOfYouthDripBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));

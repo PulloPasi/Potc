@@ -82,7 +82,7 @@
     "immuneToPotions": false,
     "immuneToPlayer": false,
     "immuneToExplosion": false,
-    "immuneToTrident": false,
+    "immuneToTrident": true,
     "immuneToAnvil": false,
     "immuneToWither": false,
     "immuneToDragonBreath": false,

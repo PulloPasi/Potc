@@ -3,18 +3,18 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "chalicefull",
+    "texture": "mermaidtear",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Chalice Of Cartagena (Filled)",
-    "rarity": "RARE",
+    "name": "Mermaidtear",
+    "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Potc"
     },
     "stackSize": 64,
     "enchantability": 0,
-    "useDuration": 32,
+    "useDuration": 0,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
@@ -44,7 +44,7 @@
     "nutritionalValue": 4,
     "saturation": 0.3,
     "eatResultItem": {
-      "value": "CUSTOM:Chalice"
+      "value": ""
     },
     "isMeat": false,
     "isAlwaysEdible": false,

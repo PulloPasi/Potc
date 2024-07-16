@@ -24,6 +24,7 @@ import net.mcreator.cannon.block.PlanksOfTheFlyingDutchmanBlock;
 import net.mcreator.cannon.block.LadderThatHasBeenStolenFromMikaelsBackyardBlock;
 import net.mcreator.cannon.block.GunpowderbarrelBlock;
 import net.mcreator.cannon.block.GloriouslanternBlock;
+import net.mcreator.cannon.block.FountainOfYouthDripBlock;
 import net.mcreator.cannon.block.FerrymansChasingCannonBlock;
 import net.mcreator.cannon.block.FerrymansCannonBlock;
 import net.mcreator.cannon.block.FaceOfTheFerrymanBlock;
@@ -66,6 +67,7 @@ public class CannonModBlocks {
 	public static final RegistryObject<Block> PULLEY = REGISTRY.register("pulley", () -> new PulleyBlock());
 	public static final RegistryObject<Block> GUNPOWDERBARREL = REGISTRY.register("gunpowderbarrel", () -> new GunpowderbarrelBlock());
 	public static final RegistryObject<Block> DEAD_MANS_CHEST = REGISTRY.register("dead_mans_chest", () -> new DeadMansChestBlock());
+	public static final RegistryObject<Block> FOUNTAIN_OF_YOUTH_DRIP = REGISTRY.register("fountain_of_youth_drip", () -> new FountainOfYouthDripBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

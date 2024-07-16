@@ -1400,6 +1400,84 @@
         ],
         "dependencies": []
       }
+    },
+    {
+      "name": "Mermaidtear",
+      "type": "item",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mermaidtear",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/item/MermaidtearItem.java",
+          "src/main/resources/assets/cannon/models/item/mermaidtear.json"
+        ]
+      }
+    },
+    {
+      "name": "FountainOfYouthDrip",
+      "type": "block",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fountain_of_youth_drip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/block/FountainOfYouthDripBlock.java",
+          "src/main/resources/assets/cannon/blockstates/fountain_of_youth_drip.json",
+          "src/main/resources/assets/cannon/models/block/fountain_of_youth_drip.json",
+          "src/main/java/net/mcreator/cannon/block/entity/FountainOfYouthDripBlockEntity.java",
+          "src/main/resources/assets/cannon/models/item/fountain_of_youth_drip.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/fountain_of_youth_drip.json"
+        ]
+      }
+    },
+    {
+      "name": "FountainOfYouthDripOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fountain_of_youth_drip_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/procedures/FountainOfYouthDripOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Chalicewithtear",
+      "type": "item",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chalicewithtear",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/item/chalicewithtear.json",
+          "src/main/java/net/mcreator/cannon/item/ChalicewithtearItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Chaliceobjevti",
+      "type": "recipe",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chaliceobjevti",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/chaliceobjevti.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1508,6 +1586,7 @@
       "item.cannon.davy_jones_boots": "Davy Jones Boots",
       "item.cannon.heart_of_david_jones": "Heart Of David Jones",
       "item.cannon.le_stick_of_fire": "Le Stick Of Fire",
+      "block.cannon.fountain_of_youth_drip": "Fountain Of Youth Drip",
       "item.cannon.davy_jones_chestplate": "Davy Jones Chestplate",
       "item.cannon.davy_jones_helmet": "Davy Jones Helmet",
       "block.cannon.dead_mans_chest": "Dead Mans Chest",
@@ -1535,6 +1614,7 @@
       "item.cannon.key": "Key",
       "item.cannon.chalicefull": "Chalice Of Cartagena (Filled)",
       "block.cannon.black_plank_stairs": "Black Plank Stairs",
+      "item.cannon.chalicewithtear": "Chalice Of Cartagena (Full With Tear)",
       "item.cannon.jack_sparrow_leggings": "Jack Sparrow Leggings",
       "entity.cannon.mermaid": "Mermaid",
       "item.cannon.cannonballos": "Cannonballos",
@@ -1556,6 +1636,7 @@
       "subtitles.cannonball-explosion": "cannonball hit",
       "item.cannon.bulletitem": "Bulletitem",
       "subtitles.swordfire": "",
+      "item.cannon.mermaidtear": "Mermaidtear",
       "item.cannon.swordos": "Swordos",
       "item.cannon.bandana_helmet": "Bandana ",
       "item.cannon.briish_spawn_egg": "British Gunman Spawn Egg"

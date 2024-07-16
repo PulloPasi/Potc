@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "cannon:mermaidtear"
+    },
+    {
+      "item": "cannon:chalicefull"
+    }
+  ],
+  "result": {
+    "item": "cannon:chalicewithtear",
+    "count": 1
+  }
+}

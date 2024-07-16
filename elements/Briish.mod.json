@@ -85,7 +85,7 @@
     "immuneToTrident": false,
     "immuneToAnvil": false,
     "immuneToWither": false,
-    "immuneToDragonBreath": false,
+    "immuneToDragonBreath": true,
     "mobDrop": {
       "value": ""
     },

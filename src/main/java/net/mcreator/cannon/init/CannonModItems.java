@@ -18,6 +18,7 @@ import net.mcreator.cannon.item.SwordosItem;
 import net.mcreator.cannon.item.SwordoftrtitonbombItem;
 import net.mcreator.cannon.item.SwordOfTritonItem;
 import net.mcreator.cannon.item.PipoItem;
+import net.mcreator.cannon.item.MermaidtearItem;
 import net.mcreator.cannon.item.LeStickOfFireItem;
 import net.mcreator.cannon.item.KolmikulmaHatItem;
 import net.mcreator.cannon.item.KeyItem;
@@ -27,6 +28,7 @@ import net.mcreator.cannon.item.HalfEatenBananItem;
 import net.mcreator.cannon.item.FlintlockItem;
 import net.mcreator.cannon.item.DutchmanpeaceItem;
 import net.mcreator.cannon.item.DavyJonesItem;
+import net.mcreator.cannon.item.ChalicewithtearItem;
 import net.mcreator.cannon.item.ChalicefullItem;
 import net.mcreator.cannon.item.ChaliceItem;
 import net.mcreator.cannon.item.CannonballosItem;
@@ -103,6 +105,9 @@ public class CannonModItems {
 	public static final RegistryObject<Item> CHALICEFULL = REGISTRY.register("chalicefull", () -> new ChalicefullItem());
 	public static final RegistryObject<Item> SWORDOFTRTITONBOMB = REGISTRY.register("swordoftrtitonbomb", () -> new SwordoftrtitonbombItem());
 	public static final RegistryObject<Item> MERMAID_SPAWN_EGG = REGISTRY.register("mermaid_spawn_egg", () -> new ForgeSpawnEggItem(CannonModEntities.MERMAID, -3578331, -2904696, new Item.Properties()));
+	public static final RegistryObject<Item> MERMAIDTEAR = REGISTRY.register("mermaidtear", () -> new MermaidtearItem());
+	public static final RegistryObject<Item> FOUNTAIN_OF_YOUTH_DRIP = block(CannonModBlocks.FOUNTAIN_OF_YOUTH_DRIP);
+	public static final RegistryObject<Item> CHALICEWITHTEAR = REGISTRY.register("chalicewithtear", () -> new ChalicewithtearItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items
