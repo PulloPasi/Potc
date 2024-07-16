@@ -54,7 +54,7 @@ public class CannonModEntities {
 	public static final RegistryObject<EntityType<MermaidEntity>> MERMAID = register("mermaid",
 			EntityType.Builder.<MermaidEntity>of(MermaidEntity::new, MobCategory.WATER_AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MermaidEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 2.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

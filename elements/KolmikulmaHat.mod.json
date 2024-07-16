@@ -3,7 +3,7 @@
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "ss_head",
+    "textureHelmet": "hattu",
     "enableBody": false,
     "textureBody": "",
     "enableLeggings": false,

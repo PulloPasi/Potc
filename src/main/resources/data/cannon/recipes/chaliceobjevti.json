@@ -3,14 +3,14 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "cannon:deleted_mod_element"
+      "item": "cannon:mermaidtear"
     },
     {
       "item": "cannon:chalicefull"
     }
   ],
   "result": {
-    "item": "cannon:deleted_mod_element",
+    "item": "cannon:chalicewithtear",
     "count": 1
   }
 }

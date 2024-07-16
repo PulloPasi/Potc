@@ -3,13 +3,13 @@
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "ss_head",
+    "textureHelmet": "jackhat",
     "enableBody": true,
-    "textureBody": "ss_body",
+    "textureBody": "jackjacket",
     "enableLeggings": true,
-    "textureLeggings": "ss_leggings",
+    "textureLeggings": "jackpant",
     "enableBoots": true,
-    "textureBoots": "ss_boots",
+    "textureBoots": "jackboot",
     "creativeTab": {
       "value": "CUSTOM:Potc"
     },

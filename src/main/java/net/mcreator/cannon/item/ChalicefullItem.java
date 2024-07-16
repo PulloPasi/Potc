@@ -1,7 +1,9 @@
 
 package net.mcreator.cannon.item;
 
-import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
 
 public class ChalicefullItem extends Item {
 	public ChalicefullItem() {

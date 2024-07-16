@@ -1,6 +1,20 @@
 
 package net.mcreator.cannon.client.renderer;
 
+import software.bernie.geckolib.renderer.GeoEntityRenderer;
+import software.bernie.geckolib.cache.object.BakedGeoModel;
+
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.renderer.entity.EntityRendererProvider;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.MultiBufferSource;
+
+import net.mcreator.cannon.entity.model.BriishModel;
+import net.mcreator.cannon.entity.BriishEntity;
+
+import com.mojang.blaze3d.vertex.VertexConsumer;
+import com.mojang.blaze3d.vertex.PoseStack;
+
 public class BriishRenderer extends GeoEntityRenderer<BriishEntity> {
 	public BriishRenderer(EntityRendererProvider.Context renderManager) {
 		super(renderManager, new BriishModel());
@@ -20,5 +34,4 @@ public class BriishRenderer extends GeoEntityRenderer<BriishEntity> {
 		this.scaleWidth = scale;
 		super.preRender(poseStack, entity, model, bufferSource, buffer, isReRender, partialTick, packedLight, packedOverlay, red, green, blue, alpha);
 	}
-
 }
