@@ -26,5 +26,6 @@ public class CannonModEntityRenderers {
 		event.registerEntityRenderer(CannonModEntities.KARB.get(), KarbRenderer::new);
 		event.registerEntityRenderer(CannonModEntities.PART_OF_THE_CREW_STRONG.get(), PartOfTheCrewStrongRenderer::new);
 		event.registerEntityRenderer(CannonModEntities.BRIISH.get(), BriishRenderer::new);
+		event.registerEntityRenderer(CannonModEntities.SWORDOFTRITONPROJECTILE.get(), ThrownItemRenderer::new);
 	}
 }

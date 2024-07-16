@@ -1307,6 +1307,68 @@
           "src/main/java/net/mcreator/cannon/item/ChalicefullItem.java"
         ]
       }
+    },
+    {
+      "name": "Swordoftritonprojectile",
+      "type": "projectile",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swordoftritonprojectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/entity/SwordoftritonprojectileEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "Swordoftrtitonbomb",
+      "type": "item",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swordoftrtitonbomb",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/item/swordoftrtitonbomb.json",
+          "src/main/java/net/mcreator/cannon/item/SwordoftrtitonbombItem.java"
+        ]
+      }
+    },
+    {
+      "name": "SwordOfTritonRightclicked",
+      "type": "procedure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sword_of_triton_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/procedures/SwordOfTritonRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1425,6 +1487,7 @@
       "subtitles.cannon-fired": "cannon fired",
       "block.cannon.ladder_that_has_been_stolen_from_mikaels_backyard": "Ladder That Has Been Stolen From Mikaels Backyard",
       "block.cannon.pulley": "Pulley",
+      "item.cannon.swordoftrtitonbomb": "bomb",
       "subtitles.cannonball-woosh": "cannonball flyby",
       "block.cannon.sails_of_the_black_pearl": "Sails Of The Black Pearl",
       "block.cannon.dutchmansails_2": "Sails Of The Flying Dutchman Shaded",

@@ -15,6 +15,7 @@ import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.cannon.item.SwordosItem;
+import net.mcreator.cannon.item.SwordoftrtitonbombItem;
 import net.mcreator.cannon.item.SwordOfTritonItem;
 import net.mcreator.cannon.item.PipoItem;
 import net.mcreator.cannon.item.LeStickOfFireItem;
@@ -100,6 +101,7 @@ public class CannonModItems {
 	public static final RegistryObject<Item> SWORD_OF_TRITON = REGISTRY.register("sword_of_triton", () -> new SwordOfTritonItem());
 	public static final RegistryObject<Item> CHALICE = REGISTRY.register("chalice", () -> new ChaliceItem());
 	public static final RegistryObject<Item> CHALICEFULL = REGISTRY.register("chalicefull", () -> new ChalicefullItem());
+	public static final RegistryObject<Item> SWORDOFTRTITONBOMB = REGISTRY.register("swordoftrtitonbomb", () -> new SwordoftrtitonbombItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items
