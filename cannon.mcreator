@@ -1333,10 +1333,6 @@
             "type": "entity"
           },
           {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -1389,6 +1385,25 @@
       }
     },
     {
+      "name": "SwordoftritonprojectileProjectileHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swordoftritonprojectile_projectile_hits_living_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/procedures/SwordoftritonprojectileProjectileHitsLivingEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
       "name": "TritoneffectEffectStartedapplied",
       "type": "procedure",
       "sortid": 71,
@@ -1422,21 +1437,19 @@
       }
     },
     {
-      "name": "SwordoftritonprojectileProjectileHitsLivingEntity",
-      "type": "procedure",
-      "sortid": 73,
+      "name": "Mermaid",
+      "type": "animatedentity",
+      "sortid": 71,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "swordoftritonprojectile_projectile_hits_living_entity",
+      "registry_name": "mermaid",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cannon/procedures/SwordoftritonprojectileProjectileHitsLivingEntityProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
+          "src/main/resources/assets/cannon/models/item/mermaid_spawn_egg.json",
+          "src/main/java/net/mcreator/cannon/entity/model/MermaidModel.java",
+          "src/main/java/net/mcreator/cannon/entity/MermaidEntity.java",
+          "src/main/java/net/mcreator/cannon/client/renderer/MermaidRenderer.java",
+          "src/main/resources/data/cannon/forge/biome_modifier/mermaid_biome_modifier.json"
         ]
       }
     }

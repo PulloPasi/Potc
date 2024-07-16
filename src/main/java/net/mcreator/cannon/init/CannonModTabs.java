@@ -78,6 +78,7 @@ public class CannonModTabs {
 				tabData.accept(CannonModItems.SWORD_OF_TRITON.get());
 				tabData.accept(CannonModItems.CHALICE.get());
 				tabData.accept(CannonModItems.CHALICEFULL.get());
+				tabData.accept(CannonModItems.MERMAID_SPAWN_EGG.get());
 			})
 
 					.build());
