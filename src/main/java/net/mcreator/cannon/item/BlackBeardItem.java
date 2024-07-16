@@ -30,12 +30,12 @@ public abstract class BlackBeardItem extends ArmorItem {
 		super(new ArmorMaterial() {
 			@Override
 			public int getDurabilityForType(ArmorItem.Type type) {
-				return new int[]{13, 15, 16, 11}[type.getSlot().getIndex()] * 15;
+				return new int[]{13, 15, 16, 11}[type.getSlot().getIndex()] * 200;
 			}
 
 			@Override
 			public int getDefenseForType(ArmorItem.Type type) {
-				return new int[]{2, 5, 6, 2}[type.getSlot().getIndex()];
+				return new int[]{35, 35, 35, 35}[type.getSlot().getIndex()];
 			}
 
 			@Override
@@ -60,12 +60,12 @@ public abstract class BlackBeardItem extends ArmorItem {
 
 			@Override
 			public float getToughness() {
-				return 0f;
+				return 2f;
 			}
 
 			@Override
 			public float getKnockbackResistance() {
-				return 0f;
+				return 0.1f;
 			}
 		}, type, properties);
 	}

@@ -14,14 +14,6 @@
     "facing=west": {
       "model": "cannon:block/cannon",
       "y": 270
-    },
-    "facing=up": {
-      "model": "cannon:block/cannon",
-      "x": 270
-    },
-    "facing=down": {
-      "model": "cannon:block/cannon",
-      "x": 90
     }
   }
 }

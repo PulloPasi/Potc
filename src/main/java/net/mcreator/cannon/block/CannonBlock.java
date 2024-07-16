@@ -17,8 +17,8 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.Mirror;
+import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.EntityBlock;
-import net.minecraft.world.level.block.DirectionalBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.GrassColor;
@@ -40,7 +40,7 @@ import net.mcreator.cannon.init.CannonModBlocks;
 import net.mcreator.cannon.block.entity.CannonBlockEntity;
 
 public class CannonBlock extends Block implements EntityBlock {
-	public static final DirectionProperty FACING = DirectionalBlock.FACING;
+	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public CannonBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
@@ -69,8 +69,6 @@ public class CannonBlock extends Block implements EntityBlock {
 			case NORTH -> Shapes.or(box(0, 0, 0, 16, 16, 16), box(5, 10, -12, 11, 16, 0));
 			case EAST -> Shapes.or(box(0, 0, 0, 16, 16, 16), box(16, 10, 5, 28, 16, 11));
 			case WEST -> Shapes.or(box(0, 0, 0, 16, 16, 16), box(-12, 10, 5, 0, 16, 11));
-			case UP -> Shapes.or(box(0, 0, 0, 16, 16, 16), box(5, 16, 10, 11, 28, 16));
-			case DOWN -> Shapes.or(box(0, 0, 0, 16, 16, 16), box(5, -12, 0, 11, 0, 6));
 		};
 	}
 
@@ -81,6 +79,8 @@ public class CannonBlock extends Block implements EntityBlock {
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
+		if (context.getClickedFace().getAxis() == Direction.Axis.Y)
+			return this.defaultBlockState().setValue(FACING, Direction.NORTH);
 		return this.defaultBlockState().setValue(FACING, context.getClickedFace());
 	}
 
