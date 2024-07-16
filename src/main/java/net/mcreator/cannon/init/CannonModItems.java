@@ -102,6 +102,7 @@ public class CannonModItems {
 	public static final RegistryObject<Item> CHALICE = REGISTRY.register("chalice", () -> new ChaliceItem());
 	public static final RegistryObject<Item> CHALICEFULL = REGISTRY.register("chalicefull", () -> new ChalicefullItem());
 	public static final RegistryObject<Item> SWORDOFTRTITONBOMB = REGISTRY.register("swordoftrtitonbomb", () -> new SwordoftrtitonbombItem());
+	public static final RegistryObject<Item> MERMAID_SPAWN_EGG = REGISTRY.register("mermaid_spawn_egg", () -> new ForgeSpawnEggItem(CannonModEntities.MERMAID, -3578331, -2904696, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

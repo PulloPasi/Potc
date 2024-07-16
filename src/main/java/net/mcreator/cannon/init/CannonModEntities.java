@@ -19,6 +19,7 @@ import net.minecraft.world.entity.Entity;
 import net.mcreator.cannon.entity.SwordoftritonprojectileEntity;
 import net.mcreator.cannon.entity.PartOfTheCrewStrongEntity;
 import net.mcreator.cannon.entity.PartOfTheCrewEntity;
+import net.mcreator.cannon.entity.MermaidEntity;
 import net.mcreator.cannon.entity.KarbEntity;
 import net.mcreator.cannon.entity.CannonballosProjectileEntity;
 import net.mcreator.cannon.entity.BulletEntity;
@@ -50,6 +51,10 @@ public class CannonModEntities {
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<SwordoftritonprojectileEntity>> SWORDOFTRITONPROJECTILE = register("swordoftritonprojectile", EntityType.Builder.<SwordoftritonprojectileEntity>of(SwordoftritonprojectileEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(SwordoftritonprojectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<MermaidEntity>> MERMAID = register("mermaid",
+			EntityType.Builder.<MermaidEntity>of(MermaidEntity::new, MobCategory.WATER_AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MermaidEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -62,6 +67,7 @@ public class CannonModEntities {
 			KarbEntity.init();
 			PartOfTheCrewStrongEntity.init();
 			BriishEntity.init();
+			MermaidEntity.init();
 		});
 	}
 
@@ -71,5 +77,6 @@ public class CannonModEntities {
 		event.put(KARB.get(), KarbEntity.createAttributes().build());
 		event.put(PART_OF_THE_CREW_STRONG.get(), PartOfTheCrewStrongEntity.createAttributes().build());
 		event.put(BRIISH.get(), BriishEntity.createAttributes().build());
+		event.put(MERMAID.get(), MermaidEntity.createAttributes().build());
 	}
 }
