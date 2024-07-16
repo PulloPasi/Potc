@@ -1386,6 +1386,20 @@
           "src/main/java/net/mcreator/cannon/entity/model/MermaidModel.java"
         ]
       }
+    },
+    {
+      "name": "DavyJonesHelmetTickEvent",
+      "type": "procedure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "davy_jones_helmet_tick_event",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/procedures/DavyJonesHelmetTickEventProcedure.java"
+        ],
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [],

@@ -1,20 +1,6 @@
 
 package net.mcreator.cannon.client.renderer;
 
-import software.bernie.geckolib.renderer.GeoEntityRenderer;
-import software.bernie.geckolib.cache.object.BakedGeoModel;
-
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.client.renderer.entity.EntityRendererProvider;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.MultiBufferSource;
-
-import net.mcreator.cannon.entity.model.MermaidModel;
-import net.mcreator.cannon.entity.MermaidEntity;
-
-import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.mojang.blaze3d.vertex.PoseStack;
-
 public class MermaidRenderer extends GeoEntityRenderer<MermaidEntity> {
 	public MermaidRenderer(EntityRendererProvider.Context renderManager) {
 		super(renderManager, new MermaidModel());
@@ -34,4 +20,5 @@ public class MermaidRenderer extends GeoEntityRenderer<MermaidEntity> {
 		this.scaleWidth = scale;
 		super.preRender(poseStack, entity, model, bufferSource, buffer, isReRender, partialTick, packedLight, packedOverlay, red, green, blue, alpha);
 	}
+
 }
