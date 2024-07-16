@@ -1,11 +1,7 @@
 
 package net.mcreator.cannon.item;
 
-import net.minecraft.world.item.UseAnim;
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 
 public class ChalicewithtearItem extends Item {
 	public ChalicewithtearItem() {

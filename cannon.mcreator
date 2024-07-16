@@ -1352,6 +1352,10 @@
             "type": "entity"
           },
           {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -1402,34 +1406,15 @@
       }
     },
     {
-      "name": "Mermaidtear",
-      "type": "item",
-      "sortid": 72,
+      "name": "Chaliceobjevti",
+      "type": "recipe",
+      "sortid": 76,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "mermaidtear",
+      "registry_name": "chaliceobjevti",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cannon/item/MermaidtearItem.java",
-          "src/main/resources/assets/cannon/models/item/mermaidtear.json"
-        ]
-      }
-    },
-    {
-      "name": "FountainOfYouthDrip",
-      "type": "block",
-      "sortid": 73,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fountain_of_youth_drip",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cannon/block/FountainOfYouthDripBlock.java",
-          "src/main/resources/assets/cannon/blockstates/fountain_of_youth_drip.json",
-          "src/main/resources/assets/cannon/models/block/fountain_of_youth_drip.json",
-          "src/main/java/net/mcreator/cannon/block/entity/FountainOfYouthDripBlockEntity.java",
-          "src/main/resources/assets/cannon/models/item/fountain_of_youth_drip.json",
-          "src/main/resources/data/cannon/loot_tables/blocks/fountain_of_youth_drip.json"
+          "src/main/resources/data/cannon/recipes/chaliceobjevti.json"
         ]
       }
     },
@@ -1453,6 +1438,38 @@
       }
     },
     {
+      "name": "FountainOfYouthDrip",
+      "type": "block",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fountain_of_youth_drip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/block/FountainOfYouthDripBlock.java",
+          "src/main/resources/assets/cannon/blockstates/fountain_of_youth_drip.json",
+          "src/main/resources/assets/cannon/models/block/fountain_of_youth_drip.json",
+          "src/main/java/net/mcreator/cannon/block/entity/FountainOfYouthDripBlockEntity.java",
+          "src/main/resources/assets/cannon/models/item/fountain_of_youth_drip.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/fountain_of_youth_drip.json"
+        ]
+      }
+    },
+    {
+      "name": "Mermaidtear",
+      "type": "item",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mermaidtear",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/item/MermaidtearItem.java",
+          "src/main/resources/assets/cannon/models/item/mermaidtear.json"
+        ]
+      }
+    },
+    {
       "name": "Chalicewithtear",
       "type": "item",
       "sortid": 75,
@@ -1467,16 +1484,55 @@
       }
     },
     {
-      "name": "Chaliceobjevti",
-      "type": "recipe",
-      "sortid": 76,
+      "name": "SwordoftritonprojectileProjectileHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 73,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "chaliceobjevti",
+      "registry_name": "swordoftritonprojectile_projectile_hits_living_entity",
       "metadata": {
         "files": [
-          "src/main/resources/data/cannon/recipes/chaliceobjevti.json"
+          "src/main/java/net/mcreator/cannon/procedures/SwordoftritonprojectileProjectileHitsLivingEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
         ]
+      }
+    },
+    {
+      "name": "TritoneffectEffectStartedapplied",
+      "type": "procedure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tritoneffect_effect_startedapplied",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/procedures/TritoneffectEffectStartedappliedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TritoneffectEffectStartedapplied1",
+      "type": "procedure",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tritoneffect_effect_startedapplied_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/procedures/TritoneffectEffectStartedapplied1Procedure.java"
+        ],
+        "dependencies": []
       }
     }
   ],
