@@ -11,9 +11,12 @@
     },
     "igniteFire": false,
     "power": 1.0,
-    "damage": 5.0,
+    "damage": 1.0,
     "knockback": 5,
     "entityModel": "Default",
-    "customModelTexture": ""
+    "customModelTexture": "",
+    "onHitsEntity": {
+      "name": "SwordoftritonprojectileProjectileHitsLivingEntity"
+    }
   }
 }

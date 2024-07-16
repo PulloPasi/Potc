@@ -10,6 +10,7 @@
   "block.cannon.sails_of_the_black_pearl_patch": "Sails Of The Black Pearl Patch",
   "item_group.cannon.potc": "Potc",
   "block.cannon.cannon": "Cannon",
+  "item.cannon.sword_of_triton": "Sword Of Triton",
   "block.cannon.gloriouslantern": "Glorious Lantern",
   "item.cannon.black_beard_boots": "Black Beard Boots",
   "block.cannon.door_of_the_flying_dutchman": "Door Of The Flying Dutchman",
@@ -29,6 +30,7 @@
   "block.cannon.dead_mans_chest": "Dead Mans Chest",
   "block.cannon.rope": "Rope",
   "item.cannon.kolmikulma_hat_helmet": "Kolmikulma Hat ",
+  "entity.cannon.briish": "British Gunman",
   "block.cannon.black_planks": "Black Planks",
   "item.cannon.bill_turner_helmet": "Bill Turner Helmet",
   "block.cannon.face_of_the_ferryman": "Face Of The Ferryman",
@@ -38,6 +40,7 @@
   "item.cannon.karb_spawn_egg": "Karb Spawn Egg",
   "item.cannon.black_beard_leggings": "Black Beard Leggings",
   "item.cannon.black_beard_chestplate": "Black Beard Chestplate",
+  "item.cannon.chalice": "Chalice Of Cartagena",
   "subtitles.cannon-fire": "Cannon fires",
   "subtitles.swowrddraw": "",
   "block.cannon.planks_of_the_flying_dutchman": "Planks Of The Flying Dutchman",
@@ -47,6 +50,7 @@
   "item.cannon.part_of_the_crew_strong_spawn_egg": "Part Of The Crew Strong Spawn Egg",
   "item.cannon.dutchmanpeace": "Talisman Of The Flying Dutchman",
   "item.cannon.key": "Key",
+  "item.cannon.chalicefull": "Chalice Of Cartagena (Filled)",
   "block.cannon.black_plank_stairs": "Black Plank Stairs",
   "item.cannon.jack_sparrow_leggings": "Jack Sparrow Leggings",
   "item.cannon.cannonballos": "Cannonballos",
@@ -58,6 +62,7 @@
   "subtitles.cannon-fired": "cannon fired",
   "block.cannon.ladder_that_has_been_stolen_from_mikaels_backyard": "Ladder That Has Been Stolen From Mikaels Backyard",
   "block.cannon.pulley": "Pulley",
+  "item.cannon.swordoftrtitonbomb": "bomb",
   "subtitles.cannonball-woosh": "cannonball flyby",
   "block.cannon.sails_of_the_black_pearl": "Sails Of The Black Pearl",
   "block.cannon.dutchmansails_2": "Sails Of The Flying Dutchman Shaded",
@@ -68,5 +73,6 @@
   "item.cannon.bulletitem": "Bulletitem",
   "subtitles.swordfire": "",
   "item.cannon.swordos": "Swordos",
-  "item.cannon.bandana_helmet": "Bandana "
+  "item.cannon.bandana_helmet": "Bandana ",
+  "item.cannon.briish_spawn_egg": "British Gunman Spawn Egg"
 }
