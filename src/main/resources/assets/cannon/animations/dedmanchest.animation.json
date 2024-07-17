@@ -1,10 +1,20 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"idleclosed": {
+		"0": {
 			"loop": true
 		},
-		"open": {
+		"1": {
+			"loop": true,
+			"bones": {
+				"chestliid": {
+					"rotation": {
+						"vector": [-95, 0, 0]
+					}
+				}
+			}
+		},
+		"2": {
 			"loop": "hold_on_last_frame",
 			"animation_length": 0.625,
 			"bones": {
@@ -20,7 +30,7 @@
 				}
 			}
 		},
-		"close": {
+		"3": {
 			"loop": "hold_on_last_frame",
 			"animation_length": 0.5,
 			"bones": {
@@ -32,16 +42,6 @@
 						"0.5": {
 							"vector": [0, 0, 0]
 						}
-					}
-				}
-			}
-		},
-		"idleopen": {
-			"loop": true,
-			"bones": {
-				"chestliid": {
-					"rotation": {
-						"vector": [-95, 0, 0]
 					}
 				}
 			}
