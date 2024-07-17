@@ -3,13 +3,13 @@
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "ss_head",
+    "textureHelmet": "angelicahat",
     "enableBody": true,
-    "textureBody": "ss_body",
+    "textureBody": "angelicajacket",
     "enableLeggings": true,
-    "textureLeggings": "ss_leggings",
+    "textureLeggings": "angelicapant",
     "enableBoots": true,
-    "textureBoots": "ss_boots",
+    "textureBoots": "angelicaboot",
     "creativeTab": {
       "value": "CUSTOM:Potc"
     },

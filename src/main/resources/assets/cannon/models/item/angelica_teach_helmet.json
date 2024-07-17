@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "cannon:item/ss_head"
+    "layer0": "cannon:item/angelicahat"
   }
 }
