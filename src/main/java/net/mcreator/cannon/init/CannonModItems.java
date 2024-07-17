@@ -37,6 +37,7 @@ import net.mcreator.cannon.item.BlackBeardItem;
 import net.mcreator.cannon.item.BillTurnerItem;
 import net.mcreator.cannon.item.BandanaItem;
 import net.mcreator.cannon.item.BananItem;
+import net.mcreator.cannon.item.AngelicaTeachItem;
 import net.mcreator.cannon.block.display.DeadMansChestDisplayItem;
 import net.mcreator.cannon.CannonMod;
 
@@ -108,6 +109,10 @@ public class CannonModItems {
 	public static final RegistryObject<Item> FOUNTAIN_OF_YOUTH_DRIP = block(CannonModBlocks.FOUNTAIN_OF_YOUTH_DRIP);
 	public static final RegistryObject<Item> MERMAIDTEAR = REGISTRY.register("mermaidtear", () -> new MermaidtearItem());
 	public static final RegistryObject<Item> CHALICEWITHTEAR = REGISTRY.register("chalicewithtear", () -> new ChalicewithtearItem());
+	public static final RegistryObject<Item> ANGELICA_TEACH_HELMET = REGISTRY.register("angelica_teach_helmet", () -> new AngelicaTeachItem.Helmet());
+	public static final RegistryObject<Item> ANGELICA_TEACH_CHESTPLATE = REGISTRY.register("angelica_teach_chestplate", () -> new AngelicaTeachItem.Chestplate());
+	public static final RegistryObject<Item> ANGELICA_TEACH_LEGGINGS = REGISTRY.register("angelica_teach_leggings", () -> new AngelicaTeachItem.Leggings());
+	public static final RegistryObject<Item> ANGELICA_TEACH_BOOTS = REGISTRY.register("angelica_teach_boots", () -> new AngelicaTeachItem.Boots());
 
 	// Start of user code block custom items
 	// End of user code block custom items

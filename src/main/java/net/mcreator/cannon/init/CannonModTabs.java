@@ -82,6 +82,10 @@ public class CannonModTabs {
 				tabData.accept(CannonModItems.MERMAIDTEAR.get());
 				tabData.accept(CannonModBlocks.FOUNTAIN_OF_YOUTH_DRIP.get().asItem());
 				tabData.accept(CannonModItems.CHALICEWITHTEAR.get());
+				tabData.accept(CannonModItems.ANGELICA_TEACH_HELMET.get());
+				tabData.accept(CannonModItems.ANGELICA_TEACH_CHESTPLATE.get());
+				tabData.accept(CannonModItems.ANGELICA_TEACH_LEGGINGS.get());
+				tabData.accept(CannonModItems.ANGELICA_TEACH_BOOTS.get());
 			})
 
 					.build());
