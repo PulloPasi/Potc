@@ -1568,6 +1568,101 @@
           "src/main/resources/assets/cannon/models/item/joshamee_gibbs_chestplate.json"
         ]
       }
+    },
+    {
+      "name": "Billsetbonus",
+      "type": "procedure",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "billsetbonus",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/procedures/BillsetbonusProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Angelicabonus",
+      "type": "procedure",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "angelicabonus",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/procedures/AngelicabonusProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Jacksetbonus",
+      "type": "procedure",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jacksetbonus",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/procedures/JacksetbonusProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Gibbssetbonus",
+      "type": "procedure",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gibbssetbonus",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/procedures/GibbssetbonusProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Blackbeardsetbonus",
+      "type": "procedure",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blackbeardsetbonus",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/procedures/BlackbeardsetbonusProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1666,9 +1761,9 @@
       "item.cannon.joshamee_gibbs_leggings": "Joshamee Gibbs Leggings",
       "item.cannon.sword_of_triton": "Sword Of Triton",
       "block.cannon.gloriouslantern": "Glorious Lantern",
-      "item.cannon.black_beard_boots": "Black Beard Boots",
+      "item.cannon.black_beard_boots": "BlackBeard Boots",
       "block.cannon.door_of_the_flying_dutchman": "Door Of The Flying Dutchman",
-      "item.cannon.black_beard_helmet": "Black Beard Helmet",
+      "item.cannon.black_beard_helmet": "BlackBeard Hat",
       "item.cannon.jack_sparrow_boots": "Jack Sparrow Boots",
       "block.cannon.ferrymans_cannon": "Ferrymans Cannon",
       "subtitles.cannonfire2": "Cannon Fires",
@@ -1696,8 +1791,8 @@
       "block.cannon.ferrymans_chasing_cannon": "Ferrymans Chasing Cannon",
       "block.cannon.dutchmansails": "Sails Of The Flying Dutchman",
       "item.cannon.karb_spawn_egg": "Karb Spawn Egg",
-      "item.cannon.black_beard_leggings": "Black Beard Leggings",
-      "item.cannon.black_beard_chestplate": "Black Beard Chestplate",
+      "item.cannon.black_beard_leggings": "BlackBeard Pants",
+      "item.cannon.black_beard_chestplate": "BlackBeard Jacket",
       "item.cannon.chalice": "Chalice Of Cartagena",
       "subtitles.cannon-fire": "Cannon fires",
       "subtitles.swowrddraw": "",

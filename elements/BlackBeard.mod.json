@@ -14,10 +14,10 @@
       "value": "CUSTOM:Potc"
     },
     "armorTextureFile": "ss",
-    "helmetName": "Black Beard Helmet",
-    "bodyName": "Black Beard Chestplate",
-    "leggingsName": "Black Beard Leggings",
-    "bootsName": "Black Beard Boots",
+    "helmetName": "BlackBeard Hat",
+    "bodyName": "BlackBeard Jacket",
+    "leggingsName": "BlackBeard Pants",
+    "bootsName": "BlackBeard Boots",
     "helmetSpecialInformation": {
       "fixedValue": []
     },
