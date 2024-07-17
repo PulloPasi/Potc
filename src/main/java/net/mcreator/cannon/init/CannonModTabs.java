@@ -86,6 +86,10 @@ public class CannonModTabs {
 				tabData.accept(CannonModItems.ANGELICA_TEACH_CHESTPLATE.get());
 				tabData.accept(CannonModItems.ANGELICA_TEACH_LEGGINGS.get());
 				tabData.accept(CannonModItems.ANGELICA_TEACH_BOOTS.get());
+				tabData.accept(CannonModItems.JOSHAMEE_GIBBS_HELMET.get());
+				tabData.accept(CannonModItems.JOSHAMEE_GIBBS_CHESTPLATE.get());
+				tabData.accept(CannonModItems.JOSHAMEE_GIBBS_LEGGINGS.get());
+				tabData.accept(CannonModItems.JOSHAMEE_GIBBS_BOOTS.get());
 			})
 
 					.build());

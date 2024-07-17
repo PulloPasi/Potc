@@ -1,0 +1,86 @@
+{
+  "_fv": 60,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "ss_head",
+    "enableBody": true,
+    "textureBody": "ss_body",
+    "enableLeggings": true,
+    "textureLeggings": "ss_leggings",
+    "enableBoots": true,
+    "textureBoots": "ss_boots",
+    "creativeTab": {
+      "value": "CUSTOM:Potc"
+    },
+    "armorTextureFile": "ss",
+    "helmetName": "Joshamee Gibbs Hair",
+    "bodyName": "Joshamee Gibbs Chestplate",
+    "leggingsName": "Joshamee Gibbs Leggings",
+    "bootsName": "Joshamee Gibbs Boots",
+    "helmetSpecialInformation": {
+      "fixedValue": []
+    },
+    "bodySpecialInformation": {
+      "fixedValue": []
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": []
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": []
+    },
+    "helmetModelName": "Modelgibbs",
+    "helmetModelPart": "Head",
+    "helmetModelTexture": "gibbs.png",
+    "bodyModelName": "Modelgibbs",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "LeftArm",
+    "armsModelPartR": "RightArm",
+    "bodyModelTexture": "gibbs.png",
+    "leggingsModelName": "Modelgibbs",
+    "leggingsModelPartL": "LeftLeg",
+    "leggingsModelPartR": "Rightboot",
+    "leggingsModelTexture": "gibbs.png",
+    "bootsModelName": "Modelgibbs",
+    "bootsModelPartL": "LeftBoot",
+    "bootsModelPartR": "Rightboot",
+    "bootsModelTexture": "gibbs.png",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 15,
+    "damageValueHelmet": 2,
+    "damageValueBody": 6,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 2,
+    "enchantability": 9,
+    "toughness": 0.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": []
+  }
+}

@@ -22,6 +22,7 @@ import net.mcreator.cannon.item.MermaidtearItem;
 import net.mcreator.cannon.item.LeStickOfFireItem;
 import net.mcreator.cannon.item.KolmikulmaHatItem;
 import net.mcreator.cannon.item.KeyItem;
+import net.mcreator.cannon.item.JoshameeGibbsItem;
 import net.mcreator.cannon.item.JackSparrowItem;
 import net.mcreator.cannon.item.HeartOfDavidJonesItem;
 import net.mcreator.cannon.item.HalfEatenBananItem;
@@ -113,6 +114,10 @@ public class CannonModItems {
 	public static final RegistryObject<Item> ANGELICA_TEACH_CHESTPLATE = REGISTRY.register("angelica_teach_chestplate", () -> new AngelicaTeachItem.Chestplate());
 	public static final RegistryObject<Item> ANGELICA_TEACH_LEGGINGS = REGISTRY.register("angelica_teach_leggings", () -> new AngelicaTeachItem.Leggings());
 	public static final RegistryObject<Item> ANGELICA_TEACH_BOOTS = REGISTRY.register("angelica_teach_boots", () -> new AngelicaTeachItem.Boots());
+	public static final RegistryObject<Item> JOSHAMEE_GIBBS_HELMET = REGISTRY.register("joshamee_gibbs_helmet", () -> new JoshameeGibbsItem.Helmet());
+	public static final RegistryObject<Item> JOSHAMEE_GIBBS_CHESTPLATE = REGISTRY.register("joshamee_gibbs_chestplate", () -> new JoshameeGibbsItem.Chestplate());
+	public static final RegistryObject<Item> JOSHAMEE_GIBBS_LEGGINGS = REGISTRY.register("joshamee_gibbs_leggings", () -> new JoshameeGibbsItem.Leggings());
+	public static final RegistryObject<Item> JOSHAMEE_GIBBS_BOOTS = REGISTRY.register("joshamee_gibbs_boots", () -> new JoshameeGibbsItem.Boots());
 
 	// Start of user code block custom items
 	// End of user code block custom items
