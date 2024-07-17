@@ -3,13 +3,13 @@
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "ss_head",
+    "textureHelmet": "gibbshaior",
     "enableBody": true,
-    "textureBody": "ss_body",
+    "textureBody": "gibbsbset",
     "enableLeggings": true,
-    "textureLeggings": "ss_leggings",
+    "textureLeggings": "gibbspant",
     "enableBoots": true,
-    "textureBoots": "ss_boots",
+    "textureBoots": "gibssshoe",
     "creativeTab": {
       "value": "CUSTOM:Potc"
     },
@@ -40,7 +40,7 @@
     "bodyModelTexture": "gibbs.png",
     "leggingsModelName": "Modelgibbs",
     "leggingsModelPartL": "LeftLeg",
-    "leggingsModelPartR": "Rightboot",
+    "leggingsModelPartR": "LeftLeg",
     "leggingsModelTexture": "gibbs.png",
     "bootsModelName": "Modelgibbs",
     "bootsModelPartL": "LeftBoot",
