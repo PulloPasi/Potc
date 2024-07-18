@@ -15,6 +15,8 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
 
 import net.mcreator.cannon.procedures.FlintlockRightclickedProcedure;
+import net.mcreator.cannon.procedures.FlintlockRangedItemShootsProjectileProcedure;
+import net.mcreator.cannon.procedures.FlintlockCanUseRangedItemProcedure;
 import net.mcreator.cannon.entity.BulletEntity;
 
 public class FlintlockItem extends Item {
@@ -35,10 +37,11 @@ public class FlintlockItem extends Item {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = InteractionResultHolder.fail(entity.getItemInHand(hand));
-		if (entity.getAbilities().instabuild || findAmmo(entity) != ItemStack.EMPTY) {
-			ar = InteractionResultHolder.success(entity.getItemInHand(hand));
-			entity.startUsingItem(hand);
-		}
+		if (FlintlockCanUseRangedItemProcedure.execute(entity, ar.getObject()))
+			if (entity.getAbilities().instabuild || findAmmo(entity) != ItemStack.EMPTY) {
+				ar = InteractionResultHolder.success(entity.getItemInHand(hand));
+				entity.startUsingItem(hand);
+			}
 		FlintlockRightclickedProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);
 		return ar;
 	}
@@ -65,6 +68,7 @@ public class FlintlockItem extends Item {
 							player.getInventory().removeItem(stack);
 					}
 				}
+				FlintlockRangedItemShootsProjectileProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);
 			}
 		}
 	}

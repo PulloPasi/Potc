@@ -239,11 +239,11 @@
       "registry_name": "davy_jones",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cannon/models/item/davy_jones_boots.json",
-          "src/main/resources/assets/cannon/models/item/davy_jones_leggings.json",
           "src/main/java/net/mcreator/cannon/item/DavyJonesItem.java",
           "src/main/resources/assets/cannon/models/item/davy_jones_helmet.json",
-          "src/main/resources/assets/cannon/models/item/davy_jones_chestplate.json"
+          "src/main/resources/assets/cannon/models/item/davy_jones_boots.json",
+          "src/main/resources/assets/cannon/models/item/davy_jones_chestplate.json",
+          "src/main/resources/assets/cannon/models/item/davy_jones_leggings.json"
         ]
       }
     },
@@ -1673,13 +1673,72 @@
       "registry_name": "davy_jonesanimated",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cannon/item/DavyJonesanimatedItem.java",
-          "src/main/java/net/mcreator/cannon/client/renderer/DavyJonesanimatedArmorRenderer.java",
           "src/main/resources/assets/cannon/models/item/davy_jonesanimated_helmet.json",
-          "src/main/resources/assets/cannon/models/item/davy_jonesanimated_boots.json",
-          "src/main/java/net/mcreator/cannon/item/model/DavyJonesanimatedModel.java",
           "src/main/resources/assets/cannon/models/item/davy_jonesanimated_chestplate.json",
-          "src/main/resources/assets/cannon/models/item/davy_jonesanimated_leggings.json"
+          "src/main/java/net/mcreator/cannon/item/model/DavyJonesanimatedModel.java",
+          "src/main/java/net/mcreator/cannon/client/renderer/DavyJonesanimatedArmorRenderer.java",
+          "src/main/resources/assets/cannon/models/item/davy_jonesanimated_leggings.json",
+          "src/main/java/net/mcreator/cannon/item/DavyJonesanimatedItem.java",
+          "src/main/resources/assets/cannon/models/item/davy_jonesanimated_boots.json"
+        ]
+      }
+    },
+    {
+      "name": "FlintlockCanUseRangedItem",
+      "type": "procedure",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_can_use_ranged_item",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/cannon/procedures/FlintlockCanUseRangedItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FlintlockRangedItemShootsProjectile",
+      "type": "procedure",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlock_ranged_item_shoots_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/procedures/FlintlockRangedItemShootsProjectileProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       }
     }
