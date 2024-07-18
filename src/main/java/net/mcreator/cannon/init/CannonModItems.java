@@ -13,6 +13,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.ArmorItem;
 
 import net.mcreator.cannon.item.SwordosItem;
 import net.mcreator.cannon.item.SwordoftrtitonbombItem;
@@ -28,6 +29,7 @@ import net.mcreator.cannon.item.HeartOfDavidJonesItem;
 import net.mcreator.cannon.item.HalfEatenBananItem;
 import net.mcreator.cannon.item.FlintlockItem;
 import net.mcreator.cannon.item.DutchmanpeaceItem;
+import net.mcreator.cannon.item.DavyJonesanimatedItem;
 import net.mcreator.cannon.item.DavyJonesItem;
 import net.mcreator.cannon.item.ChalicewithtearItem;
 import net.mcreator.cannon.item.ChalicefullItem;
@@ -118,6 +120,10 @@ public class CannonModItems {
 	public static final RegistryObject<Item> JOSHAMEE_GIBBS_CHESTPLATE = REGISTRY.register("joshamee_gibbs_chestplate", () -> new JoshameeGibbsItem.Chestplate());
 	public static final RegistryObject<Item> JOSHAMEE_GIBBS_LEGGINGS = REGISTRY.register("joshamee_gibbs_leggings", () -> new JoshameeGibbsItem.Leggings());
 	public static final RegistryObject<Item> JOSHAMEE_GIBBS_BOOTS = REGISTRY.register("joshamee_gibbs_boots", () -> new JoshameeGibbsItem.Boots());
+	public static final RegistryObject<DavyJonesanimatedItem> DAVY_JONESANIMATED_HELMET = REGISTRY.register("davy_jonesanimated_helmet", () -> new DavyJonesanimatedItem(ArmorItem.Type.HELMET, new Item.Properties()));
+	public static final RegistryObject<DavyJonesanimatedItem> DAVY_JONESANIMATED_CHESTPLATE = REGISTRY.register("davy_jonesanimated_chestplate", () -> new DavyJonesanimatedItem(ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+	public static final RegistryObject<DavyJonesanimatedItem> DAVY_JONESANIMATED_LEGGINGS = REGISTRY.register("davy_jonesanimated_leggings", () -> new DavyJonesanimatedItem(ArmorItem.Type.LEGGINGS, new Item.Properties()));
+	public static final RegistryObject<DavyJonesanimatedItem> DAVY_JONESANIMATED_BOOTS = REGISTRY.register("davy_jonesanimated_boots", () -> new DavyJonesanimatedItem(ArmorItem.Type.BOOTS, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items
