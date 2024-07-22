@@ -124,6 +124,18 @@ public class CannonModItems {
 	public static final RegistryObject<DavyJonesanimatedItem> DAVY_JONESANIMATED_CHESTPLATE = REGISTRY.register("davy_jonesanimated_chestplate", () -> new DavyJonesanimatedItem(ArmorItem.Type.CHESTPLATE, new Item.Properties()));
 	public static final RegistryObject<DavyJonesanimatedItem> DAVY_JONESANIMATED_LEGGINGS = REGISTRY.register("davy_jonesanimated_leggings", () -> new DavyJonesanimatedItem(ArmorItem.Type.LEGGINGS, new Item.Properties()));
 	public static final RegistryObject<DavyJonesanimatedItem> DAVY_JONESANIMATED_BOOTS = REGISTRY.register("davy_jonesanimated_boots", () -> new DavyJonesanimatedItem(ArmorItem.Type.BOOTS, new Item.Properties()));
+	public static final RegistryObject<Item> PLANKS_OF_THE_QUEEN_ANNES_REVENGE = block(CannonModBlocks.PLANKS_OF_THE_QUEEN_ANNES_REVENGE);
+	public static final RegistryObject<Item> SLABS_OF_THE_QUEEN_ANNES_REVENGE = block(CannonModBlocks.SLABS_OF_THE_QUEEN_ANNES_REVENGE);
+	public static final RegistryObject<Item> STAIRS_OF_THE_QUEEN_ANNES_REVENGE = block(CannonModBlocks.STAIRS_OF_THE_QUEEN_ANNES_REVENGE);
+	public static final RegistryObject<Item> SIDE_FIGURE_HEAD_OF_THE_QUEEN_ANNES_REVENGE = block(CannonModBlocks.SIDE_FIGURE_HEAD_OF_THE_QUEEN_ANNES_REVENGE);
+	public static final RegistryObject<Item> CANNON_HATCH_OF_THE_QUEEN_ANNES_REVENGE = block(CannonModBlocks.CANNON_HATCH_OF_THE_QUEEN_ANNES_REVENGE);
+	public static final RegistryObject<Item> STYLISH_FENCE = block(CannonModBlocks.STYLISH_FENCE);
+	public static final RegistryObject<Item> STYLISH_WALL = block(CannonModBlocks.STYLISH_WALL);
+	public static final RegistryObject<Item> ROPE_BLOCK = block(CannonModBlocks.ROPE_BLOCK);
+	public static final RegistryObject<Item> RED_SAIL = block(CannonModBlocks.RED_SAIL);
+	public static final RegistryObject<Item> RED_SAIL_SLAB = block(CannonModBlocks.RED_SAIL_SLAB);
+	public static final RegistryObject<Item> RED_SAIL_STAIR = block(CannonModBlocks.RED_SAIL_STAIR);
+	public static final RegistryObject<Item> RED_SAIL_WALL = block(CannonModBlocks.RED_SAIL_WALL);
 
 	// Start of user code block custom items
 	// End of user code block custom items

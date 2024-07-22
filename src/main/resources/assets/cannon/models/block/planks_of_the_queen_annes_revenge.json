@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cannon:block/redplanks",
+    "up": "cannon:block/redplanks",
+    "north": "cannon:block/redplanks",
+    "east": "cannon:block/redplanks",
+    "south": "cannon:block/redplanks",
+    "west": "cannon:block/redplanks",
+    "particle": "cannon:block/redplanks"
+  },
+  "render_type": "solid"
+}

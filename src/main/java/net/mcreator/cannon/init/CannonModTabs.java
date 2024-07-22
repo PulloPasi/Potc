@@ -94,6 +94,18 @@ public class CannonModTabs {
 				tabData.accept(CannonModItems.DAVY_JONESANIMATED_CHESTPLATE.get());
 				tabData.accept(CannonModItems.DAVY_JONESANIMATED_LEGGINGS.get());
 				tabData.accept(CannonModItems.DAVY_JONESANIMATED_BOOTS.get());
+				tabData.accept(CannonModBlocks.PLANKS_OF_THE_QUEEN_ANNES_REVENGE.get().asItem());
+				tabData.accept(CannonModBlocks.SLABS_OF_THE_QUEEN_ANNES_REVENGE.get().asItem());
+				tabData.accept(CannonModBlocks.STAIRS_OF_THE_QUEEN_ANNES_REVENGE.get().asItem());
+				tabData.accept(CannonModBlocks.SIDE_FIGURE_HEAD_OF_THE_QUEEN_ANNES_REVENGE.get().asItem());
+				tabData.accept(CannonModBlocks.CANNON_HATCH_OF_THE_QUEEN_ANNES_REVENGE.get().asItem());
+				tabData.accept(CannonModBlocks.STYLISH_FENCE.get().asItem());
+				tabData.accept(CannonModBlocks.STYLISH_WALL.get().asItem());
+				tabData.accept(CannonModBlocks.ROPE_BLOCK.get().asItem());
+				tabData.accept(CannonModBlocks.RED_SAIL.get().asItem());
+				tabData.accept(CannonModBlocks.RED_SAIL_SLAB.get().asItem());
+				tabData.accept(CannonModBlocks.RED_SAIL_STAIR.get().asItem());
+				tabData.accept(CannonModBlocks.RED_SAIL_WALL.get().asItem());
 			})
 
 					.build());

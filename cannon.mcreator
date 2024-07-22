@@ -1682,6 +1682,259 @@
           "src/main/resources/assets/cannon/models/item/davy_jonesanimated_leggings.json"
         ]
       }
+    },
+    {
+      "name": "PlanksOfTheQueenAnnesRevenge",
+      "type": "block",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "planks_of_the_queen_annes_revenge",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/blockstates/planks_of_the_queen_annes_revenge.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/planks_of_the_queen_annes_revenge.json",
+          "src/main/resources/assets/cannon/models/block/planks_of_the_queen_annes_revenge.json",
+          "src/main/resources/assets/cannon/models/item/planks_of_the_queen_annes_revenge.json",
+          "src/main/java/net/mcreator/cannon/block/PlanksOfTheQueenAnnesRevengeBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "SlabsOfTheQueenAnnesRevenge",
+      "type": "block",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slabs_of_the_queen_annes_revenge",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/blockstates/slabs_of_the_queen_annes_revenge.json",
+          "src/main/resources/assets/cannon/models/block/slabs_of_the_queen_annes_revenge.json",
+          "src/main/resources/assets/cannon/models/block/slabs_of_the_queen_annes_revenge_top.json",
+          "src/main/resources/assets/cannon/models/block/slabs_of_the_queen_annes_revenge_full.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/slabs_of_the_queen_annes_revenge.json",
+          "src/main/resources/assets/cannon/models/item/slabs_of_the_queen_annes_revenge.json",
+          "src/main/java/net/mcreator/cannon/block/SlabsOfTheQueenAnnesRevengeBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "StairsOfTheQueenAnnesRevenge",
+      "type": "block",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stairs_of_the_queen_annes_revenge",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/item/stairs_of_the_queen_annes_revenge.json",
+          "src/main/resources/assets/cannon/blockstates/stairs_of_the_queen_annes_revenge.json",
+          "src/main/resources/assets/cannon/models/block/stairs_of_the_queen_annes_revenge_outer.json",
+          "src/main/java/net/mcreator/cannon/block/StairsOfTheQueenAnnesRevengeBlock.java",
+          "src/main/resources/assets/cannon/models/block/stairs_of_the_queen_annes_revenge_inner.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/stairs_of_the_queen_annes_revenge.json",
+          "src/main/resources/assets/cannon/models/block/stairs_of_the_queen_annes_revenge.json"
+        ]
+      }
+    },
+    {
+      "name": "SideFigureHeadOfTheQueenAnnesRevenge",
+      "type": "block",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "side_figure_head_of_the_queen_annes_revenge",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/block/side_figure_head_of_the_queen_annes_revenge.json",
+          "src/main/resources/assets/cannon/models/item/side_figure_head_of_the_queen_annes_revenge.json",
+          "src/main/resources/assets/cannon/blockstates/side_figure_head_of_the_queen_annes_revenge.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/side_figure_head_of_the_queen_annes_revenge.json",
+          "src/main/java/net/mcreator/cannon/block/SideFigureHeadOfTheQueenAnnesRevengeBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "SideFigureHeadOfTheQueenAnnesRevengeOnTickUpdate",
+      "type": "procedure",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "side_figure_head_of_the_queen_annes_revenge_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/procedures/SideFigureHeadOfTheQueenAnnesRevengeOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CannonHatchOfTheQueenAnnesRevenge",
+      "type": "block",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cannon_hatch_of_the_queen_annes_revenge",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/block/cannon_hatch_of_the_queen_annes_revenge_top.json",
+          "src/main/resources/assets/cannon/models/item/cannon_hatch_of_the_queen_annes_revenge.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/cannon_hatch_of_the_queen_annes_revenge.json",
+          "src/main/resources/assets/cannon/models/block/cannon_hatch_of_the_queen_annes_revenge.json",
+          "src/main/java/net/mcreator/cannon/block/CannonHatchOfTheQueenAnnesRevengeBlock.java",
+          "src/main/resources/assets/cannon/models/block/cannon_hatch_of_the_queen_annes_revenge_open.json",
+          "src/main/resources/assets/cannon/blockstates/cannon_hatch_of_the_queen_annes_revenge.json"
+        ]
+      }
+    },
+    {
+      "name": "StylishFence",
+      "type": "block",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stylish_fence",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/block/stylish_fence_inventory.json",
+          "src/main/resources/assets/cannon/blockstates/stylish_fence.json",
+          "src/main/resources/assets/cannon/models/block/stylish_fence_post.json",
+          "src/main/resources/assets/cannon/models/item/stylish_fence.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/stylish_fence.json",
+          "src/main/java/net/mcreator/cannon/block/StylishFenceBlock.java",
+          "src/main/resources/assets/cannon/models/block/stylish_fence.json"
+        ]
+      }
+    },
+    {
+      "name": "StylishWall",
+      "type": "block",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stylish_wall",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/block/stylish_wall_inventory.json",
+          "src/main/java/net/mcreator/cannon/block/StylishWallBlock.java",
+          "src/main/resources/assets/cannon/models/item/stylish_wall.json",
+          "src/main/resources/assets/cannon/models/block/stylish_wall_post.json",
+          "src/main/resources/assets/cannon/blockstates/stylish_wall.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/stylish_wall.json",
+          "src/main/resources/assets/cannon/models/block/stylish_wall.json",
+          "src/main/resources/assets/cannon/models/block/stylish_wall_side_tall.json"
+        ]
+      }
+    },
+    {
+      "name": "RopeBlock",
+      "type": "block",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rope_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/block/rope_block.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/rope_block.json",
+          "src/main/java/net/mcreator/cannon/block/RopeBlockBlock.java",
+          "src/main/resources/assets/cannon/models/item/rope_block.json",
+          "src/main/resources/assets/cannon/blockstates/rope_block.json"
+        ]
+      }
+    },
+    {
+      "name": "RedSail",
+      "type": "block",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_sail",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/block/RedSailBlock.java",
+          "src/main/resources/assets/cannon/models/item/red_sail.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/red_sail.json",
+          "src/main/resources/assets/cannon/blockstates/red_sail.json",
+          "src/main/resources/assets/cannon/models/block/red_sail.json"
+        ]
+      }
+    },
+    {
+      "name": "RedSailSlab",
+      "type": "block",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_sail_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/block/red_sail_slab_full.json",
+          "src/main/resources/assets/cannon/models/block/red_sail_slab.json",
+          "src/main/java/net/mcreator/cannon/block/RedSailSlabBlock.java",
+          "src/main/resources/assets/cannon/models/block/red_sail_slab_top.json",
+          "src/main/resources/assets/cannon/models/item/red_sail_slab.json",
+          "src/main/resources/assets/cannon/blockstates/red_sail_slab.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/red_sail_slab.json"
+        ]
+      }
+    },
+    {
+      "name": "RedSailStair",
+      "type": "block",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_sail_stair",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/item/red_sail_stair.json",
+          "src/main/resources/assets/cannon/models/block/red_sail_stair.json",
+          "src/main/resources/assets/cannon/models/block/red_sail_stair_outer.json",
+          "src/main/resources/assets/cannon/blockstates/red_sail_stair.json",
+          "src/main/java/net/mcreator/cannon/block/RedSailStairBlock.java",
+          "src/main/resources/assets/cannon/models/block/red_sail_stair_inner.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/red_sail_stair.json"
+        ]
+      }
+    },
+    {
+      "name": "RedSailWall",
+      "type": "block",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_sail_wall",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/blockstates/red_sail_wall.json",
+          "src/main/resources/assets/cannon/models/item/red_sail_wall.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/red_sail_wall.json",
+          "src/main/resources/assets/cannon/models/block/red_sail_wall.json",
+          "src/main/resources/assets/cannon/models/block/red_sail_wall_side_tall.json",
+          "src/main/java/net/mcreator/cannon/block/RedSailWallBlock.java",
+          "src/main/resources/assets/cannon/models/block/red_sail_wall_post.json",
+          "src/main/resources/assets/cannon/models/block/red_sail_wall_inventory.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1753,10 +2006,21 @@
   ],
   "tag_elements": {
     "BLOCKS:minecraft:slabs": [
+      "~CUSTOM:RedSailSlab",
+      "~CUSTOM:SlabsOfTheQueenAnnesRevenge",
       "~CUSTOM:SlabsOfTheFlyingDutchman",
       "~CUSTOM:BlackPlankSlab"
     ],
+    "BLOCKS:minecraft:fences": [
+      "~CUSTOM:StylishFence"
+    ],
+    "BLOCKS:minecraft:walls": [
+      "~CUSTOM:RedSailWall",
+      "~CUSTOM:StylishWall"
+    ],
     "BLOCKS:minecraft:stairs": [
+      "~CUSTOM:RedSailStair",
+      "~CUSTOM:StairsOfTheQueenAnnesRevenge",
       "~CUSTOM:StairsOfTheFlyingDutchman",
       "~CUSTOM:BlackPlankStairs"
     ]
@@ -1766,96 +2030,108 @@
       "subtitles.gunfire": "",
       "item.cannon.joshamee_gibbs_boots": "Joshamee Gibbs Boots",
       "item.cannon.banan": "Banan",
-      "block.cannon.black_plank_slab": "Black Plank Slab",
-      "block.cannon.black_plank_trap_door": "Black Plank Trap Door",
-      "item.cannon.bill_turner_boots": "Bill Turner Boots",
+      "block.cannon.planks_of_the_queen_annes_revenge": "Planks Of The Queen Anne\u0027s Revenge",
       "block.cannon.gunpowderbarrel": "Gunpowder Barrel",
+      "block.cannon.cannon_hatch_of_the_queen_annes_revenge": "Cannon Hatch Of The Queen Anne\u0027s Revenge",
       "entity.cannon.part_of_the_crew_strong": "Part Of The Crew Strong",
       "entity.cannon.part_of_the_crew": "Part Of The Crew",
       "block.cannon.sails_of_the_black_pearl_patch": "Sails Of The Black Pearl Patch",
-      "item_group.cannon.potc": "Potc",
       "block.cannon.cannon": "Cannon",
       "item.cannon.angelica_teach_boots": "Angelica Teach Boots",
+      "block.cannon.stylish_fence": "Stylish Fence",
       "item.cannon.mermaid_spawn_egg": "Mermaid Spawn Egg",
-      "item.cannon.joshamee_gibbs_leggings": "Joshamee Gibbs Leggings",
       "item.cannon.sword_of_triton": "Sword Of Triton",
-      "block.cannon.gloriouslantern": "Glorious Lantern",
       "item.cannon.black_beard_boots": "BlackBeard Boots",
-      "block.cannon.door_of_the_flying_dutchman": "Door Of The Flying Dutchman",
-      "item.cannon.black_beard_helmet": "BlackBeard Hat",
-      "item.cannon.davy_jonesanimated_leggings": "Davy Jonesanimated Leggings",
       "item.cannon.jack_sparrow_boots": "Jack Sparrow Boots",
-      "block.cannon.ferrymans_cannon": "Ferrymans Cannon",
-      "subtitles.cannonfire2": "Cannon Fires",
-      "item.cannon.part_of_the_crew_spawn_egg": "Part Of The Crew Spawn Egg",
-      "item.cannon.angelica_teach_leggings": "Angelica Teach Leggings",
       "item.cannon.bill_turner_leggings": "Bill Turner Leggings",
       "item.cannon.jack_sparrow_chestplate": "Jack Sparrow Chestplate",
-      "item.cannon.davy_jones_leggings": "Davy Jones Leggings",
-      "item.cannon.davy_jones_boots": "Davy Jones Boots",
       "item.cannon.heart_of_david_jones": "Heart Of David Jones",
       "item.cannon.joshamee_gibbs_chestplate": "Joshamee Gibbs Chestplate",
       "item.cannon.le_stick_of_fire": "Le Stick Of Fire",
       "block.cannon.fountain_of_youth_drip": "Fountain Of Youth Drip",
-      "item.cannon.davy_jones_chestplate": "Davy Jones Chestplate",
       "item.cannon.davy_jonesanimated_chestplate": "Davy Jonesanimated Chestplate",
       "item.cannon.davy_jones_helmet": "Davy Jones Helmet",
       "block.cannon.dead_mans_chest": "Dead Mans Chest",
       "item.cannon.joshamee_gibbs_helmet": "Joshamee Gibbs Hair",
-      "block.cannon.rope": "Rope",
-      "item.cannon.kolmikulma_hat_helmet": "Kolmikulma Hat ",
-      "entity.cannon.briish": "British Gunman",
-      "block.cannon.black_planks": "Black Planks",
-      "item.cannon.bill_turner_helmet": "Bill Turner Helmet",
+      "block.cannon.red_sail": "Red Sail",
       "block.cannon.face_of_the_ferryman": "Face Of The Ferryman",
       "item.cannon.pipo_helmet": "Pipo ",
       "block.cannon.ferrymans_chasing_cannon": "Ferrymans Chasing Cannon",
       "block.cannon.dutchmansails": "Sails Of The Flying Dutchman",
       "item.cannon.karb_spawn_egg": "Karb Spawn Egg",
-      "item.cannon.black_beard_leggings": "BlackBeard Pants",
       "item.cannon.black_beard_chestplate": "BlackBeard Jacket",
-      "item.cannon.chalice": "Chalice Of Cartagena",
-      "subtitles.cannon-fire": "Cannon fires",
       "subtitles.swowrddraw": "",
       "block.cannon.planks_of_the_flying_dutchman": "Planks Of The Flying Dutchman",
       "item.cannon.jack_sparrow_helmet": "Jack Sparrow Helmet",
       "subtitles.cannonfire": "Cannon Fires",
+      "block.cannon.slabs_of_the_queen_annes_revenge": "Slabs Of The Queen Anne\u0027s Revenge",
       "item.cannon.flintlock": "Flintlock",
-      "item.cannon.part_of_the_crew_strong_spawn_egg": "Part Of The Crew Strong Spawn Egg",
-      "item.cannon.dutchmanpeace": "Talisman Of The Flying Dutchman",
-      "item.cannon.key": "Key",
-      "item.cannon.chalicefull": "Chalice Of Cartagena (Filled)",
-      "block.cannon.black_plank_stairs": "Black Plank Stairs",
       "item.cannon.chalicewithtear": "Chalice Of Cartagena (Full With Tear)",
-      "item.cannon.jack_sparrow_leggings": "Jack Sparrow Leggings",
-      "entity.cannon.mermaid": "Mermaid",
-      "item.cannon.cannonballos": "Cannonballos",
       "block.cannon.barnacles": "Barnacles",
-      "block.cannon.slabs_of_the_flying_dutchman": "Slabs Of The Flying Dutchman",
       "entity.cannon.karb": "Karb",
       "item.cannon.davy_jonesanimated_boots": "Davy Jonesanimated Boots",
-      "block.cannon.stairs_of_the_flying_dutchman": "Stairs Of The Flying Dutchman",
-      "subtitles.cannon-load": "cannon load",
       "subtitles.cannon-fired": "cannon fired",
-      "block.cannon.ladder_that_has_been_stolen_from_mikaels_backyard": "Ladder That Has Been Stolen From Mikaels Backyard",
-      "block.cannon.pulley": "Pulley",
-      "item.cannon.angelica_teach_chestplate": "Angelica Teach Vest",
-      "item.cannon.swordoftrtitonbomb": "bomb",
-      "item.cannon.davy_jonesanimated_helmet": "Davy Jonesanimated Helmet",
+      "block.cannon.stylish_wall": "Stylish Wall",
+      "block.cannon.red_sail_slab": "Red Sail Slab",
       "subtitles.cannonball-woosh": "cannonball flyby",
-      "block.cannon.sails_of_the_black_pearl": "Sails Of The Black Pearl",
       "item.cannon.angelica_teach_helmet": "Angelica Teach Hat",
-      "block.cannon.dutchmansails_2": "Sails Of The Flying Dutchman Shaded",
       "item.cannon.bill_turner_chestplate": "Bill Turner Chestplate",
-      "block.cannon.dutchmansails_3": "Sails Of The Flying Dutchman Bottom",
       "item.cannon.half_eaten_banan": "Half Eaten Banan",
       "subtitles.cannonball-explosion": "cannonball hit",
       "item.cannon.bulletitem": "Bulletitem",
       "subtitles.swordfire": "",
       "item.cannon.mermaidtear": "Mermaidtear",
+      "item.cannon.briish_spawn_egg": "British Gunman Spawn Egg",
+      "block.cannon.rope_block": "Rope Block",
+      "block.cannon.black_plank_slab": "Black Plank Slab",
+      "block.cannon.black_plank_trap_door": "Black Plank Trap Door",
+      "item.cannon.bill_turner_boots": "Bill Turner Boots",
+      "block.cannon.stairs_of_the_queen_annes_revenge": "Stairs Of The Queen Anne\u0027s Revenge",
+      "item_group.cannon.potc": "Potc",
+      "item.cannon.joshamee_gibbs_leggings": "Joshamee Gibbs Leggings",
+      "block.cannon.side_figure_head_of_the_queen_annes_revenge": "Side Figure Head Of The Queen Anne\u0027s Revenge",
+      "block.cannon.gloriouslantern": "Glorious Lantern",
+      "block.cannon.door_of_the_flying_dutchman": "Door Of The Flying Dutchman",
+      "item.cannon.black_beard_helmet": "BlackBeard Hat",
+      "item.cannon.davy_jonesanimated_leggings": "Davy Jonesanimated Leggings",
+      "block.cannon.ferrymans_cannon": "Ferrymans Cannon",
+      "subtitles.cannonfire2": "Cannon Fires",
+      "item.cannon.part_of_the_crew_spawn_egg": "Part Of The Crew Spawn Egg",
+      "item.cannon.angelica_teach_leggings": "Angelica Teach Leggings",
+      "item.cannon.davy_jones_leggings": "Davy Jones Leggings",
+      "item.cannon.davy_jones_boots": "Davy Jones Boots",
+      "item.cannon.davy_jones_chestplate": "Davy Jones Chestplate",
+      "block.cannon.red_sail_stair": "Red Sail Stair",
+      "block.cannon.rope": "Rope",
+      "item.cannon.kolmikulma_hat_helmet": "Kolmikulma Hat ",
+      "entity.cannon.briish": "British Gunman",
+      "block.cannon.black_planks": "Black Planks",
+      "item.cannon.bill_turner_helmet": "Bill Turner Helmet",
+      "item.cannon.black_beard_leggings": "BlackBeard Pants",
+      "item.cannon.chalice": "Chalice Of Cartagena",
+      "subtitles.cannon-fire": "Cannon fires",
+      "item.cannon.part_of_the_crew_strong_spawn_egg": "Part Of The Crew Strong Spawn Egg",
+      "item.cannon.dutchmanpeace": "Talisman Of The Flying Dutchman",
+      "item.cannon.key": "Key",
+      "item.cannon.chalicefull": "Chalice Of Cartagena (Filled)",
+      "block.cannon.black_plank_stairs": "Black Plank Stairs",
+      "item.cannon.jack_sparrow_leggings": "Jack Sparrow Leggings",
+      "entity.cannon.mermaid": "Mermaid",
+      "item.cannon.cannonballos": "Cannonballos",
+      "block.cannon.slabs_of_the_flying_dutchman": "Slabs Of The Flying Dutchman",
+      "block.cannon.stairs_of_the_flying_dutchman": "Stairs Of The Flying Dutchman",
+      "subtitles.cannon-load": "cannon load",
+      "block.cannon.ladder_that_has_been_stolen_from_mikaels_backyard": "Ladder That Has Been Stolen From Mikaels Backyard",
+      "block.cannon.pulley": "Pulley",
+      "item.cannon.angelica_teach_chestplate": "Angelica Teach Vest",
+      "item.cannon.swordoftrtitonbomb": "bomb",
+      "item.cannon.davy_jonesanimated_helmet": "Davy Jonesanimated Helmet",
+      "block.cannon.sails_of_the_black_pearl": "Sails Of The Black Pearl",
+      "block.cannon.dutchmansails_2": "Sails Of The Flying Dutchman Shaded",
+      "block.cannon.dutchmansails_3": "Sails Of The Flying Dutchman Bottom",
       "item.cannon.swordos": "Swordos",
-      "item.cannon.bandana_helmet": "Bandana ",
-      "item.cannon.briish_spawn_egg": "British Gunman Spawn Egg"
+      "block.cannon.red_sail_wall": "Red Sail Wall",
+      "item.cannon.bandana_helmet": "Bandana "
     }
   },
   "foldersRoot": {

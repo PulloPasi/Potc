@@ -14,12 +14,23 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.cannon.block.StylishWallBlock;
+import net.mcreator.cannon.block.StylishFenceBlock;
+import net.mcreator.cannon.block.StairsOfTheQueenAnnesRevengeBlock;
 import net.mcreator.cannon.block.StairsOfTheFlyingDutchmanBlock;
+import net.mcreator.cannon.block.SlabsOfTheQueenAnnesRevengeBlock;
 import net.mcreator.cannon.block.SlabsOfTheFlyingDutchmanBlock;
+import net.mcreator.cannon.block.SideFigureHeadOfTheQueenAnnesRevengeBlock;
 import net.mcreator.cannon.block.SailsOfTheBlackPearlPatchBlock;
 import net.mcreator.cannon.block.SailsOfTheBlackPearlBlock;
+import net.mcreator.cannon.block.RopeBlockBlock;
 import net.mcreator.cannon.block.RopeBlock;
+import net.mcreator.cannon.block.RedSailWallBlock;
+import net.mcreator.cannon.block.RedSailStairBlock;
+import net.mcreator.cannon.block.RedSailSlabBlock;
+import net.mcreator.cannon.block.RedSailBlock;
 import net.mcreator.cannon.block.PulleyBlock;
+import net.mcreator.cannon.block.PlanksOfTheQueenAnnesRevengeBlock;
 import net.mcreator.cannon.block.PlanksOfTheFlyingDutchmanBlock;
 import net.mcreator.cannon.block.LadderThatHasBeenStolenFromMikaelsBackyardBlock;
 import net.mcreator.cannon.block.GunpowderbarrelBlock;
@@ -33,6 +44,7 @@ import net.mcreator.cannon.block.Dutchmansails3Block;
 import net.mcreator.cannon.block.Dutchmansails2Block;
 import net.mcreator.cannon.block.DoorOfTheFlyingDutchmanBlock;
 import net.mcreator.cannon.block.DeadMansChestBlock;
+import net.mcreator.cannon.block.CannonHatchOfTheQueenAnnesRevengeBlock;
 import net.mcreator.cannon.block.CannonBlock;
 import net.mcreator.cannon.block.BlackPlanksBlock;
 import net.mcreator.cannon.block.BlackPlankTrapDoorBlock;
@@ -68,6 +80,18 @@ public class CannonModBlocks {
 	public static final RegistryObject<Block> GUNPOWDERBARREL = REGISTRY.register("gunpowderbarrel", () -> new GunpowderbarrelBlock());
 	public static final RegistryObject<Block> DEAD_MANS_CHEST = REGISTRY.register("dead_mans_chest", () -> new DeadMansChestBlock());
 	public static final RegistryObject<Block> FOUNTAIN_OF_YOUTH_DRIP = REGISTRY.register("fountain_of_youth_drip", () -> new FountainOfYouthDripBlock());
+	public static final RegistryObject<Block> PLANKS_OF_THE_QUEEN_ANNES_REVENGE = REGISTRY.register("planks_of_the_queen_annes_revenge", () -> new PlanksOfTheQueenAnnesRevengeBlock());
+	public static final RegistryObject<Block> SLABS_OF_THE_QUEEN_ANNES_REVENGE = REGISTRY.register("slabs_of_the_queen_annes_revenge", () -> new SlabsOfTheQueenAnnesRevengeBlock());
+	public static final RegistryObject<Block> STAIRS_OF_THE_QUEEN_ANNES_REVENGE = REGISTRY.register("stairs_of_the_queen_annes_revenge", () -> new StairsOfTheQueenAnnesRevengeBlock());
+	public static final RegistryObject<Block> SIDE_FIGURE_HEAD_OF_THE_QUEEN_ANNES_REVENGE = REGISTRY.register("side_figure_head_of_the_queen_annes_revenge", () -> new SideFigureHeadOfTheQueenAnnesRevengeBlock());
+	public static final RegistryObject<Block> CANNON_HATCH_OF_THE_QUEEN_ANNES_REVENGE = REGISTRY.register("cannon_hatch_of_the_queen_annes_revenge", () -> new CannonHatchOfTheQueenAnnesRevengeBlock());
+	public static final RegistryObject<Block> STYLISH_FENCE = REGISTRY.register("stylish_fence", () -> new StylishFenceBlock());
+	public static final RegistryObject<Block> STYLISH_WALL = REGISTRY.register("stylish_wall", () -> new StylishWallBlock());
+	public static final RegistryObject<Block> ROPE_BLOCK = REGISTRY.register("rope_block", () -> new RopeBlockBlock());
+	public static final RegistryObject<Block> RED_SAIL = REGISTRY.register("red_sail", () -> new RedSailBlock());
+	public static final RegistryObject<Block> RED_SAIL_SLAB = REGISTRY.register("red_sail_slab", () -> new RedSailSlabBlock());
+	public static final RegistryObject<Block> RED_SAIL_STAIR = REGISTRY.register("red_sail_stair", () -> new RedSailStairBlock());
+	public static final RegistryObject<Block> RED_SAIL_WALL = REGISTRY.register("red_sail_wall", () -> new RedSailWallBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

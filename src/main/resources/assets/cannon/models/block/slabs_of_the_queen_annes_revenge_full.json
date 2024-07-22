@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "cannon:block/redplanks",
+    "top": "cannon:block/redplanks",
+    "side": "cannon:block/redplanks"
+  },
+  "render_type": "solid"
+}

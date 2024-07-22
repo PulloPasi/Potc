@@ -1,0 +1,8 @@
+{
+  "parent": "block/fence_inventory",
+  "textures": {
+    "texture": "cannon:block/balckosplankos",
+    "particle": "cannon:block/balckosplankos"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cannon:block/redcloth",
+    "up": "cannon:block/redcloth",
+    "north": "cannon:block/redcloth",
+    "east": "cannon:block/redcloth",
+    "south": "cannon:block/redcloth",
+    "west": "cannon:block/redcloth",
+    "particle": "cannon:block/redcloth"
+  },
+  "render_type": "solid"
+}

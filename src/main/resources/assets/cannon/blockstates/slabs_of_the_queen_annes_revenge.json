@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cannon:block/slabs_of_the_queen_annes_revenge"
+    },
+    "type=top": {
+      "model": "cannon:block/slabs_of_the_queen_annes_revenge_top"
+    },
+    "type=double": {
+      "model": "cannon:block/slabs_of_the_queen_annes_revenge_full"
+    }
+  }
+}

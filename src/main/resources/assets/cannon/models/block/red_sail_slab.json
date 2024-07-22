@@ -1,0 +1,9 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "cannon:block/redcloth",
+    "top": "cannon:block/redcloth",
+    "side": "cannon:block/redcloth"
+  },
+  "render_type": "solid"
+}
