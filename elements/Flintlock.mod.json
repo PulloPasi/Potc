@@ -43,6 +43,12 @@
     "projectile": {
       "value": "CUSTOM:Bullet"
     },
+    "onRangedItemUsed": {
+      "name": "FlintlockRangedItemShootsProjectile"
+    },
+    "rangedUseCondition": {
+      "name": "FlintlockCanUseRangedItem"
+    },
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,
