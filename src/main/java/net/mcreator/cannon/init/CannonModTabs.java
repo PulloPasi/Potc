@@ -103,6 +103,7 @@ public class CannonModTabs {
 				tabData.accept(CannonModBlocks.RED_SAIL_STAIR.get().asItem());
 				tabData.accept(CannonModBlocks.RED_SAIL_WALL.get().asItem());
 				tabData.accept(CannonModBlocks.LIGHT_RED_SAIL.get().asItem());
+				tabData.accept(CannonModItems.QUARTERMASTER_SPAWN_EGG.get());
 			})
 
 					.build());

@@ -131,6 +131,7 @@ public class CannonModItems {
 	public static final RegistryObject<Item> RED_SAIL_STAIR = block(CannonModBlocks.RED_SAIL_STAIR);
 	public static final RegistryObject<Item> RED_SAIL_WALL = block(CannonModBlocks.RED_SAIL_WALL);
 	public static final RegistryObject<Item> LIGHT_RED_SAIL = block(CannonModBlocks.LIGHT_RED_SAIL);
+	public static final RegistryObject<Item> QUARTERMASTER_SPAWN_EGG = REGISTRY.register("quartermaster_spawn_egg", () -> new ForgeSpawnEggItem(CannonModEntities.QUARTERMASTER, -4025995, -12500928, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

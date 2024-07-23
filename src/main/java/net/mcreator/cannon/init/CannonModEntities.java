@@ -17,6 +17,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.cannon.entity.SwordoftritonprojectileEntity;
+import net.mcreator.cannon.entity.QuartermasterEntity;
 import net.mcreator.cannon.entity.PartOfTheCrewStrongEntity;
 import net.mcreator.cannon.entity.PartOfTheCrewEntity;
 import net.mcreator.cannon.entity.MermaidEntity;
@@ -55,6 +56,10 @@ public class CannonModEntities {
 			EntityType.Builder.<MermaidEntity>of(MermaidEntity::new, MobCategory.WATER_AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MermaidEntity::new)
 
 					.sized(0.6f, 2.5f));
+	public static final RegistryObject<EntityType<QuartermasterEntity>> QUARTERMASTER = register("quartermaster",
+			EntityType.Builder.<QuartermasterEntity>of(QuartermasterEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(QuartermasterEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -68,6 +73,7 @@ public class CannonModEntities {
 			PartOfTheCrewStrongEntity.init();
 			BriishEntity.init();
 			MermaidEntity.init();
+			QuartermasterEntity.init();
 		});
 	}
 
@@ -78,5 +84,6 @@ public class CannonModEntities {
 		event.put(PART_OF_THE_CREW_STRONG.get(), PartOfTheCrewStrongEntity.createAttributes().build());
 		event.put(BRIISH.get(), BriishEntity.createAttributes().build());
 		event.put(MERMAID.get(), MermaidEntity.createAttributes().build());
+		event.put(QUARTERMASTER.get(), QuartermasterEntity.createAttributes().build());
 	}
 }

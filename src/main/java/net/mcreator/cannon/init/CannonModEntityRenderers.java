@@ -11,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
+import net.mcreator.cannon.client.renderer.QuartermasterRenderer;
 import net.mcreator.cannon.client.renderer.PartOfTheCrewStrongRenderer;
 import net.mcreator.cannon.client.renderer.PartOfTheCrewRenderer;
 import net.mcreator.cannon.client.renderer.MermaidRenderer;
@@ -29,5 +30,6 @@ public class CannonModEntityRenderers {
 		event.registerEntityRenderer(CannonModEntities.BRIISH.get(), BriishRenderer::new);
 		event.registerEntityRenderer(CannonModEntities.SWORDOFTRITONPROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(CannonModEntities.MERMAID.get(), MermaidRenderer::new);
+		event.registerEntityRenderer(CannonModEntities.QUARTERMASTER.get(), QuartermasterRenderer::new);
 	}
 }

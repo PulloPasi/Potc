@@ -15,8 +15,8 @@
   "item.cannon.sword_of_triton": "Sword Of Triton",
   "item.cannon.black_beard_boots": "BlackBeard Boots",
   "item.cannon.jack_sparrow_boots": "Jack Sparrow Boots",
-  "item.cannon.bill_turner_leggings": "Bill Turner Leggings",
   "item.cannon.jack_sparrow_chestplate": "Jack Sparrow Chestplate",
+  "item.cannon.bill_turner_leggings": "Bill Turner Leggings",
   "item.cannon.heart_of_david_jones": "Heart Of David Jones",
   "item.cannon.joshamee_gibbs_chestplate": "Joshamee Gibbs Chestplate",
   "item.cannon.le_stick_of_fire": "Le Stick Of Fire",
@@ -58,6 +58,7 @@
   "item.cannon.bill_turner_boots": "Bill Turner Boots",
   "block.cannon.stairs_of_the_queen_annes_revenge": "Stairs Of The Queen Anne\u0027s Revenge",
   "item_group.cannon.potc": "Potc",
+  "entity.cannon.quartermaster": "Quartermaster",
   "item.cannon.joshamee_gibbs_leggings": "Joshamee Gibbs Leggings",
   "block.cannon.side_figure_head_of_the_queen_annes_revenge": "Side Figure Head Of The Queen Anne\u0027s Revenge",
   "block.cannon.gloriouslantern": "Glorious Lantern",
@@ -100,5 +101,6 @@
   "block.cannon.dutchmansails_3": "Sails Of The Flying Dutchman Bottom",
   "item.cannon.swordos": "Swordos",
   "block.cannon.red_sail_wall": "Red Sail Wall",
-  "item.cannon.bandana_helmet": "Bandana "
+  "item.cannon.bandana_helmet": "Bandana ",
+  "item.cannon.quartermaster_spawn_egg": "Quartermaster Spawn Egg"
 }
