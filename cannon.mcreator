@@ -1665,25 +1665,6 @@
       }
     },
     {
-      "name": "DavyJonesanimated",
-      "type": "animatedarmor",
-      "sortid": 55,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "davy_jonesanimated",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/cannon/models/item/davy_jonesanimated_helmet.json",
-          "src/main/resources/assets/cannon/models/item/davy_jonesanimated_chestplate.json",
-          "src/main/java/net/mcreator/cannon/item/model/DavyJonesanimatedModel.java",
-          "src/main/java/net/mcreator/cannon/client/renderer/DavyJonesanimatedArmorRenderer.java",
-          "src/main/resources/assets/cannon/models/item/davy_jonesanimated_leggings.json",
-          "src/main/java/net/mcreator/cannon/item/DavyJonesanimatedItem.java",
-          "src/main/resources/assets/cannon/models/item/davy_jonesanimated_boots.json"
-        ]
-      }
-    },
-    {
       "name": "FlintlockCanUseRangedItem",
       "type": "procedure",
       "sortid": 90,
@@ -1994,6 +1975,23 @@
           "src/main/resources/assets/cannon/models/block/red_sail_wall_inventory.json"
         ]
       }
+    },
+    {
+      "name": "LightRedSail",
+      "type": "block",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_red_sail",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/blockstates/light_red_sail.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/light_red_sail.json",
+          "src/main/java/net/mcreator/cannon/block/LightRedSailBlock.java",
+          "src/main/resources/assets/cannon/models/item/light_red_sail.json",
+          "src/main/resources/assets/cannon/models/block/light_red_sail.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -2108,7 +2106,6 @@
       "item.cannon.joshamee_gibbs_chestplate": "Joshamee Gibbs Chestplate",
       "item.cannon.le_stick_of_fire": "Le Stick Of Fire",
       "block.cannon.fountain_of_youth_drip": "Fountain Of Youth Drip",
-      "item.cannon.davy_jonesanimated_chestplate": "Davy Jonesanimated Chestplate",
       "item.cannon.davy_jones_helmet": "Davy Jones Helmet",
       "block.cannon.dead_mans_chest": "Dead Mans Chest",
       "item.cannon.joshamee_gibbs_helmet": "Joshamee Gibbs Hair",
@@ -2128,7 +2125,6 @@
       "item.cannon.chalicewithtear": "Chalice Of Cartagena (Full With Tear)",
       "block.cannon.barnacles": "Barnacles",
       "entity.cannon.karb": "Karb",
-      "item.cannon.davy_jonesanimated_boots": "Davy Jonesanimated Boots",
       "subtitles.cannon-fired": "cannon fired",
       "block.cannon.stylish_wall": "Stylish Wall",
       "block.cannon.red_sail_slab": "Red Sail Slab",
@@ -2152,7 +2148,6 @@
       "block.cannon.gloriouslantern": "Glorious Lantern",
       "block.cannon.door_of_the_flying_dutchman": "Door Of The Flying Dutchman",
       "item.cannon.black_beard_helmet": "BlackBeard Hat",
-      "item.cannon.davy_jonesanimated_leggings": "Davy Jonesanimated Leggings",
       "block.cannon.ferrymans_cannon": "Ferrymans Cannon",
       "subtitles.cannonfire2": "Cannon Fires",
       "item.cannon.part_of_the_crew_spawn_egg": "Part Of The Crew Spawn Egg",
@@ -2184,7 +2179,7 @@
       "block.cannon.pulley": "Pulley",
       "item.cannon.angelica_teach_chestplate": "Angelica Teach Vest",
       "item.cannon.swordoftrtitonbomb": "bomb",
-      "item.cannon.davy_jonesanimated_helmet": "Davy Jonesanimated Helmet",
+      "block.cannon.light_red_sail": "Light Red Sail",
       "block.cannon.sails_of_the_black_pearl": "Sails Of The Black Pearl",
       "block.cannon.dutchmansails_2": "Sails Of The Flying Dutchman Shaded",
       "block.cannon.dutchmansails_3": "Sails Of The Flying Dutchman Bottom",

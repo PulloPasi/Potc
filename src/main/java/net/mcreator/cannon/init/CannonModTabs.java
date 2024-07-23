@@ -90,10 +90,6 @@ public class CannonModTabs {
 				tabData.accept(CannonModItems.JOSHAMEE_GIBBS_CHESTPLATE.get());
 				tabData.accept(CannonModItems.JOSHAMEE_GIBBS_LEGGINGS.get());
 				tabData.accept(CannonModItems.JOSHAMEE_GIBBS_BOOTS.get());
-				tabData.accept(CannonModItems.DAVY_JONESANIMATED_HELMET.get());
-				tabData.accept(CannonModItems.DAVY_JONESANIMATED_CHESTPLATE.get());
-				tabData.accept(CannonModItems.DAVY_JONESANIMATED_LEGGINGS.get());
-				tabData.accept(CannonModItems.DAVY_JONESANIMATED_BOOTS.get());
 				tabData.accept(CannonModBlocks.PLANKS_OF_THE_QUEEN_ANNES_REVENGE.get().asItem());
 				tabData.accept(CannonModBlocks.SLABS_OF_THE_QUEEN_ANNES_REVENGE.get().asItem());
 				tabData.accept(CannonModBlocks.STAIRS_OF_THE_QUEEN_ANNES_REVENGE.get().asItem());
@@ -106,6 +102,7 @@ public class CannonModTabs {
 				tabData.accept(CannonModBlocks.RED_SAIL_SLAB.get().asItem());
 				tabData.accept(CannonModBlocks.RED_SAIL_STAIR.get().asItem());
 				tabData.accept(CannonModBlocks.RED_SAIL_WALL.get().asItem());
+				tabData.accept(CannonModBlocks.LIGHT_RED_SAIL.get().asItem());
 			})
 
 					.build());

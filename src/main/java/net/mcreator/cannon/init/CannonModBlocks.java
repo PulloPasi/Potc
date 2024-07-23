@@ -32,6 +32,7 @@ import net.mcreator.cannon.block.RedSailBlock;
 import net.mcreator.cannon.block.PulleyBlock;
 import net.mcreator.cannon.block.PlanksOfTheQueenAnnesRevengeBlock;
 import net.mcreator.cannon.block.PlanksOfTheFlyingDutchmanBlock;
+import net.mcreator.cannon.block.LightRedSailBlock;
 import net.mcreator.cannon.block.LadderThatHasBeenStolenFromMikaelsBackyardBlock;
 import net.mcreator.cannon.block.GunpowderbarrelBlock;
 import net.mcreator.cannon.block.GloriouslanternBlock;
@@ -92,6 +93,7 @@ public class CannonModBlocks {
 	public static final RegistryObject<Block> RED_SAIL_SLAB = REGISTRY.register("red_sail_slab", () -> new RedSailSlabBlock());
 	public static final RegistryObject<Block> RED_SAIL_STAIR = REGISTRY.register("red_sail_stair", () -> new RedSailStairBlock());
 	public static final RegistryObject<Block> RED_SAIL_WALL = REGISTRY.register("red_sail_wall", () -> new RedSailWallBlock());
+	public static final RegistryObject<Block> LIGHT_RED_SAIL = REGISTRY.register("light_red_sail", () -> new LightRedSailBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
