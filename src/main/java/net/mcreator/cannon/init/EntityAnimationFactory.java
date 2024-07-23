@@ -10,6 +10,7 @@ import net.mcreator.cannon.entity.PartOfTheCrewEntity;
 import net.mcreator.cannon.entity.MermaidEntity;
 import net.mcreator.cannon.entity.KarbEntity;
 import net.mcreator.cannon.entity.BriishEntity;
+import net.mcreator.cannon.entity.BlackBeardsCrewEntity;
 
 @Mod.EventBusSubscriber
 public class EntityAnimationFactory {
@@ -52,6 +53,13 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof QuartermasterEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof BlackBeardsCrewEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

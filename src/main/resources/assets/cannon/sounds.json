@@ -67,5 +67,13 @@
         "stream": false
       }
     ]
+  },
+  "cannonhit": {
+    "sounds": [
+      {
+        "name": "cannon:cannonhit",
+        "stream": false
+      }
+    ]
   }
 }

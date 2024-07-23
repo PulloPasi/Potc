@@ -14,6 +14,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.cannon.item.TalismanOfTheVoodooMisterItem;
+import net.mcreator.cannon.item.TalismanOfTheBlackPearlItem;
 import net.mcreator.cannon.item.SwordosItem;
 import net.mcreator.cannon.item.SwordoftrtitonbombItem;
 import net.mcreator.cannon.item.SwordOfTritonItem;
@@ -132,6 +134,9 @@ public class CannonModItems {
 	public static final RegistryObject<Item> RED_SAIL_WALL = block(CannonModBlocks.RED_SAIL_WALL);
 	public static final RegistryObject<Item> LIGHT_RED_SAIL = block(CannonModBlocks.LIGHT_RED_SAIL);
 	public static final RegistryObject<Item> QUARTERMASTER_SPAWN_EGG = REGISTRY.register("quartermaster_spawn_egg", () -> new ForgeSpawnEggItem(CannonModEntities.QUARTERMASTER, -4025995, -12500928, new Item.Properties()));
+	public static final RegistryObject<Item> TALISMAN_OF_THE_VOODOO_MISTER = REGISTRY.register("talisman_of_the_voodoo_mister", () -> new TalismanOfTheVoodooMisterItem());
+	public static final RegistryObject<Item> TALISMAN_OF_THE_BLACK_PEARL = REGISTRY.register("talisman_of_the_black_pearl", () -> new TalismanOfTheBlackPearlItem());
+	public static final RegistryObject<Item> BLACK_BEARDS_CREW_SPAWN_EGG = REGISTRY.register("black_beards_crew_spawn_egg", () -> new ForgeSpawnEggItem(CannonModEntities.BLACK_BEARDS_CREW, -12975100, -16777216, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

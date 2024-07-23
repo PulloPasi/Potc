@@ -44,21 +44,21 @@ import net.minecraft.nbt.CompoundTag;
 
 import net.mcreator.cannon.init.CannonModEntities;
 
-public class QuartermasterEntity extends Monster implements GeoEntity {
-	public static final EntityDataAccessor<Boolean> SHOOT = SynchedEntityData.defineId(QuartermasterEntity.class, EntityDataSerializers.BOOLEAN);
-	public static final EntityDataAccessor<String> ANIMATION = SynchedEntityData.defineId(QuartermasterEntity.class, EntityDataSerializers.STRING);
-	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(QuartermasterEntity.class, EntityDataSerializers.STRING);
+public class BlackBeardsCrewEntity extends Monster implements GeoEntity {
+	public static final EntityDataAccessor<Boolean> SHOOT = SynchedEntityData.defineId(BlackBeardsCrewEntity.class, EntityDataSerializers.BOOLEAN);
+	public static final EntityDataAccessor<String> ANIMATION = SynchedEntityData.defineId(BlackBeardsCrewEntity.class, EntityDataSerializers.STRING);
+	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(BlackBeardsCrewEntity.class, EntityDataSerializers.STRING);
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 	private boolean swinging;
 	private boolean lastloop;
 	private long lastSwing;
 	public String animationprocedure = "empty";
 
-	public QuartermasterEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(CannonModEntities.QUARTERMASTER.get(), world);
+	public BlackBeardsCrewEntity(PlayMessages.SpawnEntity packet, Level world) {
+		this(CannonModEntities.BLACK_BEARDS_CREW.get(), world);
 	}
 
-	public QuartermasterEntity(EntityType<QuartermasterEntity> type, Level world) {
+	public BlackBeardsCrewEntity(EntityType<BlackBeardsCrewEntity> type, Level world) {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
@@ -70,7 +70,7 @@ public class QuartermasterEntity extends Monster implements GeoEntity {
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "quartermaster");
+		this.entityData.define(TEXTURE, "qarcrewmante");
 	}
 
 	public void setTexture(String texture) {
@@ -141,7 +141,7 @@ public class QuartermasterEntity extends Monster implements GeoEntity {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(CannonModEntities.QUARTERMASTER.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+		SpawnPlacements.register(CannonModEntities.BLACK_BEARDS_CREW.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
 				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL && Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
 	}
 
@@ -205,7 +205,7 @@ public class QuartermasterEntity extends Monster implements GeoEntity {
 	protected void tickDeath() {
 		++this.deathTime;
 		if (this.deathTime == 20) {
-			this.remove(QuartermasterEntity.RemovalReason.KILLED);
+			this.remove(BlackBeardsCrewEntity.RemovalReason.KILLED);
 			this.dropExperience();
 		}
 	}
@@ -220,9 +220,9 @@ public class QuartermasterEntity extends Monster implements GeoEntity {
 
 	@Override
 	public void registerControllers(AnimatableManager.ControllerRegistrar data) {
-		data.add(new AnimationController<>(this, "movement", 0, this::movementPredicate));
-		data.add(new AnimationController<>(this, "attacking", 0, this::attackingPredicate));
-		data.add(new AnimationController<>(this, "procedure", 0, this::procedurePredicate));
+		data.add(new AnimationController<>(this, "movement", 4, this::movementPredicate));
+		data.add(new AnimationController<>(this, "attacking", 4, this::attackingPredicate));
+		data.add(new AnimationController<>(this, "procedure", 4, this::procedurePredicate));
 	}
 
 	@Override

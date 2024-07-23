@@ -16,9 +16,9 @@ public class CannonballosProjectileHitsBlockProcedure {
 			_level.explode(null, x, y, z, 4, Level.ExplosionInteraction.TNT);
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
-				_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cannon:cannonball-explosion")), SoundSource.NEUTRAL, 2, 1);
+				_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cannon:cannonhit")), SoundSource.NEUTRAL, 2, 1);
 			} else {
-				_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cannon:cannonball-explosion")), SoundSource.NEUTRAL, 2, 1, false);
+				_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cannon:cannonhit")), SoundSource.NEUTRAL, 2, 1, false);
 			}
 		}
 		if (world instanceof ServerLevel _level)

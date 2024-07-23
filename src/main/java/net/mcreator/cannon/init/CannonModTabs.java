@@ -104,6 +104,9 @@ public class CannonModTabs {
 				tabData.accept(CannonModBlocks.RED_SAIL_WALL.get().asItem());
 				tabData.accept(CannonModBlocks.LIGHT_RED_SAIL.get().asItem());
 				tabData.accept(CannonModItems.QUARTERMASTER_SPAWN_EGG.get());
+				tabData.accept(CannonModItems.TALISMAN_OF_THE_VOODOO_MISTER.get());
+				tabData.accept(CannonModItems.TALISMAN_OF_THE_BLACK_PEARL.get());
+				tabData.accept(CannonModItems.BLACK_BEARDS_CREW_SPAWN_EGG.get());
 			})
 
 					.build());

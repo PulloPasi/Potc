@@ -25,6 +25,7 @@ import net.mcreator.cannon.entity.KarbEntity;
 import net.mcreator.cannon.entity.CannonballosProjectileEntity;
 import net.mcreator.cannon.entity.BulletEntity;
 import net.mcreator.cannon.entity.BriishEntity;
+import net.mcreator.cannon.entity.BlackBeardsCrewEntity;
 import net.mcreator.cannon.CannonMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -60,6 +61,10 @@ public class CannonModEntities {
 			EntityType.Builder.<QuartermasterEntity>of(QuartermasterEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(QuartermasterEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<BlackBeardsCrewEntity>> BLACK_BEARDS_CREW = register("black_beards_crew",
+			EntityType.Builder.<BlackBeardsCrewEntity>of(BlackBeardsCrewEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BlackBeardsCrewEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -74,6 +79,7 @@ public class CannonModEntities {
 			BriishEntity.init();
 			MermaidEntity.init();
 			QuartermasterEntity.init();
+			BlackBeardsCrewEntity.init();
 		});
 	}
 
@@ -85,5 +91,6 @@ public class CannonModEntities {
 		event.put(BRIISH.get(), BriishEntity.createAttributes().build());
 		event.put(MERMAID.get(), MermaidEntity.createAttributes().build());
 		event.put(QUARTERMASTER.get(), QuartermasterEntity.createAttributes().build());
+		event.put(BLACK_BEARDS_CREW.get(), BlackBeardsCrewEntity.createAttributes().build());
 	}
 }

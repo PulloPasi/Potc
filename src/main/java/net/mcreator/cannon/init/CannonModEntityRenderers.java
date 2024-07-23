@@ -17,6 +17,7 @@ import net.mcreator.cannon.client.renderer.PartOfTheCrewRenderer;
 import net.mcreator.cannon.client.renderer.MermaidRenderer;
 import net.mcreator.cannon.client.renderer.KarbRenderer;
 import net.mcreator.cannon.client.renderer.BriishRenderer;
+import net.mcreator.cannon.client.renderer.BlackBeardsCrewRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class CannonModEntityRenderers {
@@ -31,5 +32,6 @@ public class CannonModEntityRenderers {
 		event.registerEntityRenderer(CannonModEntities.SWORDOFTRITONPROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(CannonModEntities.MERMAID.get(), MermaidRenderer::new);
 		event.registerEntityRenderer(CannonModEntities.QUARTERMASTER.get(), QuartermasterRenderer::new);
+		event.registerEntityRenderer(CannonModEntities.BLACK_BEARDS_CREW.get(), BlackBeardsCrewRenderer::new);
 	}
 }

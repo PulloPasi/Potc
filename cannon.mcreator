@@ -2009,6 +2009,51 @@
           "src/main/java/net/mcreator/cannon/entity/QuartermasterEntity.java"
         ]
       }
+    },
+    {
+      "name": "TalismanOfTheVoodooMister",
+      "type": "item",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "talisman_of_the_voodoo_mister",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/item/TalismanOfTheVoodooMisterItem.java",
+          "src/main/resources/assets/cannon/models/item/talisman_of_the_voodoo_mister.json"
+        ]
+      }
+    },
+    {
+      "name": "TalismanOfTheBlackPearl",
+      "type": "item",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "talisman_of_the_black_pearl",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/item/talisman_of_the_black_pearl.json",
+          "src/main/java/net/mcreator/cannon/item/TalismanOfTheBlackPearlItem.java"
+        ]
+      }
+    },
+    {
+      "name": "BlackBeardsCrew",
+      "type": "animatedentity",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_beards_crew",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/client/renderer/BlackBeardsCrewRenderer.java",
+          "src/main/java/net/mcreator/cannon/entity/model/BlackBeardsCrewModel.java",
+          "src/main/resources/assets/cannon/models/item/black_beards_crew_spawn_egg.json",
+          "src/main/java/net/mcreator/cannon/entity/BlackBeardsCrewEntity.java",
+          "src/main/resources/data/cannon/forge/biome_modifier/black_beards_crew_biome_modifier.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -2076,6 +2121,14 @@
       ],
       "category": "neutral",
       "subtitle": ""
+    },
+    {
+      "name": "cannonhit",
+      "files": [
+        "cannonhit"
+      ],
+      "category": "neutral",
+      "subtitle": ""
     }
   ],
   "tag_elements": {
@@ -2139,8 +2192,10 @@
       "subtitles.cannonfire": "Cannon Fires",
       "block.cannon.slabs_of_the_queen_annes_revenge": "Slabs Of The Queen Anne\u0027s Revenge",
       "item.cannon.flintlock": "Flintlock",
+      "entity.cannon.black_beards_crew": "Black Beards Crew",
       "item.cannon.chalicewithtear": "Chalice Of Cartagena (Full With Tear)",
       "block.cannon.barnacles": "Barnacles",
+      "item.cannon.black_beards_crew_spawn_egg": "Black Beards Crew Spawn Egg",
       "entity.cannon.karb": "Karb",
       "subtitles.cannon-fired": "cannon fired",
       "block.cannon.stylish_wall": "Stylish Wall",
@@ -2153,8 +2208,10 @@
       "item.cannon.bulletitem": "Bulletitem",
       "subtitles.swordfire": "",
       "item.cannon.mermaidtear": "Mermaidtear",
+      "subtitles.cannonhit": "",
       "item.cannon.briish_spawn_egg": "British Gunman Spawn Egg",
       "block.cannon.rope_block": "Rope Block",
+      "item.cannon.talisman_of_the_black_pearl": "Talisman Of The Black Pearl",
       "block.cannon.black_plank_slab": "Black Plank Slab",
       "block.cannon.black_plank_trap_door": "Black Plank Trap Door",
       "item.cannon.bill_turner_boots": "Bill Turner Boots",
@@ -2174,6 +2231,7 @@
       "item.cannon.davy_jones_boots": "Davy Jones Boots",
       "item.cannon.davy_jones_chestplate": "Davy Jones Chestplate",
       "block.cannon.red_sail_stair": "Red Sail Stair",
+      "item.cannon.talisman_of_the_voodoo_mister": "Talisman Of The Queen Anne\u0027s Revenge",
       "block.cannon.rope": "Rope",
       "item.cannon.kolmikulma_hat_helmet": "Kolmikulma Hat ",
       "entity.cannon.briish": "British Gunman",
