@@ -2054,6 +2054,26 @@
           "src/main/resources/data/cannon/forge/biome_modifier/black_beards_crew_biome_modifier.json"
         ]
       }
+    },
+    {
+      "name": "BlackBeardCrewAttackCondition",
+      "type": "procedure",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_beard_crew_attack_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/cannon/procedures/BlackBeardCrewAttackConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
