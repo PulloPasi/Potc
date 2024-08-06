@@ -35,6 +35,9 @@ import net.mcreator.cannon.block.PlanksOfTheFlyingDutchmanBlock;
 import net.mcreator.cannon.block.LightRedSailBlock;
 import net.mcreator.cannon.block.LadderThatHasBeenStolenFromMikaelsBackyardBlock;
 import net.mcreator.cannon.block.GunpowderbarrelBlock;
+import net.mcreator.cannon.block.GreyPlanksBlock;
+import net.mcreator.cannon.block.GreyPlankStairBlock;
+import net.mcreator.cannon.block.GreyPlankSlabBlock;
 import net.mcreator.cannon.block.GloriouslanternBlock;
 import net.mcreator.cannon.block.FountainOfYouthDripBlock;
 import net.mcreator.cannon.block.FerrymansChasingCannonBlock;
@@ -94,6 +97,9 @@ public class CannonModBlocks {
 	public static final RegistryObject<Block> RED_SAIL_STAIR = REGISTRY.register("red_sail_stair", () -> new RedSailStairBlock());
 	public static final RegistryObject<Block> RED_SAIL_WALL = REGISTRY.register("red_sail_wall", () -> new RedSailWallBlock());
 	public static final RegistryObject<Block> LIGHT_RED_SAIL = REGISTRY.register("light_red_sail", () -> new LightRedSailBlock());
+	public static final RegistryObject<Block> GREY_PLANKS = REGISTRY.register("grey_planks", () -> new GreyPlanksBlock());
+	public static final RegistryObject<Block> GREY_PLANK_SLAB = REGISTRY.register("grey_plank_slab", () -> new GreyPlankSlabBlock());
+	public static final RegistryObject<Block> GREY_PLANK_STAIR = REGISTRY.register("grey_plank_stair", () -> new GreyPlankStairBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

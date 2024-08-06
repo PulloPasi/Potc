@@ -137,6 +137,9 @@ public class CannonModItems {
 	public static final RegistryObject<Item> TALISMAN_OF_THE_VOODOO_MISTER = REGISTRY.register("talisman_of_the_voodoo_mister", () -> new TalismanOfTheVoodooMisterItem());
 	public static final RegistryObject<Item> TALISMAN_OF_THE_BLACK_PEARL = REGISTRY.register("talisman_of_the_black_pearl", () -> new TalismanOfTheBlackPearlItem());
 	public static final RegistryObject<Item> BLACK_BEARDS_CREW_SPAWN_EGG = REGISTRY.register("black_beards_crew_spawn_egg", () -> new ForgeSpawnEggItem(CannonModEntities.BLACK_BEARDS_CREW, -12975100, -16777216, new Item.Properties()));
+	public static final RegistryObject<Item> GREY_PLANKS = block(CannonModBlocks.GREY_PLANKS);
+	public static final RegistryObject<Item> GREY_PLANK_SLAB = block(CannonModBlocks.GREY_PLANK_SLAB);
+	public static final RegistryObject<Item> GREY_PLANK_STAIR = block(CannonModBlocks.GREY_PLANK_STAIR);
 
 	// Start of user code block custom items
 	// End of user code block custom items

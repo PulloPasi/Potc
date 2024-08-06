@@ -1,0 +1,9 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "cannon:block/greywood",
+    "top": "cannon:block/greywood",
+    "side": "cannon:block/greywood"
+  },
+  "render_type": "solid"
+}

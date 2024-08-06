@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cannon:block/grey_plank_slab"
+    },
+    "type=top": {
+      "model": "cannon:block/grey_plank_slab_top"
+    },
+    "type=double": {
+      "model": "cannon:block/grey_plank_slab_full"
+    }
+  }
+}

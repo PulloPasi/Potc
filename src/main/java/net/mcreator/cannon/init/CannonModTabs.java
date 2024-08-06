@@ -107,6 +107,9 @@ public class CannonModTabs {
 				tabData.accept(CannonModItems.TALISMAN_OF_THE_VOODOO_MISTER.get());
 				tabData.accept(CannonModItems.TALISMAN_OF_THE_BLACK_PEARL.get());
 				tabData.accept(CannonModItems.BLACK_BEARDS_CREW_SPAWN_EGG.get());
+				tabData.accept(CannonModBlocks.GREY_PLANKS.get().asItem());
+				tabData.accept(CannonModBlocks.GREY_PLANK_SLAB.get().asItem());
+				tabData.accept(CannonModBlocks.GREY_PLANK_STAIR.get().asItem());
 			})
 
 					.build());

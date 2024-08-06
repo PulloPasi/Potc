@@ -2074,6 +2074,61 @@
           }
         ]
       }
+    },
+    {
+      "name": "GreyPlanks",
+      "type": "block",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grey_planks",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/item/grey_planks.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/grey_planks.json",
+          "src/main/resources/assets/cannon/blockstates/grey_planks.json",
+          "src/main/java/net/mcreator/cannon/block/GreyPlanksBlock.java",
+          "src/main/resources/assets/cannon/models/block/grey_planks.json"
+        ]
+      }
+    },
+    {
+      "name": "GreyPlankSlab",
+      "type": "block",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grey_plank_slab",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/block/GreyPlankSlabBlock.java",
+          "src/main/resources/assets/cannon/models/block/grey_plank_slab.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/grey_plank_slab.json",
+          "src/main/resources/assets/cannon/models/block/grey_plank_slab_full.json",
+          "src/main/resources/assets/cannon/models/block/grey_plank_slab_top.json",
+          "src/main/resources/assets/cannon/models/item/grey_plank_slab.json",
+          "src/main/resources/assets/cannon/blockstates/grey_plank_slab.json"
+        ]
+      }
+    },
+    {
+      "name": "GreyPlankStair",
+      "type": "block",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grey_plank_stair",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/block/grey_plank_stair_inner.json",
+          "src/main/resources/assets/cannon/models/block/grey_plank_stair.json",
+          "src/main/java/net/mcreator/cannon/block/GreyPlankStairBlock.java",
+          "src/main/resources/assets/cannon/blockstates/grey_plank_stair.json",
+          "src/main/resources/assets/cannon/models/item/grey_plank_stair.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/grey_plank_stair.json",
+          "src/main/resources/assets/cannon/models/block/grey_plank_stair_outer.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -2153,6 +2208,7 @@
   ],
   "tag_elements": {
     "BLOCKS:minecraft:slabs": [
+      "~CUSTOM:GreyPlankSlab",
       "~CUSTOM:RedSailSlab",
       "~CUSTOM:SlabsOfTheQueenAnnesRevenge",
       "~CUSTOM:SlabsOfTheFlyingDutchman",
@@ -2166,6 +2222,7 @@
       "~CUSTOM:StylishWall"
     ],
     "BLOCKS:minecraft:stairs": [
+      "~CUSTOM:GreyPlankStair",
       "~CUSTOM:RedSailStair",
       "~CUSTOM:StairsOfTheQueenAnnesRevenge",
       "~CUSTOM:StairsOfTheFlyingDutchman",
@@ -2235,12 +2292,14 @@
       "block.cannon.black_plank_slab": "Black Plank Slab",
       "block.cannon.black_plank_trap_door": "Black Plank Trap Door",
       "item.cannon.bill_turner_boots": "Bill Turner Boots",
+      "block.cannon.grey_plank_slab": "Grey Plank Slab",
       "block.cannon.stairs_of_the_queen_annes_revenge": "Stairs Of The Queen Anne\u0027s Revenge",
       "item_group.cannon.potc": "Potc",
       "entity.cannon.quartermaster": "Quartermaster",
       "item.cannon.joshamee_gibbs_leggings": "Joshamee Gibbs Leggings",
       "block.cannon.side_figure_head_of_the_queen_annes_revenge": "Side Figure Head Of The Queen Anne\u0027s Revenge",
       "block.cannon.gloriouslantern": "Glorious Lantern",
+      "block.cannon.grey_planks": "Grey Planks",
       "block.cannon.door_of_the_flying_dutchman": "Door Of The Flying Dutchman",
       "item.cannon.black_beard_helmet": "BlackBeard Hat",
       "block.cannon.ferrymans_cannon": "Ferrymans Cannon",
@@ -2255,6 +2314,7 @@
       "block.cannon.rope": "Rope",
       "item.cannon.kolmikulma_hat_helmet": "Kolmikulma Hat ",
       "entity.cannon.briish": "British Gunman",
+      "block.cannon.grey_plank_stair": "Grey Plank Stair",
       "block.cannon.black_planks": "Black Planks",
       "item.cannon.bill_turner_helmet": "Bill Turner Helmet",
       "item.cannon.black_beard_leggings": "BlackBeard Pants",

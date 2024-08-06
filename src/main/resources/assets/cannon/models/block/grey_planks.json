@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cannon:block/greywood",
+    "up": "cannon:block/greywood",
+    "north": "cannon:block/greywood",
+    "east": "cannon:block/greywood",
+    "south": "cannon:block/greywood",
+    "west": "cannon:block/greywood",
+    "particle": "cannon:block/greywood"
+  },
+  "render_type": "solid"
+}
