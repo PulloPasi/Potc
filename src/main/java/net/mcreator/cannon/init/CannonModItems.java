@@ -140,6 +140,9 @@ public class CannonModItems {
 	public static final RegistryObject<Item> GREY_PLANKS = block(CannonModBlocks.GREY_PLANKS);
 	public static final RegistryObject<Item> GREY_PLANK_SLAB = block(CannonModBlocks.GREY_PLANK_SLAB);
 	public static final RegistryObject<Item> GREY_PLANK_STAIR = block(CannonModBlocks.GREY_PLANK_STAIR);
+	public static final RegistryObject<Item> BARREL = block(CannonModBlocks.BARREL);
+	public static final RegistryObject<Item> WINDOW_OF_THE_BLACK_PEARL = block(CannonModBlocks.WINDOW_OF_THE_BLACK_PEARL);
+	public static final RegistryObject<Item> CHANDELIER = block(CannonModBlocks.CHANDELIER);
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "cannon:block/barrel"
+    },
+    "facing=east": {
+      "model": "cannon:block/barrel",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "cannon:block/barrel",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "cannon:block/barrel",
+      "y": 270
+    }
+  }
+}

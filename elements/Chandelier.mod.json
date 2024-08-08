@@ -2,31 +2,30 @@
   "_fv": 60,
   "_type": "block",
   "definition": {
-    "texture": "dutchwood",
+    "texture": "chandlier",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 11,
-    "customModelName": "Single texture",
+    "renderType": 2,
+    "customModelName": "chandlier:default",
     "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
-    "blockBase": "Stairs",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": false,
+    "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "disableOffset": false,
     "boundingBoxes": [
       {
         "mx": 0.0,
-        "my": 0.0,
+        "my": 9.0,
         "mz": 0.0,
         "Mx": 16.0,
         "My": 16.0,
@@ -34,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Grey Plank Stair",
+    "name": "Chandelier",
     "specialInformation": {
       "fixedValue": []
     },
@@ -99,7 +98,7 @@
     "stepSound": {
       "value": ""
     },
-    "luminance": 0,
+    "luminance": 12,
     "unbreakable": false,
     "breakHarvestLevel": 1,
     "isBonemealable": false,

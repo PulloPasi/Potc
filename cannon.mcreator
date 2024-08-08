@@ -2129,6 +2129,61 @@
           "src/main/resources/assets/cannon/models/block/grey_plank_stair_outer.json"
         ]
       }
+    },
+    {
+      "name": "Barrel",
+      "type": "block",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "barrel",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/loot_tables/blocks/barrel.json",
+          "src/main/resources/assets/cannon/blockstates/barrel.json",
+          "src/main/java/net/mcreator/cannon/block/BarrelBlock.java",
+          "src/main/resources/assets/cannon/models/block/barrel.json",
+          "src/main/resources/assets/cannon/models/item/barrel.json"
+        ]
+      }
+    },
+    {
+      "name": "WindowOfTheBlackPearl",
+      "type": "block",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "window_of_the_black_pearl",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/block/window_of_the_black_pearl_side.json",
+          "src/main/resources/assets/cannon/models/block/window_of_the_black_pearl_noside.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/window_of_the_black_pearl.json",
+          "src/main/resources/assets/cannon/models/block/window_of_the_black_pearl_side_alt.json",
+          "src/main/java/net/mcreator/cannon/block/WindowOfTheBlackPearlBlock.java",
+          "src/main/resources/assets/cannon/blockstates/window_of_the_black_pearl.json",
+          "src/main/resources/assets/cannon/models/block/window_of_the_black_pearl_noside_alt.json",
+          "src/main/resources/assets/cannon/models/block/window_of_the_black_pearl_post.json",
+          "src/main/resources/assets/cannon/models/item/window_of_the_black_pearl.json"
+        ]
+      }
+    },
+    {
+      "name": "Chandelier",
+      "type": "block",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chandelier",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/block/chandelier.json",
+          "src/main/resources/assets/cannon/models/item/chandelier.json",
+          "src/main/resources/assets/cannon/blockstates/chandelier.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/chandelier.json",
+          "src/main/java/net/mcreator/cannon/block/ChandelierBlock.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -2280,12 +2335,14 @@
       "subtitles.cannonball-woosh": "cannonball flyby",
       "item.cannon.angelica_teach_helmet": "Angelica Teach Hat",
       "item.cannon.bill_turner_chestplate": "Bill Turner Chestplate",
+      "block.cannon.chandelier": "Chandelier",
       "item.cannon.half_eaten_banan": "Half Eaten Banan",
       "subtitles.cannonball-explosion": "cannonball hit",
       "item.cannon.bulletitem": "Bulletitem",
       "subtitles.swordfire": "",
       "item.cannon.mermaidtear": "Mermaidtear",
       "subtitles.cannonhit": "",
+      "block.cannon.window_of_the_black_pearl": "Window Of The Black Pearl",
       "item.cannon.briish_spawn_egg": "British Gunman Spawn Egg",
       "block.cannon.rope_block": "Rope Block",
       "item.cannon.talisman_of_the_black_pearl": "Talisman Of The Black Pearl",
@@ -2300,7 +2357,7 @@
       "block.cannon.side_figure_head_of_the_queen_annes_revenge": "Side Figure Head Of The Queen Anne\u0027s Revenge",
       "block.cannon.gloriouslantern": "Glorious Lantern",
       "block.cannon.grey_planks": "Grey Planks",
-      "block.cannon.door_of_the_flying_dutchman": "Door Of The Flying Dutchman",
+      "block.cannon.door_of_the_flying_dutchman": "Shit Looking Door",
       "item.cannon.black_beard_helmet": "BlackBeard Hat",
       "block.cannon.ferrymans_cannon": "Ferrymans Cannon",
       "subtitles.cannonfire2": "Cannon Fires",
@@ -2320,6 +2377,7 @@
       "item.cannon.black_beard_leggings": "BlackBeard Pants",
       "item.cannon.chalice": "Chalice Of Cartagena",
       "subtitles.cannon-fire": "Cannon fires",
+      "block.cannon.barrel": "Barrel",
       "item.cannon.part_of_the_crew_strong_spawn_egg": "Part Of The Crew Strong Spawn Egg",
       "item.cannon.dutchmanpeace": "Talisman Of The Flying Dutchman",
       "item.cannon.key": "Key",

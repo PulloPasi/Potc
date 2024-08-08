@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "cannon:block/window"
+  },
+  "render_type": "cutout_mipped"
+}

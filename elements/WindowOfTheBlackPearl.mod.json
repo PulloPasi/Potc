@@ -2,7 +2,7 @@
   "_fv": 60,
   "_type": "block",
   "definition": {
-    "texture": "dutchwood",
+    "texture": "window",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -16,12 +16,12 @@
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
-    "blockBase": "Stairs",
+    "blockBase": "Pane",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": false,
+    "hasTransparency": true,
     "connectedSides": false,
-    "transparencyType": "SOLID",
+    "transparencyType": "CUTOUT_MIPPED",
     "disableOffset": false,
     "boundingBoxes": [
       {
@@ -34,7 +34,7 @@
         "subtract": false
       }
     ],
-    "name": "Grey Plank Stair",
+    "name": "Window Of The Black Pearl",
     "specialInformation": {
       "fixedValue": []
     },
@@ -57,7 +57,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
-      "value": "WOOD"
+      "value": "GLASS"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -82,7 +82,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "WOOD"
+      "value": "GLASS"
     },
     "breakSound": {
       "value": ""

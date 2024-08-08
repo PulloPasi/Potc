@@ -110,6 +110,9 @@ public class CannonModTabs {
 				tabData.accept(CannonModBlocks.GREY_PLANKS.get().asItem());
 				tabData.accept(CannonModBlocks.GREY_PLANK_SLAB.get().asItem());
 				tabData.accept(CannonModBlocks.GREY_PLANK_STAIR.get().asItem());
+				tabData.accept(CannonModBlocks.BARREL.get().asItem());
+				tabData.accept(CannonModBlocks.WINDOW_OF_THE_BLACK_PEARL.get().asItem());
+				tabData.accept(CannonModBlocks.CHANDELIER.get().asItem());
 			})
 
 					.build());

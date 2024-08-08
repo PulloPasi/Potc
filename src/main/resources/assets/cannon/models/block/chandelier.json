@@ -1,0 +1,9 @@
+{
+  "parent": "cannon:custom/chandlier",
+  "textures": {
+    "all": "cannon:block/chandlier",
+    "particle": "cannon:block/chandlier",
+    "0": "cannon:block/chandlier"
+  },
+  "render_type": "solid"
+}

@@ -14,6 +14,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.cannon.block.WindowOfTheBlackPearlBlock;
 import net.mcreator.cannon.block.StylishWallBlock;
 import net.mcreator.cannon.block.StylishFenceBlock;
 import net.mcreator.cannon.block.StairsOfTheQueenAnnesRevengeBlock;
@@ -48,12 +49,14 @@ import net.mcreator.cannon.block.Dutchmansails3Block;
 import net.mcreator.cannon.block.Dutchmansails2Block;
 import net.mcreator.cannon.block.DoorOfTheFlyingDutchmanBlock;
 import net.mcreator.cannon.block.DeadMansChestBlock;
+import net.mcreator.cannon.block.ChandelierBlock;
 import net.mcreator.cannon.block.CannonHatchOfTheQueenAnnesRevengeBlock;
 import net.mcreator.cannon.block.CannonBlock;
 import net.mcreator.cannon.block.BlackPlanksBlock;
 import net.mcreator.cannon.block.BlackPlankTrapDoorBlock;
 import net.mcreator.cannon.block.BlackPlankStairsBlock;
 import net.mcreator.cannon.block.BlackPlankSlabBlock;
+import net.mcreator.cannon.block.BarrelBlock;
 import net.mcreator.cannon.block.BarnaclesBlock;
 import net.mcreator.cannon.CannonMod;
 
@@ -100,6 +103,9 @@ public class CannonModBlocks {
 	public static final RegistryObject<Block> GREY_PLANKS = REGISTRY.register("grey_planks", () -> new GreyPlanksBlock());
 	public static final RegistryObject<Block> GREY_PLANK_SLAB = REGISTRY.register("grey_plank_slab", () -> new GreyPlankSlabBlock());
 	public static final RegistryObject<Block> GREY_PLANK_STAIR = REGISTRY.register("grey_plank_stair", () -> new GreyPlankStairBlock());
+	public static final RegistryObject<Block> BARREL = REGISTRY.register("barrel", () -> new BarrelBlock());
+	public static final RegistryObject<Block> WINDOW_OF_THE_BLACK_PEARL = REGISTRY.register("window_of_the_black_pearl", () -> new WindowOfTheBlackPearlBlock());
+	public static final RegistryObject<Block> CHANDELIER = REGISTRY.register("chandelier", () -> new ChandelierBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
