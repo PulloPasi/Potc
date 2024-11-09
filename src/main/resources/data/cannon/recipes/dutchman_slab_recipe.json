@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "cannon:planks_of_the_flying_dutchman"
+    }
+  },
+  "result": {
+    "item": "cannon:slabs_of_the_flying_dutchman",
+    "count": 6
+  }
+}

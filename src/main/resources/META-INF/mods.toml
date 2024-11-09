@@ -7,6 +7,7 @@ modId="cannon"
 version="1.0.0"
 displayName="cannon"
 displayURL="https://mcreator.net"
+logoFile="logo.png"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 authors="pulli, MCreator"
 

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aba",
+    "cdc"
+  ],
+  "key": {
+    "a": {
+      "tag": "minecraft:candles"
+    },
+    "b": {
+      "item": "cannon:rope"
+    },
+    "c": {
+      "tag": "minecraft:wooden_slabs"
+    },
+    "d": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "result": {
+    "item": "cannon:chandelier",
+    "count": 1
+  }
+}

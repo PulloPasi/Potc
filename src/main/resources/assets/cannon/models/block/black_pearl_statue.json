@@ -1,0 +1,9 @@
+{
+  "parent": "cannon:custom/bpstatuekaks",
+  "textures": {
+    "all": "cannon:block/bpstatue",
+    "particle": "cannon:block/bpstatue",
+    "0": "cannon:block/bpstatue"
+  },
+  "render_type": "solid"
+}

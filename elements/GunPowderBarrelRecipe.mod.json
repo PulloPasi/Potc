@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 2,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.WOODEN_SLAB"
+      },
+      {
+        "value": "Blocks.WOODEN_SLAB"
+      },
+      {
+        "value": "Blocks.WOODEN_SLAB"
+      },
+      {
+        "value": "Items.GUNPOWDER"
+      },
+      {
+        "value": "Items.GUNPOWDER"
+      },
+      {
+        "value": "Items.GUNPOWDER"
+      },
+      {
+        "value": "Blocks.WOODEN_SLAB"
+      },
+      {
+        "value": "Blocks.WOODEN_SLAB"
+      },
+      {
+        "value": "Blocks.WOODEN_SLAB"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Gunpowderbarrel"
+    },
+    "name": "gun_powder_barrel_recipe",
+    "namespace": "mod"
+  }
+}

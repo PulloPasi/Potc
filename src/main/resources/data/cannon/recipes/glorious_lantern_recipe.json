@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "a",
+    "b",
+    "c"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_bars"
+    },
+    "b": {
+      "item": "minecraft:lantern"
+    },
+    "c": {
+      "item": "cannon:black_planks"
+    }
+  },
+  "result": {
+    "item": "cannon:gloriouslantern",
+    "count": 1
+  }
+}

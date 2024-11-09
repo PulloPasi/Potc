@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "minecraft:black_dye"
+    },
+    {
+      "item": "cannon:sails_of_the_black_pearl_patch"
+    }
+  ],
+  "result": {
+    "item": "cannon:sails_of_the_black_pearl",
+    "count": 1
+  }
+}

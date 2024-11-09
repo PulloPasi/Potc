@@ -721,7 +721,6 @@
       "registry_name": "part_of_the_crew_strong",
       "metadata": {
         "files": [
-          "src/main/resources/data/cannon/forge/biome_modifier/part_of_the_crew_strong_biome_modifier.json",
           "src/main/java/net/mcreator/cannon/entity/model/PartOfTheCrewStrongModel.java",
           "src/main/java/net/mcreator/cannon/entity/PartOfTheCrewStrongEntity.java",
           "src/main/resources/assets/cannon/models/item/part_of_the_crew_strong_spawn_egg.json",
@@ -958,9 +957,6 @@
       "locked_code": false,
       "registry_name": "cannon_on_block_right_clicked_1",
       "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cannon/procedures/CannonOnBlockRightClicked1Procedure.java"
-        ],
         "dependencies": [
           {
             "name": "entity",
@@ -1240,7 +1236,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/cannon/entity/BriishEntity.java",
-          "src/main/resources/data/cannon/forge/biome_modifier/briish_biome_modifier.json",
           "src/main/java/net/mcreator/cannon/entity/model/BriishModel.java",
           "src/main/java/net/mcreator/cannon/client/renderer/BriishRenderer.java",
           "src/main/resources/assets/cannon/models/item/briish_spawn_egg.json"
@@ -1386,7 +1381,6 @@
           "src/main/resources/assets/cannon/models/item/mermaid_spawn_egg.json",
           "src/main/java/net/mcreator/cannon/client/renderer/MermaidRenderer.java",
           "src/main/java/net/mcreator/cannon/entity/MermaidEntity.java",
-          "src/main/resources/data/cannon/forge/biome_modifier/mermaid_biome_modifier.json",
           "src/main/java/net/mcreator/cannon/entity/model/MermaidModel.java"
         ]
       }
@@ -2005,7 +1999,6 @@
           "src/main/resources/assets/cannon/models/item/quartermaster_spawn_egg.json",
           "src/main/java/net/mcreator/cannon/entity/model/QuartermasterModel.java",
           "src/main/java/net/mcreator/cannon/client/renderer/QuartermasterRenderer.java",
-          "src/main/resources/data/cannon/forge/biome_modifier/quartermaster_biome_modifier.json",
           "src/main/java/net/mcreator/cannon/entity/QuartermasterEntity.java"
         ]
       }
@@ -2050,8 +2043,7 @@
           "src/main/java/net/mcreator/cannon/client/renderer/BlackBeardsCrewRenderer.java",
           "src/main/java/net/mcreator/cannon/entity/model/BlackBeardsCrewModel.java",
           "src/main/resources/assets/cannon/models/item/black_beards_crew_spawn_egg.json",
-          "src/main/java/net/mcreator/cannon/entity/BlackBeardsCrewEntity.java",
-          "src/main/resources/data/cannon/forge/biome_modifier/black_beards_crew_biome_modifier.json"
+          "src/main/java/net/mcreator/cannon/entity/BlackBeardsCrewEntity.java"
         ]
       }
     },
@@ -2184,6 +2176,746 @@
           "src/main/java/net/mcreator/cannon/block/ChandelierBlock.java"
         ]
       }
+    },
+    {
+      "name": "SlimFence",
+      "type": "block",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slim_fence",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/block/SlimFenceBlock.java",
+          "src/main/resources/assets/cannon/models/block/slim_fence.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/slim_fence.json",
+          "src/main/resources/assets/cannon/models/item/slim_fence.json",
+          "src/main/resources/assets/cannon/blockstates/slim_fence.json"
+        ]
+      }
+    },
+    {
+      "name": "BlackPearlStatue",
+      "type": "block",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_pearl_statue",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/item/black_pearl_statue.json",
+          "src/main/resources/assets/cannon/blockstates/black_pearl_statue.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/black_pearl_statue.json",
+          "src/main/java/net/mcreator/cannon/block/BlackPearlStatueBlock.java",
+          "src/main/resources/assets/cannon/models/block/black_pearl_statue.json"
+        ]
+      }
+    },
+    {
+      "name": "Barbossa",
+      "type": "armor",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "barbossa",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/item/barbossa_leggings.json",
+          "src/main/resources/assets/cannon/models/item/barbossa_chestplate.json",
+          "src/main/resources/assets/cannon/models/item/barbossa_helmet.json",
+          "src/main/java/net/mcreator/cannon/item/BarbossaItem.java",
+          "src/main/resources/assets/cannon/models/item/barbossa_boots.json"
+        ]
+      }
+    },
+    {
+      "name": "Barbossasetbonus",
+      "type": "procedure",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "barbossasetbonus",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/procedures/BarbossasetbonusProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Redplanks",
+      "type": "recipe",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redplanks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/redplanks.json"
+        ]
+      }
+    },
+    {
+      "name": "Blackplanksrecipe",
+      "type": "recipe",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blackplanksrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/blackplanksrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Greyplankrecipe",
+      "type": "recipe",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "greyplankrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/greyplankrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Dutchmanplnaks",
+      "type": "recipe",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dutchmanplnaks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/dutchmanplnaks.json"
+        ]
+      }
+    },
+    {
+      "name": "LockerSand",
+      "type": "block",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "locker_sand",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/block/locker_sand.json",
+          "src/main/java/net/mcreator/cannon/block/LockerSandBlock.java",
+          "src/main/resources/assets/cannon/blockstates/locker_sand.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/locker_sand.json",
+          "src/main/resources/assets/cannon/models/item/locker_sand.json"
+        ]
+      }
+    },
+    {
+      "name": "DavyJonesLocker",
+      "type": "dimension",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "davy_jones_locker",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/dimension/davy_jones_locker.json",
+          "src/main/resources/data/cannon/dimension_type/davy_jones_locker.json",
+          "src/main/java/net/mcreator/cannon/world/dimension/DavyJonesLockerDimension.java"
+        ]
+      }
+    },
+    {
+      "name": "Locker",
+      "type": "biome",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "locker",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/worldgen/biome/locker.json"
+        ]
+      }
+    },
+    {
+      "name": "LockerOcean",
+      "type": "biome",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "locker_ocean",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/worldgen/biome/locker_ocean.json"
+        ]
+      }
+    },
+    {
+      "name": "BlackPlankSlabRecipe",
+      "type": "recipe",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_plank_slab_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/black_plank_slab_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "BlackPlankStairRecipe",
+      "type": "recipe",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_plank_stair_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/black_plank_stair_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "BlackcannonHatchRecipe",
+      "type": "recipe",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blackcannon_hatch_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/blackcannon_hatch_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "StylishWallRecipe",
+      "type": "recipe",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stylish_wall_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/stylish_wall_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "StylishFenceRecipe",
+      "type": "recipe",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stylish_fence_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/stylish_fence_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "GreyPlankStairRecipe",
+      "type": "recipe",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grey_plank_stair_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/grey_plank_stair_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "GreyPlankSlabRecipe",
+      "type": "recipe",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grey_plank_slab_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/grey_plank_slab_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "RedPlankStairRecipe",
+      "type": "recipe",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_plank_stair_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/red_plank_stair_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "RedPlankSlabRecipe",
+      "type": "recipe",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_plank_slab_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/red_plank_slab_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "RedCannonHatchRecipe",
+      "type": "recipe",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_cannon_hatch_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/red_cannon_hatch_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "BlackPearlWindowRecipe",
+      "type": "recipe",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_pearl_window_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/black_pearl_window_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "ChadelierRecipe",
+      "type": "recipe",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chadelier_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/chadelier_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "RopeRecipe",
+      "type": "recipe",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rope_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/rope_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "SailRecipe",
+      "type": "recipe",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sail_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/sail_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "BlackPearlSailRecipe",
+      "type": "recipe",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_pearl_sail_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/black_pearl_sail_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "RopeblockRecipe",
+      "type": "recipe",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ropeblock_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/ropeblock_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "AnotherRopeRecipe",
+      "type": "recipe",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "another_rope_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/another_rope_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "SlimFenceRecipe",
+      "type": "recipe",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slim_fence_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/slim_fence_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "RedSailRecipe",
+      "type": "recipe",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_sail_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/red_sail_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "RedSailWallRecipe",
+      "type": "recipe",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_sail_wall_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/red_sail_wall_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "RedSailSlabRecipe",
+      "type": "recipe",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_sail_slab_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/red_sail_slab_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "RedSailStairRecipe",
+      "type": "recipe",
+      "sortid": 143,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_sail_stair_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/red_sail_stair_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "GunPowderBarrelRecipe",
+      "type": "recipe",
+      "sortid": 144,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gun_powder_barrel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/gun_powder_barrel_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "CannonBallRecipe",
+      "type": "recipe",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cannon_ball_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/cannon_ball_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "LightRedSailBlockRecipe",
+      "type": "recipe",
+      "sortid": 146,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_red_sail_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/light_red_sail_block_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "PulleyRecipe",
+      "type": "recipe",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pulley_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/pulley_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "DutchmanSailsRecipe",
+      "type": "recipe",
+      "sortid": 148,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dutchman_sails_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/dutchman_sails_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "DutchmanSailBottomRecipe",
+      "type": "recipe",
+      "sortid": 149,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dutchman_sail_bottom_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/dutchman_sail_bottom_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "DutchmanSailDarkerRecipe",
+      "type": "recipe",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dutchman_sail_darker_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/dutchman_sail_darker_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "QARSideFigureHeadRecipe",
+      "type": "recipe",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qar_side_figure_head_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/qar_side_figure_head_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "BPSideFigureHeadRecipe",
+      "type": "recipe",
+      "sortid": 152,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bp_side_figure_head_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/bp_side_figure_head_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "SwordRecipe",
+      "type": "recipe",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/sword_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "CannonTrade",
+      "type": "villagertrade",
+      "sortid": 154,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cannon_trade",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Cannonrecipe",
+      "type": "recipe",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cannonrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/cannonrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "BeanieRecipe",
+      "type": "recipe",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beanie_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/beanie_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "DutchmanStairRecipe",
+      "type": "recipe",
+      "sortid": 157,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dutchman_stair_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/dutchman_stair_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "DutchmanSlabRecipe",
+      "type": "recipe",
+      "sortid": 158,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dutchman_slab_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/dutchman_slab_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "SwordOfTritonTrade",
+      "type": "villagertrade",
+      "sortid": 159,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sword_of_triton_trade",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "GloriousLanternRecipe",
+      "type": "recipe",
+      "sortid": 160,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glorious_lantern_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/glorious_lantern_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "TricornRecipe",
+      "type": "recipe",
+      "sortid": 161,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tricorn_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/tricorn_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "BandanaRecipe",
+      "type": "recipe",
+      "sortid": 162,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bandana_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/bandana_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "BlackPlankTrim",
+      "type": "block",
+      "sortid": 163,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_plank_trim",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/block/BlackPlankTrimBlock.java",
+          "src/main/resources/assets/cannon/models/item/black_plank_trim.json",
+          "src/main/resources/assets/cannon/blockstates/black_plank_trim.json",
+          "src/main/resources/assets/cannon/models/block/black_plank_trim.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/black_plank_trim.json"
+        ]
+      }
+    },
+    {
+      "name": "JacksCompass",
+      "type": "item",
+      "sortid": 164,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jacks_compass",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/item/JacksCompassItem.java",
+          "src/main/resources/assets/cannon/models/item/jacks_compass.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -2258,10 +2990,13 @@
         "cannonhit"
       ],
       "category": "neutral",
-      "subtitle": ""
+      "subtitle": "Cannonball hits"
     }
   ],
   "tag_elements": {
+    "BIOMES:minecraft:has_structure/shipwreck_beached": [
+      "~CUSTOM:Locker"
+    ],
     "BLOCKS:minecraft:slabs": [
       "~CUSTOM:GreyPlankSlab",
       "~CUSTOM:RedSailSlab",
@@ -2282,6 +3017,10 @@
       "~CUSTOM:StairsOfTheQueenAnnesRevenge",
       "~CUSTOM:StairsOfTheFlyingDutchman",
       "~CUSTOM:BlackPlankStairs"
+    ],
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.FLOWING_WATER",
+      "~CUSTOM:LockerSand"
     ]
   },
   "language_map": {
@@ -2294,31 +3033,36 @@
       "block.cannon.cannon_hatch_of_the_queen_annes_revenge": "Cannon Hatch Of The Queen Anne\u0027s Revenge",
       "entity.cannon.part_of_the_crew_strong": "Part Of The Crew Strong",
       "entity.cannon.part_of_the_crew": "Part Of The Crew",
-      "block.cannon.sails_of_the_black_pearl_patch": "Sails Of The Black Pearl Patch",
+      "block.cannon.sails_of_the_black_pearl_patch": "Sail",
       "block.cannon.cannon": "Cannon",
+      "item.cannon.barbossa_boots": "Barbossa Boots",
       "item.cannon.angelica_teach_boots": "Angelica Teach Boots",
       "block.cannon.stylish_fence": "Stylish Fence",
       "item.cannon.mermaid_spawn_egg": "Mermaid Spawn Egg",
+      "block.cannon.locker_sand": "Locker Sand",
       "item.cannon.sword_of_triton": "Sword Of Triton",
       "item.cannon.black_beard_boots": "BlackBeard Boots",
       "item.cannon.jack_sparrow_boots": "Jack Sparrow Boots",
+      "item.cannon.barbossa_helmet": "Barbossa\u0027s Hat",
       "item.cannon.bill_turner_leggings": "Bill Turner Leggings",
       "item.cannon.jack_sparrow_chestplate": "Jack Sparrow Chestplate",
-      "item.cannon.heart_of_david_jones": "Heart Of David Jones",
+      "item.cannon.heart_of_david_jones": "Heart Of Davy Jones",
       "item.cannon.joshamee_gibbs_chestplate": "Joshamee Gibbs Chestplate",
       "item.cannon.le_stick_of_fire": "Le Stick Of Fire",
       "block.cannon.fountain_of_youth_drip": "Fountain Of Youth Drip",
+      "biome.cannon.locker": "Locker",
       "item.cannon.davy_jones_helmet": "Davy Jones Helmet",
       "block.cannon.dead_mans_chest": "Dead Mans Chest",
       "item.cannon.joshamee_gibbs_helmet": "Joshamee Gibbs Hair",
       "block.cannon.red_sail": "Red Sail",
       "block.cannon.face_of_the_ferryman": "Face Of The Ferryman",
-      "item.cannon.pipo_helmet": "Pipo ",
+      "item.cannon.pipo_helmet": "Beanie",
       "block.cannon.ferrymans_chasing_cannon": "Ferrymans Chasing Cannon",
       "block.cannon.dutchmansails": "Sails Of The Flying Dutchman",
       "item.cannon.karb_spawn_egg": "Karb Spawn Egg",
       "item.cannon.black_beard_chestplate": "BlackBeard Jacket",
       "subtitles.swowrddraw": "",
+      "item.cannon.jacks_compass": "Jack\u0027s Compass",
       "block.cannon.planks_of_the_flying_dutchman": "Planks Of The Flying Dutchman",
       "item.cannon.jack_sparrow_helmet": "Jack Sparrow Helmet",
       "subtitles.cannonfire": "Cannon Fires",
@@ -2341,7 +3085,7 @@
       "item.cannon.bulletitem": "Bulletitem",
       "subtitles.swordfire": "",
       "item.cannon.mermaidtear": "Mermaidtear",
-      "subtitles.cannonhit": "",
+      "subtitles.cannonhit": "Cannonball hits",
       "block.cannon.window_of_the_black_pearl": "Window Of The Black Pearl",
       "item.cannon.briish_spawn_egg": "British Gunman Spawn Egg",
       "block.cannon.rope_block": "Rope Block",
@@ -2351,8 +3095,9 @@
       "item.cannon.bill_turner_boots": "Bill Turner Boots",
       "block.cannon.grey_plank_slab": "Grey Plank Slab",
       "block.cannon.stairs_of_the_queen_annes_revenge": "Stairs Of The Queen Anne\u0027s Revenge",
-      "item_group.cannon.potc": "Potc",
+      "item_group.cannon.potc": "Cursed Tides",
       "entity.cannon.quartermaster": "Quartermaster",
+      "item.cannon.barbossa_leggings": "Barbossa Leggings",
       "item.cannon.joshamee_gibbs_leggings": "Joshamee Gibbs Leggings",
       "block.cannon.side_figure_head_of_the_queen_annes_revenge": "Side Figure Head Of The Queen Anne\u0027s Revenge",
       "block.cannon.gloriouslantern": "Glorious Lantern",
@@ -2363,13 +3108,16 @@
       "subtitles.cannonfire2": "Cannon Fires",
       "item.cannon.part_of_the_crew_spawn_egg": "Part Of The Crew Spawn Egg",
       "item.cannon.angelica_teach_leggings": "Angelica Teach Leggings",
+      "biome.cannon.locker_ocean": "Locker Ocean",
       "item.cannon.davy_jones_leggings": "Davy Jones Leggings",
+      "block.cannon.black_plank_trim": "Black Plank Trim",
       "item.cannon.davy_jones_boots": "Davy Jones Boots",
+      "block.cannon.slim_fence": "Slim Fence",
       "item.cannon.davy_jones_chestplate": "Davy Jones Chestplate",
       "block.cannon.red_sail_stair": "Red Sail Stair",
       "item.cannon.talisman_of_the_voodoo_mister": "Talisman Of The Queen Anne\u0027s Revenge",
       "block.cannon.rope": "Rope",
-      "item.cannon.kolmikulma_hat_helmet": "Kolmikulma Hat ",
+      "item.cannon.kolmikulma_hat_helmet": "Tricorn",
       "entity.cannon.briish": "British Gunman",
       "block.cannon.grey_plank_stair": "Grey Plank Stair",
       "block.cannon.black_planks": "Black Planks",
@@ -2389,6 +3137,7 @@
       "block.cannon.slabs_of_the_flying_dutchman": "Slabs Of The Flying Dutchman",
       "block.cannon.stairs_of_the_flying_dutchman": "Stairs Of The Flying Dutchman",
       "subtitles.cannon-load": "cannon load",
+      "item.cannon.barbossa_chestplate": "Barbossa\u0027s Jacket",
       "block.cannon.ladder_that_has_been_stolen_from_mikaels_backyard": "Ladder That Has Been Stolen From Mikaels Backyard",
       "block.cannon.pulley": "Pulley",
       "item.cannon.angelica_teach_chestplate": "Angelica Teach Vest",
@@ -2400,7 +3149,8 @@
       "item.cannon.swordos": "Swordos",
       "block.cannon.red_sail_wall": "Red Sail Wall",
       "item.cannon.bandana_helmet": "Bandana ",
-      "item.cannon.quartermaster_spawn_egg": "Quartermaster Spawn Egg"
+      "item.cannon.quartermaster_spawn_egg": "Quartermaster Spawn Egg",
+      "block.cannon.black_pearl_statue": "Black Pearl Statue"
     }
   },
   "foldersRoot": {
@@ -2415,6 +3165,7 @@
     "websiteURL": "https://mcreator.net",
     "license": "Academic Free License v3.0",
     "serverSideOnly": false,
+    "modPicture": "cannonballos",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],

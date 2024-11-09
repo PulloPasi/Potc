@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "bbb",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "tag": "minecraft:wooden_slabs"
+    },
+    "b": {
+      "item": "minecraft:gunpowder"
+    }
+  },
+  "result": {
+    "item": "cannon:gunpowderbarrel",
+    "count": 2
+  }
+}

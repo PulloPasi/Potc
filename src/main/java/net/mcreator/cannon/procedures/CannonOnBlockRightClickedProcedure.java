@@ -50,13 +50,6 @@ public class CannonOnBlockRightClickedProcedure {
 							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cannon:cannon-fired")), SoundSource.BLOCKS, 15, 2, false);
 						}
 					}
-					if (world instanceof Level _level) {
-						if (!_level.isClientSide()) {
-							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cannon:cannonball-woosh")), SoundSource.BLOCKS, 2, 1);
-						} else {
-							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cannon:cannonball-woosh")), SoundSource.BLOCKS, 2, 1, false);
-						}
-					}
 					fromX = x + 0.5;
 					fromY = y + 0.5;
 					fromZ = z + 0.5;

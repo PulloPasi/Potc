@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "a",
+    "b",
+    "c"
+  ],
+  "key": {
+    "a": {
+      "item": "cannon:grey_planks"
+    },
+    "b": {
+      "item": "minecraft:iron_ingot"
+    },
+    "c": {
+      "item": "cannon:grey_plank_slab"
+    }
+  },
+  "result": {
+    "item": "cannon:black_pearl_statue",
+    "count": 1
+  }
+}

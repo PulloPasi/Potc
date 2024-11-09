@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aba",
+    "bbb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_nugget"
+    },
+    "b": {
+      "item": "cannon:planks_of_the_queen_annes_revenge"
+    }
+  },
+  "result": {
+    "item": "cannon:cannon_hatch_of_the_queen_annes_revenge",
+    "count": 2
+  }
+}

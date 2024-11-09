@@ -69,6 +69,7 @@
     ]
   },
   "cannonhit": {
+    "subtitle": "subtitles.cannonhit",
     "sounds": [
       {
         "name": "cannon:cannonhit",

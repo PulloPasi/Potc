@@ -1,0 +1,9 @@
+{
+  "parent": "cannon:custom/fence",
+  "textures": {
+    "all": "cannon:block/fence",
+    "particle": "cannon:block/fence",
+    "0": "cannon:block/fence"
+  },
+  "render_type": "solid"
+}

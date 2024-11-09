@@ -113,6 +113,15 @@ public class CannonModTabs {
 				tabData.accept(CannonModBlocks.BARREL.get().asItem());
 				tabData.accept(CannonModBlocks.WINDOW_OF_THE_BLACK_PEARL.get().asItem());
 				tabData.accept(CannonModBlocks.CHANDELIER.get().asItem());
+				tabData.accept(CannonModBlocks.SLIM_FENCE.get().asItem());
+				tabData.accept(CannonModBlocks.BLACK_PEARL_STATUE.get().asItem());
+				tabData.accept(CannonModItems.BARBOSSA_HELMET.get());
+				tabData.accept(CannonModItems.BARBOSSA_CHESTPLATE.get());
+				tabData.accept(CannonModItems.BARBOSSA_LEGGINGS.get());
+				tabData.accept(CannonModItems.BARBOSSA_BOOTS.get());
+				tabData.accept(CannonModBlocks.LOCKER_SAND.get().asItem());
+				tabData.accept(CannonModBlocks.BLACK_PLANK_TRIM.get().asItem());
+				tabData.accept(CannonModItems.JACKS_COMPASS.get());
 			})
 
 					.build());

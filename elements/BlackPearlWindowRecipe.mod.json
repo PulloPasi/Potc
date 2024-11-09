@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 8,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#15"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#15"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#15"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#15"
+      },
+      {
+        "value": "Blocks.IRON_BARS"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#15"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#15"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#15"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#15"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:WindowOfTheBlackPearl"
+    },
+    "name": "black_pearl_window_recipe",
+    "namespace": "mod"
+  }
+}

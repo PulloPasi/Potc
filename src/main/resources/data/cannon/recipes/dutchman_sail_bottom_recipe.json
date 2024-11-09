@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "cannon:dutchmansails"
+    }
+  },
+  "result": {
+    "item": "cannon:dutchmansails_3",
+    "count": 1
+  }
+}

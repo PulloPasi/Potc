@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:GreyPlanks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:GreyPlanks"
+      },
+      {
+        "value": "CUSTOM:GreyPlanks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:GreyPlanks"
+      },
+      {
+        "value": "CUSTOM:GreyPlanks"
+      },
+      {
+        "value": "CUSTOM:GreyPlanks"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:GreyPlankStair"
+    },
+    "name": "grey_plank_stair_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "minecraft:white_dye"
+    },
+    {
+      "item": "cannon:red_sail"
+    }
+  ],
+  "result": {
+    "item": "cannon:light_red_sail",
+    "count": 1
+  }
+}

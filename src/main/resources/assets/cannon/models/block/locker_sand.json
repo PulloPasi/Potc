@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cannon:block/lockersand",
+    "up": "cannon:block/lockersand",
+    "north": "cannon:block/lockersand",
+    "east": "cannon:block/lockersand",
+    "south": "cannon:block/lockersand",
+    "west": "cannon:block/lockersand",
+    "particle": "cannon:block/lockersand"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "cannon:custom/halfhaflslab",
+  "textures": {
+    "all": "cannon:block/balckosplankos",
+    "particle": "cannon:block/balckosplankos",
+    "0": "cannon:block/balckosplankos"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,33 @@
+{
+  "_fv": 60,
+  "_type": "villagertrade",
+  "definition": {
+    "tradeEntries": [
+      {
+        "villagerProfession": {
+          "value": "WEAPONSMITH"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "Items.GOLD_INGOT"
+            },
+            "countPrice1": 15,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:Cannon"
+            },
+            "countOffer": 1,
+            "level": 2,
+            "maxTrades": 10,
+            "xp": 5,
+            "priceMultiplier": 0.1
+          }
+        ]
+      }
+    ]
+  }
+}

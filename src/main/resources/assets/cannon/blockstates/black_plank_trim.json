@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "cannon:block/black_plank_trim"
+    },
+    "facing=east": {
+      "model": "cannon:block/black_plank_trim",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "cannon:block/black_plank_trim",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "cannon:block/black_plank_trim",
+      "y": 270
+    }
+  }
+}

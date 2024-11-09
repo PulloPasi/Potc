@@ -25,6 +25,7 @@ import net.mcreator.cannon.item.LeStickOfFireItem;
 import net.mcreator.cannon.item.KolmikulmaHatItem;
 import net.mcreator.cannon.item.KeyItem;
 import net.mcreator.cannon.item.JoshameeGibbsItem;
+import net.mcreator.cannon.item.JacksCompassItem;
 import net.mcreator.cannon.item.JackSparrowItem;
 import net.mcreator.cannon.item.HeartOfDavidJonesItem;
 import net.mcreator.cannon.item.HalfEatenBananItem;
@@ -38,6 +39,7 @@ import net.mcreator.cannon.item.CannonballosItem;
 import net.mcreator.cannon.item.BulletitemItem;
 import net.mcreator.cannon.item.BlackBeardItem;
 import net.mcreator.cannon.item.BillTurnerItem;
+import net.mcreator.cannon.item.BarbossaItem;
 import net.mcreator.cannon.item.BandanaItem;
 import net.mcreator.cannon.item.BananItem;
 import net.mcreator.cannon.item.AngelicaTeachItem;
@@ -143,6 +145,15 @@ public class CannonModItems {
 	public static final RegistryObject<Item> BARREL = block(CannonModBlocks.BARREL);
 	public static final RegistryObject<Item> WINDOW_OF_THE_BLACK_PEARL = block(CannonModBlocks.WINDOW_OF_THE_BLACK_PEARL);
 	public static final RegistryObject<Item> CHANDELIER = block(CannonModBlocks.CHANDELIER);
+	public static final RegistryObject<Item> SLIM_FENCE = block(CannonModBlocks.SLIM_FENCE);
+	public static final RegistryObject<Item> BLACK_PEARL_STATUE = block(CannonModBlocks.BLACK_PEARL_STATUE);
+	public static final RegistryObject<Item> BARBOSSA_HELMET = REGISTRY.register("barbossa_helmet", () -> new BarbossaItem.Helmet());
+	public static final RegistryObject<Item> BARBOSSA_CHESTPLATE = REGISTRY.register("barbossa_chestplate", () -> new BarbossaItem.Chestplate());
+	public static final RegistryObject<Item> BARBOSSA_LEGGINGS = REGISTRY.register("barbossa_leggings", () -> new BarbossaItem.Leggings());
+	public static final RegistryObject<Item> BARBOSSA_BOOTS = REGISTRY.register("barbossa_boots", () -> new BarbossaItem.Boots());
+	public static final RegistryObject<Item> LOCKER_SAND = block(CannonModBlocks.LOCKER_SAND);
+	public static final RegistryObject<Item> BLACK_PLANK_TRIM = block(CannonModBlocks.BLACK_PLANK_TRIM);
+	public static final RegistryObject<Item> JACKS_COMPASS = REGISTRY.register("jacks_compass", () -> new JacksCompassItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 2,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.IRON_NUGGET"
+      },
+      {
+        "value": "CUSTOM:BlackPlanks"
+      },
+      {
+        "value": "Items.IRON_NUGGET"
+      },
+      {
+        "value": "CUSTOM:BlackPlanks"
+      },
+      {
+        "value": "CUSTOM:BlackPlanks"
+      },
+      {
+        "value": "CUSTOM:BlackPlanks"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:BlackPlankTrapDoor"
+    },
+    "name": "blackcannon_hatch_recipe",
+    "namespace": "mod"
+  }
+}

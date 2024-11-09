@@ -40,7 +40,7 @@ public class CannonModEntities {
 	public static final RegistryObject<EntityType<BulletEntity>> BULLET = register("bullet",
 			EntityType.Builder.<BulletEntity>of(BulletEntity::new, MobCategory.MISC).setCustomClientFactory(BulletEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<KarbEntity>> KARB = register("karb",
-			EntityType.Builder.<KarbEntity>of(KarbEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(KarbEntity::new)
+			EntityType.Builder.<KarbEntity>of(KarbEntity::new, MobCategory.WATER_AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(KarbEntity::new)
 
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<PartOfTheCrewStrongEntity>> PART_OF_THE_CREW_STRONG = register("part_of_the_crew_strong",
