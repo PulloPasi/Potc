@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_side_tall",
+  "textures": {
+    "wall": "cannon:block/dutchmanplank1",
+    "particle": "cannon:block/dutchmanplank1"
+  },
+  "render_type": "solid"
+}

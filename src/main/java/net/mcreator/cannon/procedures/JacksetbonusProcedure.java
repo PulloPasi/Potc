@@ -34,8 +34,10 @@ public class JacksetbonusProcedure {
 			return;
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == CannonModItems.JACK_SPARROW_BOOTS.get()
 				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == CannonModItems.JACK_SPARROW_LEGGINGS.get()
-				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == CannonModItems.JACK_SPARROW_CHESTPLATE.get()
-				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == CannonModItems.JACK_SPARROW_HELMET.get()) {
+				&& ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == CannonModItems.JACK_SPARROW_CHESTPLATE.get()
+						|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == CannonModItems.JACKDOS_CHESTPLATE.get())
+				&& ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == CannonModItems.JACK_SPARROW_HELMET.get()
+						|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == CannonModItems.JACKDOS_HELMET.get())) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 2, 1, false, false));
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())

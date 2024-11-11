@@ -2916,6 +2916,277 @@
           "src/main/resources/assets/cannon/models/item/jacks_compass.json"
         ]
       }
+    },
+    {
+      "name": "Jackdos",
+      "type": "armor",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jackdos",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/item/jackdos_chestplate.json",
+          "src/main/java/net/mcreator/cannon/item/JackdosItem.java",
+          "src/main/resources/assets/cannon/models/item/jackdos_helmet.json"
+        ]
+      }
+    },
+    {
+      "name": "BlackPearlMast",
+      "type": "block",
+      "sortid": 166,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_pearl_mast",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/block/BlackPearlMastBlock.java",
+          "src/main/resources/assets/cannon/models/block/black_pearl_mast.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/black_pearl_mast.json",
+          "src/main/resources/assets/cannon/blockstates/black_pearl_mast.json",
+          "src/main/resources/assets/cannon/models/item/black_pearl_mast.json"
+        ]
+      }
+    },
+    {
+      "name": "HangingVinesDutchman",
+      "type": "block",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hanging_vines_dutchman",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/loot_tables/blocks/hanging_vines_dutchman.json",
+          "src/main/java/net/mcreator/cannon/block/HangingVinesDutchmanBlock.java",
+          "src/main/resources/assets/cannon/blockstates/hanging_vines_dutchman.json",
+          "src/main/resources/assets/cannon/models/block/hanging_vines_dutchman.json",
+          "src/main/resources/assets/cannon/models/item/hanging_vines_dutchman.json"
+        ]
+      }
+    },
+    {
+      "name": "DutchmanPlank1",
+      "type": "block",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dutchman_plank_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/block/DutchmanPlank1Block.java",
+          "src/main/resources/assets/cannon/models/item/dutchman_plank_1.json",
+          "src/main/resources/assets/cannon/blockstates/dutchman_plank_1.json",
+          "src/main/resources/assets/cannon/models/block/dutchman_plank_1.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/dutchman_plank_1.json"
+        ]
+      }
+    },
+    {
+      "name": "DutchmanPlank2",
+      "type": "block",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dutchman_plank_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/item/dutchman_plank_2.json",
+          "src/main/resources/assets/cannon/models/block/dutchman_plank_2.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/dutchman_plank_2.json",
+          "src/main/resources/assets/cannon/blockstates/dutchman_plank_2.json",
+          "src/main/java/net/mcreator/cannon/block/DutchmanPlank2Block.java"
+        ]
+      }
+    },
+    {
+      "name": "DutchmanPlank3",
+      "type": "block",
+      "sortid": 171,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dutchman_plank_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/loot_tables/blocks/dutchman_plank_3.json",
+          "src/main/java/net/mcreator/cannon/block/DutchmanPlank3Block.java",
+          "src/main/resources/assets/cannon/models/block/dutchman_plank_3.json",
+          "src/main/resources/assets/cannon/models/item/dutchman_plank_3.json",
+          "src/main/resources/assets/cannon/blockstates/dutchman_plank_3.json"
+        ]
+      }
+    },
+    {
+      "name": "DutchmanPlank4",
+      "type": "block",
+      "sortid": 172,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dutchman_plank_4",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/loot_tables/blocks/dutchman_plank_4.json",
+          "src/main/java/net/mcreator/cannon/block/DutchmanPlank4Block.java",
+          "src/main/resources/assets/cannon/blockstates/dutchman_plank_4.json",
+          "src/main/resources/assets/cannon/models/block/dutchman_plank_4.json",
+          "src/main/resources/assets/cannon/models/item/dutchman_plank_4.json"
+        ]
+      }
+    },
+    {
+      "name": "DutchmanWall1",
+      "type": "block",
+      "sortid": 173,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dutchman_wall_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/blockstates/dutchman_wall_1.json",
+          "src/main/java/net/mcreator/cannon/block/DutchmanWall1Block.java",
+          "src/main/resources/data/cannon/loot_tables/blocks/dutchman_wall_1.json",
+          "src/main/resources/assets/cannon/models/block/dutchman_wall_1_post.json",
+          "src/main/resources/assets/cannon/models/block/dutchman_wall_1_inventory.json",
+          "src/main/resources/assets/cannon/models/block/dutchman_wall_1.json",
+          "src/main/resources/assets/cannon/models/item/dutchman_wall_1.json",
+          "src/main/resources/assets/cannon/models/block/dutchman_wall_1_side_tall.json"
+        ]
+      }
+    },
+    {
+      "name": "DutchmanWall2",
+      "type": "block",
+      "sortid": 174,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dutchman_wall_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/loot_tables/blocks/dutchman_wall_2.json",
+          "src/main/resources/assets/cannon/models/block/dutchman_wall_2.json",
+          "src/main/resources/assets/cannon/models/item/dutchman_wall_2.json",
+          "src/main/resources/assets/cannon/models/block/dutchman_wall_2_post.json",
+          "src/main/java/net/mcreator/cannon/block/DutchmanWall2Block.java",
+          "src/main/resources/assets/cannon/blockstates/dutchman_wall_2.json",
+          "src/main/resources/assets/cannon/models/block/dutchman_wall_2_side_tall.json",
+          "src/main/resources/assets/cannon/models/block/dutchman_wall_2_inventory.json"
+        ]
+      }
+    },
+    {
+      "name": "DutchmanSlab1",
+      "type": "block",
+      "sortid": 175,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dutchman_slab_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/item/dutchman_slab_1.json",
+          "src/main/java/net/mcreator/cannon/block/DutchmanSlab1Block.java",
+          "src/main/resources/assets/cannon/models/block/dutchman_slab_1.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/dutchman_slab_1.json",
+          "src/main/resources/assets/cannon/blockstates/dutchman_slab_1.json",
+          "src/main/resources/assets/cannon/models/block/dutchman_slab_1_top.json",
+          "src/main/resources/assets/cannon/models/block/dutchman_slab_1_full.json"
+        ]
+      }
+    },
+    {
+      "name": "DutchmanSlab2",
+      "type": "block",
+      "sortid": 176,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dutchman_slab_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/blockstates/dutchman_slab_2.json",
+          "src/main/resources/assets/cannon/models/block/dutchman_slab_2_full.json",
+          "src/main/resources/assets/cannon/models/block/dutchman_slab_2_top.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/dutchman_slab_2.json",
+          "src/main/resources/assets/cannon/models/block/dutchman_slab_2.json",
+          "src/main/resources/assets/cannon/models/item/dutchman_slab_2.json",
+          "src/main/java/net/mcreator/cannon/block/DutchmanSlab2Block.java"
+        ]
+      }
+    },
+    {
+      "name": "DutchmanSlab3",
+      "type": "block",
+      "sortid": 177,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dutchman_slab_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/block/DutchmanSlab3Block.java",
+          "src/main/resources/assets/cannon/models/item/dutchman_slab_3.json",
+          "src/main/resources/assets/cannon/models/block/dutchman_slab_3_top.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/dutchman_slab_3.json",
+          "src/main/resources/assets/cannon/models/block/dutchman_slab_3.json",
+          "src/main/resources/assets/cannon/blockstates/dutchman_slab_3.json",
+          "src/main/resources/assets/cannon/models/block/dutchman_slab_3_full.json"
+        ]
+      }
+    },
+    {
+      "name": "DutchmanStair",
+      "type": "block",
+      "sortid": 178,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dutchman_stair",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/block/DutchmanStairBlock.java",
+          "src/main/resources/assets/cannon/blockstates/dutchman_stair.json",
+          "src/main/resources/assets/cannon/models/block/dutchman_stair_inventory.json",
+          "src/main/resources/assets/cannon/models/block/dutchman_stair_post.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/dutchman_stair.json",
+          "src/main/resources/assets/cannon/models/item/dutchman_stair.json",
+          "src/main/resources/assets/cannon/models/block/dutchman_stair.json"
+        ]
+      }
+    },
+    {
+      "name": "DutchmanStair1",
+      "type": "block",
+      "sortid": 179,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dutchman_stair_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/block/dutchman_stair_1.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/dutchman_stair_1.json",
+          "src/main/resources/assets/cannon/models/item/dutchman_stair_1.json",
+          "src/main/resources/assets/cannon/models/block/dutchman_stair_1_inner.json",
+          "src/main/java/net/mcreator/cannon/block/DutchmanStair1Block.java",
+          "src/main/resources/assets/cannon/models/block/dutchman_stair_1_outer.json",
+          "src/main/resources/assets/cannon/blockstates/dutchman_stair_1.json"
+        ]
+      }
+    },
+    {
+      "name": "DutchmanStair2",
+      "type": "block",
+      "sortid": 180,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dutchman_stair_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/block/dutchman_stair_2.json",
+          "src/main/java/net/mcreator/cannon/block/DutchmanStair2Block.java",
+          "src/main/resources/data/cannon/loot_tables/blocks/dutchman_stair_2.json",
+          "src/main/resources/assets/cannon/models/block/dutchman_stair_2_inner.json",
+          "src/main/resources/assets/cannon/models/item/dutchman_stair_2.json",
+          "src/main/resources/assets/cannon/blockstates/dutchman_stair_2.json",
+          "src/main/resources/assets/cannon/models/block/dutchman_stair_2_outer.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -2998,6 +3269,9 @@
       "~CUSTOM:Locker"
     ],
     "BLOCKS:minecraft:slabs": [
+      "~CUSTOM:DutchmanSlab3",
+      "~CUSTOM:DutchmanSlab2",
+      "~CUSTOM:DutchmanSlab1",
       "~CUSTOM:GreyPlankSlab",
       "~CUSTOM:RedSailSlab",
       "~CUSTOM:SlabsOfTheQueenAnnesRevenge",
@@ -3005,13 +3279,18 @@
       "~CUSTOM:BlackPlankSlab"
     ],
     "BLOCKS:minecraft:fences": [
+      "~CUSTOM:DutchmanStair",
       "~CUSTOM:StylishFence"
     ],
     "BLOCKS:minecraft:walls": [
+      "~CUSTOM:DutchmanWall2",
+      "~CUSTOM:DutchmanWall1",
       "~CUSTOM:RedSailWall",
       "~CUSTOM:StylishWall"
     ],
     "BLOCKS:minecraft:stairs": [
+      "~CUSTOM:DutchmanStair2",
+      "~CUSTOM:DutchmanStair1",
       "~CUSTOM:GreyPlankStair",
       "~CUSTOM:RedSailStair",
       "~CUSTOM:StairsOfTheQueenAnnesRevenge",
@@ -3026,6 +3305,7 @@
   "language_map": {
     "en_us": {
       "subtitles.gunfire": "",
+      "item.cannon.jackdos_helmet": "Jack Sparrow (No Hat)",
       "item.cannon.joshamee_gibbs_boots": "Joshamee Gibbs Boots",
       "item.cannon.banan": "Banan",
       "block.cannon.planks_of_the_queen_annes_revenge": "Planks Of The Queen Anne\u0027s Revenge",
@@ -3036,16 +3316,18 @@
       "block.cannon.sails_of_the_black_pearl_patch": "Sail",
       "block.cannon.cannon": "Cannon",
       "item.cannon.barbossa_boots": "Barbossa Boots",
-      "item.cannon.angelica_teach_boots": "Angelica Teach Boots",
       "block.cannon.stylish_fence": "Stylish Fence",
+      "item.cannon.angelica_teach_boots": "Angelica Teach Boots",
       "item.cannon.mermaid_spawn_egg": "Mermaid Spawn Egg",
       "block.cannon.locker_sand": "Locker Sand",
       "item.cannon.sword_of_triton": "Sword Of Triton",
       "item.cannon.black_beard_boots": "BlackBeard Boots",
+      "block.cannon.dutchman_wall_1": "Dutchman Wall 1",
+      "block.cannon.dutchman_wall_2": "Dutchman Wall 2",
       "item.cannon.jack_sparrow_boots": "Jack Sparrow Boots",
       "item.cannon.barbossa_helmet": "Barbossa\u0027s Hat",
-      "item.cannon.jack_sparrow_chestplate": "Jack Sparrow Chestplate",
       "item.cannon.bill_turner_leggings": "Bill Turner Leggings",
+      "item.cannon.jack_sparrow_chestplate": "Jack Sparrow Chestplate",
       "item.cannon.heart_of_david_jones": "Heart Of Davy Jones",
       "item.cannon.joshamee_gibbs_chestplate": "Joshamee Gibbs Chestplate",
       "item.cannon.le_stick_of_fire": "Le Stick Of Fire",
@@ -3054,13 +3336,17 @@
       "item.cannon.davy_jones_helmet": "Davy Jones Helmet",
       "block.cannon.dead_mans_chest": "Dead Mans Chest",
       "item.cannon.joshamee_gibbs_helmet": "Joshamee Gibbs Hair",
+      "block.cannon.hanging_vines_dutchman": "Hanging Vines ",
       "block.cannon.red_sail": "Red Sail",
       "block.cannon.face_of_the_ferryman": "Face Of The Ferryman",
       "item.cannon.pipo_helmet": "Beanie",
       "block.cannon.ferrymans_chasing_cannon": "Ferrymans Chasing Cannon",
       "block.cannon.dutchmansails": "Sails Of The Flying Dutchman",
+      "block.cannon.dutchman_slab_1": "Dutchman Slab 1",
       "item.cannon.karb_spawn_egg": "Karb Spawn Egg",
+      "block.cannon.dutchman_slab_2": "Dutchman Slab 2",
       "item.cannon.black_beard_chestplate": "BlackBeard Jacket",
+      "block.cannon.dutchman_slab_3": "Dutchman Slab 3",
       "subtitles.swowrddraw": "",
       "item.cannon.jacks_compass": "Jack\u0027s Compass",
       "block.cannon.planks_of_the_flying_dutchman": "Planks Of The Flying Dutchman",
@@ -3077,6 +3363,7 @@
       "block.cannon.stylish_wall": "Stylish Wall",
       "block.cannon.red_sail_slab": "Red Sail Slab",
       "subtitles.cannonball-woosh": "cannonball flyby",
+      "block.cannon.black_pearl_mast": "Black Pearl Mast",
       "item.cannon.angelica_teach_helmet": "Angelica Teach Hat",
       "item.cannon.bill_turner_chestplate": "Bill Turner Chestplate",
       "block.cannon.chandelier": "Chandelier",
@@ -3087,15 +3374,21 @@
       "item.cannon.mermaidtear": "Mermaidtear",
       "subtitles.cannonhit": "Cannonball hits",
       "block.cannon.window_of_the_black_pearl": "Window Of The Black Pearl",
+      "item.cannon.jackdos_chestplate": "Jack Sparrow (No Jacket)",
       "item.cannon.briish_spawn_egg": "British Gunman Spawn Egg",
       "block.cannon.rope_block": "Rope Block",
+      "block.cannon.dutchman_plank_1": "Dutchman Plank 1",
       "item.cannon.talisman_of_the_black_pearl": "Talisman Of The Black Pearl",
       "block.cannon.black_plank_slab": "Black Plank Slab",
       "block.cannon.black_plank_trap_door": "Black Plank Trap Door",
       "item.cannon.bill_turner_boots": "Bill Turner Boots",
       "block.cannon.grey_plank_slab": "Grey Plank Slab",
+      "block.cannon.dutchman_plank_2": "Dutchman Plank 2",
+      "block.cannon.dutchman_plank_3": "Dutchman Plank 3",
+      "block.cannon.dutchman_plank_4": "Dutchman Plank 4",
       "block.cannon.stairs_of_the_queen_annes_revenge": "Stairs Of The Queen Anne\u0027s Revenge",
       "item_group.cannon.potc": "Cursed Tides",
+      "block.cannon.dutchman_stair": "Dutchman Fence",
       "entity.cannon.quartermaster": "Quartermaster",
       "item.cannon.barbossa_leggings": "Barbossa Leggings",
       "item.cannon.joshamee_gibbs_leggings": "Joshamee Gibbs Leggings",
@@ -3130,6 +3423,8 @@
       "item.cannon.dutchmanpeace": "Talisman Of The Flying Dutchman",
       "item.cannon.key": "Key",
       "item.cannon.chalicefull": "Chalice Of Cartagena (Filled)",
+      "block.cannon.dutchman_stair_2": "Dutchman Stair 2",
+      "block.cannon.dutchman_stair_1": "Dutchman Stair 1",
       "block.cannon.black_plank_stairs": "Black Plank Stairs",
       "item.cannon.jack_sparrow_leggings": "Jack Sparrow Leggings",
       "entity.cannon.mermaid": "Mermaid",

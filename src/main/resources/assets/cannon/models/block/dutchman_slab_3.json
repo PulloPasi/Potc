@@ -1,0 +1,9 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "cannon:block/dutchmanplank4",
+    "top": "cannon:block/dutchmanplank4",
+    "side": "cannon:block/dutchmanplank4"
+  },
+  "render_type": "solid"
+}

@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "cannon:dutchman_stair_2",
+    "cannon:dutchman_stair_1",
     "cannon:grey_plank_stair",
     "cannon:red_sail_stair",
     "cannon:stairs_of_the_queen_annes_revenge",

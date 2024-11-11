@@ -12,6 +12,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.mcreator.cannon.client.model.Modeltrihat;
 import net.mcreator.cannon.client.model.Modelpipo;
 import net.mcreator.cannon.client.model.Modeljonetsiversiokaksi;
+import net.mcreator.cannon.client.model.Modeljackkaks;
 import net.mcreator.cannon.client.model.Modeljack;
 import net.mcreator.cannon.client.model.Modelgibbs;
 import net.mcreator.cannon.client.model.Modelblackbeard;
@@ -36,5 +37,6 @@ public class CannonModModels {
 		event.registerLayerDefinition(Modeltrihat.LAYER_LOCATION, Modeltrihat::createBodyLayer);
 		event.registerLayerDefinition(Modelblackbeard.LAYER_LOCATION, Modelblackbeard::createBodyLayer);
 		event.registerLayerDefinition(Modelbarbossakaks.LAYER_LOCATION, Modelbarbossakaks::createBodyLayer);
+		event.registerLayerDefinition(Modeljackkaks.LAYER_LOCATION, Modeljackkaks::createBodyLayer);
 	}
 }

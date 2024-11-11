@@ -26,6 +26,7 @@ import net.mcreator.cannon.item.KolmikulmaHatItem;
 import net.mcreator.cannon.item.KeyItem;
 import net.mcreator.cannon.item.JoshameeGibbsItem;
 import net.mcreator.cannon.item.JacksCompassItem;
+import net.mcreator.cannon.item.JackdosItem;
 import net.mcreator.cannon.item.JackSparrowItem;
 import net.mcreator.cannon.item.HeartOfDavidJonesItem;
 import net.mcreator.cannon.item.HalfEatenBananItem;
@@ -154,6 +155,22 @@ public class CannonModItems {
 	public static final RegistryObject<Item> LOCKER_SAND = block(CannonModBlocks.LOCKER_SAND);
 	public static final RegistryObject<Item> BLACK_PLANK_TRIM = block(CannonModBlocks.BLACK_PLANK_TRIM);
 	public static final RegistryObject<Item> JACKS_COMPASS = REGISTRY.register("jacks_compass", () -> new JacksCompassItem());
+	public static final RegistryObject<Item> JACKDOS_HELMET = REGISTRY.register("jackdos_helmet", () -> new JackdosItem.Helmet());
+	public static final RegistryObject<Item> JACKDOS_CHESTPLATE = REGISTRY.register("jackdos_chestplate", () -> new JackdosItem.Chestplate());
+	public static final RegistryObject<Item> BLACK_PEARL_MAST = block(CannonModBlocks.BLACK_PEARL_MAST);
+	public static final RegistryObject<Item> HANGING_VINES_DUTCHMAN = block(CannonModBlocks.HANGING_VINES_DUTCHMAN);
+	public static final RegistryObject<Item> DUTCHMAN_PLANK_1 = block(CannonModBlocks.DUTCHMAN_PLANK_1);
+	public static final RegistryObject<Item> DUTCHMAN_PLANK_2 = block(CannonModBlocks.DUTCHMAN_PLANK_2);
+	public static final RegistryObject<Item> DUTCHMAN_PLANK_3 = block(CannonModBlocks.DUTCHMAN_PLANK_3);
+	public static final RegistryObject<Item> DUTCHMAN_PLANK_4 = block(CannonModBlocks.DUTCHMAN_PLANK_4);
+	public static final RegistryObject<Item> DUTCHMAN_WALL_1 = block(CannonModBlocks.DUTCHMAN_WALL_1);
+	public static final RegistryObject<Item> DUTCHMAN_WALL_2 = block(CannonModBlocks.DUTCHMAN_WALL_2);
+	public static final RegistryObject<Item> DUTCHMAN_SLAB_1 = block(CannonModBlocks.DUTCHMAN_SLAB_1);
+	public static final RegistryObject<Item> DUTCHMAN_SLAB_2 = block(CannonModBlocks.DUTCHMAN_SLAB_2);
+	public static final RegistryObject<Item> DUTCHMAN_SLAB_3 = block(CannonModBlocks.DUTCHMAN_SLAB_3);
+	public static final RegistryObject<Item> DUTCHMAN_STAIR = block(CannonModBlocks.DUTCHMAN_STAIR);
+	public static final RegistryObject<Item> DUTCHMAN_STAIR_1 = block(CannonModBlocks.DUTCHMAN_STAIR_1);
+	public static final RegistryObject<Item> DUTCHMAN_STAIR_2 = block(CannonModBlocks.DUTCHMAN_STAIR_2);
 
 	// Start of user code block custom items
 	// End of user code block custom items

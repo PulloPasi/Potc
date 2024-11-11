@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cannon:block/dutchmanplank4",
+    "up": "cannon:block/dutchmanplank4",
+    "north": "cannon:block/dutchmanplank4",
+    "east": "cannon:block/dutchmanplank4",
+    "south": "cannon:block/dutchmanplank4",
+    "west": "cannon:block/dutchmanplank4",
+    "particle": "cannon:block/dutchmanplank4"
+  },
+  "render_type": "solid"
+}

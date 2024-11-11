@@ -1,0 +1,9 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "cannon:block/dutchmanplank1",
+    "top": "cannon:block/dutchmanplank1",
+    "side": "cannon:block/dutchmanplank1"
+  },
+  "render_type": "solid"
+}

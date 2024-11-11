@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "cannon:dutchman_stair",
     "cannon:stylish_fence"
   ]
 }

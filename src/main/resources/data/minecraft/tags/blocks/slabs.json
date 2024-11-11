@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
+    "cannon:dutchman_slab_3",
+    "cannon:dutchman_slab_2",
+    "cannon:dutchman_slab_1",
     "cannon:grey_plank_slab",
     "cannon:red_sail_slab",
     "cannon:slabs_of_the_queen_annes_revenge",

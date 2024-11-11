@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "cannon:block/dutchmanplank2",
+    "top": "cannon:block/dutchmanplank2",
+    "side": "cannon:block/dutchmanplank2"
+  },
+  "render_type": "solid"
+}

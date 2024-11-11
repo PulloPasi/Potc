@@ -122,6 +122,22 @@ public class CannonModTabs {
 				tabData.accept(CannonModBlocks.LOCKER_SAND.get().asItem());
 				tabData.accept(CannonModBlocks.BLACK_PLANK_TRIM.get().asItem());
 				tabData.accept(CannonModItems.JACKS_COMPASS.get());
+				tabData.accept(CannonModItems.JACKDOS_HELMET.get());
+				tabData.accept(CannonModItems.JACKDOS_CHESTPLATE.get());
+				tabData.accept(CannonModBlocks.BLACK_PEARL_MAST.get().asItem());
+				tabData.accept(CannonModBlocks.HANGING_VINES_DUTCHMAN.get().asItem());
+				tabData.accept(CannonModBlocks.DUTCHMAN_PLANK_1.get().asItem());
+				tabData.accept(CannonModBlocks.DUTCHMAN_PLANK_2.get().asItem());
+				tabData.accept(CannonModBlocks.DUTCHMAN_PLANK_3.get().asItem());
+				tabData.accept(CannonModBlocks.DUTCHMAN_PLANK_4.get().asItem());
+				tabData.accept(CannonModBlocks.DUTCHMAN_WALL_1.get().asItem());
+				tabData.accept(CannonModBlocks.DUTCHMAN_WALL_2.get().asItem());
+				tabData.accept(CannonModBlocks.DUTCHMAN_SLAB_1.get().asItem());
+				tabData.accept(CannonModBlocks.DUTCHMAN_SLAB_2.get().asItem());
+				tabData.accept(CannonModBlocks.DUTCHMAN_SLAB_3.get().asItem());
+				tabData.accept(CannonModBlocks.DUTCHMAN_STAIR.get().asItem());
+				tabData.accept(CannonModBlocks.DUTCHMAN_STAIR_1.get().asItem());
+				tabData.accept(CannonModBlocks.DUTCHMAN_STAIR_2.get().asItem());
 			})
 
 					.build());

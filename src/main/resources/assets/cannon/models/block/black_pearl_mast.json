@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cannon:block/masttop",
+    "up": "cannon:block/masttop",
+    "north": "cannon:block/mastfront",
+    "east": "cannon:block/mastfront",
+    "south": "cannon:block/mastfront",
+    "west": "cannon:block/mastfront",
+    "particle": "cannon:block/masttop"
+  },
+  "render_type": "solid"
+}

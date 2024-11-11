@@ -1,7 +1,16 @@
 {
   "variants": {
-    "": {
+    "axis=x": {
+      "model": "cannon:block/rope_block",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
       "model": "cannon:block/rope_block"
+    },
+    "axis=z": {
+      "model": "cannon:block/rope_block",
+      "x": 90
     }
   }
 }

@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "cannon:dutchman_wall_2",
+    "cannon:dutchman_wall_1",
     "cannon:red_sail_wall",
     "cannon:stylish_wall"
   ]
