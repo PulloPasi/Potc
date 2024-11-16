@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cannon:block/queenaennsrevengerrwindow",
+    "up": "cannon:block/queenaennsrevengerrwindow",
+    "north": "cannon:block/queenaennsrevengerrwindow",
+    "east": "cannon:block/queenaennsrevengerrwindow",
+    "south": "cannon:block/queenaennsrevengerrwindow",
+    "west": "cannon:block/queenaennsrevengerrwindow",
+    "particle": "cannon:block/queenaennsrevengerrwindow"
+  },
+  "render_type": "translucent"
+}

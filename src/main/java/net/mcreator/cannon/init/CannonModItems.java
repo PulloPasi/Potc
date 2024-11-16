@@ -171,6 +171,14 @@ public class CannonModItems {
 	public static final RegistryObject<Item> DUTCHMAN_STAIR = block(CannonModBlocks.DUTCHMAN_STAIR);
 	public static final RegistryObject<Item> DUTCHMAN_STAIR_1 = block(CannonModBlocks.DUTCHMAN_STAIR_1);
 	public static final RegistryObject<Item> DUTCHMAN_STAIR_2 = block(CannonModBlocks.DUTCHMAN_STAIR_2);
+	public static final RegistryObject<Item> BLACK_PEARL_BOW_1 = block(CannonModBlocks.BLACK_PEARL_BOW_1);
+	public static final RegistryObject<Item> BLACK_PEARL_BOW_2 = block(CannonModBlocks.BLACK_PEARL_BOW_2);
+	public static final RegistryObject<Item> QUEEN_ANNES_REVENGE_WINDOW = block(CannonModBlocks.QUEEN_ANNES_REVENGE_WINDOW);
+	public static final RegistryObject<Item> BLACK_PEARL_BIRD_TRIM = block(CannonModBlocks.BLACK_PEARL_BIRD_TRIM);
+	public static final RegistryObject<Item> BLACK_PEARL_CABIN_ROOF = block(CannonModBlocks.BLACK_PEARL_CABIN_ROOF);
+	public static final RegistryObject<Item> BLACK_PEARL_CABIN_ROOF_SLAB = block(CannonModBlocks.BLACK_PEARL_CABIN_ROOF_SLAB);
+	public static final RegistryObject<Item> BLACK_PEARL_CABIN_ROOF_STAIR = block(CannonModBlocks.BLACK_PEARL_CABIN_ROOF_STAIR);
+	public static final RegistryObject<Item> BLACK_PEARL_BACK_TRIM = block(CannonModBlocks.BLACK_PEARL_BACK_TRIM);
 
 	// Start of user code block custom items
 	// End of user code block custom items

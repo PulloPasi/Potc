@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cannon:block/black_pearl_cabin_roof_slab"
+    },
+    "type=top": {
+      "model": "cannon:block/black_pearl_cabin_roof_slab_top"
+    },
+    "type=double": {
+      "model": "cannon:block/black_pearl_cabin_roof_slab_full"
+    }
+  }
+}

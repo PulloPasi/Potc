@@ -1,0 +1,9 @@
+{
+  "parent": "cannon:custom/blackpearldesing",
+  "textures": {
+    "all": "cannon:block/blackpearldesign",
+    "particle": "cannon:block/blackpearldesign",
+    "0": "cannon:block/blackpearldesign"
+  },
+  "render_type": "solid"
+}

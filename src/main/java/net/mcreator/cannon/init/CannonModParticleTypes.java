@@ -16,4 +16,5 @@ import net.mcreator.cannon.CannonMod;
 public class CannonModParticleTypes {
 	public static final DeferredRegister<ParticleType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.PARTICLE_TYPES, CannonMod.MODID);
 	public static final RegistryObject<SimpleParticleType> CANNONTRAIL = REGISTRY.register("cannontrail", () -> new SimpleParticleType(true));
+	public static final RegistryObject<SimpleParticleType> MUZZLEFLARE = REGISTRY.register("muzzleflare", () -> new SimpleParticleType(true));
 }

@@ -138,6 +138,14 @@ public class CannonModTabs {
 				tabData.accept(CannonModBlocks.DUTCHMAN_STAIR.get().asItem());
 				tabData.accept(CannonModBlocks.DUTCHMAN_STAIR_1.get().asItem());
 				tabData.accept(CannonModBlocks.DUTCHMAN_STAIR_2.get().asItem());
+				tabData.accept(CannonModBlocks.BLACK_PEARL_BOW_1.get().asItem());
+				tabData.accept(CannonModBlocks.BLACK_PEARL_BOW_2.get().asItem());
+				tabData.accept(CannonModBlocks.QUEEN_ANNES_REVENGE_WINDOW.get().asItem());
+				tabData.accept(CannonModBlocks.BLACK_PEARL_BIRD_TRIM.get().asItem());
+				tabData.accept(CannonModBlocks.BLACK_PEARL_CABIN_ROOF.get().asItem());
+				tabData.accept(CannonModBlocks.BLACK_PEARL_CABIN_ROOF_SLAB.get().asItem());
+				tabData.accept(CannonModBlocks.BLACK_PEARL_CABIN_ROOF_STAIR.get().asItem());
+				tabData.accept(CannonModBlocks.BLACK_PEARL_BACK_TRIM.get().asItem());
 			})
 
 					.build());

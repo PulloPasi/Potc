@@ -18,9 +18,11 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.cannon.init.CannonModParticleTypes;
 import net.mcreator.cannon.init.CannonModItems;
 import net.mcreator.cannon.init.CannonModEntities;
 import net.mcreator.cannon.entity.CannonballosProjectileEntity;
@@ -163,6 +165,7 @@ public class CannonOnBlockRightClicked1Procedure {
 						}.getDirection((world.getBlockState(BlockPos.containing(x, y, z))))).getStepZ()), 5, 2);
 						projectileLevel.addFreshEntity(_entityToSpawn);
 					}
+					world.addParticle((SimpleParticleType) (CannonModParticleTypes.MUZZLEFLARE.get()), (fromX + 0.1), (fromY + 0.3), (fromZ + 0.1), 0, 1, 0);
 					if (entity instanceof Player _player) {
 						ItemStack _stktoremove = new ItemStack(CannonModItems.CANNONBALLOS.get());
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());

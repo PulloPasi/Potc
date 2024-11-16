@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cannon:block/balckosplankos",
+    "up": "cannon:block/balckosplankos",
+    "north": "cannon:block/bow1",
+    "east": "cannon:block/balckosplankos",
+    "south": "cannon:block/balckosplankos",
+    "west": "cannon:block/balckosplankos",
+    "particle": "cannon:block/balckosplankos"
+  },
+  "render_type": "solid"
+}

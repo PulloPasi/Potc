@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cannon:block/roof",
+    "up": "cannon:block/roof",
+    "north": "cannon:block/roof",
+    "east": "cannon:block/roof",
+    "south": "cannon:block/roof",
+    "west": "cannon:block/roof",
+    "particle": "cannon:block/roof"
+  },
+  "render_type": "solid"
+}

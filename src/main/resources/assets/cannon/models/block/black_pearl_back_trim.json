@@ -1,0 +1,9 @@
+{
+  "parent": "cannon:custom/bigdesign",
+  "textures": {
+    "all": "cannon:block/bigdesign",
+    "particle": "cannon:block/bigdesign",
+    "0": "cannon:block/bigdesign"
+  },
+  "render_type": "solid"
+}

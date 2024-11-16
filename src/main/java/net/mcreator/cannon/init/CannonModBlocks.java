@@ -31,6 +31,7 @@ import net.mcreator.cannon.block.RedSailWallBlock;
 import net.mcreator.cannon.block.RedSailStairBlock;
 import net.mcreator.cannon.block.RedSailSlabBlock;
 import net.mcreator.cannon.block.RedSailBlock;
+import net.mcreator.cannon.block.QueenAnnesRevengeWindowBlock;
 import net.mcreator.cannon.block.PulleyBlock;
 import net.mcreator.cannon.block.PlanksOfTheQueenAnnesRevengeBlock;
 import net.mcreator.cannon.block.PlanksOfTheFlyingDutchmanBlock;
@@ -74,6 +75,13 @@ import net.mcreator.cannon.block.BlackPlankStairsBlock;
 import net.mcreator.cannon.block.BlackPlankSlabBlock;
 import net.mcreator.cannon.block.BlackPearlStatueBlock;
 import net.mcreator.cannon.block.BlackPearlMastBlock;
+import net.mcreator.cannon.block.BlackPearlCabinRoofStairBlock;
+import net.mcreator.cannon.block.BlackPearlCabinRoofSlabBlock;
+import net.mcreator.cannon.block.BlackPearlCabinRoofBlock;
+import net.mcreator.cannon.block.BlackPearlBow2Block;
+import net.mcreator.cannon.block.BlackPearlBow1Block;
+import net.mcreator.cannon.block.BlackPearlBirdTrimBlock;
+import net.mcreator.cannon.block.BlackPearlBackTrimBlock;
 import net.mcreator.cannon.block.BarrelBlock;
 import net.mcreator.cannon.block.BarnaclesBlock;
 import net.mcreator.cannon.CannonMod;
@@ -142,6 +150,14 @@ public class CannonModBlocks {
 	public static final RegistryObject<Block> DUTCHMAN_STAIR = REGISTRY.register("dutchman_stair", () -> new DutchmanStairBlock());
 	public static final RegistryObject<Block> DUTCHMAN_STAIR_1 = REGISTRY.register("dutchman_stair_1", () -> new DutchmanStair1Block());
 	public static final RegistryObject<Block> DUTCHMAN_STAIR_2 = REGISTRY.register("dutchman_stair_2", () -> new DutchmanStair2Block());
+	public static final RegistryObject<Block> BLACK_PEARL_BOW_1 = REGISTRY.register("black_pearl_bow_1", () -> new BlackPearlBow1Block());
+	public static final RegistryObject<Block> BLACK_PEARL_BOW_2 = REGISTRY.register("black_pearl_bow_2", () -> new BlackPearlBow2Block());
+	public static final RegistryObject<Block> QUEEN_ANNES_REVENGE_WINDOW = REGISTRY.register("queen_annes_revenge_window", () -> new QueenAnnesRevengeWindowBlock());
+	public static final RegistryObject<Block> BLACK_PEARL_BIRD_TRIM = REGISTRY.register("black_pearl_bird_trim", () -> new BlackPearlBirdTrimBlock());
+	public static final RegistryObject<Block> BLACK_PEARL_CABIN_ROOF = REGISTRY.register("black_pearl_cabin_roof", () -> new BlackPearlCabinRoofBlock());
+	public static final RegistryObject<Block> BLACK_PEARL_CABIN_ROOF_SLAB = REGISTRY.register("black_pearl_cabin_roof_slab", () -> new BlackPearlCabinRoofSlabBlock());
+	public static final RegistryObject<Block> BLACK_PEARL_CABIN_ROOF_STAIR = REGISTRY.register("black_pearl_cabin_roof_stair", () -> new BlackPearlCabinRoofStairBlock());
+	public static final RegistryObject<Block> BLACK_PEARL_BACK_TRIM = REGISTRY.register("black_pearl_back_trim", () -> new BlackPearlBackTrimBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

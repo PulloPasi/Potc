@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "cannon:block/roof",
+    "top": "cannon:block/roof",
+    "side": "cannon:block/roof"
+  },
+  "render_type": "solid"
+}
