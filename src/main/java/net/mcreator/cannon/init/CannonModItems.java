@@ -25,12 +25,14 @@ import net.mcreator.cannon.item.LeStickOfFireItem;
 import net.mcreator.cannon.item.KolmikulmaHatItem;
 import net.mcreator.cannon.item.KeyItem;
 import net.mcreator.cannon.item.JoshameeGibbsItem;
+import net.mcreator.cannon.item.JarOfDirtItem;
 import net.mcreator.cannon.item.JacksCompassItem;
 import net.mcreator.cannon.item.JackdosItem;
 import net.mcreator.cannon.item.JackSparrowItem;
 import net.mcreator.cannon.item.HeartOfDavidJonesItem;
 import net.mcreator.cannon.item.HalfEatenBananItem;
 import net.mcreator.cannon.item.FlintlockItem;
+import net.mcreator.cannon.item.ElizabethItem;
 import net.mcreator.cannon.item.DutchmanpeaceItem;
 import net.mcreator.cannon.item.DavyJonesItem;
 import net.mcreator.cannon.item.ChalicewithtearItem;
@@ -38,6 +40,7 @@ import net.mcreator.cannon.item.ChalicefullItem;
 import net.mcreator.cannon.item.ChaliceItem;
 import net.mcreator.cannon.item.CannonballosItem;
 import net.mcreator.cannon.item.BulletitemItem;
+import net.mcreator.cannon.item.BottleOfRumItem;
 import net.mcreator.cannon.item.BlackBeardItem;
 import net.mcreator.cannon.item.BillTurnerItem;
 import net.mcreator.cannon.item.BarbossaItem;
@@ -179,6 +182,13 @@ public class CannonModItems {
 	public static final RegistryObject<Item> BLACK_PEARL_CABIN_ROOF_SLAB = block(CannonModBlocks.BLACK_PEARL_CABIN_ROOF_SLAB);
 	public static final RegistryObject<Item> BLACK_PEARL_CABIN_ROOF_STAIR = block(CannonModBlocks.BLACK_PEARL_CABIN_ROOF_STAIR);
 	public static final RegistryObject<Item> BLACK_PEARL_BACK_TRIM = block(CannonModBlocks.BLACK_PEARL_BACK_TRIM);
+	public static final RegistryObject<Item> ORGAN = block(CannonModBlocks.ORGAN);
+	public static final RegistryObject<Item> BOTTLE_OF_RUM = REGISTRY.register("bottle_of_rum", () -> new BottleOfRumItem());
+	public static final RegistryObject<Item> JAR_OF_DIRT = REGISTRY.register("jar_of_dirt", () -> new JarOfDirtItem());
+	public static final RegistryObject<Item> ELIZABETH_HELMET = REGISTRY.register("elizabeth_helmet", () -> new ElizabethItem.Helmet());
+	public static final RegistryObject<Item> ELIZABETH_CHESTPLATE = REGISTRY.register("elizabeth_chestplate", () -> new ElizabethItem.Chestplate());
+	public static final RegistryObject<Item> ELIZABETH_LEGGINGS = REGISTRY.register("elizabeth_leggings", () -> new ElizabethItem.Leggings());
+	public static final RegistryObject<Item> ELIZABETH_BOOTS = REGISTRY.register("elizabeth_boots", () -> new ElizabethItem.Boots());
 
 	// Start of user code block custom items
 	// End of user code block custom items

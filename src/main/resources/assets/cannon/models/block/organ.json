@@ -1,0 +1,9 @@
+{
+  "parent": "cannon:custom/organ",
+  "textures": {
+    "all": "cannon:block/organ",
+    "particle": "cannon:block/organ",
+    "0": "cannon:block/organ"
+  },
+  "render_type": "solid"
+}

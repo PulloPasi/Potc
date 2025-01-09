@@ -1,0 +1,86 @@
+{
+  "_fv": 60,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "elizabethhelmet",
+    "enableBody": true,
+    "textureBody": "elizabethchestplate",
+    "enableLeggings": true,
+    "textureLeggings": "elizabethleggings",
+    "enableBoots": true,
+    "textureBoots": "elizabethboots",
+    "creativeTab": {
+      "value": "CUSTOM:Potc"
+    },
+    "armorTextureFile": "ss",
+    "helmetName": "Elizabeth Helmet",
+    "bodyName": "Elizabeth Chestplate",
+    "leggingsName": "Elizabeth Leggings",
+    "bootsName": "Elizabeth Boots",
+    "helmetSpecialInformation": {
+      "fixedValue": []
+    },
+    "bodySpecialInformation": {
+      "fixedValue": []
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": []
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": []
+    },
+    "helmetModelName": "Modelelizabeth",
+    "helmetModelPart": "Head",
+    "helmetModelTexture": "elizabeth.png",
+    "bodyModelName": "Modelelizabeth",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "LeftArm",
+    "armsModelPartR": "RightArm",
+    "bodyModelTexture": "elizabeth.png",
+    "leggingsModelName": "Modelelizabeth",
+    "leggingsModelPartL": "LeftLeg",
+    "leggingsModelPartR": "RightLeg",
+    "leggingsModelTexture": "elizabeth.png",
+    "bootsModelName": "Modelelizabeth",
+    "bootsModelPartL": "leftboot",
+    "bootsModelPartR": "rightboot",
+    "bootsModelTexture": "elizabeth.png",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 15,
+    "damageValueHelmet": 2,
+    "damageValueBody": 6,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 2,
+    "enchantability": 9,
+    "toughness": 0.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": []
+  }
+}

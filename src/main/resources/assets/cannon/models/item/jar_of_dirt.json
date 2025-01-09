@@ -1,0 +1,7 @@
+{
+  "parent": "cannon:custom/jarofdirt",
+  "textures": {
+    "0": "cannon:block/jarofdirt",
+    "particle": "cannon:item/jarofdirt"
+  }
+}

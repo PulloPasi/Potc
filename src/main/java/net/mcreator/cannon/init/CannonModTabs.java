@@ -146,6 +146,13 @@ public class CannonModTabs {
 				tabData.accept(CannonModBlocks.BLACK_PEARL_CABIN_ROOF_SLAB.get().asItem());
 				tabData.accept(CannonModBlocks.BLACK_PEARL_CABIN_ROOF_STAIR.get().asItem());
 				tabData.accept(CannonModBlocks.BLACK_PEARL_BACK_TRIM.get().asItem());
+				tabData.accept(CannonModBlocks.ORGAN.get().asItem());
+				tabData.accept(CannonModItems.BOTTLE_OF_RUM.get());
+				tabData.accept(CannonModItems.JAR_OF_DIRT.get());
+				tabData.accept(CannonModItems.ELIZABETH_HELMET.get());
+				tabData.accept(CannonModItems.ELIZABETH_CHESTPLATE.get());
+				tabData.accept(CannonModItems.ELIZABETH_LEGGINGS.get());
+				tabData.accept(CannonModItems.ELIZABETH_BOOTS.get());
 			})
 
 					.build());

@@ -35,6 +35,7 @@ import net.mcreator.cannon.block.QueenAnnesRevengeWindowBlock;
 import net.mcreator.cannon.block.PulleyBlock;
 import net.mcreator.cannon.block.PlanksOfTheQueenAnnesRevengeBlock;
 import net.mcreator.cannon.block.PlanksOfTheFlyingDutchmanBlock;
+import net.mcreator.cannon.block.OrganBlock;
 import net.mcreator.cannon.block.LockerSandBlock;
 import net.mcreator.cannon.block.LightRedSailBlock;
 import net.mcreator.cannon.block.LadderThatHasBeenStolenFromMikaelsBackyardBlock;
@@ -158,6 +159,7 @@ public class CannonModBlocks {
 	public static final RegistryObject<Block> BLACK_PEARL_CABIN_ROOF_SLAB = REGISTRY.register("black_pearl_cabin_roof_slab", () -> new BlackPearlCabinRoofSlabBlock());
 	public static final RegistryObject<Block> BLACK_PEARL_CABIN_ROOF_STAIR = REGISTRY.register("black_pearl_cabin_roof_stair", () -> new BlackPearlCabinRoofStairBlock());
 	public static final RegistryObject<Block> BLACK_PEARL_BACK_TRIM = REGISTRY.register("black_pearl_back_trim", () -> new BlackPearlBackTrimBlock());
+	public static final RegistryObject<Block> ORGAN = REGISTRY.register("organ", () -> new OrganBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

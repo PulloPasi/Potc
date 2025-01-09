@@ -3344,6 +3344,119 @@
           "src/main/resources/assets/cannon/blockstates/black_pearl_back_trim.json"
         ]
       }
+    },
+    {
+      "name": "Organ",
+      "type": "block",
+      "sortid": 190,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "organ",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/item/organ.json",
+          "src/main/java/net/mcreator/cannon/block/OrganBlock.java",
+          "src/main/resources/assets/cannon/blockstates/organ.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/organ.json",
+          "src/main/resources/assets/cannon/models/block/organ.json"
+        ]
+      }
+    },
+    {
+      "name": "BottleOfRumPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 191,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bottle_of_rum_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/procedures/BottleOfRumPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BottleOfRum",
+      "type": "item",
+      "sortid": 192,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bottle_of_rum",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/item/bottle_of_rum.json",
+          "src/main/java/net/mcreator/cannon/item/BottleOfRumItem.java"
+        ]
+      }
+    },
+    {
+      "name": "JarOfDirt",
+      "type": "item",
+      "sortid": 193,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jar_of_dirt",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/item/jar_of_dirt.json",
+          "src/main/java/net/mcreator/cannon/item/JarOfDirtItem.java"
+        ]
+      }
+    },
+    {
+      "name": "As",
+      "type": "damagetype",
+      "sortid": 194,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "as",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/damage_type/as.json"
+        ]
+      }
+    },
+    {
+      "name": "Elizabeth",
+      "type": "armor",
+      "sortid": 195,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elizabeth",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/item/ElizabethItem.java",
+          "src/main/resources/assets/cannon/models/item/elizabeth_boots.json",
+          "src/main/resources/assets/cannon/models/item/elizabeth_leggings.json",
+          "src/main/resources/assets/cannon/models/item/elizabeth_chestplate.json",
+          "src/main/resources/assets/cannon/models/item/elizabeth_helmet.json"
+        ]
+      }
+    },
+    {
+      "name": "Elizabethsetbonus",
+      "type": "procedure",
+      "sortid": 196,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elizabethsetbonus",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/procedures/ElizabethsetbonusProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -3464,8 +3577,10 @@
   "language_map": {
     "en_us": {
       "subtitles.gunfire": "",
+      "item.cannon.elizabeth_helmet": "Elizabeth Helmet",
       "item.cannon.jackdos_helmet": "Jack Sparrow (No Hat)",
       "item.cannon.joshamee_gibbs_boots": "Joshamee Gibbs Boots",
+      "item.cannon.elizabeth_boots": "Elizabeth Boots",
       "item.cannon.banan": "Banan",
       "block.cannon.planks_of_the_queen_annes_revenge": "Planks Of The Queen Anne\u0027s Revenge",
       "block.cannon.gunpowderbarrel": "Gunpowder Barrel",
@@ -3476,8 +3591,8 @@
       "block.cannon.black_pearl_bird_trim": "Black Pearl Bird Trim",
       "block.cannon.cannon": "Cannon",
       "item.cannon.barbossa_boots": "Barbossa Boots",
-      "item.cannon.angelica_teach_boots": "Angelica Teach Boots",
       "block.cannon.stylish_fence": "Stylish Fence",
+      "item.cannon.angelica_teach_boots": "Angelica Teach Boots",
       "item.cannon.mermaid_spawn_egg": "Mermaid Spawn Egg",
       "block.cannon.locker_sand": "Locker Sand",
       "item.cannon.sword_of_triton": "Sword Of Triton",
@@ -3486,6 +3601,7 @@
       "block.cannon.dutchman_wall_2": "Dutchman Wall 2",
       "item.cannon.jack_sparrow_boots": "Jack Sparrow Boots",
       "item.cannon.barbossa_helmet": "Barbossa\u0027s Hat",
+      "block.cannon.organ": "Organ",
       "item.cannon.bill_turner_leggings": "Bill Turner Leggings",
       "item.cannon.jack_sparrow_chestplate": "Jack Sparrow Chestplate",
       "block.cannon.black_pearl_cabin_roof_slab": "Black Pearl Cabin Roof Slab",
@@ -3533,6 +3649,7 @@
       "item.cannon.bulletitem": "Bulletitem",
       "subtitles.swordfire": "",
       "item.cannon.mermaidtear": "Mermaidtear",
+      "death.attack.as": "%1$s chose his own fate",
       "subtitles.cannonhit": "Cannonball hits",
       "block.cannon.window_of_the_black_pearl": "Window Of The Black Pearl",
       "item.cannon.jackdos_chestplate": "Jack Sparrow (No Jacket)",
@@ -3543,6 +3660,7 @@
       "block.cannon.black_plank_slab": "Black Plank Slab",
       "block.cannon.black_plank_trap_door": "Black Plank Trap Door",
       "item.cannon.bill_turner_boots": "Bill Turner Boots",
+      "item.cannon.elizabeth_chestplate": "Elizabeth Chestplate",
       "block.cannon.grey_plank_slab": "Grey Plank Slab",
       "block.cannon.dutchman_plank_2": "Dutchman Plank 2",
       "block.cannon.dutchman_plank_3": "Dutchman Plank 3",
@@ -3559,6 +3677,7 @@
       "block.cannon.door_of_the_flying_dutchman": "Shit Looking Door",
       "item.cannon.black_beard_helmet": "BlackBeard Hat",
       "block.cannon.black_pearl_bow_2": "Black Pearl Bow 2",
+      "item.cannon.bottle_of_rum": "Bottle O\u0027 Rum",
       "block.cannon.black_pearl_bow_1": "Black Pearl Bow 1",
       "block.cannon.ferrymans_cannon": "Ferrymans Cannon",
       "subtitles.cannonfire2": "Cannon Fires",
@@ -3572,6 +3691,7 @@
       "item.cannon.davy_jones_chestplate": "Davy Jones Chestplate",
       "block.cannon.red_sail_stair": "Red Sail Stair",
       "item.cannon.talisman_of_the_voodoo_mister": "Talisman Of The Queen Anne\u0027s Revenge",
+      "item.cannon.elizabeth_leggings": "Elizabeth Leggings",
       "block.cannon.rope": "Rope",
       "item.cannon.kolmikulma_hat_helmet": "Tricorn",
       "entity.cannon.briish": "British Gunman",
@@ -3592,7 +3712,9 @@
       "block.cannon.black_plank_stairs": "Black Plank Stairs",
       "item.cannon.jack_sparrow_leggings": "Jack Sparrow Leggings",
       "entity.cannon.mermaid": "Mermaid",
+      "death.attack.as.player": "%1$s died whilst trying to escape %2$s",
       "item.cannon.cannonballos": "Cannonballos",
+      "item.cannon.jar_of_dirt": "Jar Of Dirt",
       "block.cannon.slabs_of_the_flying_dutchman": "Slabs Of The Flying Dutchman",
       "block.cannon.stairs_of_the_flying_dutchman": "Stairs Of The Flying Dutchman",
       "subtitles.cannon-load": "cannon load",
@@ -3610,6 +3732,7 @@
       "item.cannon.swordos": "Swordos",
       "block.cannon.red_sail_wall": "Red Sail Wall",
       "item.cannon.bandana_helmet": "Bandana ",
+      "death.attack.as.item": "%1$s was doomed by %2$s using %3$s",
       "item.cannon.quartermaster_spawn_egg": "Quartermaster Spawn Egg",
       "block.cannon.black_pearl_statue": "Black Pearl Statue",
       "block.cannon.queen_annes_revenge_window": "Queen Annes Revenge Window"

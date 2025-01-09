@@ -15,6 +15,7 @@ import net.mcreator.cannon.client.model.Modeljonetsiversiokaksi;
 import net.mcreator.cannon.client.model.Modeljackkaks;
 import net.mcreator.cannon.client.model.Modeljack;
 import net.mcreator.cannon.client.model.Modelgibbs;
+import net.mcreator.cannon.client.model.Modelelizabeth;
 import net.mcreator.cannon.client.model.Modelblackbeard;
 import net.mcreator.cannon.client.model.Modelbillvkaks;
 import net.mcreator.cannon.client.model.Modelbillkolme;
@@ -31,12 +32,13 @@ public class CannonModModels {
 		event.registerLayerDefinition(Modeljack.LAYER_LOCATION, Modeljack::createBodyLayer);
 		event.registerLayerDefinition(Modelbandana.LAYER_LOCATION, Modelbandana::createBodyLayer);
 		event.registerLayerDefinition(Modelpipo.LAYER_LOCATION, Modelpipo::createBodyLayer);
-		event.registerLayerDefinition(Modelbillvkaks.LAYER_LOCATION, Modelbillvkaks::createBodyLayer);
 		event.registerLayerDefinition(Modelgibbs.LAYER_LOCATION, Modelgibbs::createBodyLayer);
+		event.registerLayerDefinition(Modelelizabeth.LAYER_LOCATION, Modelelizabeth::createBodyLayer);
+		event.registerLayerDefinition(Modelbarbossakaks.LAYER_LOCATION, Modelbarbossakaks::createBodyLayer);
+		event.registerLayerDefinition(Modeljackkaks.LAYER_LOCATION, Modeljackkaks::createBodyLayer);
+		event.registerLayerDefinition(Modelbillvkaks.LAYER_LOCATION, Modelbillvkaks::createBodyLayer);
 		event.registerLayerDefinition(Modelangelica.LAYER_LOCATION, Modelangelica::createBodyLayer);
 		event.registerLayerDefinition(Modeltrihat.LAYER_LOCATION, Modeltrihat::createBodyLayer);
 		event.registerLayerDefinition(Modelblackbeard.LAYER_LOCATION, Modelblackbeard::createBodyLayer);
-		event.registerLayerDefinition(Modelbarbossakaks.LAYER_LOCATION, Modelbarbossakaks::createBodyLayer);
-		event.registerLayerDefinition(Modeljackkaks.LAYER_LOCATION, Modeljackkaks::createBodyLayer);
 	}
 }
