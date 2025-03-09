@@ -3,7 +3,6 @@
     {
       "name": "CannonballosProjectileHitsBlock",
       "type": "procedure",
-      "sortid": 56,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cannonballos_projectile_hits_block",
@@ -34,7 +33,6 @@
     {
       "name": "Cannon",
       "type": "block",
-      "sortid": 1,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cannon",
@@ -52,7 +50,6 @@
     {
       "name": "CannonOnBlockRightClicked",
       "type": "procedure",
-      "sortid": 57,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cannon_on_block_right_clicked",
@@ -87,7 +84,6 @@
     {
       "name": "CannonballosProjectile",
       "type": "projectile",
-      "sortid": 58,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cannonballos_projectile",
@@ -100,7 +96,6 @@
     {
       "name": "Cannonballos",
       "type": "item",
-      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cannonballos",
@@ -114,7 +109,6 @@
     {
       "name": "BlackPlanks",
       "type": "block",
-      "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "registry_name": "black_planks",
@@ -131,7 +125,6 @@
     {
       "name": "BlackPlankSlab",
       "type": "block",
-      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "registry_name": "black_plank_slab",
@@ -150,7 +143,6 @@
     {
       "name": "BlackPlankTrapDoor",
       "type": "block",
-      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "registry_name": "black_plank_trap_door",
@@ -169,7 +161,6 @@
     {
       "name": "Dutchmansails",
       "type": "block",
-      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dutchmansails",
@@ -186,7 +177,6 @@
     {
       "name": "Gloriouslantern",
       "type": "block",
-      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gloriouslantern",
@@ -203,7 +193,6 @@
     {
       "name": "Potc",
       "type": "tab",
-      "sortid": 59,
       "compiles": true,
       "locked_code": false,
       "registry_name": "potc",
@@ -214,7 +203,6 @@
     {
       "name": "BlackPlankStairs",
       "type": "block",
-      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "registry_name": "black_plank_stairs",
@@ -233,24 +221,22 @@
     {
       "name": "DavyJones",
       "type": "armor",
-      "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "registry_name": "davy_jones",
       "metadata": {
         "files": [
+          "src/main/resources/assets/cannon/models/item/davy_jones_boots.json",
+          "src/main/resources/assets/cannon/models/item/davy_jones_leggings.json",
           "src/main/java/net/mcreator/cannon/item/DavyJonesItem.java",
           "src/main/resources/assets/cannon/models/item/davy_jones_helmet.json",
-          "src/main/resources/assets/cannon/models/item/davy_jones_boots.json",
-          "src/main/resources/assets/cannon/models/item/davy_jones_chestplate.json",
-          "src/main/resources/assets/cannon/models/item/davy_jones_leggings.json"
+          "src/main/resources/assets/cannon/models/item/davy_jones_chestplate.json"
         ]
       }
     },
     {
       "name": "Dutchmansails2",
       "type": "block",
-      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dutchmansails_2",
@@ -267,7 +253,6 @@
     {
       "name": "Dutchmansails3",
       "type": "block",
-      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dutchmansails_3",
@@ -284,7 +269,6 @@
     {
       "name": "FaceOfTheFerryman",
       "type": "block",
-      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "registry_name": "face_of_the_ferryman",
@@ -301,7 +285,6 @@
     {
       "name": "FerrymansCannon",
       "type": "block",
-      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ferrymans_cannon",
@@ -319,7 +302,6 @@
     {
       "name": "LeStickOfFire",
       "type": "tool",
-      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "registry_name": "le_stick_of_fire",
@@ -333,7 +315,6 @@
     {
       "name": "LadderThatHasBeenStolenFromMikaelsBackyard",
       "type": "block",
-      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ladder_that_has_been_stolen_from_mikaels_backyard",
@@ -350,7 +331,6 @@
     {
       "name": "PlanksOfTheFlyingDutchman",
       "type": "block",
-      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "registry_name": "planks_of_the_flying_dutchman",
@@ -367,7 +347,6 @@
     {
       "name": "FerrymansChasingCannon",
       "type": "block",
-      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ferrymans_chasing_cannon",
@@ -385,7 +364,6 @@
     {
       "name": "DoorOfTheFlyingDutchman",
       "type": "block",
-      "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "registry_name": "door_of_the_flying_dutchman",
@@ -409,7 +387,6 @@
     {
       "name": "CannonBlockAdded",
       "type": "procedure",
-      "sortid": 60,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cannon_block_added",
@@ -440,7 +417,6 @@
     {
       "name": "StairsOfTheFlyingDutchman",
       "type": "block",
-      "sortid": 19,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stairs_of_the_flying_dutchman",
@@ -459,7 +435,6 @@
     {
       "name": "Barnacles",
       "type": "block",
-      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "registry_name": "barnacles",
@@ -476,7 +451,6 @@
     {
       "name": "Rope",
       "type": "block",
-      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rope",
@@ -493,7 +467,6 @@
     {
       "name": "Cannontrail",
       "type": "particle",
-      "sortid": 61,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cannontrail",
@@ -507,7 +480,6 @@
     {
       "name": "CannonballosProjectileWhileProjectileFlyingTick",
       "type": "procedure",
-      "sortid": 62,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cannonballos_projectile_while_projectile_flying_tick",
@@ -538,7 +510,6 @@
     {
       "name": "PartOfTheCrew",
       "type": "animatedentity",
-      "sortid": 22,
       "compiles": true,
       "locked_code": false,
       "registry_name": "part_of_the_crew",
@@ -555,7 +526,6 @@
     {
       "name": "Bullet",
       "type": "projectile",
-      "sortid": 63,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bullet",
@@ -568,7 +538,6 @@
     {
       "name": "Bulletitem",
       "type": "item",
-      "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bulletitem",
@@ -582,7 +551,6 @@
     {
       "name": "FlintlockRightclicked",
       "type": "procedure",
-      "sortid": 64,
       "compiles": true,
       "locked_code": false,
       "registry_name": "flintlock_rightclicked",
@@ -617,7 +585,6 @@
     {
       "name": "Flintlock",
       "type": "item",
-      "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "registry_name": "flintlock",
@@ -631,7 +598,6 @@
     {
       "name": "BulletProjectileHitsBlock",
       "type": "procedure",
-      "sortid": 65,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bullet_projectile_hits_block",
@@ -662,7 +628,6 @@
     {
       "name": "SlabsOfTheFlyingDutchman",
       "type": "block",
-      "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "registry_name": "slabs_of_the_flying_dutchman",
@@ -681,7 +646,6 @@
     {
       "name": "BillTurner",
       "type": "armor",
-      "sortid": 26,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bill_turner",
@@ -698,7 +662,6 @@
     {
       "name": "Karb",
       "type": "animatedentity",
-      "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "registry_name": "karb",
@@ -715,7 +678,6 @@
     {
       "name": "PartOfTheCrewStrong",
       "type": "animatedentity",
-      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "registry_name": "part_of_the_crew_strong",
@@ -731,7 +693,6 @@
     {
       "name": "PartOfTheCrewStrongEntityIsHurt",
       "type": "procedure",
-      "sortid": 66,
       "compiles": true,
       "locked_code": false,
       "registry_name": "part_of_the_crew_strong_entity_is_hurt",
@@ -750,7 +711,6 @@
     {
       "name": "Swordos",
       "type": "tool",
-      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "registry_name": "swordos",
@@ -764,7 +724,6 @@
     {
       "name": "SailsOfTheBlackPearl",
       "type": "block",
-      "sortid": 30,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sails_of_the_black_pearl",
@@ -781,7 +740,6 @@
     {
       "name": "SailsOfTheBlackPearlPatch",
       "type": "block",
-      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sails_of_the_black_pearl_patch",
@@ -798,7 +756,6 @@
     {
       "name": "JackSparrow",
       "type": "armor",
-      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "registry_name": "jack_sparrow",
@@ -815,7 +772,6 @@
     {
       "name": "Pulley",
       "type": "block",
-      "sortid": 33,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pulley",
@@ -832,7 +788,6 @@
     {
       "name": "Gunpowderbarrel",
       "type": "block",
-      "sortid": 34,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gunpowderbarrel",
@@ -850,7 +805,6 @@
     {
       "name": "Gunpowderbarrelexplode",
       "type": "procedure",
-      "sortid": 67,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gunpowderbarrelexplode",
@@ -881,7 +835,6 @@
     {
       "name": "DeadMansChest",
       "type": "animatedblock",
-      "sortid": 35,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dead_mans_chest",
@@ -903,7 +856,6 @@
     {
       "name": "Key",
       "type": "item",
-      "sortid": 36,
       "compiles": true,
       "locked_code": false,
       "registry_name": "key",
@@ -917,7 +869,6 @@
     {
       "name": "FerrymansChasingCannonOnBlockRightClicked",
       "type": "procedure",
-      "sortid": 68,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ferrymans_chasing_cannon_on_block_right_clicked",
@@ -952,7 +903,6 @@
     {
       "name": "CannonOnBlockRightClicked1",
       "type": "procedure",
-      "sortid": 69,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cannon_on_block_right_clicked_1",
@@ -987,7 +937,6 @@
     {
       "name": "FerrymanChasingCannonRightClicked1",
       "type": "procedure",
-      "sortid": 70,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ferryman_chasing_cannon_right_clicked_1",
@@ -1022,7 +971,6 @@
     {
       "name": "FerrymansChasingCannonBlockAdded",
       "type": "procedure",
-      "sortid": 71,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ferrymans_chasing_cannon_block_added",
@@ -1053,7 +1001,6 @@
     {
       "name": "HeartOfDavidJones",
       "type": "item",
-      "sortid": 37,
       "compiles": true,
       "locked_code": false,
       "registry_name": "heart_of_david_jones",
@@ -1067,7 +1014,6 @@
     {
       "name": "Banan",
       "type": "item",
-      "sortid": 38,
       "compiles": true,
       "locked_code": false,
       "registry_name": "banan",
@@ -1081,7 +1027,6 @@
     {
       "name": "HalfEatenBanan",
       "type": "item",
-      "sortid": 39,
       "compiles": true,
       "locked_code": false,
       "registry_name": "half_eaten_banan",
@@ -1095,7 +1040,6 @@
     {
       "name": "Bandana",
       "type": "armor",
-      "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bandana",
@@ -1109,7 +1053,6 @@
     {
       "name": "KolmikulmaHat",
       "type": "armor",
-      "sortid": 41,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kolmikulma_hat",
@@ -1123,7 +1066,6 @@
     {
       "name": "Pipo",
       "type": "armor",
-      "sortid": 42,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pipo",
@@ -1137,7 +1079,6 @@
     {
       "name": "Dutchmanpeace",
       "type": "item",
-      "sortid": 43,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dutchmanpeace",
@@ -1151,7 +1092,6 @@
     {
       "name": "BlackBeard",
       "type": "armor",
-      "sortid": 44,
       "compiles": true,
       "locked_code": false,
       "registry_name": "black_beard",
@@ -1168,7 +1108,6 @@
     {
       "name": "PartOfCrewAttackCondition",
       "type": "procedure",
-      "sortid": 72,
       "compiles": true,
       "locked_code": false,
       "registry_name": "part_of_crew_attack_condition",
@@ -1188,7 +1127,6 @@
     {
       "name": "PartOfCrewLootTable",
       "type": "loottable",
-      "sortid": 73,
       "compiles": true,
       "locked_code": false,
       "registry_name": "part_of_crew_loot_table",
@@ -1201,7 +1139,6 @@
     {
       "name": "PartOfTheCrewEntityDies",
       "type": "procedure",
-      "sortid": 74,
       "compiles": true,
       "locked_code": false,
       "registry_name": "part_of_the_crew_entity_dies",
@@ -1232,7 +1169,6 @@
     {
       "name": "Briish",
       "type": "animatedentity",
-      "sortid": 45,
       "compiles": true,
       "locked_code": false,
       "registry_name": "briish",
@@ -1248,7 +1184,6 @@
     {
       "name": "Davidjonesarmoreffect",
       "type": "procedure",
-      "sortid": 75,
       "compiles": true,
       "locked_code": false,
       "registry_name": "davidjonesarmoreffect",
@@ -1267,7 +1202,6 @@
     {
       "name": "SwordOfTriton",
       "type": "tool",
-      "sortid": 46,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sword_of_triton",
@@ -1281,7 +1215,6 @@
     {
       "name": "Chalice",
       "type": "item",
-      "sortid": 47,
       "compiles": true,
       "locked_code": false,
       "registry_name": "chalice",
@@ -1295,7 +1228,6 @@
     {
       "name": "Chalicefull",
       "type": "item",
-      "sortid": 48,
       "compiles": true,
       "locked_code": false,
       "registry_name": "chalicefull",
@@ -1309,7 +1241,6 @@
     {
       "name": "Swordoftritonprojectile",
       "type": "projectile",
-      "sortid": 76,
       "compiles": true,
       "locked_code": false,
       "registry_name": "swordoftritonprojectile",
@@ -1322,7 +1253,6 @@
     {
       "name": "Swordoftrtitonbomb",
       "type": "item",
-      "sortid": 77,
       "compiles": true,
       "locked_code": false,
       "registry_name": "swordoftrtitonbomb",
@@ -1336,7 +1266,6 @@
     {
       "name": "SwordOfTritonRightclicked",
       "type": "procedure",
-      "sortid": 78,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sword_of_triton_rightclicked",
@@ -1375,7 +1304,6 @@
     {
       "name": "Mermaid",
       "type": "animatedentity",
-      "sortid": 49,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mermaid",
@@ -1391,7 +1319,6 @@
     {
       "name": "DavyJonesHelmetTickEvent",
       "type": "procedure",
-      "sortid": 79,
       "compiles": true,
       "locked_code": false,
       "registry_name": "davy_jones_helmet_tick_event",
@@ -1405,7 +1332,6 @@
     {
       "name": "Chaliceobjevti",
       "type": "recipe",
-      "sortid": 80,
       "compiles": true,
       "locked_code": false,
       "registry_name": "chaliceobjevti",
@@ -1418,7 +1344,6 @@
     {
       "name": "FountainOfYouthDripOnBlockRightClicked",
       "type": "procedure",
-      "sortid": 81,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fountain_of_youth_drip_on_block_right_clicked",
@@ -1437,7 +1362,6 @@
     {
       "name": "FountainOfYouthDrip",
       "type": "block",
-      "sortid": 51,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fountain_of_youth_drip",
@@ -1455,7 +1379,6 @@
     {
       "name": "Mermaidtear",
       "type": "item",
-      "sortid": 50,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mermaidtear",
@@ -1469,7 +1392,6 @@
     {
       "name": "Chalicewithtear",
       "type": "item",
-      "sortid": 52,
       "compiles": true,
       "locked_code": false,
       "registry_name": "chalicewithtear",
@@ -1483,7 +1405,6 @@
     {
       "name": "SwordoftritonprojectileProjectileHitsLivingEntity",
       "type": "procedure",
-      "sortid": 82,
       "compiles": true,
       "locked_code": false,
       "registry_name": "swordoftritonprojectile_projectile_hits_living_entity",
@@ -1502,7 +1423,6 @@
     {
       "name": "TritoneffectEffectStartedapplied",
       "type": "procedure",
-      "sortid": 83,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tritoneffect_effect_startedapplied",
@@ -1521,7 +1441,6 @@
     {
       "name": "TritoneffectEffectStartedapplied1",
       "type": "procedure",
-      "sortid": 84,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tritoneffect_effect_startedapplied_1",
@@ -1535,7 +1454,6 @@
     {
       "name": "AngelicaTeach",
       "type": "armor",
-      "sortid": 53,
       "compiles": true,
       "locked_code": false,
       "registry_name": "angelica_teach",
@@ -1552,7 +1470,6 @@
     {
       "name": "JoshameeGibbs",
       "type": "armor",
-      "sortid": 54,
       "compiles": true,
       "locked_code": false,
       "registry_name": "joshamee_gibbs",
@@ -1569,7 +1486,6 @@
     {
       "name": "Billsetbonus",
       "type": "procedure",
-      "sortid": 85,
       "compiles": true,
       "locked_code": false,
       "registry_name": "billsetbonus",
@@ -1588,7 +1504,6 @@
     {
       "name": "Angelicabonus",
       "type": "procedure",
-      "sortid": 86,
       "compiles": true,
       "locked_code": false,
       "registry_name": "angelicabonus",
@@ -1607,7 +1522,6 @@
     {
       "name": "Jacksetbonus",
       "type": "procedure",
-      "sortid": 87,
       "compiles": true,
       "locked_code": false,
       "registry_name": "jacksetbonus",
@@ -1626,7 +1540,6 @@
     {
       "name": "Gibbssetbonus",
       "type": "procedure",
-      "sortid": 88,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gibbssetbonus",
@@ -1645,7 +1558,6 @@
     {
       "name": "Blackbeardsetbonus",
       "type": "procedure",
-      "sortid": 89,
       "compiles": true,
       "locked_code": false,
       "registry_name": "blackbeardsetbonus",
@@ -1664,7 +1576,6 @@
     {
       "name": "FlintlockCanUseRangedItem",
       "type": "procedure",
-      "sortid": 90,
       "compiles": true,
       "locked_code": false,
       "registry_name": "flintlock_can_use_ranged_item",
@@ -1688,7 +1599,6 @@
     {
       "name": "FlintlockRangedItemShootsProjectile",
       "type": "procedure",
-      "sortid": 91,
       "compiles": true,
       "locked_code": false,
       "registry_name": "flintlock_ranged_item_shoots_projectile",
@@ -1723,7 +1633,6 @@
     {
       "name": "PlanksOfTheQueenAnnesRevenge",
       "type": "block",
-      "sortid": 85,
       "compiles": true,
       "locked_code": false,
       "registry_name": "planks_of_the_queen_annes_revenge",
@@ -1740,7 +1649,6 @@
     {
       "name": "SlabsOfTheQueenAnnesRevenge",
       "type": "block",
-      "sortid": 86,
       "compiles": true,
       "locked_code": false,
       "registry_name": "slabs_of_the_queen_annes_revenge",
@@ -1759,7 +1667,6 @@
     {
       "name": "StairsOfTheQueenAnnesRevenge",
       "type": "block",
-      "sortid": 87,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stairs_of_the_queen_annes_revenge",
@@ -1778,7 +1685,6 @@
     {
       "name": "SideFigureHeadOfTheQueenAnnesRevenge",
       "type": "block",
-      "sortid": 88,
       "compiles": true,
       "locked_code": false,
       "registry_name": "side_figure_head_of_the_queen_annes_revenge",
@@ -1795,7 +1701,6 @@
     {
       "name": "SideFigureHeadOfTheQueenAnnesRevengeOnTickUpdate",
       "type": "procedure",
-      "sortid": 89,
       "compiles": true,
       "locked_code": false,
       "registry_name": "side_figure_head_of_the_queen_annes_revenge_on_tick_update",
@@ -1826,7 +1731,6 @@
     {
       "name": "CannonHatchOfTheQueenAnnesRevenge",
       "type": "block",
-      "sortid": 90,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cannon_hatch_of_the_queen_annes_revenge",
@@ -1845,7 +1749,6 @@
     {
       "name": "StylishFence",
       "type": "block",
-      "sortid": 91,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stylish_fence",
@@ -1864,7 +1767,6 @@
     {
       "name": "StylishWall",
       "type": "block",
-      "sortid": 92,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stylish_wall",
@@ -1884,7 +1786,6 @@
     {
       "name": "RopeBlock",
       "type": "block",
-      "sortid": 93,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rope_block",
@@ -1901,7 +1802,6 @@
     {
       "name": "RedSail",
       "type": "block",
-      "sortid": 94,
       "compiles": true,
       "locked_code": false,
       "registry_name": "red_sail",
@@ -1918,7 +1818,6 @@
     {
       "name": "RedSailSlab",
       "type": "block",
-      "sortid": 95,
       "compiles": true,
       "locked_code": false,
       "registry_name": "red_sail_slab",
@@ -1937,7 +1836,6 @@
     {
       "name": "RedSailStair",
       "type": "block",
-      "sortid": 96,
       "compiles": true,
       "locked_code": false,
       "registry_name": "red_sail_stair",
@@ -1956,7 +1854,6 @@
     {
       "name": "RedSailWall",
       "type": "block",
-      "sortid": 97,
       "compiles": true,
       "locked_code": false,
       "registry_name": "red_sail_wall",
@@ -1976,7 +1873,6 @@
     {
       "name": "LightRedSail",
       "type": "block",
-      "sortid": 98,
       "compiles": true,
       "locked_code": false,
       "registry_name": "light_red_sail",
@@ -1993,7 +1889,6 @@
     {
       "name": "Quartermaster",
       "type": "animatedentity",
-      "sortid": 99,
       "compiles": true,
       "locked_code": false,
       "registry_name": "quartermaster",
@@ -2009,7 +1904,6 @@
     {
       "name": "TalismanOfTheVoodooMister",
       "type": "item",
-      "sortid": 100,
       "compiles": true,
       "locked_code": false,
       "registry_name": "talisman_of_the_voodoo_mister",
@@ -2023,7 +1917,6 @@
     {
       "name": "TalismanOfTheBlackPearl",
       "type": "item",
-      "sortid": 101,
       "compiles": true,
       "locked_code": false,
       "registry_name": "talisman_of_the_black_pearl",
@@ -2037,7 +1930,6 @@
     {
       "name": "BlackBeardsCrew",
       "type": "animatedentity",
-      "sortid": 102,
       "compiles": true,
       "locked_code": false,
       "registry_name": "black_beards_crew",
@@ -2053,7 +1945,6 @@
     {
       "name": "BlackBeardCrewAttackCondition",
       "type": "procedure",
-      "sortid": 103,
       "compiles": true,
       "locked_code": false,
       "registry_name": "black_beard_crew_attack_condition",
@@ -2073,7 +1964,6 @@
     {
       "name": "GreyPlanks",
       "type": "block",
-      "sortid": 104,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grey_planks",
@@ -2090,7 +1980,6 @@
     {
       "name": "GreyPlankSlab",
       "type": "block",
-      "sortid": 105,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grey_plank_slab",
@@ -2109,7 +1998,6 @@
     {
       "name": "GreyPlankStair",
       "type": "block",
-      "sortid": 106,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grey_plank_stair",
@@ -2128,7 +2016,6 @@
     {
       "name": "Barrel",
       "type": "block",
-      "sortid": 107,
       "compiles": true,
       "locked_code": false,
       "registry_name": "barrel",
@@ -2145,7 +2032,6 @@
     {
       "name": "WindowOfTheBlackPearl",
       "type": "block",
-      "sortid": 108,
       "compiles": true,
       "locked_code": false,
       "registry_name": "window_of_the_black_pearl",
@@ -2166,7 +2052,6 @@
     {
       "name": "Chandelier",
       "type": "block",
-      "sortid": 109,
       "compiles": true,
       "locked_code": false,
       "registry_name": "chandelier",
@@ -2183,7 +2068,6 @@
     {
       "name": "SlimFence",
       "type": "block",
-      "sortid": 110,
       "compiles": true,
       "locked_code": false,
       "registry_name": "slim_fence",
@@ -2200,7 +2084,6 @@
     {
       "name": "BlackPearlStatue",
       "type": "block",
-      "sortid": 111,
       "compiles": true,
       "locked_code": false,
       "registry_name": "black_pearl_statue",
@@ -2217,7 +2100,6 @@
     {
       "name": "Barbossa",
       "type": "armor",
-      "sortid": 112,
       "compiles": true,
       "locked_code": false,
       "registry_name": "barbossa",
@@ -2234,7 +2116,6 @@
     {
       "name": "Barbossasetbonus",
       "type": "procedure",
-      "sortid": 113,
       "compiles": true,
       "locked_code": false,
       "registry_name": "barbossasetbonus",
@@ -2253,7 +2134,6 @@
     {
       "name": "Redplanks",
       "type": "recipe",
-      "sortid": 114,
       "compiles": true,
       "locked_code": false,
       "registry_name": "redplanks",
@@ -2266,7 +2146,6 @@
     {
       "name": "Blackplanksrecipe",
       "type": "recipe",
-      "sortid": 115,
       "compiles": true,
       "locked_code": false,
       "registry_name": "blackplanksrecipe",
@@ -2279,7 +2158,6 @@
     {
       "name": "Greyplankrecipe",
       "type": "recipe",
-      "sortid": 116,
       "compiles": true,
       "locked_code": false,
       "registry_name": "greyplankrecipe",
@@ -2292,7 +2170,6 @@
     {
       "name": "Dutchmanplnaks",
       "type": "recipe",
-      "sortid": 117,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dutchmanplnaks",
@@ -2305,7 +2182,6 @@
     {
       "name": "LockerSand",
       "type": "block",
-      "sortid": 118,
       "compiles": true,
       "locked_code": false,
       "registry_name": "locker_sand",
@@ -2322,7 +2198,6 @@
     {
       "name": "DavyJonesLocker",
       "type": "dimension",
-      "sortid": 119,
       "compiles": true,
       "locked_code": false,
       "registry_name": "davy_jones_locker",
@@ -2337,7 +2212,6 @@
     {
       "name": "Locker",
       "type": "biome",
-      "sortid": 120,
       "compiles": true,
       "locked_code": false,
       "registry_name": "locker",
@@ -2350,7 +2224,6 @@
     {
       "name": "LockerOcean",
       "type": "biome",
-      "sortid": 121,
       "compiles": true,
       "locked_code": false,
       "registry_name": "locker_ocean",
@@ -2363,7 +2236,6 @@
     {
       "name": "BlackPlankSlabRecipe",
       "type": "recipe",
-      "sortid": 122,
       "compiles": true,
       "locked_code": false,
       "registry_name": "black_plank_slab_recipe",
@@ -2376,7 +2248,6 @@
     {
       "name": "BlackPlankStairRecipe",
       "type": "recipe",
-      "sortid": 123,
       "compiles": true,
       "locked_code": false,
       "registry_name": "black_plank_stair_recipe",
@@ -2389,7 +2260,6 @@
     {
       "name": "BlackcannonHatchRecipe",
       "type": "recipe",
-      "sortid": 124,
       "compiles": true,
       "locked_code": false,
       "registry_name": "blackcannon_hatch_recipe",
@@ -2402,7 +2272,6 @@
     {
       "name": "StylishWallRecipe",
       "type": "recipe",
-      "sortid": 125,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stylish_wall_recipe",
@@ -2415,7 +2284,6 @@
     {
       "name": "StylishFenceRecipe",
       "type": "recipe",
-      "sortid": 126,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stylish_fence_recipe",
@@ -2428,7 +2296,6 @@
     {
       "name": "GreyPlankStairRecipe",
       "type": "recipe",
-      "sortid": 127,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grey_plank_stair_recipe",
@@ -2441,7 +2308,6 @@
     {
       "name": "GreyPlankSlabRecipe",
       "type": "recipe",
-      "sortid": 128,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grey_plank_slab_recipe",
@@ -2454,7 +2320,6 @@
     {
       "name": "RedPlankStairRecipe",
       "type": "recipe",
-      "sortid": 129,
       "compiles": true,
       "locked_code": false,
       "registry_name": "red_plank_stair_recipe",
@@ -2467,7 +2332,6 @@
     {
       "name": "RedPlankSlabRecipe",
       "type": "recipe",
-      "sortid": 130,
       "compiles": true,
       "locked_code": false,
       "registry_name": "red_plank_slab_recipe",
@@ -2480,7 +2344,6 @@
     {
       "name": "RedCannonHatchRecipe",
       "type": "recipe",
-      "sortid": 131,
       "compiles": true,
       "locked_code": false,
       "registry_name": "red_cannon_hatch_recipe",
@@ -2493,7 +2356,6 @@
     {
       "name": "BlackPearlWindowRecipe",
       "type": "recipe",
-      "sortid": 132,
       "compiles": true,
       "locked_code": false,
       "registry_name": "black_pearl_window_recipe",
@@ -2506,7 +2368,6 @@
     {
       "name": "ChadelierRecipe",
       "type": "recipe",
-      "sortid": 133,
       "compiles": true,
       "locked_code": false,
       "registry_name": "chadelier_recipe",
@@ -2519,7 +2380,6 @@
     {
       "name": "RopeRecipe",
       "type": "recipe",
-      "sortid": 134,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rope_recipe",
@@ -2532,7 +2392,6 @@
     {
       "name": "SailRecipe",
       "type": "recipe",
-      "sortid": 135,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sail_recipe",
@@ -2545,7 +2404,6 @@
     {
       "name": "BlackPearlSailRecipe",
       "type": "recipe",
-      "sortid": 136,
       "compiles": true,
       "locked_code": false,
       "registry_name": "black_pearl_sail_recipe",
@@ -2558,7 +2416,6 @@
     {
       "name": "RopeblockRecipe",
       "type": "recipe",
-      "sortid": 137,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ropeblock_recipe",
@@ -2571,7 +2428,6 @@
     {
       "name": "AnotherRopeRecipe",
       "type": "recipe",
-      "sortid": 138,
       "compiles": true,
       "locked_code": false,
       "registry_name": "another_rope_recipe",
@@ -2584,7 +2440,6 @@
     {
       "name": "SlimFenceRecipe",
       "type": "recipe",
-      "sortid": 139,
       "compiles": true,
       "locked_code": false,
       "registry_name": "slim_fence_recipe",
@@ -2597,7 +2452,6 @@
     {
       "name": "RedSailRecipe",
       "type": "recipe",
-      "sortid": 140,
       "compiles": true,
       "locked_code": false,
       "registry_name": "red_sail_recipe",
@@ -2610,7 +2464,6 @@
     {
       "name": "RedSailWallRecipe",
       "type": "recipe",
-      "sortid": 141,
       "compiles": true,
       "locked_code": false,
       "registry_name": "red_sail_wall_recipe",
@@ -2623,7 +2476,6 @@
     {
       "name": "RedSailSlabRecipe",
       "type": "recipe",
-      "sortid": 142,
       "compiles": true,
       "locked_code": false,
       "registry_name": "red_sail_slab_recipe",
@@ -2636,7 +2488,6 @@
     {
       "name": "RedSailStairRecipe",
       "type": "recipe",
-      "sortid": 143,
       "compiles": true,
       "locked_code": false,
       "registry_name": "red_sail_stair_recipe",
@@ -2649,7 +2500,6 @@
     {
       "name": "GunPowderBarrelRecipe",
       "type": "recipe",
-      "sortid": 144,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gun_powder_barrel_recipe",
@@ -2662,7 +2512,6 @@
     {
       "name": "CannonBallRecipe",
       "type": "recipe",
-      "sortid": 145,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cannon_ball_recipe",
@@ -2675,7 +2524,6 @@
     {
       "name": "LightRedSailBlockRecipe",
       "type": "recipe",
-      "sortid": 146,
       "compiles": true,
       "locked_code": false,
       "registry_name": "light_red_sail_block_recipe",
@@ -2688,7 +2536,6 @@
     {
       "name": "PulleyRecipe",
       "type": "recipe",
-      "sortid": 147,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pulley_recipe",
@@ -2701,7 +2548,6 @@
     {
       "name": "DutchmanSailsRecipe",
       "type": "recipe",
-      "sortid": 148,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dutchman_sails_recipe",
@@ -2714,7 +2560,6 @@
     {
       "name": "DutchmanSailBottomRecipe",
       "type": "recipe",
-      "sortid": 149,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dutchman_sail_bottom_recipe",
@@ -2727,7 +2572,6 @@
     {
       "name": "DutchmanSailDarkerRecipe",
       "type": "recipe",
-      "sortid": 150,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dutchman_sail_darker_recipe",
@@ -2740,7 +2584,6 @@
     {
       "name": "QARSideFigureHeadRecipe",
       "type": "recipe",
-      "sortid": 151,
       "compiles": true,
       "locked_code": false,
       "registry_name": "qar_side_figure_head_recipe",
@@ -2753,7 +2596,6 @@
     {
       "name": "BPSideFigureHeadRecipe",
       "type": "recipe",
-      "sortid": 152,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bp_side_figure_head_recipe",
@@ -2766,7 +2608,6 @@
     {
       "name": "SwordRecipe",
       "type": "recipe",
-      "sortid": 153,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sword_recipe",
@@ -2779,7 +2620,6 @@
     {
       "name": "CannonTrade",
       "type": "villagertrade",
-      "sortid": 154,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cannon_trade",
@@ -2790,7 +2630,6 @@
     {
       "name": "Cannonrecipe",
       "type": "recipe",
-      "sortid": 155,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cannonrecipe",
@@ -2803,7 +2642,6 @@
     {
       "name": "BeanieRecipe",
       "type": "recipe",
-      "sortid": 156,
       "compiles": true,
       "locked_code": false,
       "registry_name": "beanie_recipe",
@@ -2816,7 +2654,6 @@
     {
       "name": "DutchmanStairRecipe",
       "type": "recipe",
-      "sortid": 157,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dutchman_stair_recipe",
@@ -2829,7 +2666,6 @@
     {
       "name": "DutchmanSlabRecipe",
       "type": "recipe",
-      "sortid": 158,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dutchman_slab_recipe",
@@ -2842,7 +2678,6 @@
     {
       "name": "SwordOfTritonTrade",
       "type": "villagertrade",
-      "sortid": 159,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sword_of_triton_trade",
@@ -2853,7 +2688,6 @@
     {
       "name": "GloriousLanternRecipe",
       "type": "recipe",
-      "sortid": 160,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glorious_lantern_recipe",
@@ -2866,7 +2700,6 @@
     {
       "name": "TricornRecipe",
       "type": "recipe",
-      "sortid": 161,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tricorn_recipe",
@@ -2879,7 +2712,6 @@
     {
       "name": "BandanaRecipe",
       "type": "recipe",
-      "sortid": 162,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bandana_recipe",
@@ -2892,7 +2724,6 @@
     {
       "name": "BlackPlankTrim",
       "type": "block",
-      "sortid": 163,
       "compiles": true,
       "locked_code": false,
       "registry_name": "black_plank_trim",
@@ -2909,7 +2740,6 @@
     {
       "name": "JacksCompass",
       "type": "item",
-      "sortid": 164,
       "compiles": true,
       "locked_code": false,
       "registry_name": "jacks_compass",
@@ -2923,7 +2753,6 @@
     {
       "name": "Jackdos",
       "type": "armor",
-      "sortid": 165,
       "compiles": true,
       "locked_code": false,
       "registry_name": "jackdos",
@@ -2938,7 +2767,6 @@
     {
       "name": "BlackPearlMast",
       "type": "block",
-      "sortid": 166,
       "compiles": true,
       "locked_code": false,
       "registry_name": "black_pearl_mast",
@@ -2955,7 +2783,6 @@
     {
       "name": "HangingVinesDutchman",
       "type": "block",
-      "sortid": 168,
       "compiles": true,
       "locked_code": false,
       "registry_name": "hanging_vines_dutchman",
@@ -2972,7 +2799,6 @@
     {
       "name": "DutchmanPlank1",
       "type": "block",
-      "sortid": 169,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dutchman_plank_1",
@@ -2989,7 +2815,6 @@
     {
       "name": "DutchmanPlank2",
       "type": "block",
-      "sortid": 170,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dutchman_plank_2",
@@ -3006,7 +2831,6 @@
     {
       "name": "DutchmanPlank3",
       "type": "block",
-      "sortid": 171,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dutchman_plank_3",
@@ -3023,7 +2847,6 @@
     {
       "name": "DutchmanPlank4",
       "type": "block",
-      "sortid": 172,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dutchman_plank_4",
@@ -3040,7 +2863,6 @@
     {
       "name": "DutchmanWall1",
       "type": "block",
-      "sortid": 173,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dutchman_wall_1",
@@ -3060,7 +2882,6 @@
     {
       "name": "DutchmanWall2",
       "type": "block",
-      "sortid": 174,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dutchman_wall_2",
@@ -3080,7 +2901,6 @@
     {
       "name": "DutchmanSlab1",
       "type": "block",
-      "sortid": 175,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dutchman_slab_1",
@@ -3099,7 +2919,6 @@
     {
       "name": "DutchmanSlab2",
       "type": "block",
-      "sortid": 176,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dutchman_slab_2",
@@ -3118,7 +2937,6 @@
     {
       "name": "DutchmanSlab3",
       "type": "block",
-      "sortid": 177,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dutchman_slab_3",
@@ -3137,7 +2955,6 @@
     {
       "name": "DutchmanStair",
       "type": "block",
-      "sortid": 178,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dutchman_stair",
@@ -3156,7 +2973,6 @@
     {
       "name": "DutchmanStair1",
       "type": "block",
-      "sortid": 179,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dutchman_stair_1",
@@ -3175,7 +2991,6 @@
     {
       "name": "DutchmanStair2",
       "type": "block",
-      "sortid": 180,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dutchman_stair_2",
@@ -3194,7 +3009,6 @@
     {
       "name": "Muzzleflare",
       "type": "particle",
-      "sortid": 181,
       "compiles": true,
       "locked_code": false,
       "registry_name": "muzzleflare",
@@ -3208,7 +3022,6 @@
     {
       "name": "BlackPearlBow1",
       "type": "block",
-      "sortid": 182,
       "compiles": true,
       "locked_code": false,
       "registry_name": "black_pearl_bow_1",
@@ -3225,7 +3038,6 @@
     {
       "name": "BlackPearlBow2",
       "type": "block",
-      "sortid": 183,
       "compiles": true,
       "locked_code": false,
       "registry_name": "black_pearl_bow_2",
@@ -3242,7 +3054,6 @@
     {
       "name": "QueenAnnesRevengeWindow",
       "type": "block",
-      "sortid": 184,
       "compiles": true,
       "locked_code": false,
       "registry_name": "queen_annes_revenge_window",
@@ -3259,7 +3070,6 @@
     {
       "name": "BlackPearlBirdTrim",
       "type": "block",
-      "sortid": 185,
       "compiles": true,
       "locked_code": false,
       "registry_name": "black_pearl_bird_trim",
@@ -3276,7 +3086,6 @@
     {
       "name": "BlackPearlCabinRoof",
       "type": "block",
-      "sortid": 186,
       "compiles": true,
       "locked_code": false,
       "registry_name": "black_pearl_cabin_roof",
@@ -3293,7 +3102,6 @@
     {
       "name": "BlackPearlCabinRoofSlab",
       "type": "block",
-      "sortid": 187,
       "compiles": true,
       "locked_code": false,
       "registry_name": "black_pearl_cabin_roof_slab",
@@ -3312,7 +3120,6 @@
     {
       "name": "BlackPearlCabinRoofStair",
       "type": "block",
-      "sortid": 188,
       "compiles": true,
       "locked_code": false,
       "registry_name": "black_pearl_cabin_roof_stair",
@@ -3331,7 +3138,6 @@
     {
       "name": "BlackPearlBackTrim",
       "type": "block",
-      "sortid": 189,
       "compiles": true,
       "locked_code": false,
       "registry_name": "black_pearl_back_trim",
@@ -3348,7 +3154,6 @@
     {
       "name": "Organ",
       "type": "block",
-      "sortid": 190,
       "compiles": true,
       "locked_code": false,
       "registry_name": "organ",
@@ -3365,7 +3170,6 @@
     {
       "name": "BottleOfRumPlayerFinishesUsingItem",
       "type": "procedure",
-      "sortid": 191,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bottle_of_rum_player_finishes_using_item",
@@ -3384,7 +3188,6 @@
     {
       "name": "BottleOfRum",
       "type": "item",
-      "sortid": 192,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bottle_of_rum",
@@ -3398,7 +3201,6 @@
     {
       "name": "JarOfDirt",
       "type": "item",
-      "sortid": 193,
       "compiles": true,
       "locked_code": false,
       "registry_name": "jar_of_dirt",
@@ -3412,7 +3214,6 @@
     {
       "name": "As",
       "type": "damagetype",
-      "sortid": 194,
       "compiles": true,
       "locked_code": false,
       "registry_name": "as",
@@ -3425,7 +3226,6 @@
     {
       "name": "Elizabeth",
       "type": "armor",
-      "sortid": 195,
       "compiles": true,
       "locked_code": false,
       "registry_name": "elizabeth",
@@ -3442,7 +3242,6 @@
     {
       "name": "Elizabethsetbonus",
       "type": "procedure",
-      "sortid": 196,
       "compiles": true,
       "locked_code": false,
       "registry_name": "elizabethsetbonus",
@@ -3455,6 +3254,18 @@
             "name": "entity",
             "type": "entity"
           }
+        ]
+      }
+    },
+    {
+      "name": "Stickoffirerecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stickoffirerecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/stickoffirerecipe.json"
         ]
       }
     }
@@ -3553,6 +3364,9 @@
       "~CUSTOM:DutchmanStair",
       "~CUSTOM:StylishFence"
     ],
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:LeStickOfFire"
+    ],
     "BLOCKS:minecraft:walls": [
       "~CUSTOM:DutchmanWall2",
       "~CUSTOM:DutchmanWall1",
@@ -3569,11 +3383,16 @@
       "~CUSTOM:StairsOfTheFlyingDutchman",
       "~CUSTOM:BlackPlankStairs"
     ],
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:SwordOfTriton",
+      "~CUSTOM:Swordos"
+    ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
-      "~Blocks.FLOWING_WATER",
-      "~CUSTOM:LockerSand"
+      "~CUSTOM:LockerSand",
+      "~Blocks.FLOWING_WATER"
     ]
   },
+  "tab_element_order": {},
   "language_map": {
     "en_us": {
       "subtitles.gunfire": "",
@@ -3761,5 +3580,5 @@
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.cannon"
   },
-  "mcreatorVersion": 202400118518
+  "mcreatorVersion": 202400452410
 }

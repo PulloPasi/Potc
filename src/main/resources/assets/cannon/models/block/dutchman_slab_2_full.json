@@ -1,6 +1,7 @@
 {
   "parent": "block/cube_bottom_top",
   "textures": {
+    "particle": "cannon:block/dutchmanplank2",
     "bottom": "cannon:block/dutchmanplank2",
     "top": "cannon:block/dutchmanplank2",
     "side": "cannon:block/dutchmanplank2"

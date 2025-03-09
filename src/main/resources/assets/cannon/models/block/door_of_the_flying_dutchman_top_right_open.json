@@ -1,6 +1,7 @@
 {
   "parent": "block/door_top_right_open",
   "textures": {
+    "particle": "cannon:block/doorofthedutchman",
     "bottom": "cannon:block/doorofthedutchman",
     "top": "cannon:block/doorofthedutchman"
   },

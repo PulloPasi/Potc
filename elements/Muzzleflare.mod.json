@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "particle",
   "definition": {
     "texture": "cannonflare.png",
@@ -7,7 +7,9 @@
     "frameDuration": 1,
     "width": 4.0,
     "height": 4.0,
-    "scale": 2.0,
+    "scale": {
+      "fixedValue": 2.0
+    },
     "speedFactor": 0.0,
     "gravity": 0.0,
     "maxAge": 0,

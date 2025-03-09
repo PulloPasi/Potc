@@ -99,6 +99,10 @@ public class CannonballosProjectileEntity extends AbstractArrow implements ItemS
 		return shoot(world, entity, source, 7f, 10, 5);
 	}
 
+	public static CannonballosProjectileEntity shoot(Level world, LivingEntity entity, RandomSource source, float pullingPower) {
+		return shoot(world, entity, source, pullingPower * 7f, 10, 5);
+	}
+
 	public static CannonballosProjectileEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
 		CannonballosProjectileEntity entityarrow = new CannonballosProjectileEntity(CannonModEntities.CANNONBALLOS_PROJECTILE.get(), entity, world);
 		entityarrow.shoot(entity.getViewVector(1).x, entity.getViewVector(1).y, entity.getViewVector(1).z, power * 2, 0);

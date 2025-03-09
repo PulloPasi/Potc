@@ -35,16 +35,16 @@ public class CannonModTabs {
 				tabData.accept(CannonModBlocks.FACE_OF_THE_FERRYMAN.get().asItem());
 				tabData.accept(CannonModBlocks.FERRYMANS_CANNON.get().asItem());
 				tabData.accept(CannonModItems.LE_STICK_OF_FIRE.get());
-				tabData.accept(CannonModBlocks.FERRYMANS_CHASING_CANNON.get().asItem());
-				tabData.accept(CannonModBlocks.PLANKS_OF_THE_FLYING_DUTCHMAN.get().asItem());
-				tabData.accept(CannonModBlocks.DOOR_OF_THE_FLYING_DUTCHMAN.get().asItem());
 				tabData.accept(CannonModBlocks.LADDER_THAT_HAS_BEEN_STOLEN_FROM_MIKAELS_BACKYARD.get().asItem());
+				tabData.accept(CannonModBlocks.PLANKS_OF_THE_FLYING_DUTCHMAN.get().asItem());
+				tabData.accept(CannonModBlocks.FERRYMANS_CHASING_CANNON.get().asItem());
+				tabData.accept(CannonModBlocks.DOOR_OF_THE_FLYING_DUTCHMAN.get().asItem());
 				tabData.accept(CannonModBlocks.STAIRS_OF_THE_FLYING_DUTCHMAN.get().asItem());
 				tabData.accept(CannonModBlocks.BARNACLES.get().asItem());
 				tabData.accept(CannonModBlocks.ROPE.get().asItem());
 				tabData.accept(CannonModItems.PART_OF_THE_CREW_SPAWN_EGG.get());
-				tabData.accept(CannonModItems.FLINTLOCK.get());
 				tabData.accept(CannonModItems.BULLETITEM.get());
+				tabData.accept(CannonModItems.FLINTLOCK.get());
 				tabData.accept(CannonModBlocks.SLABS_OF_THE_FLYING_DUTCHMAN.get().asItem());
 				tabData.accept(CannonModItems.BILL_TURNER_HELMET.get());
 				tabData.accept(CannonModItems.BILL_TURNER_CHESTPLATE.get());
@@ -79,8 +79,8 @@ public class CannonModTabs {
 				tabData.accept(CannonModItems.CHALICE.get());
 				tabData.accept(CannonModItems.CHALICEFULL.get());
 				tabData.accept(CannonModItems.MERMAID_SPAWN_EGG.get());
-				tabData.accept(CannonModItems.MERMAIDTEAR.get());
 				tabData.accept(CannonModBlocks.FOUNTAIN_OF_YOUTH_DRIP.get().asItem());
+				tabData.accept(CannonModItems.MERMAIDTEAR.get());
 				tabData.accept(CannonModItems.CHALICEWITHTEAR.get());
 				tabData.accept(CannonModItems.ANGELICA_TEACH_HELMET.get());
 				tabData.accept(CannonModItems.ANGELICA_TEACH_CHESTPLATE.get());
@@ -153,7 +153,5 @@ public class CannonModTabs {
 				tabData.accept(CannonModItems.ELIZABETH_CHESTPLATE.get());
 				tabData.accept(CannonModItems.ELIZABETH_LEGGINGS.get());
 				tabData.accept(CannonModItems.ELIZABETH_BOOTS.get());
-			})
-
-					.build());
+			}).build());
 }

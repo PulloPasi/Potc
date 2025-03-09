@@ -10,7 +10,7 @@ import net.minecraft.core.BlockPos;
 
 public class RedSailSlabBlock extends SlabBlock {
 	public RedSailSlabBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().sound(SoundType.WOOL).strength(1f, 10f).dynamicShape());
+		super(BlockBehaviour.Properties.of().ignitedByLava().sound(SoundType.WOOL).strength(1f, 10f));
 	}
 
 	@Override

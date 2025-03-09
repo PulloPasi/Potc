@@ -12,7 +12,7 @@ import net.minecraft.core.BlockPos;
 
 public class DutchmanStair2Block extends StairBlock {
 	public DutchmanStair2Block() {
-		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(1f, 10f).dynamicShape());
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(1f, 10f));
 	}
 
 	@Override

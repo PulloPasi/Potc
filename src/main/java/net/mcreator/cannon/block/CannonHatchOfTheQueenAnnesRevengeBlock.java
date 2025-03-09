@@ -12,7 +12,7 @@ import net.minecraft.core.BlockPos;
 
 public class CannonHatchOfTheQueenAnnesRevengeBlock extends TrapDoorBlock {
 	public CannonHatchOfTheQueenAnnesRevengeBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(1f, 10f).dynamicShape(), BlockSetType.OAK);
+		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(1f, 10f), BlockSetType.OAK);
 	}
 
 	@Override

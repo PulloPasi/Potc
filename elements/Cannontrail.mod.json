@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "particle",
   "definition": {
     "texture": "cannontrailparticle.png",
@@ -7,7 +7,9 @@
     "frameDuration": 1,
     "width": 0.2,
     "height": 0.2,
-    "scale": 0.7,
+    "scale": {
+      "fixedValue": 0.7
+    },
     "speedFactor": 0.2,
     "gravity": 0.5,
     "maxAge": 7,

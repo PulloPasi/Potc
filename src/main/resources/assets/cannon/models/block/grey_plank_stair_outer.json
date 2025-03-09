@@ -1,6 +1,7 @@
 {
   "parent": "block/outer_stairs",
   "textures": {
+    "particle": "cannon:block/dutchwood",
     "bottom": "cannon:block/dutchwood",
     "top": "cannon:block/dutchwood",
     "side": "cannon:block/dutchwood"

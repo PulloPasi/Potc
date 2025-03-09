@@ -12,7 +12,7 @@ import net.minecraft.core.BlockPos;
 
 public class DoorOfTheFlyingDutchmanBlock extends DoorBlock {
 	public DoorOfTheFlyingDutchmanBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).dynamicShape(), BlockSetType.OAK);
+		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false), BlockSetType.OAK);
 	}
 
 	@Override

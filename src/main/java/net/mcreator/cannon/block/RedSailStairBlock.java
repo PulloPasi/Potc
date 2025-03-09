@@ -11,7 +11,7 @@ import net.minecraft.core.BlockPos;
 
 public class RedSailStairBlock extends StairBlock {
 	public RedSailStairBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().ignitedByLava().sound(SoundType.WOOL).strength(1f, 10f).dynamicShape());
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().ignitedByLava().sound(SoundType.WOOL).strength(1f, 10f));
 	}
 
 	@Override

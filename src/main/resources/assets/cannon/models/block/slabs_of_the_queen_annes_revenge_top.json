@@ -1,6 +1,7 @@
 {
   "parent": "block/slab_top",
   "textures": {
+    "particle": "cannon:block/redplanks",
     "bottom": "cannon:block/redplanks",
     "top": "cannon:block/redplanks",
     "side": "cannon:block/redplanks"

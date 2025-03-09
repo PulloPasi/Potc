@@ -11,7 +11,7 @@ import net.minecraft.core.BlockPos;
 
 public class GreyPlankSlabBlock extends SlabBlock {
 	public GreyPlankSlabBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(1f, 10f).dynamicShape());
+		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(1f, 10f));
 	}
 
 	@Override

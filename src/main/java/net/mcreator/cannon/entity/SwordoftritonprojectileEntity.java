@@ -83,6 +83,10 @@ public class SwordoftritonprojectileEntity extends AbstractArrow implements Item
 		return shoot(world, entity, source, 1f, 1, 5);
 	}
 
+	public static SwordoftritonprojectileEntity shoot(Level world, LivingEntity entity, RandomSource source, float pullingPower) {
+		return shoot(world, entity, source, pullingPower * 1f, 1, 5);
+	}
+
 	public static SwordoftritonprojectileEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
 		SwordoftritonprojectileEntity entityarrow = new SwordoftritonprojectileEntity(CannonModEntities.SWORDOFTRITONPROJECTILE.get(), entity, world);
 		entityarrow.shoot(entity.getViewVector(1).x, entity.getViewVector(1).y, entity.getViewVector(1).z, power * 2, 0);

@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -10,9 +10,11 @@
     "textureLeggings": "gibbspant",
     "enableBoots": true,
     "textureBoots": "gibssshoe",
-    "creativeTab": {
-      "value": "CUSTOM:Potc"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Potc"
+      }
+    ],
     "armorTextureFile": "ss",
     "helmetName": "Joshamee Gibbs Hair",
     "bodyName": "Joshamee Gibbs Chestplate",

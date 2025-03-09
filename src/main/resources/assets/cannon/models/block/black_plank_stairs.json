@@ -1,6 +1,7 @@
 {
   "parent": "block/stairs",
   "textures": {
+    "particle": "cannon:block/balckosplankos",
     "bottom": "cannon:block/balckosplankos",
     "top": "cannon:block/balckosplankos",
     "side": "cannon:block/balckosplankos"

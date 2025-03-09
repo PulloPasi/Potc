@@ -1,6 +1,7 @@
 {
   "parent": "block/cube_bottom_top",
   "textures": {
+    "particle": "cannon:block/redcloth",
     "bottom": "cannon:block/redcloth",
     "top": "cannon:block/redcloth",
     "side": "cannon:block/redcloth"

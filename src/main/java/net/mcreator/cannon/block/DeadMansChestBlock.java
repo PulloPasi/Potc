@@ -41,7 +41,9 @@ public class DeadMansChestBlock extends BaseEntityBlock implements EntityBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public DeadMansChestBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.POLISHED_DEEPSLATE).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of()
+
+				.sound(SoundType.POLISHED_DEEPSLATE).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 

@@ -1,6 +1,7 @@
 {
   "parent": "block/inner_stairs",
   "textures": {
+    "particle": "cannon:block/puu",
     "bottom": "cannon:block/puu",
     "top": "cannon:block/puu",
     "side": "cannon:block/puu"

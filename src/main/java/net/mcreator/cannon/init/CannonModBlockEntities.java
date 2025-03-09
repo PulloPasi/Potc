@@ -29,6 +29,8 @@ public class CannonModBlockEntities {
 			() -> BlockEntityType.Builder.of(DeadMansChestTileEntity::new, CannonModBlocks.DEAD_MANS_CHEST.get()).build(null));
 	public static final RegistryObject<BlockEntityType<?>> FOUNTAIN_OF_YOUTH_DRIP = register("fountain_of_youth_drip", CannonModBlocks.FOUNTAIN_OF_YOUTH_DRIP, FountainOfYouthDripBlockEntity::new);
 
+	// Start of user code block custom block entities
+	// End of user code block custom block entities
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));
 	}

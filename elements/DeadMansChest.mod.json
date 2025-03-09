@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "animatedblock",
   "definition": {
     "texture": "chest",
@@ -13,6 +13,7 @@
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
+    "animateBlockItem": false,
     "itemTexture": "",
     "particleTexture": "",
     "tintType": "No tint",
@@ -43,6 +44,7 @@
     "creativeTab": {
       "value": "CUSTOM:Potc"
     },
+    "creativeTabs": [],
     "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
@@ -132,6 +134,7 @@
     "maxGenerateHeight": 64,
     "normal": "dedmanchest.geo.json",
     "displaySettings": "dedmanchest.item.json",
+    "vanillaToolTier": "NONE",
     "blockstateList": []
   }
 }

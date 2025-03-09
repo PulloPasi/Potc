@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "minecraft:water",
-    "cannon:locker_sand"
+    "cannon:locker_sand",
+    "minecraft:water"
   ]
 }
