@@ -11,7 +11,7 @@ import net.minecraft.core.BlockPos;
 
 public class BlackPlankSlabBlock extends SlabBlock {
 	public BlackPlankSlabBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(1f, 10f));
+		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(1f, 3f));
 	}
 
 	@Override

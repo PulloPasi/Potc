@@ -3268,6 +3268,54 @@
           "src/main/resources/data/cannon/recipes/stickoffirerecipe.json"
         ]
       }
+    },
+    {
+      "name": "Rumrecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rumrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/rumrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Swordoftritronrecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swordoftritronrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/swordoftritronrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Bulletrecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bulletrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/bulletrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Flintlockrecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flintlockrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/flintlockrecipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -3398,8 +3446,8 @@
       "subtitles.gunfire": "",
       "item.cannon.elizabeth_helmet": "Elizabeth Helmet",
       "item.cannon.jackdos_helmet": "Jack Sparrow (No Hat)",
-      "item.cannon.joshamee_gibbs_boots": "Joshamee Gibbs Boots",
       "item.cannon.elizabeth_boots": "Elizabeth Boots",
+      "item.cannon.joshamee_gibbs_boots": "Joshamee Gibbs Boots",
       "item.cannon.banan": "Banan",
       "block.cannon.planks_of_the_queen_annes_revenge": "Planks Of The Queen Anne\u0027s Revenge",
       "block.cannon.gunpowderbarrel": "Gunpowder Barrel",
@@ -3410,8 +3458,8 @@
       "block.cannon.black_pearl_bird_trim": "Black Pearl Bird Trim",
       "block.cannon.cannon": "Cannon",
       "item.cannon.barbossa_boots": "Barbossa Boots",
-      "block.cannon.stylish_fence": "Stylish Fence",
       "item.cannon.angelica_teach_boots": "Angelica Teach Boots",
+      "block.cannon.stylish_fence": "Stylish Fence",
       "item.cannon.mermaid_spawn_egg": "Mermaid Spawn Egg",
       "block.cannon.locker_sand": "Locker Sand",
       "item.cannon.sword_of_triton": "Sword Of Triton",

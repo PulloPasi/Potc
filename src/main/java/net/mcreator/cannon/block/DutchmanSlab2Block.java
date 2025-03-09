@@ -11,7 +11,7 @@ import net.minecraft.core.BlockPos;
 
 public class DutchmanSlab2Block extends SlabBlock {
 	public DutchmanSlab2Block() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(1f, 10f));
+		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(1f, 3f));
 	}
 
 	@Override

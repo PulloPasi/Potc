@@ -11,7 +11,7 @@ import net.minecraft.core.BlockPos;
 
 public class DutchmanStairBlock extends FenceBlock {
 	public DutchmanStairBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).forceSolidOn());
+		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(1f, 3f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).forceSolidOn());
 	}
 
 	@Override

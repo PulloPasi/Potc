@@ -2,9 +2,9 @@
   "_fv": 73,
   "_type": "item",
   "definition": {
-    "renderType": 0,
+    "renderType": 1,
     "texture": "flinttilokki",
-    "customModelName": "Ranged item",
+    "customModelName": "flintlock:default",
     "customProperties": {},
     "states": [],
     "name": "Flintlock",
@@ -62,6 +62,10 @@
     "isAlwaysEdible": false,
     "animation": "crossbow",
     "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
     "musicDiscLengthInTicks": 0,
     "musicDiscAnalogOutput": 0
   }
