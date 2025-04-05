@@ -15,6 +15,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.cannon.block.WindowOfTheBlackPearlBlock;
+import net.mcreator.cannon.block.SwirlwvyRopeBlock;
 import net.mcreator.cannon.block.StylishWallBlock;
 import net.mcreator.cannon.block.StylishFenceBlock;
 import net.mcreator.cannon.block.StairsOfTheQueenAnnesRevengeBlock;
@@ -160,6 +161,7 @@ public class CannonModBlocks {
 	public static final RegistryObject<Block> BLACK_PEARL_CABIN_ROOF_STAIR = REGISTRY.register("black_pearl_cabin_roof_stair", () -> new BlackPearlCabinRoofStairBlock());
 	public static final RegistryObject<Block> BLACK_PEARL_BACK_TRIM = REGISTRY.register("black_pearl_back_trim", () -> new BlackPearlBackTrimBlock());
 	public static final RegistryObject<Block> ORGAN = REGISTRY.register("organ", () -> new OrganBlock());
+	public static final RegistryObject<Block> SWIRLWVY_ROPE = REGISTRY.register("swirlwvy_rope", () -> new SwirlwvyRopeBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

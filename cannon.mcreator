@@ -3316,6 +3316,87 @@
           "src/main/resources/data/cannon/recipes/flintlockrecipe.json"
         ]
       }
+    },
+    {
+      "name": "CustomLeadItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_lead_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/item/CustomLeadItemItem.java",
+          "src/main/resources/assets/cannon/models/item/custom_lead_item.json"
+        ]
+      }
+    },
+    {
+      "name": "OnFenceRightClick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_fence_right_click",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/procedures/OnFenceRightClickProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "SpawnRopeBetweenFences",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_rope_between_fences",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/procedures/SpawnRopeBetweenFencesProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "RemoveRopeOnFenceBreak",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "remove_rope_on_fence_break",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/procedures/RemoveRopeOnFenceBreakProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "LeashHolder",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leash_holder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/entity/LeashHolderEntity.java",
+          "src/main/java/net/mcreator/cannon/client/renderer/LeashHolderRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "SwirlwvyRope",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swirlwvy_rope",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/loot_tables/blocks/swirlwvy_rope.json",
+          "src/main/resources/assets/cannon/models/block/swirlwvy_rope.json",
+          "src/main/resources/assets/cannon/blockstates/swirlwvy_rope.json",
+          "src/main/resources/assets/cannon/models/item/swirlwvy_rope.json",
+          "src/main/java/net/mcreator/cannon/block/SwirlwvyRopeBlock.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -3446,8 +3527,8 @@
       "subtitles.gunfire": "",
       "item.cannon.elizabeth_helmet": "Elizabeth Helmet",
       "item.cannon.jackdos_helmet": "Jack Sparrow (No Hat)",
-      "item.cannon.elizabeth_boots": "Elizabeth Boots",
       "item.cannon.joshamee_gibbs_boots": "Joshamee Gibbs Boots",
+      "item.cannon.elizabeth_boots": "Elizabeth Boots",
       "item.cannon.banan": "Banan",
       "block.cannon.planks_of_the_queen_annes_revenge": "Planks Of The Queen Anne\u0027s Revenge",
       "block.cannon.gunpowderbarrel": "Gunpowder Barrel",
@@ -3458,12 +3539,14 @@
       "block.cannon.black_pearl_bird_trim": "Black Pearl Bird Trim",
       "block.cannon.cannon": "Cannon",
       "item.cannon.barbossa_boots": "Barbossa Boots",
-      "item.cannon.angelica_teach_boots": "Angelica Teach Boots",
       "block.cannon.stylish_fence": "Stylish Fence",
+      "item.cannon.angelica_teach_boots": "Angelica Teach Boots",
       "item.cannon.mermaid_spawn_egg": "Mermaid Spawn Egg",
       "block.cannon.locker_sand": "Locker Sand",
       "item.cannon.sword_of_triton": "Sword Of Triton",
       "item.cannon.black_beard_boots": "BlackBeard Boots",
+      "block.cannon.swirlwvy_rope": "Pile Of Rope",
+      "item.cannon.custom_lead_item": "Custom Lead Item",
       "block.cannon.dutchman_wall_1": "Dutchman Wall 1",
       "block.cannon.dutchman_wall_2": "Dutchman Wall 2",
       "item.cannon.jack_sparrow_boots": "Jack Sparrow Boots",
@@ -3499,6 +3582,7 @@
       "block.cannon.slabs_of_the_queen_annes_revenge": "Slabs Of The Queen Anne\u0027s Revenge",
       "item.cannon.flintlock": "Flintlock",
       "entity.cannon.black_beards_crew": "Black Beards Crew",
+      "entity.cannon.leash_holder": "Leash Holder",
       "item.cannon.chalicewithtear": "Chalice Of Cartagena (Full With Tear)",
       "item.cannon.black_beards_crew_spawn_egg": "Black Beards Crew Spawn Egg",
       "block.cannon.barnacles": "Barnacles",

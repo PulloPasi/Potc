@@ -9,5 +9,5 @@
     "west": "cannon:block/queenaennsrevengerrwindow",
     "particle": "cannon:block/queenaennsrevengerrwindow"
   },
-  "render_type": "translucent"
+  "render_type": "cutout"
 }

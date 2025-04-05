@@ -35,6 +35,7 @@ import net.mcreator.cannon.item.FlintlockItem;
 import net.mcreator.cannon.item.ElizabethItem;
 import net.mcreator.cannon.item.DutchmanpeaceItem;
 import net.mcreator.cannon.item.DavyJonesItem;
+import net.mcreator.cannon.item.CustomLeadItemItem;
 import net.mcreator.cannon.item.ChalicewithtearItem;
 import net.mcreator.cannon.item.ChalicefullItem;
 import net.mcreator.cannon.item.ChaliceItem;
@@ -189,6 +190,8 @@ public class CannonModItems {
 	public static final RegistryObject<Item> ELIZABETH_CHESTPLATE = REGISTRY.register("elizabeth_chestplate", () -> new ElizabethItem.Chestplate());
 	public static final RegistryObject<Item> ELIZABETH_LEGGINGS = REGISTRY.register("elizabeth_leggings", () -> new ElizabethItem.Leggings());
 	public static final RegistryObject<Item> ELIZABETH_BOOTS = REGISTRY.register("elizabeth_boots", () -> new ElizabethItem.Boots());
+	public static final RegistryObject<Item> CUSTOM_LEAD_ITEM = REGISTRY.register("custom_lead_item", () -> new CustomLeadItemItem());
+	public static final RegistryObject<Item> SWIRLWVY_ROPE = block(CannonModBlocks.SWIRLWVY_ROPE);
 
 	// Start of user code block custom items
 	// End of user code block custom items

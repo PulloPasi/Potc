@@ -21,6 +21,7 @@ import net.mcreator.cannon.entity.QuartermasterEntity;
 import net.mcreator.cannon.entity.PartOfTheCrewStrongEntity;
 import net.mcreator.cannon.entity.PartOfTheCrewEntity;
 import net.mcreator.cannon.entity.MermaidEntity;
+import net.mcreator.cannon.entity.LeashHolderEntity;
 import net.mcreator.cannon.entity.KarbEntity;
 import net.mcreator.cannon.entity.CannonballosProjectileEntity;
 import net.mcreator.cannon.entity.BulletEntity;
@@ -65,6 +66,10 @@ public class CannonModEntities {
 			EntityType.Builder.<BlackBeardsCrewEntity>of(BlackBeardsCrewEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BlackBeardsCrewEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<LeashHolderEntity>> LEASH_HOLDER = register("leash_holder",
+			EntityType.Builder.<LeashHolderEntity>of(LeashHolderEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(LeashHolderEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -82,6 +87,7 @@ public class CannonModEntities {
 			MermaidEntity.init();
 			QuartermasterEntity.init();
 			BlackBeardsCrewEntity.init();
+			LeashHolderEntity.init();
 		});
 	}
 
@@ -94,5 +100,6 @@ public class CannonModEntities {
 		event.put(MERMAID.get(), MermaidEntity.createAttributes().build());
 		event.put(QUARTERMASTER.get(), QuartermasterEntity.createAttributes().build());
 		event.put(BLACK_BEARDS_CREW.get(), BlackBeardsCrewEntity.createAttributes().build());
+		event.put(LEASH_HOLDER.get(), LeashHolderEntity.createAttributes().build());
 	}
 }
