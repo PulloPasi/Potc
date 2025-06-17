@@ -11,6 +11,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.cannon.block.entity.RopeAnchorBlockEntity;
 import net.mcreator.cannon.block.entity.GunpowderbarrelBlockEntity;
 import net.mcreator.cannon.block.entity.FountainOfYouthDripBlockEntity;
 import net.mcreator.cannon.block.entity.FerrymansChasingCannonBlockEntity;
@@ -28,6 +29,7 @@ public class CannonModBlockEntities {
 	public static final RegistryObject<BlockEntityType<DeadMansChestTileEntity>> DEAD_MANS_CHEST = REGISTRY.register("dead_mans_chest",
 			() -> BlockEntityType.Builder.of(DeadMansChestTileEntity::new, CannonModBlocks.DEAD_MANS_CHEST.get()).build(null));
 	public static final RegistryObject<BlockEntityType<?>> FOUNTAIN_OF_YOUTH_DRIP = register("fountain_of_youth_drip", CannonModBlocks.FOUNTAIN_OF_YOUTH_DRIP, FountainOfYouthDripBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> ROPE_ANCHOR = register("rope_anchor", CannonModBlocks.ROPE_ANCHOR, RopeAnchorBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

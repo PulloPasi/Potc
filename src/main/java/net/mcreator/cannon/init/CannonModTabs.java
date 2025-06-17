@@ -153,7 +153,7 @@ public class CannonModTabs {
 				tabData.accept(CannonModItems.ELIZABETH_CHESTPLATE.get());
 				tabData.accept(CannonModItems.ELIZABETH_LEGGINGS.get());
 				tabData.accept(CannonModItems.ELIZABETH_BOOTS.get());
-				tabData.accept(CannonModItems.CUSTOM_LEAD_ITEM.get());
 				tabData.accept(CannonModBlocks.SWIRLWVY_ROPE.get().asItem());
+				tabData.accept(CannonModItems.RIGGING_TOOL.get());
 			}).build());
 }

@@ -3,18 +3,18 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "minecraft:lead",
+    "texture": "riggingtoolitem",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Custom Lead Item",
+    "name": "Rigging Tool",
     "rarity": "COMMON",
     "creativeTabs": [
       {
         "value": "CUSTOM:Potc"
       }
     ],
-    "stackSize": 64,
+    "stackSize": 1,
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
@@ -36,9 +36,6 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onRightClickedOnBlock": {
-      "name": "OnFenceRightClick"
-    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,

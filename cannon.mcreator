@@ -712,7 +712,7 @@
       "name": "Swordos",
       "type": "tool",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "swordos",
       "metadata": {
         "files": [
@@ -3318,58 +3318,6 @@
       }
     },
     {
-      "name": "CustomLeadItem",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "custom_lead_item",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cannon/item/CustomLeadItemItem.java",
-          "src/main/resources/assets/cannon/models/item/custom_lead_item.json"
-        ]
-      }
-    },
-    {
-      "name": "OnFenceRightClick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "on_fence_right_click",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cannon/procedures/OnFenceRightClickProcedure.java"
-        ],
-        "dependencies": []
-      }
-    },
-    {
-      "name": "SpawnRopeBetweenFences",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "spawn_rope_between_fences",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cannon/procedures/SpawnRopeBetweenFencesProcedure.java"
-        ],
-        "dependencies": []
-      }
-    },
-    {
-      "name": "RemoveRopeOnFenceBreak",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "remove_rope_on_fence_break",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cannon/procedures/RemoveRopeOnFenceBreakProcedure.java"
-        ],
-        "dependencies": []
-      }
-    },
-    {
       "name": "LeashHolder",
       "type": "livingentity",
       "compiles": true,
@@ -3397,9 +3345,150 @@
           "src/main/java/net/mcreator/cannon/block/SwirlwvyRopeBlock.java"
         ]
       }
+    },
+    {
+      "name": "SwordosRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "swordos_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/procedures/SwordosRightclickedProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "SwordosStoppedUsingProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "swordos_stopped_using_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/procedures/SwordosStoppedUsingProcedureProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "BlockMeleeDamageProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "block_melee_damage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/procedures/BlockMeleeDamageProcedureProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "RopeAnchor",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rope_anchor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/item/rope_anchor.json",
+          "src/main/resources/assets/cannon/blockstates/rope_anchor.json",
+          "src/main/resources/data/cannon/loot_tables/blocks/rope_anchor.json",
+          "src/main/java/net/mcreator/cannon/block/entity/RopeAnchorBlockEntity.java",
+          "src/main/resources/assets/cannon/models/block/rope_anchor.json",
+          "src/main/java/net/mcreator/cannon/block/RopeAnchorBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "RiggingTool",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rigging_tool",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/item/rigging_tool.json",
+          "src/main/java/net/mcreator/cannon/item/RiggingToolItem.java"
+        ]
+      }
+    },
+    {
+      "name": "RiggingTooluse",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rigging_tooluse",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/procedures/RiggingTooluseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PlaceRopeBetween",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "place_rope_between",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/procedures/PlaceRopeBetweenProcedure.java"
+        ],
+        "dependencies": []
+      }
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "riggingAnchorX",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "riggingAnchorY",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "riggingAnchorZ",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "riggingHasFirst",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    }
+  ],
   "sound_elements": [
     {
       "name": "cannonfire",
@@ -3546,7 +3635,6 @@
       "item.cannon.sword_of_triton": "Sword Of Triton",
       "item.cannon.black_beard_boots": "BlackBeard Boots",
       "block.cannon.swirlwvy_rope": "Pile Of Rope",
-      "item.cannon.custom_lead_item": "Custom Lead Item",
       "block.cannon.dutchman_wall_1": "Dutchman Wall 1",
       "block.cannon.dutchman_wall_2": "Dutchman Wall 2",
       "item.cannon.jack_sparrow_boots": "Jack Sparrow Boots",
@@ -3565,6 +3653,7 @@
       "item.cannon.joshamee_gibbs_helmet": "Joshamee Gibbs Hair",
       "block.cannon.hanging_vines_dutchman": "Hanging Vines ",
       "block.cannon.red_sail": "Red Sail",
+      "item.cannon.rigging_tool": "Rigging Tool",
       "block.cannon.face_of_the_ferryman": "Face Of The Ferryman",
       "item.cannon.pipo_helmet": "Beanie",
       "block.cannon.ferrymans_chasing_cannon": "Ferrymans Chasing Cannon",
@@ -3605,6 +3694,7 @@
       "block.cannon.window_of_the_black_pearl": "Window Of The Black Pearl",
       "item.cannon.jackdos_chestplate": "Jack Sparrow (No Jacket)",
       "item.cannon.briish_spawn_egg": "British Gunman Spawn Egg",
+      "block.cannon.rope_anchor": "Rigging Pulley",
       "block.cannon.rope_block": "Rope Block",
       "block.cannon.dutchman_plank_1": "Dutchman Plank 1",
       "item.cannon.talisman_of_the_black_pearl": "Talisman Of The Black Pearl",
