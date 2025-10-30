@@ -22,9 +22,6 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.mcreator.cannon.init.CannonModEntities;
 import net.mcreator.cannon.util.LeadConnectionManager;
-import org.valkyrienskies.core.api.ships.Ship;
-import org.valkyrienskies.core.api.ships.ShipManager;
-import org.valkyrienskies.mod.common.VSGameUtilsKt;
 
 import java.util.*;
 
@@ -67,10 +64,6 @@ public class LeadEntity extends Mob {
                    (from.getZ() + to.getZ()) / 2.0);
     }
 
-    // Store last known positions to detect movement
-    private BlockPos lastFromPos;
-    private BlockPos lastToPos;
-    
     @Override
     public void tick() {
         super.tick();
@@ -102,54 +95,9 @@ public class LeadEntity extends Mob {
         }
         
         // Update position to be between the two blocks
-        this.updatePosition();
-        
-        // Check for block movement
-        if (lastFromPos == null) lastFromPos = from;
-        if (lastToPos == null) lastToPos = to;
-        
-        // Update connection if blocks have moved
-        if (!lastFromPos.equals(from) || !lastToPos.equals(to)) {
-            LeadConnectionManager.updateConnection(this, from, to);
-            lastFromPos = from.immutable();
-            lastToPos = to.immutable();
-        }
-    }
-    
-    private void updatePosition() {
-        // Get the actual positions (accounting for ship movement)
-        BlockPos actualFrom = getActualPosition(from);
-        BlockPos actualTo = getActualPosition(to);
-        
-        // Update position to be between the two blocks
-        this.setPos((actualFrom.getX() + actualTo.getX()) / 2.0, 
-                   (actualFrom.getY() + actualTo.getY()) / 2.0, 
-                   (actualFrom.getZ() + actualTo.getZ()) / 2.0);
-    }
-    
-    private BlockPos getActualPosition(BlockPos pos) {
-        // If Valkyrien Skies is present, get the transformed position
-        try {
-            ShipManager manager = VSGameUtilsKt.getShipObjectWorld(level()).getShipManager();
-            Optional<Ship> ship = manager.getShipFromBlock(pos);
-            if (ship.isPresent()) {
-                return ship.get().getShipToWorld().transformPosition(pos);
-            }
-        } catch (Exception e) {
-            // Valkyrien Skies not available or error occurred
-        }
-        return pos;
-    }
-    
-    @SubscribeEvent
-    public static void onServerTick(TickEvent.LevelTickEvent event) {
-        if (event.phase != TickEvent.Phase.END || event.level.isClientSide()) {
-            return;
-        }
-        
-        // Update all lead entities in the level
-        event.level.getEntitiesOfClass(LeadEntity.class, entity -> true)
-            .forEach(LeadEntity::updatePosition);
+        this.setPos((from.getX() + to.getX()) / 2.0, 
+                   (from.getY() + to.getY()) / 2.0, 
+                   (from.getZ() + to.getZ()) / 2.0);
     }
     }
 
