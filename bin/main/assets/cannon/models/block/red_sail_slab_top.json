@@ -1,0 +1,10 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "particle": "cannon:block/redcloth",
+    "bottom": "cannon:block/redcloth",
+    "top": "cannon:block/redcloth",
+    "side": "cannon:block/redcloth"
+  },
+  "render_type": "solid"
+}

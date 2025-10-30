@@ -1,0 +1,31 @@
+{
+  "_fv": 60,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:Cannonballos"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "CUSTOM:cannonfire"
+    },
+    "igniteFire": false,
+    "power": 7.0,
+    "damage": 10.0,
+    "knockback": 5,
+    "entityModel": "Default",
+    "customModelTexture": "",
+    "onHitsBlock": {
+      "name": "CannonballosProjectileHitsBlock"
+    },
+    "onHitsPlayer": {
+      "name": "CannonballosProjectileHitsBlock"
+    },
+    "onHitsEntity": {
+      "name": "CannonballosProjectileHitsBlock"
+    },
+    "onFlyingTick": {
+      "name": "CannonballosProjectileWhileProjectileFlyingTick"
+    }
+  }
+}

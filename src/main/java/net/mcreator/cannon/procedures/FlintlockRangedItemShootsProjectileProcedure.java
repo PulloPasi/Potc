@@ -1,5 +1,9 @@
 package net.mcreator.cannon.procedures;
 
+import org.valkyrienskies.core.impl.shadow.z;
+import org.valkyrienskies.core.impl.shadow.y;
+import org.valkyrienskies.core.impl.shadow.x;
+
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;

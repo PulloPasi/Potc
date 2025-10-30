@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "cannon:block/face_of_the_ferryman"
+    },
+    "facing=east": {
+      "model": "cannon:block/face_of_the_ferryman",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "cannon:block/face_of_the_ferryman",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "cannon:block/face_of_the_ferryman",
+      "y": 270
+    }
+  }
+}

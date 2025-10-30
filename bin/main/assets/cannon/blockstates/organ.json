@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "cannon:block/organ"
+    },
+    "facing=east": {
+      "model": "cannon:block/organ",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "cannon:block/organ",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "cannon:block/organ",
+      "y": 270
+    }
+  }
+}

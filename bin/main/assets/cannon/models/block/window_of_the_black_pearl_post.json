@@ -1,0 +1,9 @@
+{
+  "parent": "block/template_glass_pane_post",
+  "textures": {
+    "particle": "cannon:block/window",
+    "edge": "cannon:block/window",
+    "pane": "cannon:block/window"
+  },
+  "render_type": "cutout_mipped"
+}

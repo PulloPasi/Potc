@@ -1,0 +1,9 @@
+{
+  "parent": "cannon:custom/kasvoreik",
+  "textures": {
+    "all": "cannon:block/wallholeforcannontex",
+    "particle": "cannon:block/wallholeforcannontex",
+    "missing": "cannon:block/wallholeforcannontex"
+  },
+  "render_type": "solid"
+}

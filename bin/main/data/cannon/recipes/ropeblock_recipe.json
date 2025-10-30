@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "cannon:rope"
+    },
+    {
+      "item": "cannon:rope"
+    },
+    {
+      "item": "cannon:rope"
+    },
+    {
+      "item": "cannon:rope"
+    }
+  ],
+  "result": {
+    "item": "cannon:rope_block",
+    "count": 1
+  }
+}

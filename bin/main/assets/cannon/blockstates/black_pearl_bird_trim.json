@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "cannon:block/black_pearl_bird_trim"
+    },
+    "facing=east": {
+      "model": "cannon:block/black_pearl_bird_trim",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "cannon:block/black_pearl_bird_trim",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "cannon:block/black_pearl_bird_trim",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "cannon:block/black_pearl_bird_trim",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "cannon:block/black_pearl_bird_trim",
+      "x": 90
+    }
+  }
+}

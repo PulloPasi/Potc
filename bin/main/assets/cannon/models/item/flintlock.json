@@ -1,0 +1,7 @@
+{
+  "parent": "cannon:custom/flintlock",
+  "textures": {
+    "0": "cannon:block/flintlock",
+    "particle": "cannon:item/flinttilokki"
+  }
+}

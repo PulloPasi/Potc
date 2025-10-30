@@ -1,0 +1,9 @@
+{
+  "parent": "cannon:custom/tykki",
+  "textures": {
+    "all": "cannon:block/tykkitekstuurio",
+    "particle": "cannon:block/tykkitekstuurio",
+    "0": "cannon:block/tykkitekstuurio"
+  },
+  "render_type": "solid"
+}

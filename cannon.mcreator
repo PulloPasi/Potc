@@ -511,7 +511,7 @@
       "name": "PartOfTheCrew",
       "type": "animatedentity",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "part_of_the_crew",
       "metadata": {
         "files": [
@@ -663,7 +663,7 @@
       "name": "Karb",
       "type": "animatedentity",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "karb",
       "metadata": {
         "files": [
@@ -679,7 +679,7 @@
       "name": "PartOfTheCrewStrong",
       "type": "animatedentity",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "part_of_the_crew_strong",
       "metadata": {
         "files": [
@@ -836,7 +836,7 @@
       "name": "DeadMansChest",
       "type": "animatedblock",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "dead_mans_chest",
       "metadata": {
         "files": [
@@ -1170,7 +1170,7 @@
       "name": "Briish",
       "type": "animatedentity",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "briish",
       "metadata": {
         "files": [
@@ -1305,7 +1305,7 @@
       "name": "Mermaid",
       "type": "animatedentity",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "mermaid",
       "metadata": {
         "files": [
@@ -1890,7 +1890,7 @@
       "name": "Quartermaster",
       "type": "animatedentity",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "quartermaster",
       "metadata": {
         "files": [
@@ -1931,7 +1931,7 @@
       "name": "BlackBeardsCrew",
       "type": "animatedentity",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "black_beards_crew",
       "metadata": {
         "files": [
@@ -3321,7 +3321,7 @@
       "name": "LeashHolder",
       "type": "livingentity",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "leash_holder",
       "metadata": {
         "files": [
@@ -3406,7 +3406,7 @@
       "name": "RiggingTool",
       "type": "item",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "rigging_tool",
       "metadata": {
         "files": [
@@ -3419,7 +3419,7 @@
       "name": "RiggingTooluse",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "rigging_tooluse",
       "metadata": {
         "files": [
@@ -3453,13 +3453,26 @@
       "name": "PlaceRopeBetween",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "place_rope_between",
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/cannon/procedures/PlaceRopeBetweenProcedure.java"
         ],
         "dependencies": []
+      }
+    },
+    {
+      "name": "Lead",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "lead",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/client/renderer/LeadRenderer.java",
+          "src/main/java/net/mcreator/cannon/entity/LeadEntity.java"
+        ]
       }
     }
   ],
@@ -3602,8 +3615,7 @@
       "~CUSTOM:BlackPlankStairs"
     ],
     "ITEMS:minecraft:swords": [
-      "~CUSTOM:SwordOfTriton",
-      "~CUSTOM:Swordos"
+      "~CUSTOM:SwordOfTriton"
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
       "~CUSTOM:LockerSand",
@@ -3616,8 +3628,8 @@
       "subtitles.gunfire": "",
       "item.cannon.elizabeth_helmet": "Elizabeth Helmet",
       "item.cannon.jackdos_helmet": "Jack Sparrow (No Hat)",
-      "item.cannon.joshamee_gibbs_boots": "Joshamee Gibbs Boots",
       "item.cannon.elizabeth_boots": "Elizabeth Boots",
+      "item.cannon.joshamee_gibbs_boots": "Joshamee Gibbs Boots",
       "item.cannon.banan": "Banan",
       "block.cannon.planks_of_the_queen_annes_revenge": "Planks Of The Queen Anne\u0027s Revenge",
       "block.cannon.gunpowderbarrel": "Gunpowder Barrel",
@@ -3628,8 +3640,8 @@
       "block.cannon.black_pearl_bird_trim": "Black Pearl Bird Trim",
       "block.cannon.cannon": "Cannon",
       "item.cannon.barbossa_boots": "Barbossa Boots",
-      "block.cannon.stylish_fence": "Stylish Fence",
       "item.cannon.angelica_teach_boots": "Angelica Teach Boots",
+      "block.cannon.stylish_fence": "Stylish Fence",
       "item.cannon.mermaid_spawn_egg": "Mermaid Spawn Egg",
       "block.cannon.locker_sand": "Locker Sand",
       "item.cannon.sword_of_triton": "Sword Of Triton",
@@ -3706,6 +3718,7 @@
       "block.cannon.dutchman_plank_2": "Dutchman Plank 2",
       "block.cannon.dutchman_plank_3": "Dutchman Plank 3",
       "block.cannon.dutchman_plank_4": "Dutchman Plank 4",
+      "entity.cannon.lead": "Lead",
       "block.cannon.stairs_of_the_queen_annes_revenge": "Stairs Of The Queen Anne\u0027s Revenge",
       "item_group.cannon.potc": "Cursed Tides",
       "block.cannon.dutchman_stair": "Dutchman Fence",
@@ -3791,11 +3804,12 @@
     "websiteURL": "https://mcreator.net",
     "license": "Academic Free License v3.0",
     "serverSideOnly": false,
-    "modPicture": "cannonballos",
+    "modPicture": "cursed_tides",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [
+      "valkyrienskies",
       "geckolib"
     ],
     "currentGenerator": "forge-1.20.1",

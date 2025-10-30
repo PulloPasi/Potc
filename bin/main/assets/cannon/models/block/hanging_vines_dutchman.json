@@ -1,0 +1,9 @@
+{
+  "parent": "cannon:custom/hanginvines",
+  "textures": {
+    "all": "cannon:block/hangingvines",
+    "particle": "cannon:block/hangingvines",
+    "0": "cannon:block/hangingvines"
+  },
+  "render_type": "solid"
+}

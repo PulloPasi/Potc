@@ -1,0 +1,9 @@
+{
+  "parent": "cannon:custom/pulley",
+  "textures": {
+    "all": "cannon:block/pulley",
+    "particle": "cannon:block/pulley",
+    "0": "cannon:block/pulley"
+  },
+  "render_type": "solid"
+}

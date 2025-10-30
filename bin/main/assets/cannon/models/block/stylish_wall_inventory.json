@@ -1,0 +1,8 @@
+{
+  "parent": "block/wall_inventory",
+  "textures": {
+    "wall": "cannon:block/balckosplankos",
+    "particle": "cannon:block/balckosplankos"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cannon:block/ropeblocjk",
+    "up": "cannon:block/ropeblocjk",
+    "north": "cannon:block/ropeblocjk",
+    "east": "cannon:block/ropeblocjk",
+    "south": "cannon:block/ropeblocjk",
+    "west": "cannon:block/ropeblocjk",
+    "particle": "cannon:block/ropeblocjk"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "net.mcreator.cannon.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "mixins.cannon.refmap.json",
+  "mixins": [
+    "ServerShipObjectWorldAccessor"
+  ],
+  "client": [],
+  "minVersion": "0.8"
+}

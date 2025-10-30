@@ -1,6 +1,13 @@
 
 package net.mcreator.cannon.client.particle;
 
+import org.valkyrienskies.core.impl.shadow.z;
+import org.valkyrienskies.core.impl.shadow.y;
+import org.valkyrienskies.core.impl.shadow.x;
+import org.valkyrienskies.core.impl.shadow.vz;
+import org.valkyrienskies.core.impl.shadow.vy;
+import org.valkyrienskies.core.impl.shadow.vx;
+
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 

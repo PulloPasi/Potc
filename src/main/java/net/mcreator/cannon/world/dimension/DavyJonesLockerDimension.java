@@ -1,6 +1,9 @@
 
 package net.mcreator.cannon.world.dimension;
 
+import org.valkyrienskies.core.impl.shadow.y;
+import org.valkyrienskies.core.impl.shadow.x;
+
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.client.event.RegisterDimensionSpecialEffectsEvent;

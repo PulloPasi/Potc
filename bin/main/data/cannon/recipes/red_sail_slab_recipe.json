@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "cannon:red_sail"
+    }
+  },
+  "result": {
+    "item": "cannon:red_sail_slab",
+    "count": 6
+  }
+}

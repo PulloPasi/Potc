@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cannon:block/sailsv2v2",
+    "up": "cannon:block/sailsv2v2",
+    "north": "cannon:block/sailsv2v2",
+    "east": "cannon:block/sailsv2v2",
+    "south": "cannon:block/sailsv2v2",
+    "west": "cannon:block/sailsv2v2",
+    "particle": "cannon:block/sailsv2v2"
+  },
+  "render_type": "solid"
+}

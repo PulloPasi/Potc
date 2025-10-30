@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cannon:block/red_sail_slab"
+    },
+    "type=top": {
+      "model": "cannon:block/red_sail_slab_top"
+    },
+    "type=double": {
+      "model": "cannon:block/red_sail_slab_full"
+    }
+  }
+}

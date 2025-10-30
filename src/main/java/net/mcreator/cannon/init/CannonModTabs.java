@@ -50,7 +50,6 @@ public class CannonModTabs {
 				tabData.accept(CannonModItems.BILL_TURNER_CHESTPLATE.get());
 				tabData.accept(CannonModItems.BILL_TURNER_LEGGINGS.get());
 				tabData.accept(CannonModItems.BILL_TURNER_BOOTS.get());
-				tabData.accept(CannonModItems.KARB_SPAWN_EGG.get());
 				tabData.accept(CannonModItems.PART_OF_THE_CREW_STRONG_SPAWN_EGG.get());
 				tabData.accept(CannonModItems.SWORDOS.get());
 				tabData.accept(CannonModBlocks.SAILS_OF_THE_BLACK_PEARL.get().asItem());
@@ -78,7 +77,6 @@ public class CannonModTabs {
 				tabData.accept(CannonModItems.SWORD_OF_TRITON.get());
 				tabData.accept(CannonModItems.CHALICE.get());
 				tabData.accept(CannonModItems.CHALICEFULL.get());
-				tabData.accept(CannonModItems.MERMAID_SPAWN_EGG.get());
 				tabData.accept(CannonModBlocks.FOUNTAIN_OF_YOUTH_DRIP.get().asItem());
 				tabData.accept(CannonModItems.MERMAIDTEAR.get());
 				tabData.accept(CannonModItems.CHALICEWITHTEAR.get());

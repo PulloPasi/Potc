@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:red_dye"
+    },
+    "b": {
+      "item": "cannon:sails_of_the_black_pearl_patch"
+    }
+  },
+  "result": {
+    "item": "cannon:red_sail",
+    "count": 1
+  }
+}

@@ -1,5 +1,10 @@
 package net.mcreator.cannon.procedures;
 
+import org.valkyrienskies.core.impl.shadow.z;
+import org.valkyrienskies.core.impl.shadow.y;
+import org.valkyrienskies.core.impl.shadow.x;
+import org.valkyrienskies.core.impl.shadow.p;
+
 import net.minecraftforge.registries.ForgeRegistries;
 
 import net.minecraft.world.level.block.state.properties.Property;

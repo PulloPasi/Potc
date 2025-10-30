@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cannon:block/lightredsail",
+    "up": "cannon:block/lightredsail",
+    "north": "cannon:block/lightredsail",
+    "east": "cannon:block/lightredsail",
+    "south": "cannon:block/lightredsail",
+    "west": "cannon:block/lightredsail",
+    "particle": "cannon:block/lightredsail"
+  },
+  "render_type": "solid"
+}

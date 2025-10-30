@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "cannon:block/side_figure_head_of_the_queen_annes_revenge"
+    },
+    "facing=east": {
+      "model": "cannon:block/side_figure_head_of_the_queen_annes_revenge",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "cannon:block/side_figure_head_of_the_queen_annes_revenge",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "cannon:block/side_figure_head_of_the_queen_annes_revenge",
+      "y": 270
+    }
+  }
+}

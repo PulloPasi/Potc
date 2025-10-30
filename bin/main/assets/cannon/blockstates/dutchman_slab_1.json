@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cannon:block/dutchman_slab_1"
+    },
+    "type=top": {
+      "model": "cannon:block/dutchman_slab_1_top"
+    },
+    "type=double": {
+      "model": "cannon:block/dutchman_slab_1_full"
+    }
+  }
+}

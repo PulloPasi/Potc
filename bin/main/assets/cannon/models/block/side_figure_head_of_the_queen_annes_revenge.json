@@ -1,0 +1,9 @@
+{
+  "parent": "cannon:custom/figureheadside",
+  "textures": {
+    "all": "cannon:block/figureheadside",
+    "particle": "cannon:block/figureheadside",
+    "0": "cannon:block/figureheadside"
+  },
+  "render_type": "solid"
+}

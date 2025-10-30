@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "cannon:planks_of_the_queen_annes_revenge"
+    }
+  },
+  "result": {
+    "item": "cannon:slabs_of_the_queen_annes_revenge",
+    "count": 6
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "cannon:rope"
+    },
+    {
+      "item": "cannon:stylish_fence"
+    }
+  ],
+  "result": {
+    "item": "cannon:slim_fence",
+    "count": 1
+  }
+}

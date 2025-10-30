@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aba",
+    "cbc"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:stick"
+    },
+    "b": {
+      "item": "cannon:black_planks"
+    },
+    "c": {
+      "item": "cannon:black_plank_slab"
+    }
+  },
+  "result": {
+    "item": "cannon:stylish_wall",
+    "count": 4
+  }
+}

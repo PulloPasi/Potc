@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cannon:block/puu",
+    "up": "cannon:block/puu",
+    "north": "cannon:block/puu",
+    "east": "cannon:block/puu",
+    "south": "cannon:block/puu",
+    "west": "cannon:block/puu",
+    "particle": "cannon:block/puu"
+  },
+  "render_type": "solid"
+}

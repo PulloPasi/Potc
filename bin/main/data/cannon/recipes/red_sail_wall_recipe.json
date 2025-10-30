@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aba",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "cannon:red_sail_slab"
+    },
+    "b": {
+      "item": "cannon:red_sail"
+    }
+  },
+  "result": {
+    "item": "cannon:red_sail_wall",
+    "count": 4
+  }
+}

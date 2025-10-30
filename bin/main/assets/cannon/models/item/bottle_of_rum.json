@@ -1,0 +1,7 @@
+{
+  "parent": "cannon:custom/boelorum",
+  "textures": {
+    "0": "cannon:block/rumbottle",
+    "particle": "cannon:item/rumbottle"
+  }
+}

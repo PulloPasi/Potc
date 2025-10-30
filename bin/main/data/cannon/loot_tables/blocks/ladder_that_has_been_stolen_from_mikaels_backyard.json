@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "cannon:blocks/ladder_that_has_been_stolen_from_mikaels_backyard",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "cannon:ladder_that_has_been_stolen_from_mikaels_backyard"
+        }
+      ]
+    }
+  ]
+}

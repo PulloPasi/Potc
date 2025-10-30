@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " a ",
+    "bcc",
+    "dd "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:torch"
+    },
+    "b": {
+      "item": "cannon:black_plank_slab"
+    },
+    "c": {
+      "item": "minecraft:iron_block"
+    },
+    "d": {
+      "item": "cannon:black_planks"
+    }
+  },
+  "result": {
+    "item": "cannon:cannon",
+    "count": 1
+  }
+}

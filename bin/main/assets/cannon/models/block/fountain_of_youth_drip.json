@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cannon:block/dripping",
+    "up": "cannon:block/notrdrip",
+    "north": "cannon:block/notrdrip",
+    "east": "cannon:block/notrdrip",
+    "south": "cannon:block/notrdrip",
+    "west": "cannon:block/notrdrip",
+    "particle": "cannon:block/dripping"
+  },
+  "render_type": "solid"
+}

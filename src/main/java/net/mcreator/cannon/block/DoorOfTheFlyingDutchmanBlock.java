@@ -1,6 +1,10 @@
 
 package net.mcreator.cannon.block;
 
+import org.valkyrienskies.core.impl.shadow.bs;
+import org.valkyrienskies.core.impl.shadow.br;
+import org.valkyrienskies.core.impl.shadow.bp;
+
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.BlockState;

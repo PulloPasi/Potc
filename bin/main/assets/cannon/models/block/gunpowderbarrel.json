@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cannon:block/barrelbottom",
+    "up": "cannon:block/barreltop",
+    "north": "cannon:block/barrelside",
+    "east": "cannon:block/barrelside",
+    "south": "cannon:block/barrelside",
+    "west": "cannon:block/barrelside",
+    "particle": "cannon:block/barrelbottom"
+  },
+  "render_type": "solid"
+}

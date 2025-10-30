@@ -1,0 +1,7 @@
+{
+  "parent": "cannon:custom/swordoftriton",
+  "textures": {
+    "0": "cannon:block/triton",
+    "particle": "cannon:item/triton"
+  }
+}

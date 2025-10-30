@@ -1,6 +1,13 @@
 
 package net.mcreator.cannon.entity;
 
+import org.valkyrienskies.core.impl.shadow.z;
+import org.valkyrienskies.core.impl.shadow.y;
+import org.valkyrienskies.core.impl.shadow.x;
+import org.valkyrienskies.core.impl.shadow.dz;
+import org.valkyrienskies.core.impl.shadow.dy;
+import org.valkyrienskies.core.impl.shadow.dx;
+
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;

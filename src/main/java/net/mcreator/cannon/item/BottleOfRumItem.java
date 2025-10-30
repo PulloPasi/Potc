@@ -1,6 +1,10 @@
 
 package net.mcreator.cannon.item;
 
+import org.valkyrienskies.core.impl.shadow.z;
+import org.valkyrienskies.core.impl.shadow.y;
+import org.valkyrienskies.core.impl.shadow.x;
+
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;

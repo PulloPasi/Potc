@@ -1,5 +1,7 @@
 package net.mcreator.cannon.block.entity;
 
+import org.valkyrienskies.core.impl.shadow.id;
+
 import net.minecraftforge.items.wrapper.SidedInvWrapper;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.common.util.LazyOptional;

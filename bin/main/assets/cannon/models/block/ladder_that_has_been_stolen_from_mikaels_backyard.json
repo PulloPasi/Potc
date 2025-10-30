@@ -1,0 +1,9 @@
+{
+  "parent": "cannon:custom/ladder",
+  "textures": {
+    "all": "cannon:block/tikas",
+    "particle": "cannon:block/tikas",
+    "0": "cannon:block/tikas"
+  },
+  "render_type": "solid"
+}

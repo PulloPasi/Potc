@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "cannon:block/hanging_vines_dutchman"
+    },
+    "facing=east": {
+      "model": "cannon:block/hanging_vines_dutchman",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "cannon:block/hanging_vines_dutchman",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "cannon:block/hanging_vines_dutchman",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "cannon:block/hanging_vines_dutchman",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "cannon:block/hanging_vines_dutchman",
+      "x": 90
+    }
+  }
+}

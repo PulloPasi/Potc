@@ -1,0 +1,10 @@
+{
+  "parent": "cannon:custom/tykkihollantitripla",
+  "textures": {
+    "all": "cannon:block/tykkitekstuuriohollanti",
+    "particle": "cannon:block/tykkitekstuuriohollanti",
+    "0": "cannon:block/tykkitekstuuriohollanti",
+    "1": "cannon:block/pasgelia"
+  },
+  "render_type": "solid"
+}

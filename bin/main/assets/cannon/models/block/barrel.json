@@ -1,0 +1,9 @@
+{
+  "parent": "cannon:custom/barrel",
+  "textures": {
+    "all": "cannon:block/barrel",
+    "particle": "cannon:block/barrel",
+    "0": "cannon:block/barrel"
+  },
+  "render_type": "solid"
+}

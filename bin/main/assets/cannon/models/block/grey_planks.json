@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cannon:block/dutchwood",
+    "up": "cannon:block/dutchwood",
+    "north": "cannon:block/dutchwood",
+    "east": "cannon:block/dutchwood",
+    "south": "cannon:block/dutchwood",
+    "west": "cannon:block/dutchwood",
+    "particle": "cannon:block/dutchwood"
+  },
+  "render_type": "solid"
+}

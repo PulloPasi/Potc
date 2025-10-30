@@ -4,6 +4,8 @@
  */
 package net.mcreator.cannon.init;
 
+import org.valkyrienskies.core.impl.shadow.of;
+
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
@@ -22,6 +24,7 @@ import net.mcreator.cannon.entity.PartOfTheCrewStrongEntity;
 import net.mcreator.cannon.entity.PartOfTheCrewEntity;
 import net.mcreator.cannon.entity.MermaidEntity;
 import net.mcreator.cannon.entity.LeashHolderEntity;
+import net.mcreator.cannon.entity.LeadEntity;
 import net.mcreator.cannon.entity.KarbEntity;
 import net.mcreator.cannon.entity.CannonballosProjectileEntity;
 import net.mcreator.cannon.entity.BulletEntity;
@@ -70,6 +73,10 @@ public class CannonModEntities {
 			EntityType.Builder.<LeashHolderEntity>of(LeashHolderEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(LeashHolderEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<LeadEntity>> LEAD = register("lead",
+			EntityType.Builder.<LeadEntity>of(LeadEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(LeadEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -88,6 +95,7 @@ public class CannonModEntities {
 			QuartermasterEntity.init();
 			BlackBeardsCrewEntity.init();
 			LeashHolderEntity.init();
+			LeadEntity.init();
 		});
 	}
 
@@ -101,5 +109,6 @@ public class CannonModEntities {
 		event.put(QUARTERMASTER.get(), QuartermasterEntity.createAttributes().build());
 		event.put(BLACK_BEARDS_CREW.get(), BlackBeardsCrewEntity.createAttributes().build());
 		event.put(LEASH_HOLDER.get(), LeashHolderEntity.createAttributes().build());
+		event.put(LEAD.get(), LeadEntity.createAttributes().build());
 	}
 }

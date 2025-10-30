@@ -1,0 +1,9 @@
+{
+  "parent": "block/door_bottom_left_open",
+  "textures": {
+    "particle": "cannon:block/doorofthedutchman",
+    "bottom": "cannon:block/doorofthedutchman",
+    "top": "cannon:block/doorofthedutchman"
+  },
+  "render_type": "solid"
+}
