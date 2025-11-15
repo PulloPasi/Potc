@@ -1,7 +1,7 @@
 
 /*
- *    MCreator note: This file will be REGENERATED on each build.
- */
+*    MCreator note: This file will be REGENERATED on each build.
+*/
 package net.mcreator.cannon.init;
 
 import org.valkyrienskies.core.impl.shadow.of;
@@ -38,47 +38,29 @@ public class CannonModEntities {
 	public static final RegistryObject<EntityType<CannonballosProjectileEntity>> CANNONBALLOS_PROJECTILE = register("cannonballos_projectile", EntityType.Builder.<CannonballosProjectileEntity>of(CannonballosProjectileEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(CannonballosProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<PartOfTheCrewEntity>> PART_OF_THE_CREW = register("part_of_the_crew",
-			EntityType.Builder.<PartOfTheCrewEntity>of(PartOfTheCrewEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PartOfTheCrewEntity::new)
-
-					.sized(0.6f, 1.8f));
+			EntityType.Builder.<PartOfTheCrewEntity>of(PartOfTheCrewEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PartOfTheCrewEntity::new).sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<BulletEntity>> BULLET = register("bullet",
 			EntityType.Builder.<BulletEntity>of(BulletEntity::new, MobCategory.MISC).setCustomClientFactory(BulletEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<KarbEntity>> KARB = register("karb",
-			EntityType.Builder.<KarbEntity>of(KarbEntity::new, MobCategory.WATER_AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(KarbEntity::new)
-
-					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<PartOfTheCrewStrongEntity>> PART_OF_THE_CREW_STRONG = register("part_of_the_crew_strong",
-			EntityType.Builder.<PartOfTheCrewStrongEntity>of(PartOfTheCrewStrongEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PartOfTheCrewStrongEntity::new)
-
-					.sized(0.6f, 1.8f));
+			EntityType.Builder.<KarbEntity>of(KarbEntity::new, MobCategory.WATER_AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(KarbEntity::new).sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<PartOfTheCrewStrongEntity>> PART_OF_THE_CREW_STRONG = register("part_of_the_crew_strong", EntityType.Builder.<PartOfTheCrewStrongEntity>of(PartOfTheCrewStrongEntity::new, MobCategory.MONSTER)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PartOfTheCrewStrongEntity::new).sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<BriishEntity>> BRIISH = register("briish",
-			EntityType.Builder.<BriishEntity>of(BriishEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BriishEntity::new)
-
-					.sized(0.6f, 1.8f));
+			EntityType.Builder.<BriishEntity>of(BriishEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BriishEntity::new).sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<SwordoftritonprojectileEntity>> SWORDOFTRITONPROJECTILE = register("swordoftritonprojectile", EntityType.Builder.<SwordoftritonprojectileEntity>of(SwordoftritonprojectileEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(SwordoftritonprojectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<MermaidEntity>> MERMAID = register("mermaid",
-			EntityType.Builder.<MermaidEntity>of(MermaidEntity::new, MobCategory.WATER_AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MermaidEntity::new)
-
-					.sized(0.6f, 2.5f));
+			EntityType.Builder.<MermaidEntity>of(MermaidEntity::new, MobCategory.WATER_AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MermaidEntity::new).sized(0.6f, 2.5f));
 	public static final RegistryObject<EntityType<QuartermasterEntity>> QUARTERMASTER = register("quartermaster",
-			EntityType.Builder.<QuartermasterEntity>of(QuartermasterEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(QuartermasterEntity::new)
-
-					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<BlackBeardsCrewEntity>> BLACK_BEARDS_CREW = register("black_beards_crew",
-			EntityType.Builder.<BlackBeardsCrewEntity>of(BlackBeardsCrewEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BlackBeardsCrewEntity::new)
-
-					.sized(0.6f, 1.8f));
+			EntityType.Builder.<QuartermasterEntity>of(QuartermasterEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(QuartermasterEntity::new).sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<BlackBeardsCrewEntity>> BLACK_BEARDS_CREW = register("black_beards_crew", EntityType.Builder.<BlackBeardsCrewEntity>of(BlackBeardsCrewEntity::new, MobCategory.MONSTER)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BlackBeardsCrewEntity::new).sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<LeashHolderEntity>> LEASH_HOLDER = register("leash_holder",
-			EntityType.Builder.<LeashHolderEntity>of(LeashHolderEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(LeashHolderEntity::new)
-
-					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<LeadEntity>> LEAD = register("lead",
-			EntityType.Builder.<LeadEntity>of(LeadEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(LeadEntity::new)
-
-					.sized(0.6f, 1.8f));
-
+			EntityType.Builder.<LeashHolderEntity>of(LeashHolderEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(LeashHolderEntity::new).sized(0.6f, 1.8f));
 	// Start of user code block custom entities
+	public static final RegistryObject<EntityType<LeadEntity>> LEAD_ENTITY = REGISTRY.register("lead_entity",
+			() -> EntityType.Builder.<LeadEntity>of(LeadEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).sized(0.25f, 0.25f).build("lead_entity"));
+
 	// End of user code block custom entities
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -95,7 +77,6 @@ public class CannonModEntities {
 			QuartermasterEntity.init();
 			BlackBeardsCrewEntity.init();
 			LeashHolderEntity.init();
-			LeadEntity.init();
 		});
 	}
 
@@ -109,6 +90,5 @@ public class CannonModEntities {
 		event.put(QUARTERMASTER.get(), QuartermasterEntity.createAttributes().build());
 		event.put(BLACK_BEARDS_CREW.get(), BlackBeardsCrewEntity.createAttributes().build());
 		event.put(LEASH_HOLDER.get(), LeashHolderEntity.createAttributes().build());
-		event.put(LEAD.get(), LeadEntity.createAttributes().build());
 	}
 }

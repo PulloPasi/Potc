@@ -16,7 +16,6 @@ import net.mcreator.cannon.client.renderer.PartOfTheCrewStrongRenderer;
 import net.mcreator.cannon.client.renderer.PartOfTheCrewRenderer;
 import net.mcreator.cannon.client.renderer.MermaidRenderer;
 import net.mcreator.cannon.client.renderer.LeashHolderRenderer;
-import net.mcreator.cannon.client.renderer.LeadRenderer;
 import net.mcreator.cannon.client.renderer.KarbRenderer;
 import net.mcreator.cannon.client.renderer.BriishRenderer;
 import net.mcreator.cannon.client.renderer.BlackBeardsCrewRenderer;
@@ -36,6 +35,5 @@ public class CannonModEntityRenderers {
 		event.registerEntityRenderer(CannonModEntities.QUARTERMASTER.get(), QuartermasterRenderer::new);
 		event.registerEntityRenderer(CannonModEntities.BLACK_BEARDS_CREW.get(), BlackBeardsCrewRenderer::new);
 		event.registerEntityRenderer(CannonModEntities.LEASH_HOLDER.get(), LeashHolderRenderer::new);
-		event.registerEntityRenderer(CannonModEntities.LEAD.get(), LeadRenderer::new);
 	}
 }

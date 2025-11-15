@@ -50,6 +50,7 @@ public class CannonModTabs {
 				tabData.accept(CannonModItems.BILL_TURNER_CHESTPLATE.get());
 				tabData.accept(CannonModItems.BILL_TURNER_LEGGINGS.get());
 				tabData.accept(CannonModItems.BILL_TURNER_BOOTS.get());
+				tabData.accept(CannonModItems.KARB_SPAWN_EGG.get());
 				tabData.accept(CannonModItems.PART_OF_THE_CREW_STRONG_SPAWN_EGG.get());
 				tabData.accept(CannonModItems.SWORDOS.get());
 				tabData.accept(CannonModBlocks.SAILS_OF_THE_BLACK_PEARL.get().asItem());

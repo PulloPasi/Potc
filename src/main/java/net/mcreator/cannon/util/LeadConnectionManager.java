@@ -1,175 +1,199 @@
 package net.mcreator.cannon.util;
 
+import net.mcreator.cannon.CannonMod;
 import net.mcreator.cannon.entity.LeadEntity;
+import net.mcreator.cannon.init.CannonModEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.level.Level;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraft.world.phys.AABB;
+import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.fml.common.Mod;
+import org.joml.Matrix4dc;
+import org.joml.Vector3d;
+import org.valkyrienskies.core.api.ships.properties.ShipTransform;
+import org.valkyrienskies.core.impl.game.ships.ShipObjectServer;
+import org.valkyrienskies.core.impl.game.ships.ShipObjectServerWorld;
 
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 
-public class LeadConnectionManager {
-    private static final Map<BlockPos, BlockPos> connections = new HashMap<>();
-    private static final Map<BlockPos, LeadEntity> leadEntities = new HashMap<>();
-    private static final Map<BlockPos, BlockPos> connectionToEntity = new HashMap<>();
-    private static final Set<BlockPos> pendingRemovals = new HashSet<>();
+@Mod.EventBusSubscriber(modid = CannonMod.MODID)
+public final class LeadConnectionManager {
+    private static final Map<BlockPos, BlockPos> connections = new ConcurrentHashMap<>();
+    private static final Map<BlockPos, LeadEntity> leadEntities = new ConcurrentHashMap<>();
 
-    public static boolean createConnection(Level world, BlockPos from, BlockPos to) {
-        // Prevent self-connection and duplicate connections
-        if (from == null || to == null || from.equals(to) || hasConnection(from) || hasConnection(to)) {
+    private LeadConnectionManager() {
+    }
+
+    public static boolean createConnection(Level level, BlockPos from, BlockPos to) {
+        if (level == null || level.isClientSide || from == null || to == null || from.equals(to)) {
             return false;
         }
 
-        // Check if blocks are too far apart (max 32 blocks)
-        if (from.distSqr(to) > 32 * 32) {
+        BlockPos fromKey = from.immutable();
+        BlockPos toKey = to.immutable();
+
+        if (isConnected(fromKey) || isConnected(toKey)) {
             return false;
         }
 
-        // Store the connection in both directions for easy lookup
-        connections.put(from, to);
-        connections.put(to, from);
-        
-        // Spawn the visual lead entity
-        spawnLeadEntity(world, from, to);
+        if (!level.isLoaded(fromKey) || !level.isLoaded(toKey)) {
+            return false;
+        }
+
+        if (fromKey.distSqr(toKey) > 32 * 32) {
+            return false;
+        }
+
+        if (!VSShipUtils.isPositionValid(level, fromKey) || !VSShipUtils.isPositionValid(level, toKey)) {
+            return false;
+        }
+
+        connections.put(fromKey, toKey);
+        spawnLeadEntity(level, fromKey, toKey);
         return true;
-    }
-    
-    private static boolean hasConnection(BlockPos pos) {
-        return connections.containsKey(pos) || connections.containsValue(pos);
-    }
-
-    private static void spawnLeadEntity(Level world, BlockPos from, BlockPos to) {
-        if (!world.isClientSide && world instanceof ServerLevel serverLevel) {
-            // Remove any existing lead entities for these positions
-            removeLeadEntity(from);
-            removeLeadEntity(to);
-            
-            // Create and spawn the new lead entity
-            LeadEntity lead = LeadEntity.create(world, from, to);
-            serverLevel.addFreshEntity(lead);
-            
-            // Store references to the lead entity
-            leadEntities.put(from, lead);
-            leadEntities.put(to, lead);
-            connectionToEntity.put(from, to);
-            connectionToEntity.put(to, from);
-        }
-    }
-
-    public static boolean breakConnection(BlockPos pos) {
-        BlockPos connectedTo = connections.remove(pos);
-        if (connectedTo != null) {
-            // Remove the reverse connection
-            connections.remove(connectedTo);
-            
-            // Remove the lead entity and connection data
-            removeLeadEntity(pos);
-            removeLeadEntity(connectedTo);
-            connectionToEntity.remove(pos);
-            connectionToEntity.remove(connectedTo);
-            
-            return true;
-        }
-        return false;
-    }
-
-    private static void removeLeadEntity(BlockPos pos) {
-        LeadEntity lead = leadEntities.remove(pos);
-        if (lead != null && !lead.isRemoved() && lead.level() instanceof ServerLevel) {
-            lead.discard();
-        }
     }
 
     public static boolean isConnected(BlockPos pos) {
-        return connections.containsKey(pos) || connections.containsValue(pos);
+        if (pos == null) {
+            return false;
+        }
+        return leadEntities.containsKey(pos.immutable());
     }
-    
-    public static Optional<BlockPos> getConnectedPos(BlockPos pos) {
-        return Optional.ofNullable(connectionToEntity.get(pos));
-    }
-    
-    public static void updateConnection(LeadEntity lead, BlockPos from, BlockPos to) {
-        if (lead == null || from == null || to == null) {
+
+    public static void breakConnection(Level level, BlockPos pos) {
+        if (level == null || pos == null) {
             return;
         }
-        
-        // Update the connection in our maps
-        BlockPos oldTo = connectionToEntity.get(from);
-        if (oldTo != null) {
-            connectionToEntity.remove(oldTo);
+
+        BlockPos key = pos.immutable();
+        BlockPos other = connections.remove(key);
+        if (other != null) {
+            removeLeadEntity(level, key, other);
+            return;
         }
-        
-        connectionToEntity.put(from, to);
-        connectionToEntity.put(to, from);
-        
-        // Update the lead entity's position
-        lead.setPos(
+
+        for (Map.Entry<BlockPos, BlockPos> entry : new HashMap<>(connections).entrySet()) {
+            if (entry.getValue().equals(key)) {
+                BlockPos start = entry.getKey();
+                connections.remove(start);
+                removeLeadEntity(level, start, key);
+                break;
+            }
+        }
+    }
+
+    public static void breakConnection(Level level, BlockPos from, BlockPos to) {
+        if (level == null || from == null || to == null) {
+            return;
+        }
+
+        BlockPos fromKey = from.immutable();
+        BlockPos toKey = to.immutable();
+
+        if (connections.remove(fromKey, toKey)) {
+            removeLeadEntity(level, fromKey, toKey);
+            return;
+        }
+
+        if (connections.remove(toKey, fromKey)) {
+            removeLeadEntity(level, toKey, fromKey);
+        }
+    }
+
+    private static void spawnLeadEntity(Level level, BlockPos from, BlockPos to) {
+        if (!(level instanceof ServerLevel serverLevel)) {
+            return;
+        }
+
+        LeadEntity leadEntity = CannonModEntities.LEAD_ENTITY.get().create(serverLevel);
+        if (leadEntity == null) {
+            return;
+        }
+
+        leadEntity.setFromPos(from);
+        leadEntity.setToPos(to);
+
+        Vec3 midPoint = new Vec3(
             (from.getX() + to.getX()) / 2.0,
             (from.getY() + to.getY()) / 2.0,
             (from.getZ() + to.getZ()) / 2.0
         );
-    }
-    
-    @SubscribeEvent
-    public static void onServerTick(TickEvent.LevelTickEvent event) {
-        if (event.phase != TickEvent.Phase.END || event.level.isClientSide()) {
-            return;
-        }
-        
-        ServerLevel level = (ServerLevel) event.level;
-        long gameTime = level.getGameTime();
-        
-        // Check for broken connections every second (20 ticks)
-        if (gameTime % 20 == 0) {
-            // Create a copy to avoid concurrent modification
-            Map<BlockPos, BlockPos> connectionsCopy = new HashMap<>(connections);
-            
-            for (Map.Entry<BlockPos, BlockPos> entry : connectionsCopy.entrySet()) {
-                BlockPos from = entry.getKey();
-                BlockPos to = entry.getValue();
-                
-                // Check if either block has been removed
-                if (!isValidConnection(level, from, to)) {
-                    breakConnection(from);
-                }
-            }
-        }
-    }
-    
-    private static boolean isValidConnection(Level level, BlockPos from, BlockPos to) {
-        // Check if both blocks are still present and not too far apart
-        return level.isLoaded(from) && level.isLoaded(to) && 
-               level.getBlockState(from).isAir() == false && 
-               level.getBlockState(to).isAir() == false &&
-               from.distSqr(to) <= 32 * 32;
+
+        leadEntity.setPos(midPoint.x, midPoint.y, midPoint.z);
+        serverLevel.addFreshEntity(leadEntity);
+
+        leadEntities.put(from, leadEntity);
+        leadEntities.put(to, leadEntity);
     }
 
-    public static void tick(Level world) {
-        // Clean up invalid connections
-        pendingRemovals.clear();
-        
-        for (Map.Entry<BlockPos, BlockPos> entry : connections.entrySet()) {
-            BlockPos from = entry.getKey();
-            BlockPos to = entry.getValue();
-            
-            // Check if blocks still exist and are loaded
-            if (!world.isLoaded(from) || !world.isLoaded(to) || 
-                world.isEmptyBlock(from) || world.isEmptyBlock(to) ||
-                from.distSqr(to) > 256) { // 16 blocks max distance
-                pendingRemovals.add(from);
+    private static void removeLeadEntity(Level level, BlockPos from, BlockPos to) {
+        LeadEntity entity = leadEntities.remove(from);
+        if (entity != null) {
+            leadEntities.remove(to, entity);
+        } else {
+            entity = leadEntities.remove(to);
+        }
+
+        if (entity == null && level instanceof ServerLevel serverLevel) {
+            entity = findLeadEntity(serverLevel, from, to);
+        }
+
+        if (entity != null && !entity.isRemoved()) {
+            entity.discard();
+        }
+
+        leadEntities.remove(from);
+        leadEntities.remove(to);
+    }
+
+    private static LeadEntity findLeadEntity(ServerLevel level, BlockPos from, BlockPos to) {
+        Vec3 midPoint = new Vec3(
+            (from.getX() + to.getX()) / 2.0,
+            (from.getY() + to.getY()) / 2.0,
+            (from.getZ() + to.getZ()) / 2.0
+        );
+
+        double maxDist = Math.sqrt(from.distSqr(to)) / 2.0 + 1.0;
+        AABB searchArea = new AABB(
+            midPoint.x - maxDist, midPoint.y - maxDist, midPoint.z - maxDist,
+            midPoint.x + maxDist, midPoint.y + maxDist, midPoint.z + maxDist
+        );
+
+        for (LeadEntity entity : level.getEntitiesOfClass(LeadEntity.class, searchArea)) {
+            BlockPos entityFrom = entity.getFromPos();
+            BlockPos entityTo = entity.getToPos();
+            if ((entityFrom.equals(from) && entityTo.equals(to)) ||
+                (entityFrom.equals(to) && entityTo.equals(from))) {
+                return entity;
             }
         }
-        
-        // Process pending removals
-        for (BlockPos pos : pendingRemovals) {
-            breakConnection(pos);
+
+        return null;
+    }
+
+    public static void tick(Level level) {
+        if (!(level instanceof ServerLevel serverLevel)) {
+            return;
         }
-        
-        // Refresh lead entities to prevent despawn
-        if (world.getGameTime() % 200 == 0) { // Every 10 seconds
-            for (LeadEntity lead : new ArrayList<>(leadEntities.values())) {
+
+        List<BlockPos> toRemove = new ArrayList<>();
+        for (Map.Entry<BlockPos, BlockPos> entry : new HashMap<>(connections).entrySet()) {
+            BlockPos from = entry.getKey();
+            BlockPos to = entry.getValue();
+            if (!isValidConnection(serverLevel, from, to)) {
+                toRemove.add(from);
+            }
+        }
+
+        for (BlockPos from : toRemove) {
+            breakConnection(serverLevel, from);
+        }
+
+        if (serverLevel.getGameTime() % 200 == 0) {
+            Set<LeadEntity> unique = new HashSet<>(leadEntities.values());
+            for (LeadEntity lead : unique) {
                 if (lead != null && !lead.isRemoved()) {
                     lead.refreshLifespan();
                 }
@@ -177,18 +201,141 @@ public class LeadConnectionManager {
         }
     }
 
-    // VS Integration - Update positions when ship moves
+    private static boolean isValidConnection(ServerLevel level, BlockPos from, BlockPos to) {
+        boolean fromLoaded = level.isLoaded(from);
+        boolean toLoaded = level.isLoaded(to);
+
+        if (!fromLoaded || !toLoaded) {
+            // Skip validation while one of the chunks is unloaded; we'll revisit once it reloads.
+            return true;
+        }
+
+        boolean fromSolid = VSShipUtils.hasSolidBlock(level, from);
+        boolean toSolid = VSShipUtils.hasSolidBlock(level, to);
+        double distSq = from.distSqr(to);
+
+        boolean valid = fromSolid && toSolid && distSq <= 32 * 32;
+        if (!valid) {
+            CannonMod.LOGGER.debug("Invalid lead connection detected: fromSolid={}, toSolid={}, distSq={}, from={}, to={}",
+                fromSolid, toSolid, distSq, from, to);
+        }
+
+        return valid;
+    }
+
     public static void onShipMove(BlockPos oldPos, BlockPos newPos) {
-        if (connections.containsKey(oldPos)) {
-            BlockPos connectedTo = connections.remove(oldPos);
-            connections.put(newPos, connectedTo);
-            
-            // Update lead entity
-            LeadEntity lead = leadEntities.remove(oldPos);
-            if (lead != null) {
-                leadEntities.put(newPos, lead);
-                lead.refreshLifespan();
+        if (oldPos == null || newPos == null) {
+            return;
+        }
+
+        BlockPos oldKey = oldPos.immutable();
+        BlockPos newKey = newPos.immutable();
+
+        if (connections.containsKey(oldKey)) {
+            BlockPos other = connections.remove(oldKey);
+            connections.put(newKey, other);
+            updateLeadMapping(oldKey, newKey);
+            return;
+        }
+
+        for (Map.Entry<BlockPos, BlockPos> entry : new HashMap<>(connections).entrySet()) {
+            if (entry.getValue().equals(oldKey)) {
+                connections.put(entry.getKey(), newKey);
+                updateLeadMapping(oldKey, newKey);
+                break;
             }
         }
+    }
+
+    private static void updateLeadMapping(BlockPos oldPos, BlockPos newPos) {
+        LeadEntity entity = leadEntities.remove(oldPos);
+        if (entity != null) {
+            leadEntities.put(newPos, entity);
+            if (entity.getFromPos().equals(oldPos)) {
+                entity.setFromPos(newPos);
+            } else if (entity.getToPos().equals(oldPos)) {
+                entity.setToPos(newPos);
+            }
+        }
+    }
+
+    public static void handleShipWorldTick(ShipObjectServerWorld shipWorld) {
+        if (shipWorld == null) {
+            return;
+        }
+
+        Collection<ShipObjectServer> ships = shipWorld.getShipObjects().values();
+        if (ships.isEmpty()) {
+            return;
+        }
+
+        Map<BlockPos, BlockPos> snapshot = new HashMap<>(connections);
+        for (Map.Entry<BlockPos, BlockPos> entry : snapshot.entrySet()) {
+            BlockPos oldFrom = entry.getKey();
+            BlockPos oldTo = entry.getValue();
+
+            BlockPos updatedFrom = findUpdatedPosition(ships, oldFrom);
+            BlockPos updatedTo = findUpdatedPosition(ships, oldTo);
+
+            BlockPos newFromKey = updatedFrom != null ? updatedFrom.immutable() : oldFrom;
+            BlockPos newToKey = updatedTo != null ? updatedTo.immutable() : oldTo;
+
+            if (newFromKey.equals(oldFrom) && newToKey.equals(oldTo)) {
+                continue;
+            }
+
+            connections.remove(oldFrom);
+            connections.put(newFromKey, newToKey);
+
+            if (!newFromKey.equals(oldFrom)) {
+                updateLeadMapping(oldFrom, newFromKey);
+            }
+            if (!newToKey.equals(oldTo)) {
+                updateLeadMapping(oldTo, newToKey);
+            }
+        }
+    }
+
+    private static BlockPos findUpdatedPosition(Collection<ShipObjectServer> ships, BlockPos worldPos) {
+        Vector3d worldCenter = new Vector3d(worldPos.getX() + 0.5D, worldPos.getY() + 0.5D, worldPos.getZ() + 0.5D);
+
+        for (ShipObjectServer ship : ships) {
+            ShipTransform previous = ship.getPrevTickShipTransform();
+            ShipTransform current = ship.getShipTransform();
+            if (previous == null || current == null) {
+                continue;
+            }
+
+            Matrix4dc worldToShip = previous.getWorldToShip();
+            Matrix4dc shipToWorld = current.getShipToWorld();
+            if (worldToShip == null || shipToWorld == null) {
+                continue;
+            }
+
+            Vector3d localPos = worldToShip.transformPosition(worldCenter, new Vector3d());
+            if (!isApproximatelyBlockCenter(localPos)) {
+                continue;
+            }
+
+            Vector3d newWorldCenter = shipToWorld.transformPosition(localPos, new Vector3d());
+            BlockPos newPos = BlockPos.containing(newWorldCenter.x(), newWorldCenter.y(), newWorldCenter.z());
+            if (!newPos.equals(worldPos)) {
+                return newPos;
+            }
+            return null;
+        }
+
+        return null;
+    }
+
+    private static boolean isApproximatelyBlockCenter(Vector3d localPos) {
+        return isApproximatelyHalf(localPos.x())
+            && isApproximatelyHalf(localPos.y())
+            && isApproximatelyHalf(localPos.z());
+    }
+
+    private static boolean isApproximatelyHalf(double value) {
+        double fractional = value - Math.floor(value);
+        return Math.abs(fractional - 0.5D) < 0.01D;
     }
 }

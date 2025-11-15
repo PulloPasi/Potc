@@ -13,7 +13,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 public class ClientSetup {
     @SubscribeEvent
     public static void onClientSetup(FMLClientSetupEvent event) {
-        // Register the renderer for LeadEntity
-        EntityRenderers.register(CannonModEntities.LEAD.get(), LeadRenderer::new);
+        EntityRenderers.register(CannonModEntities.LEAD_ENTITY.get(), LeadRenderer::new);
     }
 }

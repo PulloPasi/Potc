@@ -2,7 +2,7 @@
   "mappings": {
     "default": {
       "map": {
-        "0": "cannonholder"
+        "0": "ropeanchor"
       },
       "name": "default"
     }
