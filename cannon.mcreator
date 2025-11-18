@@ -857,7 +857,7 @@
       "name": "Key",
       "type": "item",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "key",
       "metadata": {
         "files": [
@@ -3500,6 +3500,18 @@
           "src/main/resources/data/cannon/worldgen/biome/caribbean_sea.json"
         ]
       }
+    },
+    {
+      "name": "DeadMansChestLootTable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dead_mans_chest_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/loot_tables/chests/cannon.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -3657,8 +3669,8 @@
       "subtitles.gunfire": "",
       "item.cannon.elizabeth_helmet": "Elizabeth Helmet",
       "item.cannon.jackdos_helmet": "Jack Sparrow (No Hat)",
-      "item.cannon.joshamee_gibbs_boots": "Joshamee Gibbs Boots",
       "item.cannon.elizabeth_boots": "Elizabeth Boots",
+      "item.cannon.joshamee_gibbs_boots": "Joshamee Gibbs Boots",
       "item.cannon.banan": "Banan",
       "block.cannon.planks_of_the_queen_annes_revenge": "Planks Of The Queen Anne\u0027s Revenge",
       "block.cannon.gunpowderbarrel": "Gunpowder Barrel",

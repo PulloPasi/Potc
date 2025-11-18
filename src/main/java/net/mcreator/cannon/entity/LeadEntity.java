@@ -26,14 +26,14 @@ public class LeadEntity extends Entity {
     private BlockPos fromPos = BlockPos.ZERO;
     private BlockPos toPos = BlockPos.ZERO;
 
-    public LeadEntity(PlayMessages.SpawnEntity packet, Level level) {
-        this(CannonModEntities.LEAD_ENTITY.get(), level);
-    }
-
     public LeadEntity(EntityType<? extends LeadEntity> type, Level level) {
         super(type, level);
         this.noPhysics = true;
         this.setNoGravity(true);
+    }
+
+    public LeadEntity(PlayMessages.SpawnEntity packet, Level level) {
+        this(CannonModEntities.LEAD_ENTITY.get(), level);
     }
 
     public static LeadEntity create(Level level, BlockPos from, BlockPos to) {
