@@ -1,7 +1,7 @@
 
 /*
-*    MCreator note: This file will be REGENERATED on each build.
-*/
+ *    MCreator note: This file will be REGENERATED on each build.
+ */
 package net.mcreator.cannon.init;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -27,7 +27,6 @@ import net.mcreator.cannon.item.KolmikulmaHatItem;
 import net.mcreator.cannon.item.KeyItem;
 import net.mcreator.cannon.item.JoshameeGibbsItem;
 import net.mcreator.cannon.item.JarOfDirtItem;
-import net.mcreator.cannon.item.JacksCompassItem;
 import net.mcreator.cannon.item.JackdosItem;
 import net.mcreator.cannon.item.JackSparrowItem;
 import net.mcreator.cannon.item.HeavyRiggingToolItem;
@@ -195,9 +194,8 @@ public class CannonModItems {
 	public static final RegistryObject<Item> DROWNED_GLASS = block(CannonModBlocks.DROWNED_GLASS);
 	public static final RegistryObject<Item> HEAVY_RIGGING_TOOL = REGISTRY.register("heavy_rigging_tool", () -> new HeavyRiggingToolItem());
 	public static final RegistryObject<Item> MACCUS_SPAWN_EGG = REGISTRY.register("maccus_spawn_egg", () -> new ForgeSpawnEggItem(CannonModEntities.MACCUS, -1, -13421773, new Item.Properties()));
-	// Start of user code block custom items
-	public static final RegistryObject<Item> JACKS_COMPASS = REGISTRY.register("jacks_compass", () -> new JacksCompassItem(new Item.Properties().stacksTo(1)));
 
+	// Start of user code block custom items
 	// End of user code block custom items
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
