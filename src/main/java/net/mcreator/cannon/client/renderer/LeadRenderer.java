@@ -9,6 +9,7 @@ import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.entity.EntityRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
+import net.minecraft.client.renderer.texture.TextureAtlas;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
@@ -16,7 +17,11 @@ import net.minecraft.world.phys.Vec3;
 import org.joml.Matrix4f;
 
 public class LeadRenderer extends EntityRenderer<LeadEntity> {
-    private static final ResourceLocation TEXTURE = new ResourceLocation("minecraft", "textures/entity/lead_knot.png");
+    private static final double THICKNESS = 0.02;
+    private static final int ROPE_RED = 214;
+    private static final int ROPE_GREEN = 188;
+    private static final int ROPE_BLUE = 141;
+    private static final int ROPE_ALPHA = 255;
 
     public LeadRenderer(EntityRendererProvider.Context context) {
         super(context);
@@ -45,38 +50,44 @@ public class LeadRenderer extends EntityRenderer<LeadEntity> {
         VertexConsumer builder = buffer.getBuffer(RenderType.leash());
         Matrix4f matrix = poseStack.last().pose();
 
-        Vec3 direction = end.subtract(start);
-        Vec3 normal = safeNormalize(direction);
-        float nx = (float) normal.x;
-        float ny = (float) normal.y;
-        float nz = (float) normal.z;
-
-        Vec3 midWorld = worldFrom.add(worldTo).scale(0.5);
         Vec3 cameraPos = Minecraft.getInstance().gameRenderer.getMainCamera().getPosition();
-        Vec3 viewVec = cameraPos.subtract(midWorld);
-        Vec3 offsetNorm = safeNormalize(direction.cross(viewVec));
-        if (offsetNorm.lengthSqr() < 1.0E-4) {
-            offsetNorm = safeNormalize(direction.cross(new Vec3(0, 1, 0)));
-        }
-        if (offsetNorm.lengthSqr() < 1.0E-4) {
-            offsetNorm = safeNormalize(direction.cross(new Vec3(1, 0, 0)));
-        }
-        if (offsetNorm.lengthSqr() < 1.0E-4) {
+
+        Vec3 direction = end.subtract(start);
+        if (direction.lengthSqr() < 1.0E-6) {
             poseStack.popPose();
             return;
         }
 
-        double thickness = 0.045;
-        Vec3 offset = offsetNorm.scale(thickness);
+        Vec3 ropeMidWorld = entityPos.add(start).add(entityPos.add(end)).scale(0.5);
+        Vec3 viewVector = cameraPos.subtract(ropeMidWorld);
+        Vec3 offsetDir = safeNormalize(direction.cross(viewVector));
+        if (offsetDir == Vec3.ZERO || offsetDir.lengthSqr() < 1.0E-6) {
+            offsetDir = safeNormalize(direction.cross(new Vec3(0, 1, 0)));
+        }
+        if (offsetDir == Vec3.ZERO || offsetDir.lengthSqr() < 1.0E-6) {
+            offsetDir = safeNormalize(direction.cross(new Vec3(1, 0, 0)));
+        }
 
-        addRibbonQuad(builder, matrix, start, end, offset, nx, ny, nz, packedLight);
+        Vec3 offset = offsetDir == Vec3.ZERO ? new Vec3(THICKNESS, 0, 0) : offsetDir.scale(THICKNESS);
+
+        Vec3 startA = start.add(offset);
+        Vec3 startB = start.subtract(offset);
+        Vec3 endA = end.add(offset);
+        Vec3 endB = end.subtract(offset);
+
+        Vec3 normalVec = safeNormalize(offset.cross(direction));
+        float nx = (float) normalVec.x;
+        float ny = (float) normalVec.y;
+        float nz = (float) normalVec.z;
+
+        addRibbonQuad(builder, matrix, startA, endA, endB, startB, nx, ny, nz, packedLight);
 
         poseStack.popPose();
     }
 
     @Override
     public ResourceLocation getTextureLocation(LeadEntity entity) {
-        return TEXTURE;
+        return TextureAtlas.LOCATION_BLOCKS;
     }
 
     private static Vec3 safeNormalize(Vec3 vec) {
@@ -84,32 +95,33 @@ public class LeadRenderer extends EntityRenderer<LeadEntity> {
         return length < 1.0E-4 ? Vec3.ZERO : vec.scale(1.0 / length);
     }
 
-    private static void addRibbonQuad(VertexConsumer builder, Matrix4f matrix, Vec3 start, Vec3 end,
-                                      Vec3 offset, float nx, float ny, float nz, int packedLight) {
-        Vec3 startA = start.add(offset);
-        Vec3 startB = start.subtract(offset);
-        Vec3 endA = end.add(offset);
-        Vec3 endB = end.subtract(offset);
-
-        final int r = 214;
-        final int g = 188;
-        final int b = 141;
-        final int a = 255;
-
-        // First triangle
+    private static void addRibbonQuad(VertexConsumer builder, Matrix4f matrix,
+                                      Vec3 startA, Vec3 endA, Vec3 endB, Vec3 startB,
+                                      float nx, float ny, float nz, int packedLight) {
         builder.vertex(matrix, (float) startA.x, (float) startA.y, (float) startA.z)
-            .color(r, g, b, a).uv2(packedLight).normal(nx, ny, nz).endVertex();
+            .color(ROPE_RED, ROPE_GREEN, ROPE_BLUE, ROPE_ALPHA)
+            .uv2(packedLight)
+            .endVertex();
         builder.vertex(matrix, (float) endA.x, (float) endA.y, (float) endA.z)
-            .color(r, g, b, a).uv2(packedLight).normal(nx, ny, nz).endVertex();
+            .color(ROPE_RED, ROPE_GREEN, ROPE_BLUE, ROPE_ALPHA)
+            .uv2(packedLight)
+            .endVertex();
         builder.vertex(matrix, (float) endB.x, (float) endB.y, (float) endB.z)
-            .color(r, g, b, a).uv2(packedLight).normal(nx, ny, nz).endVertex();
+            .color(ROPE_RED, ROPE_GREEN, ROPE_BLUE, ROPE_ALPHA)
+            .uv2(packedLight)
+            .endVertex();
 
-        // Second triangle
         builder.vertex(matrix, (float) startA.x, (float) startA.y, (float) startA.z)
-            .color(r, g, b, a).uv2(packedLight).normal(nx, ny, nz).endVertex();
+            .color(ROPE_RED, ROPE_GREEN, ROPE_BLUE, ROPE_ALPHA)
+            .uv2(packedLight)
+            .endVertex();
         builder.vertex(matrix, (float) endB.x, (float) endB.y, (float) endB.z)
-            .color(r, g, b, a).uv2(packedLight).normal(nx, ny, nz).endVertex();
+            .color(ROPE_RED, ROPE_GREEN, ROPE_BLUE, ROPE_ALPHA)
+            .uv2(packedLight)
+            .endVertex();
         builder.vertex(matrix, (float) startB.x, (float) startB.y, (float) startB.z)
-            .color(r, g, b, a).uv2(packedLight).normal(nx, ny, nz).endVertex();
+            .color(ROPE_RED, ROPE_GREEN, ROPE_BLUE, ROPE_ALPHA)
+            .uv2(packedLight)
+            .endVertex();
     }
 }

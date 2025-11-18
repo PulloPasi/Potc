@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cannon:block/dutchmanglass",
+    "up": "cannon:block/dutchmanglass",
+    "north": "cannon:block/dutchmanglass",
+    "east": "cannon:block/dutchmanglass",
+    "south": "cannon:block/dutchmanglass",
+    "west": "cannon:block/dutchmanglass",
+    "particle": "cannon:block/dutchmanglass"
+  },
+  "render_type": "translucent"
+}

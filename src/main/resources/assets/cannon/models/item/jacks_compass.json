@@ -1,7 +1,4 @@
 {
-  "parent": "cannon:custom/compass",
-  "textures": {
-    "0": "cannon:block/compass",
-    "particle": "cannon:item/compass"
-  }
+  "parent": "builtin/entity",
+  "gui_light": "front"
 }

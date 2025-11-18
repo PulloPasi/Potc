@@ -2,6 +2,7 @@ package net.mcreator.cannon.client;
 
 import net.mcreator.cannon.CannonMod;
 import net.mcreator.cannon.client.renderer.LeadRenderer;
+import net.mcreator.cannon.client.renderer.HeavyLeadRenderer;
 import net.mcreator.cannon.init.CannonModEntities;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.api.distmarker.Dist;
@@ -14,5 +15,6 @@ public class ClientSetup {
     @SubscribeEvent
     public static void onClientSetup(FMLClientSetupEvent event) {
         EntityRenderers.register(CannonModEntities.LEAD_ENTITY.get(), LeadRenderer::new);
+        EntityRenderers.register(CannonModEntities.HEAVY_LEAD_ENTITY.get(), HeavyLeadRenderer::new);
     }
 }

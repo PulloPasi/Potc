@@ -120,7 +120,6 @@ public class CannonModTabs {
 				tabData.accept(CannonModItems.BARBOSSA_BOOTS.get());
 				tabData.accept(CannonModBlocks.LOCKER_SAND.get().asItem());
 				tabData.accept(CannonModBlocks.BLACK_PLANK_TRIM.get().asItem());
-				tabData.accept(CannonModItems.JACKS_COMPASS.get());
 				tabData.accept(CannonModItems.JACKDOS_HELMET.get());
 				tabData.accept(CannonModItems.JACKDOS_CHESTPLATE.get());
 				tabData.accept(CannonModBlocks.BLACK_PEARL_MAST.get().asItem());
@@ -154,5 +153,8 @@ public class CannonModTabs {
 				tabData.accept(CannonModItems.ELIZABETH_BOOTS.get());
 				tabData.accept(CannonModBlocks.SWIRLWVY_ROPE.get().asItem());
 				tabData.accept(CannonModItems.RIGGING_TOOL.get());
+				tabData.accept(CannonModBlocks.DROWNED_GLASS.get().asItem());
+				tabData.accept(CannonModItems.HEAVY_RIGGING_TOOL.get());
+				tabData.accept(CannonModItems.MACCUS_SPAWN_EGG.get());
 			}).build());
 }

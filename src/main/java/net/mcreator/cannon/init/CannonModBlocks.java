@@ -28,7 +28,6 @@ import net.mcreator.cannon.block.SailsOfTheBlackPearlPatchBlock;
 import net.mcreator.cannon.block.SailsOfTheBlackPearlBlock;
 import net.mcreator.cannon.block.RopeBlockBlock;
 import net.mcreator.cannon.block.RopeBlock;
-import net.mcreator.cannon.block.RopeAnchorBlock;
 import net.mcreator.cannon.block.RedSailWallBlock;
 import net.mcreator.cannon.block.RedSailStairBlock;
 import net.mcreator.cannon.block.RedSailSlabBlock;
@@ -66,6 +65,7 @@ import net.mcreator.cannon.block.DutchmanPlank4Block;
 import net.mcreator.cannon.block.DutchmanPlank3Block;
 import net.mcreator.cannon.block.DutchmanPlank2Block;
 import net.mcreator.cannon.block.DutchmanPlank1Block;
+import net.mcreator.cannon.block.DrownedGlassBlock;
 import net.mcreator.cannon.block.DoorOfTheFlyingDutchmanBlock;
 import net.mcreator.cannon.block.DeadMansChestBlock;
 import net.mcreator.cannon.block.ChandelierBlock;
@@ -163,7 +163,7 @@ public class CannonModBlocks {
 	public static final RegistryObject<Block> BLACK_PEARL_BACK_TRIM = REGISTRY.register("black_pearl_back_trim", () -> new BlackPearlBackTrimBlock());
 	public static final RegistryObject<Block> ORGAN = REGISTRY.register("organ", () -> new OrganBlock());
 	public static final RegistryObject<Block> SWIRLWVY_ROPE = REGISTRY.register("swirlwvy_rope", () -> new SwirlwvyRopeBlock());
-	public static final RegistryObject<Block> ROPE_ANCHOR = REGISTRY.register("rope_anchor", () -> new RopeAnchorBlock());
+	public static final RegistryObject<Block> DROWNED_GLASS = REGISTRY.register("drowned_glass", () -> new DrownedGlassBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

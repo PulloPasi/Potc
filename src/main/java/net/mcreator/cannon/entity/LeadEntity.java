@@ -87,7 +87,7 @@ public class LeadEntity extends Entity {
         updatePositionAndBox();
     }
 
-    private void updatePositionAndBox() {
+    protected void updatePositionAndBox() {
         BlockPos from = getFromPos();
         BlockPos to = getToPos();
         Vec3 start = VSShipUtils.getWorldBlockCenter(level(), from);

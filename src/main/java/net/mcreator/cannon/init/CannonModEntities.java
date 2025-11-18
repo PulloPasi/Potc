@@ -23,9 +23,11 @@ import net.mcreator.cannon.entity.QuartermasterEntity;
 import net.mcreator.cannon.entity.PartOfTheCrewStrongEntity;
 import net.mcreator.cannon.entity.PartOfTheCrewEntity;
 import net.mcreator.cannon.entity.MermaidEntity;
+import net.mcreator.cannon.entity.MaccusEntity;
 import net.mcreator.cannon.entity.LeashHolderEntity;
 import net.mcreator.cannon.entity.LeadEntity;
 import net.mcreator.cannon.entity.KarbEntity;
+import net.mcreator.cannon.entity.HeavyLeadEntity;
 import net.mcreator.cannon.entity.CannonballosProjectileEntity;
 import net.mcreator.cannon.entity.BulletEntity;
 import net.mcreator.cannon.entity.BriishEntity;
@@ -57,9 +59,13 @@ public class CannonModEntities {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BlackBeardsCrewEntity::new).sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<LeashHolderEntity>> LEASH_HOLDER = register("leash_holder",
 			EntityType.Builder.<LeashHolderEntity>of(LeashHolderEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(LeashHolderEntity::new).sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<MaccusEntity>> MACCUS = register("maccus",
+			EntityType.Builder.<MaccusEntity>of(MaccusEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MaccusEntity::new).sized(0.6f, 1.8f));
 	// Start of user code block custom entities
-	public static final RegistryObject<EntityType<LeadEntity>> LEAD_ENTITY = REGISTRY.register("lead_entity",
-			() -> EntityType.Builder.<LeadEntity>of(LeadEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).sized(0.25f, 0.25f).build("lead_entity"));
+	public static final RegistryObject<EntityType<LeadEntity>> LEAD_ENTITY = register("lead_entity",
+			EntityType.Builder.<LeadEntity>of(LeadEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(LeadEntity::new).sized(0.1f, 0.1f));
+	public static final RegistryObject<EntityType<HeavyLeadEntity>> HEAVY_LEAD_ENTITY = register("heavy_lead_entity",
+			EntityType.Builder.<HeavyLeadEntity>of(HeavyLeadEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(HeavyLeadEntity::new).sized(0.15f, 0.15f));
 
 	// End of user code block custom entities
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
@@ -77,6 +83,7 @@ public class CannonModEntities {
 			QuartermasterEntity.init();
 			BlackBeardsCrewEntity.init();
 			LeashHolderEntity.init();
+			MaccusEntity.init();
 		});
 	}
 
@@ -90,5 +97,6 @@ public class CannonModEntities {
 		event.put(QUARTERMASTER.get(), QuartermasterEntity.createAttributes().build());
 		event.put(BLACK_BEARDS_CREW.get(), BlackBeardsCrewEntity.createAttributes().build());
 		event.put(LEASH_HOLDER.get(), LeashHolderEntity.createAttributes().build());
+		event.put(MACCUS.get(), MaccusEntity.createAttributes().build());
 	}
 }

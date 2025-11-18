@@ -1,9 +1,0 @@
-{
-  "parent": "cannon:custom/ropeanchor",
-  "textures": {
-    "all": "cannon:block/ropeanchor",
-    "particle": "cannon:block/ropeanchor",
-    "0": "cannon:block/cannonholder"
-  },
-  "render_type": "solid"
-}

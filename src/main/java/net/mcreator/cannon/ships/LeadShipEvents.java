@@ -2,6 +2,7 @@ package net.mcreator.cannon.ships;
 
 import net.mcreator.cannon.CannonMod;
 import net.mcreator.cannon.util.LeadConnectionManager;
+import net.mcreator.cannon.util.HeavyLeadConnectionManager;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -22,6 +23,7 @@ public final class LeadShipEvents {
             }
 
             LeadConnectionManager.handleShipWorldTick(shipWorld);
+            HeavyLeadConnectionManager.handleShipWorldTick(shipWorld);
         }));
     }
 }
