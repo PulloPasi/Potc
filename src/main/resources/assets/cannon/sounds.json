@@ -76,5 +76,30 @@
         "stream": false
       }
     ]
+  },
+  "davysdeath": {
+    "subtitle": "subtitles.davysdeath",
+    "sounds": [
+      {
+        "name": "cannon:davysdeathmusic",
+        "stream": true
+      }
+    ]
+  },
+  "jonesphase1": {
+    "sounds": [
+      {
+        "name": "cannon:jonesphase1",
+        "stream": true
+      }
+    ]
+  },
+  "jonesphase2": {
+    "sounds": [
+      {
+        "name": "cannon:jonesphase2",
+        "stream": true
+      }
+    ]
   }
 }

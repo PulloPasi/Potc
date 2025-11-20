@@ -18,6 +18,7 @@ import net.mcreator.cannon.client.renderer.MermaidRenderer;
 import net.mcreator.cannon.client.renderer.MaccusRenderer;
 import net.mcreator.cannon.client.renderer.LeashHolderRenderer;
 import net.mcreator.cannon.client.renderer.KarbRenderer;
+import net.mcreator.cannon.client.renderer.DavyJonesBossRenderer;
 import net.mcreator.cannon.client.renderer.BriishRenderer;
 import net.mcreator.cannon.client.renderer.BlackBeardsCrewRenderer;
 
@@ -37,5 +38,7 @@ public class CannonModEntityRenderers {
 		event.registerEntityRenderer(CannonModEntities.BLACK_BEARDS_CREW.get(), BlackBeardsCrewRenderer::new);
 		event.registerEntityRenderer(CannonModEntities.LEASH_HOLDER.get(), LeashHolderRenderer::new);
 		event.registerEntityRenderer(CannonModEntities.MACCUS.get(), MaccusRenderer::new);
+		event.registerEntityRenderer(CannonModEntities.DAVY_JONES_BOSS.get(), DavyJonesBossRenderer::new);
+		event.registerEntityRenderer(CannonModEntities.F_BULLET.get(), ThrownItemRenderer::new);
 	}
 }

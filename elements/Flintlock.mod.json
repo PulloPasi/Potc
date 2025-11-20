@@ -43,7 +43,7 @@
     "shootConstantly": false,
     "rangedItemChargesPower": false,
     "projectile": {
-      "value": "CUSTOM:Bullet"
+      "value": "CUSTOM:FBullet"
     },
     "projectileDisableAmmoCheck": false,
     "onRangedItemUsed": {

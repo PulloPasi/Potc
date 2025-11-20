@@ -19,7 +19,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.mcreator.cannon.procedures.FlintlockRightclickedProcedure;
 import net.mcreator.cannon.procedures.FlintlockRangedItemShootsProjectileProcedure;
 import net.mcreator.cannon.procedures.FlintlockCanUseRangedItemProcedure;
-import net.mcreator.cannon.entity.BulletEntity;
+import net.mcreator.cannon.entity.FBulletEntity;
 
 public class FlintlockItem extends Item {
 	public FlintlockItem() {
@@ -53,7 +53,7 @@ public class FlintlockItem extends Item {
 		if (!world.isClientSide() && entity instanceof ServerPlayer player) {
 			ItemStack stack = findAmmo(player);
 			if (player.getAbilities().instabuild || stack != ItemStack.EMPTY) {
-				BulletEntity projectile = BulletEntity.shoot(world, entity, world.getRandom());
+				FBulletEntity projectile = FBulletEntity.shoot(world, entity, world.getRandom());
 				if (player.getAbilities().instabuild) {
 					projectile.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;
 				} else {
@@ -76,11 +76,11 @@ public class FlintlockItem extends Item {
 	}
 
 	private ItemStack findAmmo(Player player) {
-		ItemStack stack = ProjectileWeaponItem.getHeldProjectile(player, e -> e.getItem() == BulletEntity.PROJECTILE_ITEM.getItem());
+		ItemStack stack = ProjectileWeaponItem.getHeldProjectile(player, e -> e.getItem() == FBulletEntity.PROJECTILE_ITEM.getItem());
 		if (stack == ItemStack.EMPTY) {
 			for (int i = 0; i < player.getInventory().items.size(); i++) {
 				ItemStack teststack = player.getInventory().items.get(i);
-				if (teststack != null && teststack.getItem() == BulletEntity.PROJECTILE_ITEM.getItem()) {
+				if (teststack != null && teststack.getItem() == FBulletEntity.PROJECTILE_ITEM.getItem()) {
 					stack = teststack;
 					break;
 				}

@@ -1002,7 +1002,7 @@
       "name": "HeartOfDavidJones",
       "type": "item",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "heart_of_david_jones",
       "metadata": {
         "files": [
@@ -3512,6 +3512,33 @@
           "src/main/resources/data/cannon/loot_tables/chests/cannon.json"
         ]
       }
+    },
+    {
+      "name": "DavyJonesBoss",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "davy_jones_boss",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/entity/DavyJonesBossEntity.java",
+          "src/main/resources/assets/cannon/models/item/davy_jones_boss_spawn_egg.json",
+          "src/main/java/net/mcreator/cannon/entity/model/DavyJonesBossModel.java",
+          "src/main/java/net/mcreator/cannon/client/renderer/DavyJonesBossRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "FBullet",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "f_bullet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/entity/FBulletEntity.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -3612,6 +3639,30 @@
       ],
       "category": "neutral",
       "subtitle": "Cannonball hits"
+    },
+    {
+      "name": "davysdeath",
+      "files": [
+        "davysdeathmusic"
+      ],
+      "category": "record",
+      "subtitle": "Davy Jones is slain"
+    },
+    {
+      "name": "jonesphase1",
+      "files": [
+        "jonesphase1"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "jonesphase2",
+      "files": [
+        "jonesphase2"
+      ],
+      "category": "record",
+      "subtitle": ""
     }
   ],
   "tag_elements": {
@@ -3669,8 +3720,8 @@
       "subtitles.gunfire": "",
       "item.cannon.elizabeth_helmet": "Elizabeth Helmet",
       "item.cannon.jackdos_helmet": "Jack Sparrow (No Hat)",
-      "item.cannon.elizabeth_boots": "Elizabeth Boots",
       "item.cannon.joshamee_gibbs_boots": "Joshamee Gibbs Boots",
+      "item.cannon.elizabeth_boots": "Elizabeth Boots",
       "item.cannon.banan": "Banan",
       "block.cannon.planks_of_the_queen_annes_revenge": "Planks Of The Queen Anne\u0027s Revenge",
       "block.cannon.gunpowderbarrel": "Gunpowder Barrel",
@@ -3688,6 +3739,8 @@
       "item.cannon.sword_of_triton": "Sword Of Triton",
       "item.cannon.black_beard_boots": "BlackBeard Boots",
       "block.cannon.swirlwvy_rope": "Pile Of Rope",
+      "subtitles.jonesphase2": "",
+      "subtitles.jonesphase1": "",
       "block.cannon.dutchman_wall_1": "Dutchman Wall 1",
       "block.cannon.dutchman_wall_2": "Dutchman Wall 2",
       "item.cannon.jack_sparrow_boots": "Jack Sparrow Boots",
@@ -3733,6 +3786,7 @@
       "entity.cannon.karb": "Karb",
       "subtitles.cannon-fired": "cannon fired",
       "block.cannon.drowned_glass": "Drowned Glass",
+      "entity.cannon.davy_jones_boss": "Davy Jones ",
       "block.cannon.stylish_wall": "Stylish Wall",
       "block.cannon.red_sail_slab": "Red Sail Slab",
       "subtitles.cannonball-woosh": "cannonball flyby",
@@ -3770,6 +3824,7 @@
       "block.cannon.side_figure_head_of_the_queen_annes_revenge": "Side Figure Head Of The Queen Anne\u0027s Revenge",
       "block.cannon.gloriouslantern": "Glorious Lantern",
       "block.cannon.grey_planks": "Grey Planks",
+      "subtitles.davysdeath": "Davy Jones is slain",
       "block.cannon.door_of_the_flying_dutchman": "Shit Looking Door",
       "item.cannon.black_beard_helmet": "BlackBeard Hat",
       "block.cannon.black_pearl_bow_2": "Black Pearl Bow 2",
@@ -3823,6 +3878,7 @@
       "block.cannon.light_red_sail": "Light Red Sail",
       "block.cannon.sails_of_the_black_pearl": "Sails Of The Black Pearl",
       "block.cannon.black_pearl_cabin_roof": "Black Pearl Cabin Roof",
+      "item.cannon.davy_jones_boss_spawn_egg": "Davy Jones  Spawn Egg",
       "block.cannon.dutchmansails_2": "Sails Of The Flying Dutchman Shaded",
       "block.cannon.black_pearl_cabin_roof_stair": "Black Pearl Cabin Roof Stair",
       "block.cannon.dutchmansails_3": "Sails Of The Flying Dutchman Bottom",

@@ -10,6 +10,7 @@ import net.mcreator.cannon.entity.PartOfTheCrewEntity;
 import net.mcreator.cannon.entity.MermaidEntity;
 import net.mcreator.cannon.entity.MaccusEntity;
 import net.mcreator.cannon.entity.KarbEntity;
+import net.mcreator.cannon.entity.DavyJonesBossEntity;
 import net.mcreator.cannon.entity.BriishEntity;
 import net.mcreator.cannon.entity.BlackBeardsCrewEntity;
 
@@ -68,6 +69,13 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof MaccusEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof DavyJonesBossEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

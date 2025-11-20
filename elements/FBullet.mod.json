@@ -1,0 +1,21 @@
+{
+  "_fv": 73,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:Bulletitem"
+    },
+    "showParticles": true,
+    "actionSound": {
+      "value": "CUSTOM:gunfire"
+    },
+    "igniteFire": false,
+    "power": 2.0,
+    "damage": 5.0,
+    "knockback": 5,
+    "entityModel": "Default",
+    "customModelTexture": "fbullet.png",
+    "modelWidth": 0.5,
+    "modelHeight": 0.5
+  }
+}

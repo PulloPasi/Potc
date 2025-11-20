@@ -194,6 +194,7 @@ public class CannonModItems {
 	public static final RegistryObject<Item> DROWNED_GLASS = block(CannonModBlocks.DROWNED_GLASS);
 	public static final RegistryObject<Item> HEAVY_RIGGING_TOOL = REGISTRY.register("heavy_rigging_tool", () -> new HeavyRiggingToolItem());
 	public static final RegistryObject<Item> MACCUS_SPAWN_EGG = REGISTRY.register("maccus_spawn_egg", () -> new ForgeSpawnEggItem(CannonModEntities.MACCUS, -1, -13421773, new Item.Properties()));
+	public static final RegistryObject<Item> DAVY_JONES_BOSS_SPAWN_EGG = REGISTRY.register("davy_jones_boss_spawn_egg", () -> new ForgeSpawnEggItem(CannonModEntities.DAVY_JONES_BOSS, -1, -1, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

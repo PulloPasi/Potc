@@ -24,4 +24,7 @@ public class CannonModSounds {
 	public static final RegistryObject<SoundEvent> GUNFIRE = REGISTRY.register("gunfire", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("cannon", "gunfire")));
 	public static final RegistryObject<SoundEvent> SWOWRDDRAW = REGISTRY.register("swowrddraw", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("cannon", "swowrddraw")));
 	public static final RegistryObject<SoundEvent> CANNONHIT = REGISTRY.register("cannonhit", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("cannon", "cannonhit")));
+	public static final RegistryObject<SoundEvent> DAVYSDEATH = REGISTRY.register("davysdeath", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("cannon", "davysdeath")));
+	public static final RegistryObject<SoundEvent> JONESPHASE1 = REGISTRY.register("jonesphase1", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("cannon", "jonesphase1")));
+	public static final RegistryObject<SoundEvent> JONESPHASE2 = REGISTRY.register("jonesphase2", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("cannon", "jonesphase2")));
 }
