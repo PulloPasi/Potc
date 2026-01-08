@@ -16,6 +16,7 @@ import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.cannon.item.TalismanOfTheVoodooMisterItem;
 import net.mcreator.cannon.item.TalismanOfTheBlackPearlItem;
+import net.mcreator.cannon.item.TaleOfTheDutchmanItem;
 import net.mcreator.cannon.item.SwordosItem;
 import net.mcreator.cannon.item.SwordoftrtitonbombItem;
 import net.mcreator.cannon.item.SwordOfTritonItem;
@@ -35,6 +36,8 @@ import net.mcreator.cannon.item.HalfEatenBananItem;
 import net.mcreator.cannon.item.FlintlockItem;
 import net.mcreator.cannon.item.ElizabethItem;
 import net.mcreator.cannon.item.DutchmanpeaceItem;
+import net.mcreator.cannon.item.DrownedPipeItem;
+import net.mcreator.cannon.item.DavyjonessheetItem;
 import net.mcreator.cannon.item.DavyJonesItem;
 import net.mcreator.cannon.item.ChalicewithtearItem;
 import net.mcreator.cannon.item.ChalicefullItem;
@@ -47,6 +50,7 @@ import net.mcreator.cannon.item.BillTurnerItem;
 import net.mcreator.cannon.item.BarbossaItem;
 import net.mcreator.cannon.item.BandanaItem;
 import net.mcreator.cannon.item.BananItem;
+import net.mcreator.cannon.item.AztecCoinItem;
 import net.mcreator.cannon.item.AngelicaTeachItem;
 import net.mcreator.cannon.block.display.DeadMansChestDisplayItem;
 import net.mcreator.cannon.CannonMod;
@@ -195,6 +199,10 @@ public class CannonModItems {
 	public static final RegistryObject<Item> HEAVY_RIGGING_TOOL = REGISTRY.register("heavy_rigging_tool", () -> new HeavyRiggingToolItem());
 	public static final RegistryObject<Item> MACCUS_SPAWN_EGG = REGISTRY.register("maccus_spawn_egg", () -> new ForgeSpawnEggItem(CannonModEntities.MACCUS, -1, -13421773, new Item.Properties()));
 	public static final RegistryObject<Item> DAVY_JONES_BOSS_SPAWN_EGG = REGISTRY.register("davy_jones_boss_spawn_egg", () -> new ForgeSpawnEggItem(CannonModEntities.DAVY_JONES_BOSS, -1, -1, new Item.Properties()));
+	public static final RegistryObject<Item> DAVYJONESSHEET = REGISTRY.register("davyjonessheet", () -> new DavyjonessheetItem());
+	public static final RegistryObject<Item> DROWNED_PIPE = REGISTRY.register("drowned_pipe", () -> new DrownedPipeItem());
+	public static final RegistryObject<Item> TALE_OF_THE_DUTCHMAN = REGISTRY.register("tale_of_the_dutchman", () -> new TaleOfTheDutchmanItem());
+	public static final RegistryObject<Item> AZTEC_COIN = REGISTRY.register("aztec_coin", () -> new AztecCoinItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

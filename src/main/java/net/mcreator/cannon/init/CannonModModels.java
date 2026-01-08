@@ -10,6 +10,7 @@ import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.cannon.client.model.Modeltrihat;
+import net.mcreator.cannon.client.model.Modelplayerskeleton;
 import net.mcreator.cannon.client.model.Modelpipo;
 import net.mcreator.cannon.client.model.Modeljonetsiversiokaksi;
 import net.mcreator.cannon.client.model.Modeljackkaks;
@@ -34,6 +35,7 @@ public class CannonModModels {
 		event.registerLayerDefinition(Modelpipo.LAYER_LOCATION, Modelpipo::createBodyLayer);
 		event.registerLayerDefinition(Modelgibbs.LAYER_LOCATION, Modelgibbs::createBodyLayer);
 		event.registerLayerDefinition(Modelelizabeth.LAYER_LOCATION, Modelelizabeth::createBodyLayer);
+		event.registerLayerDefinition(Modelplayerskeleton.LAYER_LOCATION, Modelplayerskeleton::createBodyLayer);
 		event.registerLayerDefinition(Modelbarbossakaks.LAYER_LOCATION, Modelbarbossakaks::createBodyLayer);
 		event.registerLayerDefinition(Modeljackkaks.LAYER_LOCATION, Modeljackkaks::createBodyLayer);
 		event.registerLayerDefinition(Modelbillvkaks.LAYER_LOCATION, Modelbillvkaks::createBodyLayer);

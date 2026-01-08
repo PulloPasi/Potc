@@ -3142,13 +3142,14 @@
       "name": "Organ",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "organ",
       "metadata": {
         "files": [
           "src/main/resources/assets/cannon/models/item/organ.json",
           "src/main/java/net/mcreator/cannon/block/OrganBlock.java",
           "src/main/resources/assets/cannon/blockstates/organ.json",
+          "src/main/java/net/mcreator/cannon/block/entity/OrganBlockEntity.java",
           "src/main/resources/data/cannon/loot_tables/blocks/organ.json",
           "src/main/resources/assets/cannon/models/block/organ.json"
         ]
@@ -3539,6 +3540,109 @@
           "src/main/java/net/mcreator/cannon/entity/FBulletEntity.java"
         ]
       }
+    },
+    {
+      "name": "Davyjonessheet",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "davyjonessheet",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/item/davyjonessheet.json",
+          "src/main/java/net/mcreator/cannon/item/DavyjonessheetItem.java"
+        ]
+      }
+    },
+    {
+      "name": "DrownedPipe",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drowned_pipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/item/DrownedPipeItem.java",
+          "src/main/resources/assets/cannon/models/item/drowned_pipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Dutchman",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dutchman",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/worldgen/structure/dutchman.json",
+          "src/main/resources/data/cannon/worldgen/structure_set/dutchman.json",
+          "src/main/resources/data/cannon/worldgen/template_pool/dutchman.json"
+        ]
+      }
+    },
+    {
+      "name": "CompassSelect",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compass_select",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cannon/world/inventory/CompassSelectMenu.java",
+          "src/main/java/net/mcreator/cannon/client/gui/CompassSelectScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "TaleOfTheDutchman",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tale_of_the_dutchman",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/item/tale_of_the_dutchman.json",
+          "src/main/java/net/mcreator/cannon/item/TaleOfTheDutchmanItem.java"
+        ]
+      }
+    },
+    {
+      "name": "JarOfDirtRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jar_of_dirt_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/jar_of_dirt_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "DutchmanToriel",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dutchman_toriel",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cannon/recipes/dutchman_toriel.json"
+        ]
+      }
+    },
+    {
+      "name": "AztecCoin",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "aztec_coin",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cannon/models/item/aztec_coin.json",
+          "src/main/java/net/mcreator/cannon/item/AztecCoinItem.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -3663,6 +3767,22 @@
       ],
       "category": "record",
       "subtitle": ""
+    },
+    {
+      "name": "organ1",
+      "files": [
+        "organsong1"
+      ],
+      "category": "record",
+      "subtitle": "Someone is playing the organ"
+    },
+    {
+      "name": "bettercannonfire",
+      "files": [
+        "parempitykkiaani"
+      ],
+      "category": "neutral",
+      "subtitle": "cannon fired"
     }
   ],
   "tag_elements": {
@@ -3730,6 +3850,7 @@
       "entity.cannon.part_of_the_crew": "Part Of The Crew",
       "block.cannon.sails_of_the_black_pearl_patch": "Sail",
       "block.cannon.black_pearl_bird_trim": "Black Pearl Bird Trim",
+      "gui.cannon.compass_select.button_buried_treasure": "Buried treasure",
       "block.cannon.cannon": "Cannon",
       "item.cannon.barbossa_boots": "Barbossa Boots",
       "block.cannon.stylish_fence": "Stylish Fence",
@@ -3738,6 +3859,7 @@
       "block.cannon.locker_sand": "Locker Sand",
       "item.cannon.sword_of_triton": "Sword Of Triton",
       "item.cannon.black_beard_boots": "BlackBeard Boots",
+      "gui.cannon.compass_select.label_what_do_you_really_want_most": "What do you really want most?",
       "block.cannon.swirlwvy_rope": "Pile Of Rope",
       "subtitles.jonesphase2": "",
       "subtitles.jonesphase1": "",
@@ -3753,7 +3875,7 @@
       "item.cannon.maccus_spawn_egg": "Maccus Spawn Egg",
       "item.cannon.heart_of_david_jones": "Heart Of Davy Jones",
       "item.cannon.joshamee_gibbs_chestplate": "Joshamee Gibbs Chestplate",
-      "item.cannon.le_stick_of_fire": "Le Stick Of Fire",
+      "item.cannon.le_stick_of_fire": "Linstock",
       "block.cannon.fountain_of_youth_drip": "Fountain Of Youth Drip",
       "biome.cannon.locker": "Locker",
       "item.cannon.davy_jones_helmet": "Davy Jones Helmet",
@@ -3773,6 +3895,8 @@
       "item.cannon.black_beard_chestplate": "BlackBeard Jacket",
       "block.cannon.dutchman_slab_3": "Dutchman Slab 3",
       "subtitles.swowrddraw": "",
+      "gui.cannon.compass_select.button_the_dutchman": "The Dutchman",
+      "item.cannon.tale_of_the_dutchman": "Tale Of The Dutchman",
       "block.cannon.planks_of_the_flying_dutchman": "Planks Of The Flying Dutchman",
       "item.cannon.jack_sparrow_helmet": "Jack Sparrow Helmet",
       "subtitles.cannonfire": "Cannon Fires",
@@ -3786,6 +3910,7 @@
       "entity.cannon.karb": "Karb",
       "subtitles.cannon-fired": "cannon fired",
       "block.cannon.drowned_glass": "Drowned Glass",
+      "item.cannon.davyjonessheet": "\"Davy Jones\" sheet",
       "entity.cannon.davy_jones_boss": "Davy Jones ",
       "block.cannon.stylish_wall": "Stylish Wall",
       "block.cannon.red_sail_slab": "Red Sail Slab",
@@ -3796,14 +3921,16 @@
       "block.cannon.chandelier": "Chandelier",
       "item.cannon.half_eaten_banan": "Half Eaten Banan",
       "subtitles.cannonball-explosion": "cannonball hit",
-      "item.cannon.bulletitem": "Bulletitem",
+      "item.cannon.bulletitem": "Bullet",
       "subtitles.swordfire": "",
       "item.cannon.mermaidtear": "Mermaidtear",
       "death.attack.as": "%1$s chose his own fate",
       "subtitles.cannonhit": "Cannonball hits",
       "block.cannon.window_of_the_black_pearl": "Window Of The Black Pearl",
       "item.cannon.jackdos_chestplate": "Jack Sparrow (No Jacket)",
+      "item.cannon.aztec_coin": "Aztec Coin",
       "item.cannon.briish_spawn_egg": "British Gunman Spawn Egg",
+      "item.cannon.drowned_pipe": "Drowned Pipe",
       "block.cannon.rope_block": "Rope Block",
       "block.cannon.dutchman_plank_1": "Dutchman Plank 1",
       "item.cannon.talisman_of_the_black_pearl": "Talisman Of The Black Pearl",
@@ -3814,6 +3941,7 @@
       "block.cannon.grey_plank_slab": "Grey Plank Slab",
       "block.cannon.dutchman_plank_2": "Dutchman Plank 2",
       "block.cannon.dutchman_plank_3": "Dutchman Plank 3",
+      "subtitles.bettercannonfire": "cannon fired",
       "block.cannon.dutchman_plank_4": "Dutchman Plank 4",
       "block.cannon.stairs_of_the_queen_annes_revenge": "Stairs Of The Queen Anne\u0027s Revenge",
       "item_group.cannon.potc": "Cursed Tides",
@@ -3850,6 +3978,7 @@
       "block.cannon.grey_plank_stair": "Grey Plank Stair",
       "block.cannon.black_planks": "Black Planks",
       "item.cannon.bill_turner_helmet": "Bill Turner Helmet",
+      "subtitles.organ1": "Someone is playing the organ",
       "block.cannon.black_pearl_back_trim": "Black Pearl Back Trim",
       "item.cannon.black_beard_leggings": "BlackBeard Pants",
       "item.cannon.chalice": "Chalice Of Cartagena",

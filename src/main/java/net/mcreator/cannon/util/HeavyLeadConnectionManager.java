@@ -15,7 +15,13 @@ import org.valkyrienskies.core.api.ships.properties.ShipTransform;
 import org.valkyrienskies.core.impl.game.ships.ShipObjectServer;
 import org.valkyrienskies.core.impl.game.ships.ShipObjectServerWorld;
 
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.nbt.ListTag;
+import net.minecraft.nbt.NbtUtils;
+
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -178,12 +184,78 @@ public final class HeavyLeadConnectionManager {
         return null;
     }
 
+    public static List<RiggingConnection> collectConnections(BlockPos cornerA, BlockPos cornerB) {
+        if (cornerA == null || cornerB == null) {
+            return Collections.emptyList();
+        }
+
+        int minX = Math.min(cornerA.getX(), cornerB.getX());
+        int minY = Math.min(cornerA.getY(), cornerB.getY());
+        int minZ = Math.min(cornerA.getZ(), cornerB.getZ());
+        int maxX = Math.max(cornerA.getX(), cornerB.getX());
+        int maxY = Math.max(cornerA.getY(), cornerB.getY());
+        int maxZ = Math.max(cornerA.getZ(), cornerB.getZ());
+
+        List<RiggingConnection> results = new ArrayList<>();
+        for (Map.Entry<BlockPos, BlockPos> entry : connections.entrySet()) {
+            BlockPos from = entry.getKey();
+            BlockPos to = entry.getValue();
+            if (isWithin(from, minX, minY, minZ, maxX, maxY, maxZ) && isWithin(to, minX, minY, minZ, maxX, maxY, maxZ)) {
+                results.add(new RiggingConnection(from.immutable(), to.immutable()));
+            }
+        }
+        return results;
+    }
+
+    public static ListTag serializeConnections(Collection<RiggingConnection> connections, BlockPos origin) {
+        ListTag list = new ListTag();
+        if (connections == null || origin == null) {
+            return list;
+        }
+
+        for (RiggingConnection connection : connections) {
+            CompoundTag entry = new CompoundTag();
+            entry.put("from", writeRelativePos(connection.from(), origin));
+            entry.put("to", writeRelativePos(connection.to(), origin));
+            list.add(entry);
+        }
+        return list;
+    }
+
+    public static List<RiggingConnection> deserializeConnections(ListTag listTag, BlockPos origin) {
+        if (listTag == null || origin == null) {
+            return Collections.emptyList();
+        }
+
+        List<RiggingConnection> results = new ArrayList<>(listTag.size());
+        for (int i = 0; i < listTag.size(); i++) {
+            if (!(listTag.get(i) instanceof CompoundTag compound)) {
+                continue;
+            }
+            BlockPos from = readRelativePos(compound.getCompound("from"), origin);
+            BlockPos to = readRelativePos(compound.getCompound("to"), origin);
+            if (from != null && to != null) {
+                results.add(new RiggingConnection(from, to));
+            }
+        }
+        return results;
+    }
+
+    public static void recreateConnections(Level level, Collection<RiggingConnection> connections) {
+        if (level == null || connections == null) {
+            return;
+        }
+        for (RiggingConnection connection : connections) {
+            createConnection(level, connection.from(), connection.to());
+        }
+    }
+
     public static void tick(Level level) {
         if (!(level instanceof ServerLevel serverLevel)) {
             return;
         }
 
-        List<BlockPos> toRemove = new java.util.ArrayList<>();
+        List<BlockPos> toRemove = new ArrayList<>();
         for (Map.Entry<BlockPos, BlockPos> entry : new HashMap<>(connections).entrySet()) {
             BlockPos from = entry.getKey();
             BlockPos to = entry.getValue();
@@ -341,5 +413,24 @@ public final class HeavyLeadConnectionManager {
     private static boolean isApproximatelyHalf(double value) {
         double fractional = value - Math.floor(value);
         return Math.abs(fractional - 0.5D) < 0.01D;
+    }
+
+    private static boolean isWithin(BlockPos pos, int minX, int minY, int minZ, int maxX, int maxY, int maxZ) {
+        return pos.getX() >= minX && pos.getX() <= maxX
+            && pos.getY() >= minY && pos.getY() <= maxY
+            && pos.getZ() >= minZ && pos.getZ() <= maxZ;
+    }
+
+    private static CompoundTag writeRelativePos(BlockPos absolute, BlockPos origin) {
+        BlockPos relative = absolute.subtract(origin);
+        return NbtUtils.writeBlockPos(relative);
+    }
+
+    private static BlockPos readRelativePos(CompoundTag tag, BlockPos origin) {
+        if (tag == null) {
+            return null;
+        }
+        BlockPos stored = NbtUtils.readBlockPos(tag);
+        return origin.offset(stored);
     }
 }

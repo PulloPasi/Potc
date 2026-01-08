@@ -40,9 +40,9 @@ public class FerrymansChasingCannonOnBlockRightClickedProcedure {
 			if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(CannonModItems.CANNONBALLOS.get())) : false) {
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cannon:cannon-fired")), SoundSource.BLOCKS, 50, 2);
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cannon:bettercannonfire")), SoundSource.BLOCKS, 50, 2);
 					} else {
-						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cannon:cannon-fired")), SoundSource.BLOCKS, 50, 2, false);
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cannon:bettercannonfire")), SoundSource.BLOCKS, 50, 2, false);
 					}
 				}
 				fromX = x + 0.5;

@@ -175,7 +175,7 @@ public class DavyJonesBossEntity extends Monster implements GeoEntity {
 	private static final double SHOCKWAVE_RING_STEP = 2.5D;
 	private static final double SHOCKWAVE_INITIAL_RADIUS = 0.75D;
 	private static final int ANTI_BURROW_COOLDOWN_MAX = 100;
-	private static final int[] COMBO_STRIKE_TICKS = {11, 20, 33};
+	private static final int[] COMBO_STRIKE_TICKS = {8, 15, 27};
 	private static final int[] COMBO_STEP_INTERVAL_TICKS = {9, 13};
 	private static final int COMBO_FINISHER_STRIKE_TICKS = 5;
 	private static final int COUNTER_KICK_STRIKE_TICKS = 7;
@@ -994,7 +994,18 @@ public class DavyJonesBossEntity extends Monster implements GeoEntity {
 		return builder;
 	}
 
+	private PlayState lowerBodyPredicate(AnimationState<DavyJonesBossEntity> event) {
+		if (this.animationprocedure.equals("counterkick") || this.animationprocedure.equals("shockwave"))
+			return PlayState.STOP;
+		if (event.isMoving()) {
+			return event.setAndContinue(RawAnimation.begin().thenLoop("walk_lower"));
+		}
+		return event.setAndContinue(RawAnimation.begin().thenLoop("idle_lower"));
+	}
+
 	private PlayState movementPredicate(AnimationState<DavyJonesBossEntity> event) {
+		if (this.animationprocedure.equals("counterkick") || this.animationprocedure.equals("shockwave"))
+			return PlayState.STOP;
 		if (this.animationprocedure.equals("empty")) {
 			if (event.isMoving()) {
 				return event.setAndContinue(RawAnimation.begin().thenLoop("walk"));
@@ -1025,8 +1036,15 @@ public class DavyJonesBossEntity extends Monster implements GeoEntity {
 
 	@Override
 	public void registerControllers(AnimatableManager.ControllerRegistrar data) {
-		data.add(new AnimationController<>(this, "movement", 4, this::movementPredicate));
-		data.add(new AnimationController<>(this, "procedure", 4, this::procedurePredicate));
+		AnimationController<DavyJonesBossEntity> lowerBody = new AnimationController<>(this, "lowerbody", 4, this::lowerBodyPredicate);
+		lowerBody.setAnimationSpeed(1.0F);
+		data.add(lowerBody);
+		AnimationController<DavyJonesBossEntity> movement = new AnimationController<>(this, "movement", 4, this::movementPredicate);
+		movement.setAnimationSpeed(1.0F);
+		data.add(movement);
+		AnimationController<DavyJonesBossEntity> procedure = new AnimationController<>(this, "procedure", 4, this::procedurePredicate);
+		procedure.setAnimationSpeed(1.0F);
+		data.add(procedure);
 	}
 
 	@Override
@@ -1075,7 +1093,7 @@ public class DavyJonesBossEntity extends Monster implements GeoEntity {
 			SoundEvent phaseSound = this.getPhaseSound(desiredPhase);
 			if (phaseSound != null) {
 				this.stopCurrentMusic(serverLevel);
-				this.playMusic(serverLevel, phaseSound);
+				this.playMusic(serverLevel, desiredPhase, phaseSound);
 				this.musicLoopTicks = this.getLoopDuration(desiredPhase);
 			}
 		}
@@ -1091,7 +1109,7 @@ public class DavyJonesBossEntity extends Monster implements GeoEntity {
 		this.stopCurrentMusic(serverLevel);
 		SoundEvent deathSound = this.getPhaseSound(MusicPhase.DEATH);
 		if (deathSound != null) {
-			this.playMusic(serverLevel, deathSound);
+			this.playMusic(serverLevel, MusicPhase.DEATH, deathSound);
 		}
 		this.currentMusicPhase = MusicPhase.DEATH;
 		this.musicLoopTicks = 0;
@@ -1107,15 +1125,26 @@ public class DavyJonesBossEntity extends Monster implements GeoEntity {
 		};
 	}
 
-	private void playMusic(ServerLevel serverLevel, SoundEvent sound) {
-		serverLevel.playSound(null, this.blockPosition(), sound, SoundSource.RECORDS, 6.0F, 1.0F);
+	private static final float MUSIC_BASE_VOLUME = 6.0F;
+
+	private void playMusic(ServerLevel serverLevel, MusicPhase phase, SoundEvent sound) {
+		serverLevel.playSound(null, this.blockPosition(), sound, SoundSource.RECORDS, this.getPhaseVolume(phase), 1.0F);
+	}
+
+	private float getPhaseVolume(MusicPhase phase) {
+		return switch (phase) {
+		case PHASE1 -> MUSIC_BASE_VOLUME * 0.8F;
+		case PHASE2 -> MUSIC_BASE_VOLUME * 0.6F;
+		case DEATH -> MUSIC_BASE_VOLUME * 1.3F;
+		default -> MUSIC_BASE_VOLUME;
+		};
 	}
 
 	private void switchMusicPhase(ServerLevel serverLevel, MusicPhase nextPhase) {
 		this.stopCurrentMusic(serverLevel);
 		SoundEvent nextSound = this.getPhaseSound(nextPhase);
 		if (nextSound != null) {
-			this.playMusic(serverLevel, nextSound);
+			this.playMusic(serverLevel, nextPhase, nextSound);
 			this.musicLoopTicks = this.getLoopDuration(nextPhase);
 		} else {
 			this.musicLoopTicks = 0;

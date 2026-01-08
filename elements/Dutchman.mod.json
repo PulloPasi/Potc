@@ -1,0 +1,36 @@
+{
+  "_fv": 73,
+  "_type": "structure",
+  "definition": {
+    "structure": "dutchman",
+    "projection": "rigid",
+    "ignoredBlocks": [
+      {
+        "value": "Blocks.STRUCTURE_BLOCK"
+      }
+    ],
+    "spacing": 10,
+    "separation": 9,
+    "restrictionBiomes": [
+      {
+        "value": "deep_ocean"
+      },
+      {
+        "value": "deep_cold_ocean"
+      },
+      {
+        "value": "deep_lukewarm_ocean"
+      }
+    ],
+    "terrainAdaptation": "none",
+    "generationStep": "SURFACE_STRUCTURES",
+    "surfaceDetectionType": "WORLD_SURFACE",
+    "useStartHeight": true,
+    "startHeightProviderType": "UNIFORM",
+    "startHeightMin": 60,
+    "startHeightMax": 61,
+    "size": 1,
+    "maxDistanceFromCenter": 64,
+    "jigsawPools": []
+  }
+}

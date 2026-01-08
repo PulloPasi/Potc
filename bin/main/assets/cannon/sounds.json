@@ -101,5 +101,23 @@
         "stream": true
       }
     ]
+  },
+  "organ1": {
+    "subtitle": "subtitles.organ1",
+    "sounds": [
+      {
+        "name": "cannon:organsong1",
+        "stream": true
+      }
+    ]
+  },
+  "bettercannonfire": {
+    "subtitle": "subtitles.bettercannonfire",
+    "sounds": [
+      {
+        "name": "cannon:parempitykkiaani",
+        "stream": false
+      }
+    ]
   }
 }

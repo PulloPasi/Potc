@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:jigsaw",
+  "start_pool": "cannon:dutchman",
+  "size": 1,
+  "max_distance_from_center": 64,
+  "spawn_overrides": {},
+  "step": "surface_structures",
+  "terrain_adaptation": "none",
+  "start_height": {
+    "type": "minecraft:uniform",
+    "min_inclusive": {
+      "absolute": 59
+    },
+    "max_inclusive": {
+      "absolute": 59
+    }
+  },
+  "biomes": [
+    "deep_ocean",
+    "deep_cold_ocean",
+    "deep_lukewarm_ocean"
+  ],
+  "use_expansion_hack": false
+}

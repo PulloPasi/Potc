@@ -9,13 +9,11 @@ import org.valkyrienskies.core.impl.shadow.of;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 
-import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
@@ -70,10 +68,10 @@ public class CannonModEntities {
 	public static final RegistryObject<EntityType<FBulletEntity>> F_BULLET = register("f_bullet",
 			EntityType.Builder.<FBulletEntity>of(FBulletEntity::new, MobCategory.MISC).setCustomClientFactory(FBulletEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	// Start of user code block custom entities
-	public static final RegistryObject<EntityType<LeadEntity>> LEAD_ENTITY = register("lead_entity", EntityType.Builder.<LeadEntity>of(LeadEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1)
-			.setCustomClientFactory((PlayMessages.SpawnEntity packet, Level level) -> new LeadEntity(packet, level)).sized(0.1f, 0.1f));
-	public static final RegistryObject<EntityType<HeavyLeadEntity>> HEAVY_LEAD_ENTITY = register("heavy_lead_entity", EntityType.Builder.<HeavyLeadEntity>of(HeavyLeadEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true)
-			.setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory((PlayMessages.SpawnEntity packet, Level level) -> new HeavyLeadEntity(packet, level)).sized(0.15f, 0.15f));
+	public static final RegistryObject<EntityType<LeadEntity>> LEAD_ENTITY = register("lead_entity",
+			EntityType.Builder.<LeadEntity>of(LeadEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(LeadEntity::new).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<HeavyLeadEntity>> HEAVY_LEAD_ENTITY = register("heavy_lead_entity",
+			EntityType.Builder.<HeavyLeadEntity>of(HeavyLeadEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(HeavyLeadEntity::new).sized(0.5f, 0.5f));
 
 	// End of user code block custom entities
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {

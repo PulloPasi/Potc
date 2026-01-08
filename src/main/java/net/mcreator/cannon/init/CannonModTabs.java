@@ -156,5 +156,9 @@ public class CannonModTabs {
 				tabData.accept(CannonModBlocks.DROWNED_GLASS.get().asItem());
 				tabData.accept(CannonModItems.HEAVY_RIGGING_TOOL.get());
 				tabData.accept(CannonModItems.MACCUS_SPAWN_EGG.get());
+				tabData.accept(CannonModItems.DAVYJONESSHEET.get());
+				tabData.accept(CannonModItems.DROWNED_PIPE.get());
+				tabData.accept(CannonModItems.TALE_OF_THE_DUTCHMAN.get());
+				tabData.accept(CannonModItems.AZTEC_COIN.get());
 			}).build());
 }
